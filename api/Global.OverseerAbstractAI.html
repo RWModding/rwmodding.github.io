@@ -1,0 +1,1685 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OverseerAbstractAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OverseerAbstractAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_OverseerAbstractAI.md&amp;value=---%0Auid%3A%20Global.OverseerAbstractAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.OverseerAbstractAI">
+
+
+
+  <h1 id="Global_OverseerAbstractAI" data-uid="Global.OverseerAbstractAI" class="text-break">
+    Class OverseerAbstractAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OverseerAbstractAI : AbstractCreatureAI</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.AbstractCreatureAI.html">AbstractCreatureAI</a></div>
+      <div><span class="xref">OverseerAbstractAI</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_parent">AbstractCreatureAI.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_privDenPos">AbstractCreatureAI.privDenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_strandedInRoom">AbstractCreatureAI.strandedInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_path">AbstractCreatureAI.path</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_world">AbstractCreatureAI.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_migrationDestination">AbstractCreatureAI.migrationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_RealAI">AbstractCreatureAI.RealAI</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_followCreature">AbstractCreatureAI.followCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_timeBuffer">AbstractCreatureAI.timeBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_freezeDestination">AbstractCreatureAI.freezeDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_denPosition">AbstractCreatureAI.denPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_destination">AbstractCreatureAI.destination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_MigrationDestination">AbstractCreatureAI.MigrationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_WantToMigrate">AbstractCreatureAI.WantToMigrate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_offscreenSpeedFac">AbstractCreatureAI.offscreenSpeedFac</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_GoToDen">AbstractCreatureAI.GoToDen()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_SetDestination_WorldCoordinate_">AbstractCreatureAI.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_MigrateTo_WorldCoordinate_">AbstractCreatureAI.MigrateTo(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_InternalSetDestination_WorldCoordinate_">AbstractCreatureAI.InternalSetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_SetDestinationNoPathing_WorldCoordinate_System_Boolean_">AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_DoIHaveAPathToCoordinate_WorldCoordinate_">AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_FindPath_WorldCoordinate_">AbstractCreatureAI.FindPath(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_PlaceInRealizedRoom">AbstractCreatureAI.PlaceInRealizedRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_DestinationExit_System_Int32_System_Int32_">AbstractCreatureAI.DestinationExit(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_Update_System_Int32_">AbstractCreatureAI.Update(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_MigrationBehavior_System_Int32_">AbstractCreatureAI.MigrationBehavior(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_MoveWithCreature_AbstractCreature_System_Boolean_">AbstractCreatureAI.MoveWithCreature(AbstractCreature, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_TryToGoToRoom_WorldCoordinate_">AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_TimeInfluencedRandomRoll_System_Single_System_Int32_">AbstractCreatureAI.TimeInfluencedRandomRoll(float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_FollowPath_System_Int32_">AbstractCreatureAI.FollowPath(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_RandomMoveWithinRoom">AbstractCreatureAI.RandomMoveWithinRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_RandomMoveToOtherRoom_System_Int32_">AbstractCreatureAI.RandomMoveToOtherRoom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_MoveToMoreAttractiveNeighborRoom">AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_CanRoamThroughRoom_System_Int32_">AbstractCreatureAI.CanRoamThroughRoom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_WantToStayInDenUntilEndOfCycle">AbstractCreatureAI.WantToStayInDenUntilEndOfCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_Die">AbstractCreatureAI.Die()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_DoIwantToDropThisItemInDen_AbstractPhysicalObject_">AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_RandomizeSpawnPositionInRoom_WorldCoordinate_System_Int32_">AbstractCreatureAI.RandomizeSpawnPositionInRoom(WorldCoordinate, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AbstractCreatureAI.html#Global_AbstractCreatureAI_HavePrey">AbstractCreatureAI.HavePrey()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_OverseerAbstractAI__ctor_" data-uid="Global.OverseerAbstractAI.#ctor*"></a>
+
+  <h3 id="Global_OverseerAbstractAI__ctor_World_AbstractCreature_" data-uid="Global.OverseerAbstractAI.#ctor(World,AbstractCreature)">
+  OverseerAbstractAI(World, AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseerAbstractAI(World world, AbstractCreature parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_OverseerAbstractAI_InputCooldown" data-uid="Global.OverseerAbstractAI.InputCooldown">
+  InputCooldown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InputCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_SafariSwarmCap" data-uid="Global.OverseerAbstractAI.SafariSwarmCap">
+  SafariSwarmCap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SafariSwarmCap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_doorSelectionIndex" data-uid="Global.OverseerAbstractAI.doorSelectionIndex">
+  doorSelectionIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int doorSelectionIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_freezeStandardRoamingOnTheseFrames" data-uid="Global.OverseerAbstractAI.freezeStandardRoamingOnTheseFrames">
+  freezeStandardRoamingOnTheseFrames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int freezeStandardRoamingOnTheseFrames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_goToPlayer" data-uid="Global.OverseerAbstractAI.goToPlayer">
+  goToPlayer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool goToPlayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_inputPackage" data-uid="Global.OverseerAbstractAI.inputPackage">
+  inputPackage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage inputPackage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_isPlayerGuide" data-uid="Global.OverseerAbstractAI.isPlayerGuide">
+  isPlayerGuide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPlayerGuide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_lastDoorSelectionIndex" data-uid="Global.OverseerAbstractAI.lastDoorSelectionIndex">
+  lastDoorSelectionIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lastDoorSelectionIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_lastRoom" data-uid="Global.OverseerAbstractAI.lastRoom">
+  lastRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate lastRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_lastRooms" data-uid="Global.OverseerAbstractAI.lastRooms">
+  lastRooms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; lastRooms</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_lastTargetCreature" data-uid="Global.OverseerAbstractAI.lastTargetCreature">
+  lastTargetCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature lastTargetCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_moonHelper" data-uid="Global.OverseerAbstractAI.moonHelper">
+  moonHelper
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool moonHelper</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_ownerIterator" data-uid="Global.OverseerAbstractAI.ownerIterator">
+  ownerIterator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ownerIterator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_playerGuideCounter" data-uid="Global.OverseerAbstractAI.playerGuideCounter">
+  playerGuideCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int playerGuideCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_safariOwner" data-uid="Global.OverseerAbstractAI.safariOwner">
+  safariOwner
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool safariOwner</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_spearmasterLockedOverseer" data-uid="Global.OverseerAbstractAI.spearmasterLockedOverseer">
+  spearmasterLockedOverseer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool spearmasterLockedOverseer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_targetCreature" data-uid="Global.OverseerAbstractAI.targetCreature">
+  targetCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature targetCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_targetCreatureCounter" data-uid="Global.OverseerAbstractAI.targetCreatureCounter">
+  targetCreatureCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetCreatureCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_targetCreatureTime" data-uid="Global.OverseerAbstractAI.targetCreatureTime">
+  targetCreatureTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetCreatureTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_tutorialRooms" data-uid="Global.OverseerAbstractAI.tutorialRooms">
+  tutorialRooms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] tutorialRooms</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_validSafariDoors" data-uid="Global.OverseerAbstractAI.validSafariDoors">
+  validSafariDoors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ShortcutData&gt; validSafariDoors</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ShortcutData.html">ShortcutData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAbstractAI_worldAI" data-uid="Global.OverseerAbstractAI.worldAI">
+  worldAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseersWorldAI worldAI</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.OverseersWorldAI.html">OverseersWorldAI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_OverseerAbstractAI_RelevantPlayer_" data-uid="Global.OverseerAbstractAI.RelevantPlayer*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_RelevantPlayer" data-uid="Global.OverseerAbstractAI.RelevantPlayer">
+  RelevantPlayer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature RelevantPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_playerGuide_" data-uid="Global.OverseerAbstractAI.playerGuide*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_playerGuide" data-uid="Global.OverseerAbstractAI.playerGuide">
+  playerGuide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playerGuide { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_OverseerAbstractAI_AbstractBehavior_" data-uid="Global.OverseerAbstractAI.AbstractBehavior*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_AbstractBehavior_System_Int32_" data-uid="Global.OverseerAbstractAI.AbstractBehavior(System.Int32)">
+  AbstractBehavior(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AbstractBehavior(int time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_AllowSwarmTarget_" data-uid="Global.OverseerAbstractAI.AllowSwarmTarget*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_AllowSwarmTarget_AbstractCreature_AbstractRoom_" data-uid="Global.OverseerAbstractAI.AllowSwarmTarget(AbstractCreature,AbstractRoom)">
+  AllowSwarmTarget(AbstractCreature, AbstractRoom)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L991"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowSwarmTarget(AbstractCreature evalTarget, AbstractRoom roomCheck)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evalTarget</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>roomCheck</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_AllowedToTargetCreature_" data-uid="Global.OverseerAbstractAI.AllowedToTargetCreature*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_AllowedToTargetCreature_AbstractCreature_" data-uid="Global.OverseerAbstractAI.AllowedToTargetCreature(AbstractCreature)">
+  AllowedToTargetCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L1008"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowedToTargetCreature(AbstractCreature evalTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evalTarget</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_AllowedToTargetCreature_" data-uid="Global.OverseerAbstractAI.AllowedToTargetCreature*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_AllowedToTargetCreature_AbstractCreature_AbstractRoom_" data-uid="Global.OverseerAbstractAI.AllowedToTargetCreature(AbstractCreature,AbstractRoom)">
+  AllowedToTargetCreature(AbstractCreature, AbstractRoom)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L981"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowedToTargetCreature(AbstractCreature evalTarget, AbstractRoom roomCheck)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evalTarget</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>roomCheck</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_BringToRoomAndGuidePlayer_" data-uid="Global.OverseerAbstractAI.BringToRoomAndGuidePlayer*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_BringToRoomAndGuidePlayer_System_Int32_" data-uid="Global.OverseerAbstractAI.BringToRoomAndGuidePlayer(System.Int32)">
+  BringToRoomAndGuidePlayer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BringToRoomAndGuidePlayer(int room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_DefineTutorialRooms_" data-uid="Global.OverseerAbstractAI.DefineTutorialRooms*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_DefineTutorialRooms" data-uid="Global.OverseerAbstractAI.DefineTutorialRooms">
+  DefineTutorialRooms()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DefineTutorialRooms()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_GoToRandomDestinationInMoonChamber_" data-uid="Global.OverseerAbstractAI.GoToRandomDestinationInMoonChamber*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_GoToRandomDestinationInMoonChamber_System_Boolean_" data-uid="Global.OverseerAbstractAI.GoToRandomDestinationInMoonChamber(System.Boolean)">
+  GoToRandomDestinationInMoonChamber(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoToRandomDestinationInMoonChamber(bool allowForceJump)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>allowForceJump</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_GoToRandomDestinationInRMChamber_" data-uid="Global.OverseerAbstractAI.GoToRandomDestinationInRMChamber*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_GoToRandomDestinationInRMChamber_System_Boolean_" data-uid="Global.OverseerAbstractAI.GoToRandomDestinationInRMChamber(System.Boolean)">
+  GoToRandomDestinationInRMChamber(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoToRandomDestinationInRMChamber(bool allowForceJump)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>allowForceJump</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_HowInterestingIsCreature_" data-uid="Global.OverseerAbstractAI.HowInterestingIsCreature*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_HowInterestingIsCreature_AbstractCreature_" data-uid="Global.OverseerAbstractAI.HowInterestingIsCreature(AbstractCreature)">
+  HowInterestingIsCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HowInterestingIsCreature(AbstractCreature testCrit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testCrit</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_Moved_" data-uid="Global.OverseerAbstractAI.Moved*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_Moved" data-uid="Global.OverseerAbstractAI.Moved">
+  Moved()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Moved()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_NewRoom_" data-uid="Global.OverseerAbstractAI.NewRoom*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_NewRoom_Room_" data-uid="Global.OverseerAbstractAI.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L1046"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_NewWorld_" data-uid="Global.OverseerAbstractAI.NewWorld*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_NewWorld_World_" data-uid="Global.OverseerAbstractAI.NewWorld(World)">
+  NewWorld(World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewWorld(World newWorld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newWorld</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_OnSafariTargetChanged_" data-uid="Global.OverseerAbstractAI.OnSafariTargetChanged*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_OnSafariTargetChanged" data-uid="Global.OverseerAbstractAI.OnSafariTargetChanged">
+  OnSafariTargetChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L1013"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSafariTargetChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_PlayerGuideGoAway_" data-uid="Global.OverseerAbstractAI.PlayerGuideGoAway*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_PlayerGuideGoAway_System_Int32_" data-uid="Global.OverseerAbstractAI.PlayerGuideGoAway(System.Int32)">
+  PlayerGuideGoAway(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayerGuideGoAway(int time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_PlayerGuideUpdate_" data-uid="Global.OverseerAbstractAI.PlayerGuideUpdate*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_PlayerGuideUpdate_System_Int32_" data-uid="Global.OverseerAbstractAI.PlayerGuideUpdate(System.Int32)">
+  PlayerGuideUpdate(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L870"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayerGuideUpdate(int time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_ResetTargetCreature_" data-uid="Global.OverseerAbstractAI.ResetTargetCreature*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_ResetTargetCreature" data-uid="Global.OverseerAbstractAI.ResetTargetCreature">
+  ResetTargetCreature()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L1024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTargetCreature()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_Roam_" data-uid="Global.OverseerAbstractAI.Roam*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_Roam_System_Int32_System_Single_" data-uid="Global.OverseerAbstractAI.Roam(System.Int32,System.Single)">
+  Roam(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Roam(int time, float chance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>chance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_RoomAllowed_" data-uid="Global.OverseerAbstractAI.RoomAllowed*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_RoomAllowed_System_Int32_" data-uid="Global.OverseerAbstractAI.RoomAllowed(System.Int32)">
+  RoomAllowed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RoomAllowed(int room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_SetAsPlayerGuide_" data-uid="Global.OverseerAbstractAI.SetAsPlayerGuide*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_SetAsPlayerGuide_System_Int32_" data-uid="Global.OverseerAbstractAI.SetAsPlayerGuide(System.Int32)">
+  SetAsPlayerGuide(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAsPlayerGuide(int ownerOverride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ownerOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAbstractAI_SetTargetCreature_" data-uid="Global.OverseerAbstractAI.SetTargetCreature*"></a>
+
+  <h3 id="Global_OverseerAbstractAI_SetTargetCreature_AbstractCreature_" data-uid="Global.OverseerAbstractAI.SetTargetCreature(AbstractCreature)">
+  SetTargetCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L974"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetCreature(AbstractCreature newTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newTarget</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAbstractAI.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

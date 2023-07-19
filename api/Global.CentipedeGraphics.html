@@ -1,0 +1,1949 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CentipedeGraphics
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CentipedeGraphics
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_CentipedeGraphics.md&amp;value=---%0Auid%3A%20Global.CentipedeGraphics%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.CentipedeGraphics">
+
+
+
+  <h1 id="Global_CentipedeGraphics" data-uid="Global.CentipedeGraphics" class="text-break">
+    Class CentipedeGraphics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CentipedeGraphics : GraphicsModule, IDrawable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.GraphicsModule.html">GraphicsModule</a></div>
+      <div><span class="xref">CentipedeGraphics</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_internalContainerObjects">GraphicsModule.internalContainerObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_bodyParts">GraphicsModule.bodyParts</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_DEBUGLABELS">GraphicsModule.DEBUGLABELS</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_culled">GraphicsModule.culled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_lastCulled">GraphicsModule.lastCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_dispose">GraphicsModule.dispose</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_cullRange">GraphicsModule.cullRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_owner">GraphicsModule.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ShouldBeCulled">GraphicsModule.ShouldBeCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_">GraphicsModule.SuckedIntoShortCut(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_Reset">GraphicsModule.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_">GraphicsModule.PushOutOf(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_">GraphicsModule.AddObjectToInternalContainer(IDrawable, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseAllInternallyContainedSprites">GraphicsModule.ReleaseAllInternallyContainedSprites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_BringSpritesToFront">GraphicsModule.BringSpritesToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_">GraphicsModule.HypothermiaColorBlend(Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_CentipedeGraphics__ctor_" data-uid="Global.CentipedeGraphics.#ctor*"></a>
+
+  <h3 id="Global_CentipedeGraphics__ctor_PhysicalObject_" data-uid="Global.CentipedeGraphics.#ctor(PhysicalObject)">
+  CentipedeGraphics(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CentipedeGraphics(PhysicalObject ow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ow</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_CentipedeGraphics_blackColor" data-uid="Global.CentipedeGraphics.blackColor">
+  blackColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color blackColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_bodyDir" data-uid="Global.CentipedeGraphics.bodyDir">
+  bodyDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bodyDir</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_bodyRotations" data-uid="Global.CentipedeGraphics.bodyRotations">
+  bodyRotations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2[,] bodyRotations</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_centipede" data-uid="Global.CentipedeGraphics.centipede">
+  centipede
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Centipede centipede</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Centipede.html">Centipede</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_darkness" data-uid="Global.CentipedeGraphics.darkness">
+  darkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float darkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_defaultRotat" data-uid="Global.CentipedeGraphics.defaultRotat">
+  defaultRotat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float defaultRotat</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_hue" data-uid="Global.CentipedeGraphics.hue">
+  hue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float hue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lastBodyDir" data-uid="Global.CentipedeGraphics.lastBodyDir">
+  lastBodyDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastBodyDir</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lastDarkness" data-uid="Global.CentipedeGraphics.lastDarkness">
+  lastDarkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastDarkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lastWingFlapCycle" data-uid="Global.CentipedeGraphics.lastWingFlapCycle">
+  lastWingFlapCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastWingFlapCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lastWingSwimCycle" data-uid="Global.CentipedeGraphics.lastWingSwimCycle">
+  lastWingSwimCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastWingSwimCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lastWingsFolded" data-uid="Global.CentipedeGraphics.lastWingsFolded">
+  lastWingsFolded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastWingsFolded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_legLengths" data-uid="Global.CentipedeGraphics.legLengths">
+  legLengths
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] legLengths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_legs" data-uid="Global.CentipedeGraphics.legs">
+  legs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Limb[,] legs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Limb.html">Limb</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lightFlash" data-uid="Global.CentipedeGraphics.lightFlash">
+  lightFlash
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lightFlash</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_lightSource" data-uid="Global.CentipedeGraphics.lightSource">
+  lightSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightSource lightSource</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.LightSource.html">LightSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_saturation" data-uid="Global.CentipedeGraphics.saturation">
+  saturation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float saturation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_soundLoop" data-uid="Global.CentipedeGraphics.soundLoop">
+  soundLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChunkDynamicSoundLoop soundLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.ChunkDynamicSoundLoop.html">ChunkDynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_totSegs" data-uid="Global.CentipedeGraphics.totSegs">
+  totSegs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totSegs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_totalSecondarySegments" data-uid="Global.CentipedeGraphics.totalSecondarySegments">
+  totalSecondarySegments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalSecondarySegments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_walkCycle" data-uid="Global.CentipedeGraphics.walkCycle">
+  walkCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float walkCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_whiskers" data-uid="Global.CentipedeGraphics.whiskers">
+  whiskers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericBodyPart[,,] whiskers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="GenericBodyPart.html">GenericBodyPart</a>[,,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_wingFlapCycle" data-uid="Global.CentipedeGraphics.wingFlapCycle">
+  wingFlapCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingFlapCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_wingLengths" data-uid="Global.CentipedeGraphics.wingLengths">
+  wingLengths
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] wingLengths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_wingPairs" data-uid="Global.CentipedeGraphics.wingPairs">
+  wingPairs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int wingPairs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_wingSwimCycle" data-uid="Global.CentipedeGraphics.wingSwimCycle">
+  wingSwimCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingSwimCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CentipedeGraphics_wingsFolded" data-uid="Global.CentipedeGraphics.wingsFolded">
+  wingsFolded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingsFolded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_CentipedeGraphics_FirstLegSprite_" data-uid="Global.CentipedeGraphics.FirstLegSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_FirstLegSprite" data-uid="Global.CentipedeGraphics.FirstLegSprite">
+  FirstLegSprite
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FirstLegSprite { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_SecondaryShellColor_" data-uid="Global.CentipedeGraphics.SecondaryShellColor*"></a>
+
+  <h3 id="Global_CentipedeGraphics_SecondaryShellColor" data-uid="Global.CentipedeGraphics.SecondaryShellColor">
+  SecondaryShellColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SecondaryShellColor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_ShellColor_" data-uid="Global.CentipedeGraphics.ShellColor*"></a>
+
+  <h3 id="Global_CentipedeGraphics_ShellColor" data-uid="Global.CentipedeGraphics.ShellColor">
+  ShellColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ShellColor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_TotalSprites_" data-uid="Global.CentipedeGraphics.TotalSprites*"></a>
+
+  <h3 id="Global_CentipedeGraphics_TotalSprites" data-uid="Global.CentipedeGraphics.TotalSprites">
+  TotalSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalSprites { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_TubeSprite_" data-uid="Global.CentipedeGraphics.TubeSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_TubeSprite" data-uid="Global.CentipedeGraphics.TubeSprite">
+  TubeSprite
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TubeSprite { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_CentipedeGraphics_AddToContainer_" data-uid="Global.CentipedeGraphics.AddToContainer*"></a>
+
+  <h3 id="Global_CentipedeGraphics_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="Global.CentipedeGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_ApplyPalette_" data-uid="Global.CentipedeGraphics.ApplyPalette*"></a>
+
+  <h3 id="Global_CentipedeGraphics_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="Global.CentipedeGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L871"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_BestBodyRotatAtChunk_" data-uid="Global.CentipedeGraphics.BestBodyRotatAtChunk*"></a>
+
+  <h3 id="Global_CentipedeGraphics_BestBodyRotatAtChunk_System_Int32_" data-uid="Global.CentipedeGraphics.BestBodyRotatAtChunk(System.Int32)">
+  BestBodyRotatAtChunk(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 BestBodyRotatAtChunk(int chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_ChunkDrawPos_" data-uid="Global.CentipedeGraphics.ChunkDrawPos*"></a>
+
+  <h3 id="Global_CentipedeGraphics_ChunkDrawPos_System_Int32_System_Single_" data-uid="Global.CentipedeGraphics.ChunkDrawPos(System.Int32,System.Single)">
+  ChunkDrawPos(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L866"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ChunkDrawPos(int indx, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_DrawSprites_" data-uid="Global.CentipedeGraphics.DrawSprites*"></a>
+
+  <h3 id="Global_CentipedeGraphics_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="Global.CentipedeGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_HorizontalWingFlapAtChunk_" data-uid="Global.CentipedeGraphics.HorizontalWingFlapAtChunk*"></a>
+
+  <h3 id="Global_CentipedeGraphics_HorizontalWingFlapAtChunk_System_Int32_UnityEngine_Vector2_System_Single_" data-uid="Global.CentipedeGraphics.HorizontalWingFlapAtChunk(System.Int32,UnityEngine.Vector2,System.Single)">
+  HorizontalWingFlapAtChunk(int, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HorizontalWingFlapAtChunk(int chunk, Vector2 chunkRotat, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>chunkRotat</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_InitiateSprites_" data-uid="Global.CentipedeGraphics.InitiateSprites*"></a>
+
+  <h3 id="Global_CentipedeGraphics_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="Global.CentipedeGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_LegSprite_" data-uid="Global.CentipedeGraphics.LegSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_LegSprite_System_Int32_System_Int32_System_Int32_" data-uid="Global.CentipedeGraphics.LegSprite(System.Int32,System.Int32,System.Int32)">
+  LegSprite(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LegSprite(int segment, int side, int part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>segment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_RotatAtChunk_" data-uid="Global.CentipedeGraphics.RotatAtChunk*"></a>
+
+  <h3 id="Global_CentipedeGraphics_RotatAtChunk_System_Int32_System_Single_" data-uid="Global.CentipedeGraphics.RotatAtChunk(System.Int32,System.Single)">
+  RotatAtChunk(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 RotatAtChunk(int chunk, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_SecondarySegmentSprite_" data-uid="Global.CentipedeGraphics.SecondarySegmentSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_SecondarySegmentSprite_System_Int32_" data-uid="Global.CentipedeGraphics.SecondarySegmentSprite(System.Int32)">
+  SecondarySegmentSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SecondarySegmentSprite(int s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_SegmentSprite_" data-uid="Global.CentipedeGraphics.SegmentSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_SegmentSprite_System_Int32_" data-uid="Global.CentipedeGraphics.SegmentSprite(System.Int32)">
+  SegmentSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SegmentSprite(int s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_ShellSprite_" data-uid="Global.CentipedeGraphics.ShellSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_ShellSprite_System_Int32_System_Int32_" data-uid="Global.CentipedeGraphics.ShellSprite(System.Int32,System.Int32)">
+  ShellSprite(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShellSprite(int s, int t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_Update_" data-uid="Global.CentipedeGraphics.Update*"></a>
+
+  <h3 id="Global_CentipedeGraphics_Update" data-uid="Global.CentipedeGraphics.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_VerticalWingFlapAtChunk_" data-uid="Global.CentipedeGraphics.VerticalWingFlapAtChunk*"></a>
+
+  <h3 id="Global_CentipedeGraphics_VerticalWingFlapAtChunk_System_Int32_System_Single_" data-uid="Global.CentipedeGraphics.VerticalWingFlapAtChunk(System.Int32,System.Single)">
+  VerticalWingFlapAtChunk(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VerticalWingFlapAtChunk(int chunk, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_WhiskerDir_" data-uid="Global.CentipedeGraphics.WhiskerDir*"></a>
+
+  <h3 id="Global_CentipedeGraphics_WhiskerDir_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="Global.CentipedeGraphics.WhiskerDir(System.Int32,System.Int32,System.Int32,System.Single)">
+  WhiskerDir(int, int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 WhiskerDir(int end, int side, int part, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_WhiskerLength_" data-uid="Global.CentipedeGraphics.WhiskerLength*"></a>
+
+  <h3 id="Global_CentipedeGraphics_WhiskerLength_System_Int32_" data-uid="Global.CentipedeGraphics.WhiskerLength(System.Int32)">
+  WhiskerLength(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WhiskerLength(int part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_WhiskerSprite_" data-uid="Global.CentipedeGraphics.WhiskerSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_WhiskerSprite_System_Int32_System_Int32_System_Int32_" data-uid="Global.CentipedeGraphics.WhiskerSprite(System.Int32,System.Int32,System.Int32)">
+  WhiskerSprite(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WhiskerSprite(int end, int side, int pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>end</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_WingPos_" data-uid="Global.CentipedeGraphics.WingPos*"></a>
+
+  <h3 id="Global_CentipedeGraphics_WingPos_System_Int32_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_" data-uid="Global.CentipedeGraphics.WingPos(System.Int32,System.Int32,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+  WingPos(int, int, Vector2, Vector2, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L837"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 WingPos(int side, int wing, Vector2 dr, Vector2 prp, Vector2 chunkRotat, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>wing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dr</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>prp</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>chunkRotat</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CentipedeGraphics_WingSprite_" data-uid="Global.CentipedeGraphics.WingSprite*"></a>
+
+  <h3 id="Global_CentipedeGraphics_WingSprite_System_Int32_System_Int32_" data-uid="Global.CentipedeGraphics.WingSprite(System.Int32,System.Int32)">
+  WingSprite(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WingSprite(int side, int wing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>side</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>wing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CentipedeGraphics.cs/#L5" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

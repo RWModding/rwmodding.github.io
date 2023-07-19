@@ -1,0 +1,1037 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OpLabel
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OpLabel
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_Remix_MixedUI_OpLabel.md&amp;value=---%0Auid%3A%20Menu.Remix.MixedUI.OpLabel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.Remix.MixedUI.OpLabel">
+
+
+
+  <h1 id="Menu_Remix_MixedUI_OpLabel" data-uid="Menu.Remix.MixedUI.OpLabel" class="text-break">
+    Class OpLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a>.<a class="xref" href="Menu.Remix.html">Remix</a>.<a class="xref" href="Menu.Remix.MixedUI.html">MixedUI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OpLabel : UIelement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.UIelement.html">UIelement</a></div>
+      <div><span class="xref">OpLabel</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Menu.Remix.MixedUI.OpLabelLong.html">OpLabelLong</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_mute">UIelement.mute</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_description">UIelement.description</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_isRectangular">UIelement.isRectangular</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__pos">UIelement._pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__size">UIelement._size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__rad">UIelement._rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedSize">UIelement.fixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedRad">UIelement.fixedRad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_tab">UIelement.tab</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_myContainer">UIelement.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_lastScreenPos">UIelement.lastScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_wrapper">UIelement.wrapper</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosX">UIelement.PosX</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosY">UIelement.PosY</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_size">UIelement.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_rad">UIelement.rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hidden">UIelement.Hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_IsInactive">UIelement.IsInactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_pos">UIelement.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Menu">UIelement.Menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Owner">UIelement.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MouseOver">UIelement.MouseOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MousePos">UIelement.MousePos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_scrollBox">UIelement.scrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_InScrollBox">UIelement.InScrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ScreenPos">UIelement.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_frameMulti">UIelement.frameMulti</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MenuMouseMode">UIelement.MenuMouseMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_CtlrInput">UIelement.CtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_LastCtlrInput">UIelement.LastCtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ContextWrapped">UIelement.ContextWrapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnChange">UIelement.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUpdate">UIelement.OnUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnGrafUpdate">UIelement.OnGrafUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReset">UIelement.OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnDeactivate">UIelement.OnDeactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReactivate">UIelement.OnReactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUnload">UIelement.OnUnload</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reset">UIelement.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hide">UIelement.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Show">UIelement.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_GetPos">UIelement.GetPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_SetPos_UnityEngine_Vector2_">UIelement.SetPos(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToBack">UIelement.MoveToBack()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToFront">UIelement.MoveToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveInFrontOfElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveInFrontOfElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveBehindElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveBehindElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Update">UIelement.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_">UIelement.PlaySound(SoundID)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_System_Single_System_Single_System_Single_">UIelement.PlaySound(SoundID, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Unload">UIelement.Unload()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FrameMultiply_System_Int32_">UIelement.FrameMultiply(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_DisplayDescription">UIelement.DisplayDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Freeze">UIelement.Freeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelCreate_System_String_System_Boolean_">UIelement.FLabelCreate(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_UnityEngine_Vector2_UnityEngine_Vector2_">UIelement.FLabelPlaceAtCenter(FLabel, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_System_Single_System_Single_System_Single_System_Single_">UIelement.FLabelPlaceAtCenter(FLabel, float, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ForceMenuMouseMode_System_Nullable_System_Boolean__">UIelement.ForceMenuMouseMode(bool?)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Deactivate">UIelement.Deactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reactivate">UIelement.Reactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__AddToScrollBox_Menu_Remix_MixedUI_OpScrollBox_">UIelement._AddToScrollBox(OpScrollBox)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__RemoveFromScrollBox">UIelement._RemoveFromScrollBox()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__SetTab_Menu_Remix_MixedUI_OpTab_">UIelement._SetTab(OpTab)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__CenterPos">UIelement._CenterPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel__ctor_" data-uid="Menu.Remix.MixedUI.OpLabel.#ctor*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__ctor_System_Single_System_Single_System_String_System_Boolean_" data-uid="Menu.Remix.MixedUI.OpLabel.#ctor(System.Single,System.Single,System.String,System.Boolean)">
+  OpLabel(float, float, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpLabel(float posX, float posY, string text = &quot;TEXT&quot;, bool bigText = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>posX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>posY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>bigText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel__ctor_" data-uid="Menu.Remix.MixedUI.OpLabel.#ctor*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__ctor_UnityEngine_Vector2_UnityEngine_Vector2_System_String_FLabelAlignment_System_Boolean_FTextParams_" data-uid="Menu.Remix.MixedUI.OpLabel.#ctor(UnityEngine.Vector2,UnityEngine.Vector2,System.String,FLabelAlignment,System.Boolean,FTextParams)">
+  OpLabel(Vector2, Vector2, string, FLabelAlignment, bool, FTextParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpLabel(Vector2 pos, Vector2 size, string text = &quot;TEXT&quot;, FLabelAlignment alignment = FLabelAlignment.Center, bool bigText = false, FTextParams textParams = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>alignment</code> <a class="xref" href="Global.FLabelAlignment.html">FLabelAlignment</a></dt>
+    <dd></dd>
+    <dt><code>bigText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>textParams</code> <a class="xref" href="Global.FTextParams.html">FTextParams</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__alignment" data-uid="Menu.Remix.MixedUI.OpLabel._alignment">
+  _alignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FLabelAlignment _alignment</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FLabelAlignment.html">FLabelAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__bigText" data-uid="Menu.Remix.MixedUI.OpLabel._bigText">
+  _bigText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool _bigText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__displayText" data-uid="Menu.Remix.MixedUI.OpLabel._displayText">
+  _displayText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _displayText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__text" data-uid="Menu.Remix.MixedUI.OpLabel._text">
+  _text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__verticalAlignment" data-uid="Menu.Remix.MixedUI.OpLabel._verticalAlignment">
+  _verticalAlignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpLabel.LabelVAlignment _verticalAlignment</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.OpLabel.html">OpLabel</a>.<a class="xref" href="Menu.Remix.MixedUI.OpLabel.LabelVAlignment.html">LabelVAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_alpha" data-uid="Menu.Remix.MixedUI.OpLabel.alpha">
+  alpha
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float alpha</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_autoWrap" data-uid="Menu.Remix.MixedUI.OpLabel.autoWrap">
+  autoWrap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool autoWrap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_bumpBehav" data-uid="Menu.Remix.MixedUI.OpLabel.bumpBehav">
+  bumpBehav
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BumpBehaviour bumpBehav</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.BumpBehaviour.html">BumpBehaviour</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_color" data-uid="Menu.Remix.MixedUI.OpLabel.color">
+  color
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color color</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_label" data-uid="Menu.Remix.MixedUI.OpLabel.label">
+  label
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FLabel label</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FLabel.html">FLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel__IsLong_" data-uid="Menu.Remix.MixedUI.OpLabel._IsLong*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__IsLong" data-uid="Menu.Remix.MixedUI.OpLabel._IsLong">
+  _IsLong
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _IsLong { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_alignment_" data-uid="Menu.Remix.MixedUI.OpLabel.alignment*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_alignment" data-uid="Menu.Remix.MixedUI.OpLabel.alignment">
+  alignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FLabelAlignment alignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FLabelAlignment.html">FLabelAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_text_" data-uid="Menu.Remix.MixedUI.OpLabel.text*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_text" data-uid="Menu.Remix.MixedUI.OpLabel.text">
+  text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_verticalAlignment_" data-uid="Menu.Remix.MixedUI.OpLabel.verticalAlignment*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_verticalAlignment" data-uid="Menu.Remix.MixedUI.OpLabel.verticalAlignment">
+  verticalAlignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpLabel.LabelVAlignment verticalAlignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.OpLabel.html">OpLabel</a>.<a class="xref" href="Menu.Remix.MixedUI.OpLabel.LabelVAlignment.html">LabelVAlignment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_Change_" data-uid="Menu.Remix.MixedUI.OpLabel.Change*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_Change" data-uid="Menu.Remix.MixedUI.OpLabel.Change">
+  Change()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Change()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_GetDisplaySize_" data-uid="Menu.Remix.MixedUI.OpLabel.GetDisplaySize*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_GetDisplaySize" data-uid="Menu.Remix.MixedUI.OpLabel.GetDisplaySize">
+  GetDisplaySize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector2 GetDisplaySize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_GetLineCount_" data-uid="Menu.Remix.MixedUI.OpLabel.GetLineCount*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_GetLineCount" data-uid="Menu.Remix.MixedUI.OpLabel.GetLineCount">
+  GetLineCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLineCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel_GrafUpdate_" data-uid="Menu.Remix.MixedUI.OpLabel.GrafUpdate*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel_GrafUpdate_System_Single_" data-uid="Menu.Remix.MixedUI.OpLabel.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_OpLabel__IndexOfLineBreakOccurence_" data-uid="Menu.Remix.MixedUI.OpLabel._IndexOfLineBreakOccurence*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_OpLabel__IndexOfLineBreakOccurence_System_Int32_" data-uid="Menu.Remix.MixedUI.OpLabel._IndexOfLineBreakOccurence(System.Int32)">
+  _IndexOfLineBreakOccurence(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _IndexOfLineBreakOccurence(int occurence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>occurence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/OpLabel.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

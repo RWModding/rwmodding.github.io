@@ -1,0 +1,954 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OverWorld
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OverWorld
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_OverWorld.md&amp;value=---%0Auid%3A%20Global.OverWorld%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.OverWorld">
+
+
+
+  <h1 id="Global_OverWorld" data-uid="Global.OverWorld" class="text-break">
+    Class OverWorld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OverWorld</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">OverWorld</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_OverWorld__ctor_" data-uid="Global.OverWorld.#ctor*"></a>
+
+  <h3 id="Global_OverWorld__ctor_RainWorldGame_" data-uid="Global.OverWorld.#ctor(RainWorldGame)">
+  OverWorld(RainWorldGame)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverWorld(RainWorldGame game)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>game</code> <a class="xref" href="Global.RainWorldGame.html">RainWorldGame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_OverWorld_FIRSTROOM" data-uid="Global.OverWorld.FIRSTROOM">
+  FIRSTROOM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FIRSTROOM</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_activeWorld" data-uid="Global.OverWorld.activeWorld">
+  activeWorld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public World activeWorld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_currentSpecialWarp" data-uid="Global.OverWorld.currentSpecialWarp">
+  currentSpecialWarp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverWorld.SpecialWarpType currentSpecialWarp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="OverWorld.html">OverWorld</a>.<a class="xref" href="OverWorld.SpecialWarpType.html">SpecialWarpType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_game" data-uid="Global.OverWorld.game">
+  game
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RainWorldGame game</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RainWorldGame.html">RainWorldGame</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_regions" data-uid="Global.OverWorld.regions">
+  regions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Region[] regions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Region.html">Region</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_reportBackToGate" data-uid="Global.OverWorld.reportBackToGate">
+  reportBackToGate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RegionGate reportBackToGate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RegionGate.html">RegionGate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_singleRoomWorldWarpGoal" data-uid="Global.OverWorld.singleRoomWorldWarpGoal">
+  singleRoomWorldWarpGoal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string singleRoomWorldWarpGoal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_specialWarpCallback" data-uid="Global.OverWorld.specialWarpCallback">
+  specialWarpCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISpecialWarp specialWarpCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.ISpecialWarp.html">ISpecialWarp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverWorld_worldLoader" data-uid="Global.OverWorld.worldLoader">
+  worldLoader
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldLoader worldLoader</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldLoader.html">WorldLoader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_OverWorld_PlayerCharacterNumber_" data-uid="Global.OverWorld.PlayerCharacterNumber*"></a>
+
+  <h3 id="Global_OverWorld_PlayerCharacterNumber" data-uid="Global.OverWorld.PlayerCharacterNumber">
+  PlayerCharacterNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugcatStats.Name PlayerCharacterNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_OverWorld_GateRequestsSwitchInitiation_" data-uid="Global.OverWorld.GateRequestsSwitchInitiation*"></a>
+
+  <h3 id="Global_OverWorld_GateRequestsSwitchInitiation_RegionGate_" data-uid="Global.OverWorld.GateRequestsSwitchInitiation(RegionGate)">
+  GateRequestsSwitchInitiation(RegionGate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GateRequestsSwitchInitiation(RegionGate reportBackToGate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reportBackToGate</code> <a class="xref" href="Global.RegionGate.html">RegionGate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_GetRegion_" data-uid="Global.OverWorld.GetRegion*"></a>
+
+  <h3 id="Global_OverWorld_GetRegion_AbstractRoom_" data-uid="Global.OverWorld.GetRegion(AbstractRoom)">
+  GetRegion(AbstractRoom)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Region GetRegion(AbstractRoom room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Region.html">Region</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_GetRegion_" data-uid="Global.OverWorld.GetRegion*"></a>
+
+  <h3 id="Global_OverWorld_GetRegion_System_String_" data-uid="Global.OverWorld.GetRegion(System.String)">
+  GetRegion(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Region GetRegion(string rName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Region.html">Region</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_InitiateSpecialWarp_" data-uid="Global.OverWorld.InitiateSpecialWarp*"></a>
+
+  <h3 id="Global_OverWorld_InitiateSpecialWarp_OverWorld_SpecialWarpType_MoreSlugcats_ISpecialWarp_" data-uid="Global.OverWorld.InitiateSpecialWarp(OverWorld.SpecialWarpType,MoreSlugcats.ISpecialWarp)">
+  InitiateSpecialWarp(SpecialWarpType, ISpecialWarp)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitiateSpecialWarp(OverWorld.SpecialWarpType warp, ISpecialWarp callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>warp</code> <a class="xref" href="OverWorld.html">OverWorld</a>.<a class="xref" href="OverWorld.SpecialWarpType.html">SpecialWarpType</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="MoreSlugcats.ISpecialWarp.html">ISpecialWarp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_InitiateSpecialWarp_SingleRoom_" data-uid="Global.OverWorld.InitiateSpecialWarp_SingleRoom*"></a>
+
+  <h3 id="Global_OverWorld_InitiateSpecialWarp_SingleRoom_MoreSlugcats_ISpecialWarp_System_String_" data-uid="Global.OverWorld.InitiateSpecialWarp_SingleRoom(MoreSlugcats.ISpecialWarp,System.String)">
+  InitiateSpecialWarp_SingleRoom(ISpecialWarp, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitiateSpecialWarp_SingleRoom(ISpecialWarp callback, string roomName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="MoreSlugcats.ISpecialWarp.html">ISpecialWarp</a></dt>
+    <dd></dd>
+    <dt><code>roomName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_KillPlayerGuideInNewWorld_" data-uid="Global.OverWorld.KillPlayerGuideInNewWorld*"></a>
+
+  <h3 id="Global_OverWorld_KillPlayerGuideInNewWorld_World_AbstractCreature_" data-uid="Global.OverWorld.KillPlayerGuideInNewWorld(World,AbstractCreature)">
+  KillPlayerGuideInNewWorld(World, AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillPlayerGuideInNewWorld(World newWorld, AbstractCreature oldGuide)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newWorld</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+    <dt><code>oldGuide</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_LoadFirstWorld_" data-uid="Global.OverWorld.LoadFirstWorld*"></a>
+
+  <h3 id="Global_OverWorld_LoadFirstWorld" data-uid="Global.OverWorld.LoadFirstWorld">
+  LoadFirstWorld()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadFirstWorld()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_LoadWorld_" data-uid="Global.OverWorld.LoadWorld*"></a>
+
+  <h3 id="Global_OverWorld_LoadWorld_System_String_SlugcatStats_Name_System_Boolean_" data-uid="Global.OverWorld.LoadWorld(System.String,SlugcatStats.Name,System.Boolean)">
+  LoadWorld(string, Name, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadWorld(string worldName, SlugcatStats.Name playerCharacterNumber, bool singleRoomWorld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>playerCharacterNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+    <dt><code>singleRoomWorld</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_ShouldEntityBeMovedToNewRegion_" data-uid="Global.OverWorld.ShouldEntityBeMovedToNewRegion*"></a>
+
+  <h3 id="Global_OverWorld_ShouldEntityBeMovedToNewRegion_AbstractWorldEntity_" data-uid="Global.OverWorld.ShouldEntityBeMovedToNewRegion(AbstractWorldEntity)">
+  ShouldEntityBeMovedToNewRegion(AbstractWorldEntity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldEntityBeMovedToNewRegion(AbstractWorldEntity ent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ent</code> <a class="xref" href="Global.AbstractWorldEntity.html">AbstractWorldEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_SwitchWorlds_" data-uid="Global.OverWorld.SwitchWorlds*"></a>
+
+  <h3 id="Global_OverWorld_SwitchWorlds_AbstractRoom_" data-uid="Global.OverWorld.SwitchWorlds(AbstractRoom)">
+  SwitchWorlds(AbstractRoom)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchWorlds(AbstractRoom gateRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gateRoom</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_SyncFloodLevels_" data-uid="Global.OverWorld.SyncFloodLevels*"></a>
+
+  <h3 id="Global_OverWorld_SyncFloodLevels_AbstractRoom_AbstractRoom_" data-uid="Global.OverWorld.SyncFloodLevels(AbstractRoom,AbstractRoom)">
+  SyncFloodLevels(AbstractRoom, AbstractRoom)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncFloodLevels(AbstractRoom oldWorldRoom, AbstractRoom newWorldRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldWorldRoom</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+    <dt><code>newWorldRoom</code> <a class="xref" href="Global.AbstractRoom.html">AbstractRoom</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_Update_" data-uid="Global.OverWorld.Update*"></a>
+
+  <h3 id="Global_OverWorld_Update" data-uid="Global.OverWorld.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_WarpUpdate_" data-uid="Global.OverWorld.WarpUpdate*"></a>
+
+  <h3 id="Global_OverWorld_WarpUpdate" data-uid="Global.OverWorld.WarpUpdate">
+  WarpUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WarpUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverWorld_WorldLoaded_" data-uid="Global.OverWorld.WorldLoaded*"></a>
+
+  <h3 id="Global_OverWorld_WorldLoaded" data-uid="Global.OverWorld.WorldLoaded">
+  WorldLoaded()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WorldLoaded()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverWorld.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

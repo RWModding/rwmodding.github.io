@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HoldButton
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HoldButton
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_HoldButton.md&amp;value=---%0Auid%3A%20Menu.HoldButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.HoldButton">
+
+
+
+  <h1 id="Menu_HoldButton" data-uid="Menu.HoldButton" class="text-break">
+    Class HoldButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HoldButton : CircularMenuObject, SelectableMenuObject, ButtonMenuObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.MenuObject.html">MenuObject</a></div>
+      <div><a class="xref" href="Menu.PositionedMenuObject.html">PositionedMenuObject</a></div>
+      <div><a class="xref" href="Menu.CircularMenuObject.html">CircularMenuObject</a></div>
+      <div><span class="xref">HoldButton</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Menu.SelectableMenuObject.html">SelectableMenuObject</a></div>
+      <div><a class="xref" href="Menu.ButtonMenuObject.html">ButtonMenuObject</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.CircularMenuObject.html#Menu_CircularMenuObject_rad">CircularMenuObject.rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.CircularMenuObject.html#Menu_CircularMenuObject_lastRad">CircularMenuObject.lastRad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.CircularMenuObject.html#Menu_CircularMenuObject_MouseOver">CircularMenuObject.MouseOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.CircularMenuObject.html#Menu_CircularMenuObject_DrawRad_System_Single_">CircularMenuObject.DrawRad(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_pos">PositionedMenuObject.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_lastPos">PositionedMenuObject.lastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenPos">PositionedMenuObject.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenLastPos">PositionedMenuObject.ScreenLastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_">PositionedMenuObject.DrawPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_">PositionedMenuObject.DrawX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_">PositionedMenuObject.DrawY(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_menu">MenuObject.menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_subObjects">MenuObject.subObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_owner">MenuObject.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_nextSelectable">MenuObject.nextSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_toggled">MenuObject.toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_inactive">MenuObject.inactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_myContainer">MenuObject.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Container">MenuObject.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Selected">MenuObject.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_page">MenuObject.page</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_">MenuObject.Singal(MenuObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_">MenuObject.RemoveSubObject(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RecursiveRemoveSelectables_Menu_MenuObject_">MenuObject.RecursiveRemoveSelectables(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_HoldButton__ctor_" data-uid="Menu.HoldButton.#ctor*"></a>
+
+  <h3 id="Menu_HoldButton__ctor_Menu_Menu_Menu_MenuObject_System_String_System_String_UnityEngine_Vector2_System_Single_" data-uid="Menu.HoldButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,System.Single)">
+  HoldButton(Menu, MenuObject, string, string, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HoldButton(Menu menu, MenuObject owner, string displayText, string singalText, Vector2 pos, float fillTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menu</code> <a class="xref" href="Menu.Menu.html">Menu</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>displayText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>singalText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>fillTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_HoldButton_buttonBehav" data-uid="Menu.HoldButton.buttonBehav">
+  buttonBehav
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ButtonBehavior buttonBehav</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.ButtonBehavior.html">ButtonBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_buttonReleasedCounter" data-uid="Menu.HoldButton.buttonReleasedCounter">
+  buttonReleasedCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int buttonReleasedCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_circleSprites" data-uid="Menu.HoldButton.circleSprites">
+  circleSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSprite[] circleSprites</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSprite.html">FSprite</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_controlledFromOutside" data-uid="Menu.HoldButton.controlledFromOutside">
+  controlledFromOutside
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool controlledFromOutside</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_fillTime" data-uid="Menu.HoldButton.fillTime">
+  fillTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fillTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_filled" data-uid="Menu.HoldButton.filled">
+  filled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float filled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_hasSignalled" data-uid="Menu.HoldButton.hasSignalled">
+  hasSignalled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hasSignalled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_held" data-uid="Menu.HoldButton.held">
+  held
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool held</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_lastFilled" data-uid="Menu.HoldButton.lastFilled">
+  lastFilled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastFilled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_lastHeld" data-uid="Menu.HoldButton.lastHeld">
+  lastHeld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lastHeld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_lastPulse" data-uid="Menu.HoldButton.lastPulse">
+  lastPulse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastPulse</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_menuLabel" data-uid="Menu.HoldButton.menuLabel">
+  menuLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuLabel menuLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.MenuLabel.html">MenuLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_pulse" data-uid="Menu.HoldButton.pulse">
+  pulse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pulse</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_signalText" data-uid="Menu.HoldButton.signalText">
+  signalText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string signalText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_soundLoop" data-uid="Menu.HoldButton.soundLoop">
+  soundLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuMicrophone.MenuSoundLoop soundLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MenuMicrophone.html">MenuMicrophone</a>.<a class="xref" href="MenuMicrophone.MenuSoundLoop.html">MenuSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_HoldButton_warningMode" data-uid="Menu.HoldButton.warningMode">
+  warningMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool warningMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_HoldButton_CurrentlySelectableMouse_" data-uid="Menu.HoldButton.CurrentlySelectableMouse*"></a>
+
+  <h3 id="Menu_HoldButton_CurrentlySelectableMouse" data-uid="Menu.HoldButton.CurrentlySelectableMouse">
+  CurrentlySelectableMouse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentlySelectableMouse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_CurrentlySelectableNonMouse_" data-uid="Menu.HoldButton.CurrentlySelectableNonMouse*"></a>
+
+  <h3 id="Menu_HoldButton_CurrentlySelectableNonMouse" data-uid="Menu.HoldButton.CurrentlySelectableNonMouse">
+  CurrentlySelectableNonMouse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentlySelectableNonMouse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_FillingUp_" data-uid="Menu.HoldButton.FillingUp*"></a>
+
+  <h3 id="Menu_HoldButton_FillingUp" data-uid="Menu.HoldButton.FillingUp">
+  FillingUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FillingUp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_GetButtonBehavior_" data-uid="Menu.HoldButton.GetButtonBehavior*"></a>
+
+  <h3 id="Menu_HoldButton_GetButtonBehavior" data-uid="Menu.HoldButton.GetButtonBehavior">
+  GetButtonBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ButtonBehavior GetButtonBehavior { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.ButtonBehavior.html">ButtonBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_IsMouseOverMe_" data-uid="Menu.HoldButton.IsMouseOverMe*"></a>
+
+  <h3 id="Menu_HoldButton_IsMouseOverMe" data-uid="Menu.HoldButton.IsMouseOverMe">
+  IsMouseOverMe
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMouseOverMe { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_HoldButton_Clicked_" data-uid="Menu.HoldButton.Clicked*"></a>
+
+  <h3 id="Menu_HoldButton_Clicked" data-uid="Menu.HoldButton.Clicked">
+  Clicked()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clicked()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_GrafUpdate_" data-uid="Menu.HoldButton.GrafUpdate*"></a>
+
+  <h3 id="Menu_HoldButton_GrafUpdate_System_Single_" data-uid="Menu.HoldButton.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_MyColor_" data-uid="Menu.HoldButton.MyColor*"></a>
+
+  <h3 id="Menu_HoldButton_MyColor_System_Single_" data-uid="Menu.HoldButton.MyColor(System.Single)">
+  MyColor(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color MyColor(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_RemoveSprites_" data-uid="Menu.HoldButton.RemoveSprites*"></a>
+
+  <h3 id="Menu_HoldButton_RemoveSprites" data-uid="Menu.HoldButton.RemoveSprites">
+  RemoveSprites()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveSprites()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_HoldButton_Update_" data-uid="Menu.HoldButton.Update*"></a>
+
+  <h3 id="Menu_HoldButton_Update" data-uid="Menu.HoldButton.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/HoldButton.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

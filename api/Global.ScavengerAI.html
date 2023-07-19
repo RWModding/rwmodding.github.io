@@ -1,0 +1,3289 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScavengerAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScavengerAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_ScavengerAI.md&amp;value=---%0Auid%3A%20Global.ScavengerAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.ScavengerAI">
+
+
+
+  <h1 id="Global_ScavengerAI" data-uid="Global.ScavengerAI" class="text-break">
+    Class ScavengerAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScavengerAI : ArtificialIntelligence, IUseARelationshipTracker, IUseItemTracker, IAINoiseReaction, IReactToSocialEvents</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></div>
+      <div><span class="xref">ScavengerAI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IUseARelationshipTracker.html">IUseARelationshipTracker</a></div>
+      <div><a class="xref" href="Global.IUseItemTracker.html">IUseItemTracker</a></div>
+      <div><a class="xref" href="Global.IAINoiseReaction.html">IAINoiseReaction</a></div>
+      <div><a class="xref" href="Global.IReactToSocialEvents.html">IReactToSocialEvents</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_creature">ArtificialIntelligence.creature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_modules">ArtificialIntelligence.modules</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stranded">ArtificialIntelligence.stranded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_seeThroughWalls">ArtificialIntelligence.seeThroughWalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_timeInRoom">ArtificialIntelligence.timeInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_lastRoom">ArtificialIntelligence.lastRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_pathFinder">ArtificialIntelligence.pathFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_tracker">ArtificialIntelligence.tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_noiseTracker">ArtificialIntelligence.noiseTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_obstacleTracker">ArtificialIntelligence.obstacleTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_threatTracker">ArtificialIntelligence.threatTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_preyTracker">ArtificialIntelligence.preyTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_rainTracker">ArtificialIntelligence.rainTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_denFinder">ArtificialIntelligence.denFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_agressionTracker">ArtificialIntelligence.agressionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_utilityComparer">ArtificialIntelligence.utilityComparer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_missionTracker">ArtificialIntelligence.missionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_secondaryNodeFinder">ArtificialIntelligence.secondaryNodeFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_relationshipTracker">ArtificialIntelligence.relationshipTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_itemTracker">ArtificialIntelligence.itemTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_discomfortTracker">ArtificialIntelligence.discomfortTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stuckTracker">ArtificialIntelligence.stuckTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_injuryTracker">ArtificialIntelligence.injuryTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_friendTracker">ArtificialIntelligence.friendTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_AddModule_AIModule_">ArtificialIntelligence.AddModule(AIModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_">ArtificialIntelligence.VisualContact(WorldCoordinate, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualContact(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_BodyChunk_">ArtificialIntelligence.VisualContact(BodyChunk)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_SetDestination_WorldCoordinate_">ArtificialIntelligence.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewArea_System_Boolean_">ArtificialIntelligence.NewArea(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DenPosition">ArtificialIntelligence.DenPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_StaticRelationship_AbstractCreature_">ArtificialIntelligence.StaticRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_HeardNoise_Noise_InGameNoise_">ArtificialIntelligence.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_ScavengerAI__ctor_" data-uid="Global.ScavengerAI.#ctor*"></a>
+
+  <h3 id="Global_ScavengerAI__ctor_AbstractCreature_World_" data-uid="Global.ScavengerAI.#ctor(AbstractCreature,World)">
+  ScavengerAI(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerAI(AbstractCreature creature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_ScavengerAI_age" data-uid="Global.ScavengerAI.age">
+  age
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int age</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_agitation" data-uid="Global.ScavengerAI.agitation">
+  agitation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float agitation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_alreadyIdledAt" data-uid="Global.ScavengerAI.alreadyIdledAt">
+  alreadyIdledAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WorldCoordinate&gt; alreadyIdledAt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_alreadyLookedAtPos" data-uid="Global.ScavengerAI.alreadyLookedAtPos">
+  alreadyLookedAtPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 alreadyLookedAtPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_arrangeInventoryCounter" data-uid="Global.ScavengerAI.arrangeInventoryCounter">
+  arrangeInventoryCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int arrangeInventoryCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_backedByPack" data-uid="Global.ScavengerAI.backedByPack">
+  backedByPack
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float backedByPack</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_behavior" data-uid="Global.ScavengerAI.behavior">
+  behavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerAI.Behavior behavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ScavengerAI.html">ScavengerAI</a>.<a class="xref" href="ScavengerAI.Behavior.html">Behavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_changeAttackPositionDelay" data-uid="Global.ScavengerAI.changeAttackPositionDelay">
+  changeAttackPositionDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int changeAttackPositionDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_communicationModule" data-uid="Global.ScavengerAI.communicationModule">
+  communicationModule
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerAI.CommunicationModule communicationModule</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ScavengerAI.html">ScavengerAI</a>.<a class="xref" href="ScavengerAI.CommunicationModule.html">CommunicationModule</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_controlStuckTime" data-uid="Global.ScavengerAI.controlStuckTime">
+  controlStuckTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int controlStuckTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_controlWalkCooldown" data-uid="Global.ScavengerAI.controlWalkCooldown">
+  controlWalkCooldown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int controlWalkCooldown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_currentUtility" data-uid="Global.ScavengerAI.currentUtility">
+  currentUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float currentUtility</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_currentViolenceType" data-uid="Global.ScavengerAI.currentViolenceType">
+  currentViolenceType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerAI.ViolenceType currentViolenceType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ScavengerAI.html">ScavengerAI</a>.<a class="xref" href="ScavengerAI.ViolenceType.html">ViolenceType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_dbSpr" data-uid="Global.ScavengerAI.dbSpr">
+  dbSpr
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugSprite dbSpr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DebugSprite.html">DebugSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_dbSpr2" data-uid="Global.ScavengerAI.dbSpr2">
+  dbSpr2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugSprite dbSpr2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DebugSprite.html">DebugSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_debugDestinationVisualizer" data-uid="Global.ScavengerAI.debugDestinationVisualizer">
+  debugDestinationVisualizer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugDestinationVisualizer debugDestinationVisualizer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DebugDestinationVisualizer.html">DebugDestinationVisualizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_discomfortWithOtherCreatures" data-uid="Global.ScavengerAI.discomfortWithOtherCreatures">
+  discomfortWithOtherCreatures
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float discomfortWithOtherCreatures</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_filteredLikeB" data-uid="Global.ScavengerAI.filteredLikeB">
+  filteredLikeB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float filteredLikeB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_focusCreature" data-uid="Global.ScavengerAI.focusCreature">
+  focusCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation focusCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_giftForMe" data-uid="Global.ScavengerAI.giftForMe">
+  giftForMe
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractPhysicalObject giftForMe</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_goToSquadLeaderFirstTime" data-uid="Global.ScavengerAI.goToSquadLeaderFirstTime">
+  goToSquadLeaderFirstTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int goToSquadLeaderFirstTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_idleCounter" data-uid="Global.ScavengerAI.idleCounter">
+  idleCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int idleCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_lastPickupPressed" data-uid="Global.ScavengerAI.lastPickupPressed">
+  lastPickupPressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lastPickupPressed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_likeB" data-uid="Global.ScavengerAI.likeB">
+  likeB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float likeB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_lockedSafariDoorEntry" data-uid="Global.ScavengerAI.lockedSafariDoorEntry">
+  lockedSafariDoorEntry
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? lockedSafariDoorEntry</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_noiseReactDelay" data-uid="Global.ScavengerAI.noiseReactDelay">
+  noiseReactDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int noiseReactDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_numPickupPressed" data-uid="Global.ScavengerAI.numPickupPressed">
+  numPickupPressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int numPickupPressed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_outpostModule" data-uid="Global.ScavengerAI.outpostModule">
+  outpostModule
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerOutpost.GuardOutpostModule outpostModule</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ScavengerOutpost.html">ScavengerOutpost</a>.<a class="xref" href="ScavengerOutpost.GuardOutpostModule.html">GuardOutpostModule</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_pickupDownTime" data-uid="Global.ScavengerAI.pickupDownTime">
+  pickupDownTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int pickupDownTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_previousAttackPositions" data-uid="Global.ScavengerAI.previousAttackPositions">
+  previousAttackPositions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntVector2&gt; previousAttackPositions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_runSpeedGoal" data-uid="Global.ScavengerAI.runSpeedGoal">
+  runSpeedGoal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float runSpeedGoal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_scared" data-uid="Global.ScavengerAI.scared">
+  scared
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scared</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_scavageItemCheck" data-uid="Global.ScavengerAI.scavageItemCheck">
+  scavageItemCheck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int scavageItemCheck</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_scavengeCandidate" data-uid="Global.ScavengerAI.scavengeCandidate">
+  scavengeCandidate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemTracker.ItemRepresentation scavengeCandidate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ItemTracker.html">ItemTracker</a>.<a class="xref" href="ItemTracker.ItemRepresentation.html">ItemRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_scavenger" data-uid="Global.ScavengerAI.scavenger">
+  scavenger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scavenger scavenger</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Scavenger.html">Scavenger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_seenSquadLeaderInRoom" data-uid="Global.ScavengerAI.seenSquadLeaderInRoom">
+  seenSquadLeaderInRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int seenSquadLeaderInRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_tempLikeB" data-uid="Global.ScavengerAI.tempLikeB">
+  tempLikeB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float tempLikeB</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_testIdlePos" data-uid="Global.ScavengerAI.testIdlePos">
+  testIdlePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate testIdlePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_testLookPos" data-uid="Global.ScavengerAI.testLookPos">
+  testLookPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 testLookPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_testThrowPos" data-uid="Global.ScavengerAI.testThrowPos">
+  testThrowPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate testThrowPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_ticksSinceSeenPackLeader" data-uid="Global.ScavengerAI.ticksSinceSeenPackLeader">
+  ticksSinceSeenPackLeader
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ticksSinceSeenPackLeader</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_tradeSpot" data-uid="Global.ScavengerAI.tradeSpot">
+  tradeSpot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerTradeSpot tradeSpot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.ScavengerTradeSpot.html">ScavengerTradeSpot</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ScavengerAI_wantToTradeWith" data-uid="Global.ScavengerAI.wantToTradeWith">
+  wantToTradeWith
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation wantToTradeWith</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_ScavengerAI_ActNervous_" data-uid="Global.ScavengerAI.ActNervous*"></a>
+
+  <h3 id="Global_ScavengerAI_ActNervous" data-uid="Global.ScavengerAI.ActNervous">
+  ActNervous
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ActNervous { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_HoldWeapon_" data-uid="Global.ScavengerAI.HoldWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_HoldWeapon" data-uid="Global.ScavengerAI.HoldWeapon">
+  HoldWeapon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HoldWeapon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_NeedAWeapon_" data-uid="Global.ScavengerAI.NeedAWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_NeedAWeapon" data-uid="Global.ScavengerAI.NeedAWeapon">
+  NeedAWeapon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NeedAWeapon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_ScavengerAI_AttackBehavior_" data-uid="Global.ScavengerAI.AttackBehavior*"></a>
+
+  <h3 id="Global_ScavengerAI_AttackBehavior" data-uid="Global.ScavengerAI.AttackBehavior">
+  AttackBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttackBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CheckForScavangeItems_" data-uid="Global.ScavengerAI.CheckForScavangeItems*"></a>
+
+  <h3 id="Global_ScavengerAI_CheckForScavangeItems_System_Boolean_" data-uid="Global.ScavengerAI.CheckForScavangeItems(System.Boolean)">
+  CheckForScavangeItems(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckForScavangeItems(bool conservativeBias)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conservativeBias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CheckThrow_" data-uid="Global.ScavengerAI.CheckThrow*"></a>
+
+  <h3 id="Global_ScavengerAI_CheckThrow" data-uid="Global.ScavengerAI.CheckThrow">
+  CheckThrow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckThrow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CloseByPack_" data-uid="Global.ScavengerAI.CloseByPack*"></a>
+
+  <h3 id="Global_ScavengerAI_CloseByPack" data-uid="Global.ScavengerAI.CloseByPack">
+  CloseByPack()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tracker.CreatureRepresentation&gt; CloseByPack()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CollectScore_" data-uid="Global.ScavengerAI.CollectScore*"></a>
+
+  <h3 id="Global_ScavengerAI_CollectScore_ItemTracker_ItemRepresentation_System_Boolean_" data-uid="Global.ScavengerAI.CollectScore(ItemTracker.ItemRepresentation,System.Boolean)">
+  CollectScore(ItemRepresentation, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CollectScore(ItemTracker.ItemRepresentation obj, bool weaponFiltered)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="ItemTracker.html">ItemTracker</a>.<a class="xref" href="ItemTracker.ItemRepresentation.html">ItemRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>weaponFiltered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CollectScore_" data-uid="Global.ScavengerAI.CollectScore*"></a>
+
+  <h3 id="Global_ScavengerAI_CollectScore_PhysicalObject_System_Boolean_" data-uid="Global.ScavengerAI.CollectScore(PhysicalObject,System.Boolean)">
+  CollectScore(PhysicalObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CollectScore(PhysicalObject obj, bool weaponFiltered)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>weaponFiltered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_ControlledBehavior_" data-uid="Global.ScavengerAI.ControlledBehavior*"></a>
+
+  <h3 id="Global_ScavengerAI_ControlledBehavior" data-uid="Global.ScavengerAI.ControlledBehavior">
+  ControlledBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ControlledBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CreateTrackerRepresentationForCreature_" data-uid="Global.ScavengerAI.CreateTrackerRepresentationForCreature*"></a>
+
+  <h3 id="Global_ScavengerAI_CreateTrackerRepresentationForCreature_AbstractCreature_" data-uid="Global.ScavengerAI.CreateTrackerRepresentationForCreature(AbstractCreature)">
+  CreateTrackerRepresentationForCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Tracker.CreatureRepresentation CreateTrackerRepresentationForCreature(AbstractCreature otherCreature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CreatureSpotted_" data-uid="Global.ScavengerAI.CreatureSpotted*"></a>
+
+  <h3 id="Global_ScavengerAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_" data-uid="Global.ScavengerAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)">
+  CreatureSpotted(bool, CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CreatureSpotted(bool firstSpot, Tracker.CreatureRepresentation otherCreature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstSpot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>otherCreature</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_CurrentPlayerAggression_" data-uid="Global.ScavengerAI.CurrentPlayerAggression*"></a>
+
+  <h3 id="Global_ScavengerAI_CurrentPlayerAggression_AbstractCreature_" data-uid="Global.ScavengerAI.CurrentPlayerAggression(AbstractCreature)">
+  CurrentPlayerAggression(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float CurrentPlayerAggression(AbstractCreature player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_DecideBehavior_" data-uid="Global.ScavengerAI.DecideBehavior*"></a>
+
+  <h3 id="Global_ScavengerAI_DecideBehavior" data-uid="Global.ScavengerAI.DecideBehavior">
+  DecideBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L831"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DecideBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_DoIWantToTrade_" data-uid="Global.ScavengerAI.DoIWantToTrade*"></a>
+
+  <h3 id="Global_ScavengerAI_DoIWantToTrade_System_Int32_" data-uid="Global.ScavengerAI.DoIWantToTrade(System.Int32)">
+  DoIWantToTrade(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoIWantToTrade(int valueOfMerch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueOfMerch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_DontWantToThrowAt_" data-uid="Global.ScavengerAI.DontWantToThrowAt*"></a>
+
+  <h3 id="Global_ScavengerAI_DontWantToThrowAt_Tracker_CreatureRepresentation_" data-uid="Global.ScavengerAI.DontWantToThrowAt(Tracker.CreatureRepresentation)">
+  DontWantToThrowAt(CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DontWantToThrowAt(Tracker.CreatureRepresentation rep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_HitAnObjectWithWeapon_" data-uid="Global.ScavengerAI.HitAnObjectWithWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_HitAnObjectWithWeapon_Weapon_PhysicalObject_" data-uid="Global.ScavengerAI.HitAnObjectWithWeapon(Weapon,PhysicalObject)">
+  HitAnObjectWithWeapon(Weapon, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HitAnObjectWithWeapon(Weapon weapon, PhysicalObject hitObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+    <dt><code>hitObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_IdleBehavior_" data-uid="Global.ScavengerAI.IdleBehavior*"></a>
+
+  <h3 id="Global_ScavengerAI_IdleBehavior" data-uid="Global.ScavengerAI.IdleBehavior">
+  IdleBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IdleBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_IdleScore_" data-uid="Global.ScavengerAI.IdleScore*"></a>
+
+  <h3 id="Global_ScavengerAI_IdleScore_WorldCoordinate_" data-uid="Global.ScavengerAI.IdleScore(WorldCoordinate)">
+  IdleScore(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IdleScore(WorldCoordinate tstPs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tstPs</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_IsThrowPathClearFromFriends_" data-uid="Global.ScavengerAI.IsThrowPathClearFromFriends*"></a>
+
+  <h3 id="Global_ScavengerAI_IsThrowPathClearFromFriends_UnityEngine_Vector2_System_Single_" data-uid="Global.ScavengerAI.IsThrowPathClearFromFriends(UnityEngine.Vector2,System.Single)">
+  IsThrowPathClearFromFriends(Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThrowPathClearFromFriends(Vector2 throwPos, float margin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>throwPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>margin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_LikeOfPlayer_" data-uid="Global.ScavengerAI.LikeOfPlayer*"></a>
+
+  <h3 id="Global_ScavengerAI_LikeOfPlayer_RelationshipTracker_DynamicRelationship_" data-uid="Global.ScavengerAI.LikeOfPlayer(RelationshipTracker.DynamicRelationship)">
+  LikeOfPlayer(DynamicRelationship)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LikeOfPlayer(RelationshipTracker.DynamicRelationship dRelation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dRelation</code> <a class="xref" href="RelationshipTracker.html">RelationshipTracker</a>.<a class="xref" href="RelationshipTracker.DynamicRelationship.html">DynamicRelationship</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_LookPointScore_" data-uid="Global.ScavengerAI.LookPointScore*"></a>
+
+  <h3 id="Global_ScavengerAI_LookPointScore_UnityEngine_Vector2_" data-uid="Global.ScavengerAI.LookPointScore(UnityEngine.Vector2)">
+  LookPointScore(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LookPointScore(Vector2 tst)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tst</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_MakeLookHere_" data-uid="Global.ScavengerAI.MakeLookHere*"></a>
+
+  <h3 id="Global_ScavengerAI_MakeLookHere_UnityEngine_Vector2_" data-uid="Global.ScavengerAI.MakeLookHere(UnityEngine.Vector2)">
+  MakeLookHere(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeLookHere(Vector2 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_NewRoom_" data-uid="Global.ScavengerAI.NewRoom*"></a>
+
+  <h3 id="Global_ScavengerAI_NewRoom_Room_" data-uid="Global.ScavengerAI.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_NoSolidTilesBetween_" data-uid="Global.ScavengerAI.NoSolidTilesBetween*"></a>
+
+  <h3 id="Global_ScavengerAI_NoSolidTilesBetween_System_Int32_System_Int32_System_Int32_" data-uid="Global.ScavengerAI.NoSolidTilesBetween(System.Int32,System.Int32,System.Int32)">
+  NoSolidTilesBetween(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoSolidTilesBetween(int xA, int xB, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>xB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_PackLeader_" data-uid="Global.ScavengerAI.PackLeader*"></a>
+
+  <h3 id="Global_ScavengerAI_PackLeader" data-uid="Global.ScavengerAI.PackLeader">
+  PackLeader()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation PackLeader()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_PackMemberEncounter_" data-uid="Global.ScavengerAI.PackMemberEncounter*"></a>
+
+  <h3 id="Global_ScavengerAI_PackMemberEncounter_Scavenger_" data-uid="Global.ScavengerAI.PackMemberEncounter(Scavenger)">
+  PackMemberEncounter(Scavenger)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2044"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PackMemberEncounter(Scavenger otherPackMember)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherPackMember</code> <a class="xref" href="Global.Scavenger.html">Scavenger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_PickUpItemScore_" data-uid="Global.ScavengerAI.PickUpItemScore*"></a>
+
+  <h3 id="Global_ScavengerAI_PickUpItemScore_ItemTracker_ItemRepresentation_" data-uid="Global.ScavengerAI.PickUpItemScore(ItemTracker.ItemRepresentation)">
+  PickUpItemScore(ItemRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PickUpItemScore(ItemTracker.ItemRepresentation rep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rep</code> <a class="xref" href="ItemTracker.html">ItemTracker</a>.<a class="xref" href="ItemTracker.ItemRepresentation.html">ItemRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_PlayerRelationship_" data-uid="Global.ScavengerAI.PlayerRelationship*"></a>
+
+  <h3 id="Global_ScavengerAI_PlayerRelationship_RelationshipTracker_DynamicRelationship_" data-uid="Global.ScavengerAI.PlayerRelationship(RelationshipTracker.DynamicRelationship)">
+  PlayerRelationship(DynamicRelationship)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureTemplate.Relationship PlayerRelationship(RelationshipTracker.DynamicRelationship dRelation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dRelation</code> <a class="xref" href="RelationshipTracker.html">RelationshipTracker</a>.<a class="xref" href="RelationshipTracker.DynamicRelationship.html">DynamicRelationship</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CreatureTemplate.html">CreatureTemplate</a>.<a class="xref" href="CreatureTemplate.Relationship.html">Relationship</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_ReactToNoise_" data-uid="Global.ScavengerAI.ReactToNoise*"></a>
+
+  <h3 id="Global_ScavengerAI_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_" data-uid="Global.ScavengerAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)">
+  ReactToNoise(TheorizedSource, InGameNoise)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReactToNoise(NoiseTracker.TheorizedSource source, InGameNoise noise)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="NoiseTracker.html">NoiseTracker</a>.<a class="xref" href="NoiseTracker.TheorizedSource.html">TheorizedSource</a></dt>
+    <dd></dd>
+    <dt><code>noise</code> <a class="xref" href="Noise.InGameNoise.html">InGameNoise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_RealWeapon_" data-uid="Global.ScavengerAI.RealWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_RealWeapon_PhysicalObject_" data-uid="Global.ScavengerAI.RealWeapon(PhysicalObject)">
+  RealWeapon(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RealWeapon(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_RecognizeCreatureAcceptingGift_" data-uid="Global.ScavengerAI.RecognizeCreatureAcceptingGift*"></a>
+
+  <h3 id="Global_ScavengerAI_RecognizeCreatureAcceptingGift_Tracker_CreatureRepresentation_Tracker_CreatureRepresentation_System_Boolean_PhysicalObject_" data-uid="Global.ScavengerAI.RecognizeCreatureAcceptingGift(Tracker.CreatureRepresentation,Tracker.CreatureRepresentation,System.Boolean,PhysicalObject)">
+  RecognizeCreatureAcceptingGift(CreatureRepresentation, CreatureRepresentation, bool, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2813"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecognizeCreatureAcceptingGift(Tracker.CreatureRepresentation subRep, Tracker.CreatureRepresentation objRep, bool objIsMe, PhysicalObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>objRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>objIsMe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_RecognizePlayerOfferingGift_" data-uid="Global.ScavengerAI.RecognizePlayerOfferingGift*"></a>
+
+  <h3 id="Global_ScavengerAI_RecognizePlayerOfferingGift_Tracker_CreatureRepresentation_Tracker_CreatureRepresentation_System_Boolean_PhysicalObject_" data-uid="Global.ScavengerAI.RecognizePlayerOfferingGift(Tracker.CreatureRepresentation,Tracker.CreatureRepresentation,System.Boolean,PhysicalObject)">
+  RecognizePlayerOfferingGift(CreatureRepresentation, CreatureRepresentation, bool, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2789"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecognizePlayerOfferingGift(Tracker.CreatureRepresentation subRep, Tracker.CreatureRepresentation objRep, bool objIsMe, PhysicalObject item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>objRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>objIsMe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_RetrieveWeapon_" data-uid="Global.ScavengerAI.RetrieveWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_RetrieveWeapon" data-uid="Global.ScavengerAI.RetrieveWeapon">
+  RetrieveWeapon()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RetrieveWeapon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_ScavPlayerRelationChange_" data-uid="Global.ScavengerAI.ScavPlayerRelationChange*"></a>
+
+  <h3 id="Global_ScavengerAI_ScavPlayerRelationChange_System_Single_AbstractCreature_" data-uid="Global.ScavengerAI.ScavPlayerRelationChange(System.Single,AbstractCreature)">
+  ScavPlayerRelationChange(float, AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScavPlayerRelationChange(float change, AbstractCreature player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>change</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>player</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_SeeThrownWeapon_" data-uid="Global.ScavengerAI.SeeThrownWeapon*"></a>
+
+  <h3 id="Global_ScavengerAI_SeeThrownWeapon_PhysicalObject_Creature_" data-uid="Global.ScavengerAI.SeeThrownWeapon(PhysicalObject,Creature)">
+  SeeThrownWeapon(PhysicalObject, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1814"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeeThrownWeapon(PhysicalObject obj, Creature thrower)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>thrower</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_SocialEvent_" data-uid="Global.ScavengerAI.SocialEvent*"></a>
+
+  <h3 id="Global_ScavengerAI_SocialEvent_SocialEventRecognizer_EventID_Creature_Creature_PhysicalObject_" data-uid="Global.ScavengerAI.SocialEvent(SocialEventRecognizer.EventID,Creature,Creature,PhysicalObject)">
+  SocialEvent(EventID, Creature, Creature, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SocialEvent(SocialEventRecognizer.EventID ID, Creature subjectCrit, Creature objectCrit, PhysicalObject involvedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="SocialEventRecognizer.html">SocialEventRecognizer</a>.<a class="xref" href="SocialEventRecognizer.EventID.html">EventID</a></dt>
+    <dd></dd>
+    <dt><code>subjectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>objectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>involvedItem</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_SpearThrowPositionScore_" data-uid="Global.ScavengerAI.SpearThrowPositionScore*"></a>
+
+  <h3 id="Global_ScavengerAI_SpearThrowPositionScore_WorldCoordinate_RWCustom_IntVector2_System_Collections_Generic_List_RWCustom_IntVector2___" data-uid="Global.ScavengerAI.SpearThrowPositionScore(WorldCoordinate,RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)">
+  SpearThrowPositionScore(WorldCoordinate, IntVector2, ref List&lt;IntVector2&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpearThrowPositionScore(WorldCoordinate tst, IntVector2 creaturePosition, ref List&lt;IntVector2&gt; creatureMovementArea)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tst</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>creaturePosition</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>creatureMovementArea</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_TrackItem_" data-uid="Global.ScavengerAI.TrackItem*"></a>
+
+  <h3 id="Global_ScavengerAI_TrackItem_AbstractPhysicalObject_" data-uid="Global.ScavengerAI.TrackItem(AbstractPhysicalObject)">
+  TrackItem(AbstractPhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1805"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrackItem(AbstractPhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_TrackerToDiscardDeadCreature_" data-uid="Global.ScavengerAI.TrackerToDiscardDeadCreature*"></a>
+
+  <h3 id="Global_ScavengerAI_TrackerToDiscardDeadCreature_AbstractCreature_" data-uid="Global.ScavengerAI.TrackerToDiscardDeadCreature(AbstractCreature)">
+  TrackerToDiscardDeadCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TrackerToDiscardDeadCreature(AbstractCreature crit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_TravelPreference_" data-uid="Global.ScavengerAI.TravelPreference*"></a>
+
+  <h3 id="Global_ScavengerAI_TravelPreference_MovementConnection_PathCost_" data-uid="Global.ScavengerAI.TravelPreference(MovementConnection,PathCost)">
+  TravelPreference(MovementConnection, PathCost)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override PathCost TravelPreference(MovementConnection coord, PathCost cost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+    <dt><code>cost</code> <a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_Update_" data-uid="Global.ScavengerAI.Update*"></a>
+
+  <h3 id="Global_ScavengerAI_Update" data-uid="Global.ScavengerAI.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_UpdateCurrentViolenceType_" data-uid="Global.ScavengerAI.UpdateCurrentViolenceType*"></a>
+
+  <h3 id="Global_ScavengerAI_UpdateCurrentViolenceType" data-uid="Global.ScavengerAI.UpdateCurrentViolenceType">
+  UpdateCurrentViolenceType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCurrentViolenceType()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_UpdateLookPoint_" data-uid="Global.ScavengerAI.UpdateLookPoint*"></a>
+
+  <h3 id="Global_ScavengerAI_UpdateLookPoint" data-uid="Global.ScavengerAI.UpdateLookPoint">
+  UpdateLookPoint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1852"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLookPoint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_ViolenceTypeAgainstCreature_" data-uid="Global.ScavengerAI.ViolenceTypeAgainstCreature*"></a>
+
+  <h3 id="Global_ScavengerAI_ViolenceTypeAgainstCreature_Tracker_CreatureRepresentation_" data-uid="Global.ScavengerAI.ViolenceTypeAgainstCreature(Tracker.CreatureRepresentation)">
+  ViolenceTypeAgainstCreature(CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScavengerAI.ViolenceType ViolenceTypeAgainstCreature(Tracker.CreatureRepresentation critRep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>critRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ScavengerAI.html">ScavengerAI</a>.<a class="xref" href="ScavengerAI.ViolenceType.html">ViolenceType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_VisualScore_" data-uid="Global.ScavengerAI.VisualScore*"></a>
+
+  <h3 id="Global_ScavengerAI_VisualScore_UnityEngine_Vector2_System_Single_" data-uid="Global.ScavengerAI.VisualScore(UnityEngine.Vector2,System.Single)">
+  VisualScore(Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float VisualScore(Vector2 lookAtPoint, float targetSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lookAtPoint</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>targetSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_WantToStayInDenUntilEndOfCycle_" data-uid="Global.ScavengerAI.WantToStayInDenUntilEndOfCycle*"></a>
+
+  <h3 id="Global_ScavengerAI_WantToStayInDenUntilEndOfCycle" data-uid="Global.ScavengerAI.WantToStayInDenUntilEndOfCycle">
+  WantToStayInDenUntilEndOfCycle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L1318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool WantToStayInDenUntilEndOfCycle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_WantToThrowSpearAtCreature_" data-uid="Global.ScavengerAI.WantToThrowSpearAtCreature*"></a>
+
+  <h3 id="Global_ScavengerAI_WantToThrowSpearAtCreature_Tracker_CreatureRepresentation_" data-uid="Global.ScavengerAI.WantToThrowSpearAtCreature(Tracker.CreatureRepresentation)">
+  WantToThrowSpearAtCreature(CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WantToThrowSpearAtCreature(Tracker.CreatureRepresentation rep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_WeaponScore_" data-uid="Global.ScavengerAI.WeaponScore*"></a>
+
+  <h3 id="Global_ScavengerAI_WeaponScore_PhysicalObject_System_Boolean_" data-uid="Global.ScavengerAI.WeaponScore(PhysicalObject,System.Boolean)">
+  WeaponScore(PhysicalObject, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L981"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WeaponScore(PhysicalObject obj, bool pickupDropInsteadOfWeaponSelection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>pickupDropInsteadOfWeaponSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ScavengerAI_WitnessPlayerOnPlayerViolence_" data-uid="Global.ScavengerAI.WitnessPlayerOnPlayerViolence*"></a>
+
+  <h3 id="Global_ScavengerAI_WitnessPlayerOnPlayerViolence_Tracker_CreatureRepresentation_Tracker_CreatureRepresentation_System_Single_" data-uid="Global.ScavengerAI.WitnessPlayerOnPlayerViolence(Tracker.CreatureRepresentation,Tracker.CreatureRepresentation,System.Single)">
+  WitnessPlayerOnPlayerViolence(CreatureRepresentation, CreatureRepresentation, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L2765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WitnessPlayerOnPlayerViolence(Tracker.CreatureRepresentation subjectCritRep, Tracker.CreatureRepresentation objectCritRep, float violenceSeverity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subjectCritRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>objectCritRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>violenceSeverity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ScavengerAI.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

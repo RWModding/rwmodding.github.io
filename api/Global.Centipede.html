@@ -1,0 +1,2561 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Centipede
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Centipede
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_Centipede.md&amp;value=---%0Auid%3A%20Global.Centipede%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Centipede">
+
+
+
+  <h1 id="Global_Centipede" data-uid="Global.Centipede" class="text-break">
+    Class Centipede
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Centipede : InsectoidCreature, IPlayerEdible</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><a class="xref" href="Global.AirBreatherCreature.html">AirBreatherCreature</a></div>
+      <div><a class="xref" href="Global.InsectoidCreature.html">InsectoidCreature</a></div>
+      <div><span class="xref">Centipede</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IPlayerEdible.html">IPlayerEdible</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.InsectoidCreature.html#Global_InsectoidCreature_poison">InsectoidCreature.poison</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AirBreatherCreature.html#Global_AirBreatherCreature_lungs">AirBreatherCreature.lungs</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_blind">Creature.blind</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_deaf">Creature.deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTag">Creature.killTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTagCounter">Creature.killTagCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_leechedOut">Creature.leechedOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_newToRoomInvinsibility">Creature.newToRoomInvinsibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_rainDeath">Creature.rainDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortcutDelay">Creature.shortcutDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_enteringShortCut">Creature.enteringShortCut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortCutRadAdd">Creature.shortCutRadAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NPCTransportationDestination">Creature.NPCTransportationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastCoord">Creature.lastCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContact">Creature.lavaContact</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContactCount">Creature.lavaContactCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedByDaddyCorruption">Creature.GrabbedByDaddyCorruption</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stunDamageType">Creature.stunDamageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaGain">Creature.HypothermiaGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaExposure">Creature.HypothermiaExposure</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaStunDelayCounter">Creature.HypothermiaStunDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithoutDiagonals">Creature.inputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithoutDiagonals">Creature.lastInputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithDiagonals">Creature.inputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithDiagonals">Creature.lastInputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_freezeControls">Creature.freezeControls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_protectDeathRecursionFlag">Creature.protectDeathRecursionFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stun">Creature.stun</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stunned">Creature.Stunned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blinded">Creature.Blinded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deaf">Creature.Deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunkIndex">Creature.mainBodyChunkIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunk">Creature.mainBodyChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_dead">Creature.dead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Consious">Creature.Consious</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inShortcut">Creature.inShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_grasps">Creature.grasps</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_DangerPos">Creature.DangerPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_abstractCreature">Creature.abstractCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Template">Creature.Template</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_State">Creature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_coord">Creature.coord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_safariControlled">Creature.safariControlled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Hypothermia">Creature.Hypothermia</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_WormGrassGooduckyImmune">Creature.WormGrassGooduckyImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_RecreateSticksFromAbstract">Creature.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PlaceInRoom_Room_">Creature.PlaceInRoom(Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NewTile">Creature.NewTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SetKillTag_AbstractCreature_">Creature.SetKillTag(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blind_System_Int32_">Creature.Blind(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deafen_System_Int32_">Creature.Deafen(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_">Creature.SuckedIntoShortCut(IntVector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyIntoRoom_WorldCoordinate_Room_">Creature.FlyIntoRoom(WorldCoordinate, Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyAwayFromRoom_System_Boolean_">Creature.FlyAwayFromRoom(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Abstractize">Creature.Abstractize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_LoseAllGrasps">Creature.LoseAllGrasps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_BodyPartByIndex_System_Int32_">Creature.BodyPartByIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseGrasp_System_Int32_">Creature.ReleaseGrasp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SwitchGrasps_System_Int32_System_Int32_">Creature.SwitchGrasps(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_UpdateGraspIndexes">Creature.UpdateGraspIndexes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_CanBeGrabbed_Creature_">Creature.CanBeGrabbed(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_">Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_">Creature.GrabbedObjectSnatched(PhysicalObject, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">Creature.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HeardNoise_Noise_InGameNoise_">Creature.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ToString">Creature.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_">Creature.ReleaseDoorForbiddenCreatures(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_">Creature.AllowableControlledAIOverride(MovementConnection.MovementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaUpdate">Creature.HypothermiaUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_">Creature.HypothermiaBodyContactWarmup(Creature, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SafariControlInputUpdate_System_Int32_">Creature.SafariControlInputUpdate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Centipede__ctor_" data-uid="Global.Centipede.#ctor*"></a>
+
+  <h3 id="Global_Centipede__ctor_AbstractCreature_World_" data-uid="Global.Centipede.#ctor(AbstractCreature,World)">
+  Centipede(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Centipede(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Centipede_AI" data-uid="Global.Centipede.AI">
+  AI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CentipedeAI AI</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CentipedeAI.html">CentipedeAI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_Glower" data-uid="Global.Centipede.Glower">
+  Glower
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightSource Glower</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.LightSource.html">LightSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_GlowerHead" data-uid="Global.Centipede.GlowerHead">
+  GlowerHead
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk GlowerHead</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_bites" data-uid="Global.Centipede.bites">
+  bites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int bites</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_bodyDirection" data-uid="Global.Centipede.bodyDirection">
+  bodyDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bodyDirection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_bodyWave" data-uid="Global.Centipede.bodyWave">
+  bodyWave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bodyWave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_changeDirCounter" data-uid="Global.Centipede.changeDirCounter">
+  changeDirCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int changeDirCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_connectionRopes" data-uid="Global.Centipede.connectionRopes">
+  connectionRopes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rope[] connectionRopes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rope.html">Rope</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_directionChangeBlock" data-uid="Global.Centipede.directionChangeBlock">
+  directionChangeBlock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int directionChangeBlock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_doubleGrabCharge" data-uid="Global.Centipede.doubleGrabCharge">
+  doubleGrabCharge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float doubleGrabCharge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_flyModeCounter" data-uid="Global.Centipede.flyModeCounter">
+  flyModeCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int flyModeCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_flying" data-uid="Global.Centipede.flying">
+  flying
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool flying</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_moveToPos" data-uid="Global.Centipede.moveToPos">
+  moveToPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 moveToPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_moving" data-uid="Global.Centipede.moving">
+  moving
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool moving</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_noFollowConCounter" data-uid="Global.Centipede.noFollowConCounter">
+  noFollowConCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int noFollowConCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_outsideLevel" data-uid="Global.Centipede.outsideLevel">
+  outsideLevel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool outsideLevel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_shellJustFellOff" data-uid="Global.Centipede.shellJustFellOff">
+  shellJustFellOff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int shellJustFellOff</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_shockCharge" data-uid="Global.Centipede.shockCharge">
+  shockCharge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float shockCharge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_shockGiveUpCounter" data-uid="Global.Centipede.shockGiveUpCounter">
+  shockGiveUpCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int shockGiveUpCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_size" data-uid="Global.Centipede.size">
+  size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float size</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_visionDirection" data-uid="Global.Centipede.visionDirection">
+  visionDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visionDirection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_wantToFly" data-uid="Global.Centipede.wantToFly">
+  wantToFly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool wantToFly</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Centipede_wingsStartedUp" data-uid="Global.Centipede.wingsStartedUp">
+  wingsStartedUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingsStartedUp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Centipede_AquaCenti_" data-uid="Global.Centipede.AquaCenti*"></a>
+
+  <h3 id="Global_Centipede_AquaCenti" data-uid="Global.Centipede.AquaCenti">
+  AquaCenti
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AquaCenti { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_AquacentiSwim_" data-uid="Global.Centipede.AquacentiSwim*"></a>
+
+  <h3 id="Global_Centipede_AquacentiSwim" data-uid="Global.Centipede.AquacentiSwim">
+  AquacentiSwim
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AquacentiSwim { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_AutomaticPickUp_" data-uid="Global.Centipede.AutomaticPickUp*"></a>
+
+  <h3 id="Global_Centipede_AutomaticPickUp" data-uid="Global.Centipede.AutomaticPickUp">
+  AutomaticPickUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutomaticPickUp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_BitesLeft_" data-uid="Global.Centipede.BitesLeft*"></a>
+
+  <h3 id="Global_Centipede_BitesLeft" data-uid="Global.Centipede.BitesLeft">
+  BitesLeft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BitesLeft { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_CentiState_" data-uid="Global.Centipede.CentiState*"></a>
+
+  <h3 id="Global_Centipede_CentiState" data-uid="Global.Centipede.CentiState">
+  CentiState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Centipede.CentipedeState CentiState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Centipede.html">Centipede</a>.<a class="xref" href="Centipede.CentipedeState.html">CentipedeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Centiwing_" data-uid="Global.Centipede.Centiwing*"></a>
+
+  <h3 id="Global_Centipede_Centiwing" data-uid="Global.Centipede.Centiwing">
+  Centiwing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Centiwing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Edible_" data-uid="Global.Centipede.Edible*"></a>
+
+  <h3 id="Global_Centipede_Edible" data-uid="Global.Centipede.Edible">
+  Edible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Edible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_FoodPoints_" data-uid="Global.Centipede.FoodPoints*"></a>
+
+  <h3 id="Global_Centipede_FoodPoints" data-uid="Global.Centipede.FoodPoints">
+  FoodPoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FoodPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_HeadChunk_" data-uid="Global.Centipede.HeadChunk*"></a>
+
+  <h3 id="Global_Centipede_HeadChunk" data-uid="Global.Centipede.HeadChunk">
+  HeadChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk HeadChunk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_HeadIndex_" data-uid="Global.Centipede.HeadIndex*"></a>
+
+  <h3 id="Global_Centipede_HeadIndex" data-uid="Global.Centipede.HeadIndex">
+  HeadIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeadIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Red_" data-uid="Global.Centipede.Red*"></a>
+
+  <h3 id="Global_Centipede_Red" data-uid="Global.Centipede.Red">
+  Red
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Red { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Small_" data-uid="Global.Centipede.Small*"></a>
+
+  <h3 id="Global_Centipede_Small" data-uid="Global.Centipede.Small">
+  Small
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Small { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_VisionPoint_" data-uid="Global.Centipede.VisionPoint*"></a>
+
+  <h3 id="Global_Centipede_VisionPoint" data-uid="Global.Centipede.VisionPoint">
+  VisionPoint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 VisionPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Centipede_AccessibleTile_" data-uid="Global.Centipede.AccessibleTile*"></a>
+
+  <h3 id="Global_Centipede_AccessibleTile_RWCustom_IntVector2_" data-uid="Global.Centipede.AccessibleTile(RWCustom.IntVector2)">
+  AccessibleTile(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AccessibleTile(IntVector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_AccessibleTile_" data-uid="Global.Centipede.AccessibleTile*"></a>
+
+  <h3 id="Global_Centipede_AccessibleTile_UnityEngine_Vector2_" data-uid="Global.Centipede.AccessibleTile(UnityEngine.Vector2)">
+  AccessibleTile(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AccessibleTile(Vector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Act_" data-uid="Global.Centipede.Act*"></a>
+
+  <h3 id="Global_Centipede_Act" data-uid="Global.Centipede.Act">
+  Act()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Act()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_BitByPlayer_" data-uid="Global.Centipede.BitByPlayer*"></a>
+
+  <h3 id="Global_Centipede_BitByPlayer_Creature_Grasp_System_Boolean_" data-uid="Global.Centipede.BitByPlayer(Creature.Grasp,System.Boolean)">
+  BitByPlayer(Grasp, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BitByPlayer(Creature.Grasp grasp, bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grasp</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.Grasp.html">Grasp</a></dt>
+    <dd></dd>
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_ClimbableTile_" data-uid="Global.Centipede.ClimbableTile*"></a>
+
+  <h3 id="Global_Centipede_ClimbableTile_RWCustom_IntVector2_" data-uid="Global.Centipede.ClimbableTile(RWCustom.IntVector2)">
+  ClimbableTile(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClimbableTile(IntVector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_ClimbableTile_" data-uid="Global.Centipede.ClimbableTile*"></a>
+
+  <h3 id="Global_Centipede_ClimbableTile_UnityEngine_Vector2_" data-uid="Global.Centipede.ClimbableTile(UnityEngine.Vector2)">
+  ClimbableTile(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClimbableTile(Vector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Collide_" data-uid="Global.Centipede.Collide*"></a>
+
+  <h3 id="Global_Centipede_Collide_PhysicalObject_System_Int32_System_Int32_" data-uid="Global.Centipede.Collide(PhysicalObject,System.Int32,System.Int32)">
+  Collide(PhysicalObject, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Collide(PhysicalObject otherObject, int myChunk, int otherChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>myChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>otherChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Crawl_" data-uid="Global.Centipede.Crawl*"></a>
+
+  <h3 id="Global_Centipede_Crawl" data-uid="Global.Centipede.Crawl">
+  Crawl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Crawl()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Die_" data-uid="Global.Centipede.Die*"></a>
+
+  <h3 id="Global_Centipede_Die" data-uid="Global.Centipede.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Fly_" data-uid="Global.Centipede.Fly*"></a>
+
+  <h3 id="Global_Centipede_Fly" data-uid="Global.Centipede.Fly">
+  Fly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1095"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_GenerateSize_" data-uid="Global.Centipede.GenerateSize*"></a>
+
+  <h3 id="Global_Centipede_GenerateSize_AbstractCreature_" data-uid="Global.Centipede.GenerateSize(AbstractCreature)">
+  GenerateSize(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GenerateSize(AbstractCreature abstrCrit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstrCrit</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_HorizontalSitSurface_" data-uid="Global.Centipede.HorizontalSitSurface*"></a>
+
+  <h3 id="Global_Centipede_HorizontalSitSurface_UnityEngine_Vector2_" data-uid="Global.Centipede.HorizontalSitSurface(UnityEngine.Vector2)">
+  HorizontalSitSurface(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1082"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HorizontalSitSurface(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_InitiateGraphicsModule_" data-uid="Global.Centipede.InitiateGraphicsModule*"></a>
+
+  <h3 id="Global_Centipede_InitiateGraphicsModule" data-uid="Global.Centipede.InitiateGraphicsModule">
+  InitiateGraphicsModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_NewRoom_" data-uid="Global.Centipede.NewRoom*"></a>
+
+  <h3 id="Global_Centipede_NewRoom_Room_" data-uid="Global.Centipede.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_RatherClimbThanFly_" data-uid="Global.Centipede.RatherClimbThanFly*"></a>
+
+  <h3 id="Global_Centipede_RatherClimbThanFly_RWCustom_IntVector2_" data-uid="Global.Centipede.RatherClimbThanFly(RWCustom.IntVector2)">
+  RatherClimbThanFly(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RatherClimbThanFly(IntVector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Shock_" data-uid="Global.Centipede.Shock*"></a>
+
+  <h3 id="Global_Centipede_Shock_PhysicalObject_" data-uid="Global.Centipede.Shock(PhysicalObject)">
+  Shock(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shock(PhysicalObject shockObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shockObj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_ShortCutColor_" data-uid="Global.Centipede.ShortCutColor*"></a>
+
+  <h3 id="Global_Centipede_ShortCutColor" data-uid="Global.Centipede.ShortCutColor">
+  ShortCutColor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color ShortCutColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_SpearStick_" data-uid="Global.Centipede.SpearStick*"></a>
+
+  <h3 id="Global_Centipede_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_" data-uid="Global.Centipede.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)">
+  SpearStick(Weapon, float, BodyChunk, Pos, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SpearStick(Weapon source, float dmg, BodyChunk chunk, PhysicalObject.Appendage.Pos appPos, Vector2 direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+    <dt><code>dmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>appPos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_SpitOutOfShortCut_" data-uid="Global.Centipede.SpitOutOfShortCut*"></a>
+
+  <h3 id="Global_Centipede_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_" data-uid="Global.Centipede.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)">
+  SpitOutOfShortCut(IntVector2, Room, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SpitOutOfShortCut(IntVector2 pos, Room newRoom, bool spitOutAllSticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+    <dt><code>spitOutAllSticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Stun_" data-uid="Global.Centipede.Stun*"></a>
+
+  <h3 id="Global_Centipede_Stun_System_Int32_" data-uid="Global.Centipede.Stun(System.Int32)">
+  Stun(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stun(int st)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Swim_" data-uid="Global.Centipede.Swim*"></a>
+
+  <h3 id="Global_Centipede_Swim" data-uid="Global.Centipede.Swim">
+  Swim()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Swim()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_TerrainImpact_" data-uid="Global.Centipede.TerrainImpact*"></a>
+
+  <h3 id="Global_Centipede_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.Centipede.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_ThrowByPlayer_" data-uid="Global.Centipede.ThrowByPlayer*"></a>
+
+  <h3 id="Global_Centipede_ThrowByPlayer" data-uid="Global.Centipede.ThrowByPlayer">
+  ThrowByPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ThrowByPlayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Update_" data-uid="Global.Centipede.Update*"></a>
+
+  <h3 id="Global_Centipede_Update_System_Boolean_" data-uid="Global.Centipede.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_UpdateGrasp_" data-uid="Global.Centipede.UpdateGrasp*"></a>
+
+  <h3 id="Global_Centipede_UpdateGrasp_System_Int32_" data-uid="Global.Centipede.UpdateGrasp(System.Int32)">
+  UpdateGrasp(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGrasp(int g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_VerticalSitSurface_" data-uid="Global.Centipede.VerticalSitSurface*"></a>
+
+  <h3 id="Global_Centipede_VerticalSitSurface_UnityEngine_Vector2_" data-uid="Global.Centipede.VerticalSitSurface(UnityEngine.Vector2)">
+  VerticalSitSurface(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1069"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VerticalSitSurface(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Centipede_Violence_" data-uid="Global.Centipede.Violence*"></a>
+
+  <h3 id="Global_Centipede_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_" data-uid="Global.Centipede.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)">
+  Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L1211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos hitAppendage, Creature.DamageType type, float damage, float stunBonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>directionAndMomentum</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>hitChunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>hitAppendage</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stunBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Centipede.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

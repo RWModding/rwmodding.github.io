@@ -1,0 +1,1471 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DaddyGraphics
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DaddyGraphics
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_DaddyGraphics.md&amp;value=---%0Auid%3A%20Global.DaddyGraphics%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.DaddyGraphics">
+
+
+
+  <h1 id="Global_DaddyGraphics" data-uid="Global.DaddyGraphics" class="text-break">
+    Class DaddyGraphics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DaddyGraphics : GraphicsModule, IDrawable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.GraphicsModule.html">GraphicsModule</a></div>
+      <div><span class="xref">DaddyGraphics</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_internalContainerObjects">GraphicsModule.internalContainerObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_bodyParts">GraphicsModule.bodyParts</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_DEBUGLABELS">GraphicsModule.DEBUGLABELS</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_culled">GraphicsModule.culled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_lastCulled">GraphicsModule.lastCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_dispose">GraphicsModule.dispose</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_cullRange">GraphicsModule.cullRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_owner">GraphicsModule.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ShouldBeCulled">GraphicsModule.ShouldBeCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_">GraphicsModule.SuckedIntoShortCut(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_">GraphicsModule.PushOutOf(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_">GraphicsModule.AddObjectToInternalContainer(IDrawable, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseAllInternallyContainedSprites">GraphicsModule.ReleaseAllInternallyContainedSprites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_BringSpritesToFront">GraphicsModule.BringSpritesToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_">GraphicsModule.HypothermiaColorBlend(Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_DaddyGraphics__ctor_" data-uid="Global.DaddyGraphics.#ctor*"></a>
+
+  <h3 id="Global_DaddyGraphics__ctor_PhysicalObject_" data-uid="Global.DaddyGraphics.#ctor(PhysicalObject)">
+  DaddyGraphics(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics(PhysicalObject ow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ow</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_DaddyGraphics_blackColor" data-uid="Global.DaddyGraphics.blackColor">
+  blackColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L897"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color blackColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_chunksRotats" data-uid="Global.DaddyGraphics.chunksRotats">
+  chunksRotats
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L889"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[,] chunksRotats</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_danglers" data-uid="Global.DaddyGraphics.danglers">
+  danglers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L887"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.DaddyDangleTube[] danglers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.DaddyDangleTube.html">DaddyDangleTube</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_deadLegs" data-uid="Global.DaddyGraphics.deadLegs">
+  deadLegs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.DaddyDeadLeg[] deadLegs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.DaddyDeadLeg.html">DaddyDeadLeg</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_digestLoop" data-uid="Global.DaddyGraphics.digestLoop">
+  digestLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticSoundLoop digestLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.StaticSoundLoop.html">StaticSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_digesting" data-uid="Global.DaddyGraphics.digesting">
+  digesting
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L899"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float digesting</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_dummy" data-uid="Global.DaddyGraphics.dummy">
+  dummy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.HunterDummy dummy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.html">DaddyGraphics</a>.<a class="xref" href="DaddyGraphics.HunterDummy.html">HunterDummy</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_eyes" data-uid="Global.DaddyGraphics.eyes">
+  eyes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L905"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.Eye[] eyes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.Eye.html">Eye</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_feelSomethingReactionDelay" data-uid="Global.DaddyGraphics.feelSomethingReactionDelay">
+  feelSomethingReactionDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L903"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int feelSomethingReactionDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_legGraphics" data-uid="Global.DaddyGraphics.legGraphics">
+  legGraphics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L883"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.DaddyLegGraphic[] legGraphics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.DaddyLegGraphic.html">DaddyLegGraphic</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_reactionSoundDelay" data-uid="Global.DaddyGraphics.reactionSoundDelay">
+  reactionSoundDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int reactionSoundDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_totalDanglers" data-uid="Global.DaddyGraphics.totalDanglers">
+  totalDanglers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalDanglers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_totalDeadLegSprites" data-uid="Global.DaddyGraphics.totalDeadLegSprites">
+  totalDeadLegSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalDeadLegSprites</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DaddyGraphics_totalLegSprites" data-uid="Global.DaddyGraphics.totalLegSprites">
+  totalLegSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalLegSprites</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_DaddyGraphics_EffectColor_" data-uid="Global.DaddyGraphics.EffectColor*"></a>
+
+  <h3 id="Global_DaddyGraphics_EffectColor" data-uid="Global.DaddyGraphics.EffectColor">
+  EffectColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color EffectColor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_SizeClass_" data-uid="Global.DaddyGraphics.SizeClass*"></a>
+
+  <h3 id="Global_DaddyGraphics_SizeClass" data-uid="Global.DaddyGraphics.SizeClass">
+  SizeClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L915"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SizeClass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_TotalSprites_" data-uid="Global.DaddyGraphics.TotalSprites*"></a>
+
+  <h3 id="Global_DaddyGraphics_TotalSprites" data-uid="Global.DaddyGraphics.TotalSprites">
+  TotalSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L911"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalSprites { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_colorClass_" data-uid="Global.DaddyGraphics.colorClass*"></a>
+
+  <h3 id="Global_DaddyGraphics_colorClass" data-uid="Global.DaddyGraphics.colorClass">
+  colorClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool colorClass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_daddy_" data-uid="Global.DaddyGraphics.daddy*"></a>
+
+  <h3 id="Global_DaddyGraphics_daddy" data-uid="Global.DaddyGraphics.daddy">
+  daddy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyLongLegs daddy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DaddyLongLegs.html">DaddyLongLegs</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_DaddyGraphics_AddToContainer_" data-uid="Global.DaddyGraphics.AddToContainer*"></a>
+
+  <h3 id="Global_DaddyGraphics_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="Global.DaddyGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_ApplyPalette_" data-uid="Global.DaddyGraphics.ApplyPalette*"></a>
+
+  <h3 id="Global_DaddyGraphics_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="Global.DaddyGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_BodySprite_" data-uid="Global.DaddyGraphics.BodySprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_BodySprite_System_Int32_" data-uid="Global.DaddyGraphics.BodySprite(System.Int32)">
+  BodySprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodySprite(int chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_BulgeVertex_" data-uid="Global.DaddyGraphics.BulgeVertex*"></a>
+
+  <h3 id="Global_DaddyGraphics_BulgeVertex_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_" data-uid="Global.DaddyGraphics.BulgeVertex(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+  BulgeVertex(Vector2, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 BulgeVertex(Vector2 v, Vector2 dir, float rad)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>dir</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>rad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_DanglerSprite_" data-uid="Global.DaddyGraphics.DanglerSprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_DanglerSprite_System_Int32_" data-uid="Global.DaddyGraphics.DanglerSprite(System.Int32)">
+  DanglerSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DanglerSprite(int dangler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dangler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_DeadLegSprite_" data-uid="Global.DaddyGraphics.DeadLegSprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_DeadLegSprite_System_Int32_" data-uid="Global.DaddyGraphics.DeadLegSprite(System.Int32)">
+  DeadLegSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L931"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeadLegSprite(int leg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_DrawSprites_" data-uid="Global.DaddyGraphics.DrawSprites*"></a>
+
+  <h3 id="Global_DaddyGraphics_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="Global.DaddyGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_DummySprite_" data-uid="Global.DaddyGraphics.DummySprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_DummySprite" data-uid="Global.DaddyGraphics.DummySprite">
+  DummySprite()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DummySprite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_EyeSprite_" data-uid="Global.DaddyGraphics.EyeSprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_EyeSprite_System_Int32_System_Int32_" data-uid="Global.DaddyGraphics.EyeSprite(System.Int32,System.Int32)">
+  EyeSprite(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EyeSprite(int eye, int part)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eye</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_FeelSomethingWithTentacle_" data-uid="Global.DaddyGraphics.FeelSomethingWithTentacle*"></a>
+
+  <h3 id="Global_DaddyGraphics_FeelSomethingWithTentacle_Tracker_CreatureRepresentation_UnityEngine_Vector2_" data-uid="Global.DaddyGraphics.FeelSomethingWithTentacle(Tracker.CreatureRepresentation,UnityEngine.Vector2)">
+  FeelSomethingWithTentacle(CreatureRepresentation, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FeelSomethingWithTentacle(Tracker.CreatureRepresentation creatureRep, Vector2 feelPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creatureRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>feelPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_GenerateDangleCon_" data-uid="Global.DaddyGraphics.GenerateDangleCon*"></a>
+
+  <h3 id="Global_DaddyGraphics_GenerateDangleCon_System_Boolean_" data-uid="Global.DaddyGraphics.GenerateDangleCon(System.Boolean)">
+  GenerateDangleCon(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1068"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaddyGraphics.DaddyDangleTube.Connection GenerateDangleCon(bool otherIsBodyChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherIsBodyChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DaddyGraphics.html">DaddyGraphics</a>.<a class="xref" href="DaddyGraphics.DaddyDangleTube.html">DaddyDangleTube</a>.<a class="xref" href="DaddyGraphics.DaddyDangleTube.Connection.html">Connection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_InitiateSprites_" data-uid="Global.DaddyGraphics.InitiateSprites*"></a>
+
+  <h3 id="Global_DaddyGraphics_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="Global.DaddyGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_LegSprite_" data-uid="Global.DaddyGraphics.LegSprite*"></a>
+
+  <h3 id="Global_DaddyGraphics_LegSprite_System_Int32_" data-uid="Global.DaddyGraphics.LegSprite(System.Int32)">
+  LegSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L926"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LegSprite(int leg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>leg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_MakeSlitMesh_" data-uid="Global.DaddyGraphics.MakeSlitMesh*"></a>
+
+  <h3 id="Global_DaddyGraphics_MakeSlitMesh" data-uid="Global.DaddyGraphics.MakeSlitMesh">
+  MakeSlitMesh()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangleMesh MakeSlitMesh()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.TriangleMesh.html">TriangleMesh</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_ReactToNoise_" data-uid="Global.DaddyGraphics.ReactToNoise*"></a>
+
+  <h3 id="Global_DaddyGraphics_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_" data-uid="Global.DaddyGraphics.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)">
+  ReactToNoise(TheorizedSource, InGameNoise)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReactToNoise(NoiseTracker.TheorizedSource source, InGameNoise noise)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="NoiseTracker.html">NoiseTracker</a>.<a class="xref" href="NoiseTracker.TheorizedSource.html">TheorizedSource</a></dt>
+    <dd></dd>
+    <dt><code>noise</code> <a class="xref" href="Noise.InGameNoise.html">InGameNoise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_RenderSlits_" data-uid="Global.DaddyGraphics.RenderSlits*"></a>
+
+  <h3 id="Global_DaddyGraphics_RenderSlits_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="Global.DaddyGraphics.RenderSlits(System.Int32,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  RenderSlits(int, Vector2, Vector2, float, SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderSlits(int chunk, Vector2 pos, Vector2 middleOfBody, float rotation, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>middleOfBody</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_Reset_" data-uid="Global.DaddyGraphics.Reset*"></a>
+
+  <h3 id="Global_DaddyGraphics_Reset" data-uid="Global.DaddyGraphics.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DaddyGraphics_Update_" data-uid="Global.DaddyGraphics.Update*"></a>
+
+  <h3 id="Global_DaddyGraphics_Update" data-uid="Global.DaddyGraphics.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L1083"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DaddyGraphics.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

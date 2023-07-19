@@ -1,0 +1,1748 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MenuModList
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MenuModList
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_Remix_MenuModList.md&amp;value=---%0Auid%3A%20Menu.Remix.MenuModList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.Remix.MenuModList">
+
+
+
+  <h1 id="Menu_Remix_MenuModList" data-uid="Menu.Remix.MenuModList" class="text-break">
+    Class MenuModList
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a>.<a class="xref" href="Menu.Remix.html">Remix</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MenuModList : UIelement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.UIelement.html">UIelement</a></div>
+      <div><span class="xref">MenuModList</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_mute">UIelement.mute</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_description">UIelement.description</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_isRectangular">UIelement.isRectangular</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__pos">UIelement._pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__size">UIelement._size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__rad">UIelement._rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedSize">UIelement.fixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedRad">UIelement.fixedRad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_tab">UIelement.tab</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_myContainer">UIelement.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_lastScreenPos">UIelement.lastScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_wrapper">UIelement.wrapper</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosX">UIelement.PosX</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosY">UIelement.PosY</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_size">UIelement.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_rad">UIelement.rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hidden">UIelement.Hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_IsInactive">UIelement.IsInactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_pos">UIelement.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Menu">UIelement.Menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Owner">UIelement.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MousePos">UIelement.MousePos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_scrollBox">UIelement.scrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_InScrollBox">UIelement.InScrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ScreenPos">UIelement.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_frameMulti">UIelement.frameMulti</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MenuMouseMode">UIelement.MenuMouseMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_CtlrInput">UIelement.CtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_LastCtlrInput">UIelement.LastCtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ContextWrapped">UIelement.ContextWrapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnChange">UIelement.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUpdate">UIelement.OnUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnGrafUpdate">UIelement.OnGrafUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReset">UIelement.OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnDeactivate">UIelement.OnDeactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReactivate">UIelement.OnReactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUnload">UIelement.OnUnload</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reset">UIelement.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hide">UIelement.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Show">UIelement.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_GetPos">UIelement.GetPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_SetPos_UnityEngine_Vector2_">UIelement.SetPos(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToBack">UIelement.MoveToBack()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToFront">UIelement.MoveToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveInFrontOfElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveInFrontOfElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveBehindElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveBehindElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Change">UIelement.Change()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_">UIelement.PlaySound(SoundID)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_System_Single_System_Single_System_Single_">UIelement.PlaySound(SoundID, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Unload">UIelement.Unload()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FrameMultiply_System_Int32_">UIelement.FrameMultiply(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_DisplayDescription">UIelement.DisplayDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Freeze">UIelement.Freeze()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelCreate_System_String_System_Boolean_">UIelement.FLabelCreate(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_UnityEngine_Vector2_UnityEngine_Vector2_">UIelement.FLabelPlaceAtCenter(FLabel, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_System_Single_System_Single_System_Single_System_Single_">UIelement.FLabelPlaceAtCenter(FLabel, float, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ForceMenuMouseMode_System_Nullable_System_Boolean__">UIelement.ForceMenuMouseMode(bool?)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Deactivate">UIelement.Deactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reactivate">UIelement.Reactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__AddToScrollBox_Menu_Remix_MixedUI_OpScrollBox_">UIelement._AddToScrollBox(OpScrollBox)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__RemoveFromScrollBox">UIelement._RemoveFromScrollBox()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__SetTab_Menu_Remix_MixedUI_OpTab_">UIelement._SetTab(OpTab)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__CenterPos">UIelement._CenterPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_Remix_MenuModList__ctor_" data-uid="Menu.Remix.MenuModList.#ctor*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ctor_Menu_Remix_ConfigMenuTab_" data-uid="Menu.Remix.MenuModList.#ctor(Menu.Remix.ConfigMenuTab)">
+  MenuModList(ConfigMenuTab)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuModList(ConfigMenuTab tab)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tab</code> <a class="xref" href="Menu.Remix.ConfigMenuTab.html">ConfigMenuTab</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_Remix_MenuModList__backSide" data-uid="Menu.Remix.MenuModList._backSide">
+  _backSide
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FSprite _backSide</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FSprite.html">FSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__currentSelections" data-uid="Menu.Remix.MenuModList._currentSelections">
+  _currentSelections
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] _currentSelections</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__floatScrollPos" data-uid="Menu.Remix.MenuModList._floatScrollPos">
+  _floatScrollPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float _floatScrollPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__floatScrollVel" data-uid="Menu.Remix.MenuModList._floatScrollVel">
+  _floatScrollVel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float _floatScrollVel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__initialized" data-uid="Menu.Remix.MenuModList._initialized">
+  _initialized
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool _initialized</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__listFocused" data-uid="Menu.Remix.MenuModList._listFocused">
+  _listFocused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _listFocused</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__roleButtons" data-uid="Menu.Remix.MenuModList._roleButtons">
+  _roleButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly MenuModList.ListButton[] _roleButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.ListButton.html">ListButton</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__savedSelections" data-uid="Menu.Remix.MenuModList._savedSelections">
+  _savedSelections
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] _savedSelections</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__scrollPos" data-uid="Menu.Remix.MenuModList._scrollPos">
+  _scrollPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _scrollPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__scrollVisible" data-uid="Menu.Remix.MenuModList._scrollVisible">
+  _scrollVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int _scrollVisible</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__searchBox" data-uid="Menu.Remix.MenuModList._searchBox">
+  _searchBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly MenuModList.SearchBox _searchBox</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.SearchBox.html">SearchBox</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__searchQuery" data-uid="Menu.Remix.MenuModList._searchQuery">
+  _searchQuery
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string _searchQuery</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__sideLines" data-uid="Menu.Remix.MenuModList._sideLines">
+  _sideLines
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FSprite[] _sideLines</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSprite.html">FSprite</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList__slider" data-uid="Menu.Remix.MenuModList._slider">
+  _slider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly MenuModList.ListSlider _slider</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ListSlider.html">ListSlider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList_modButtons" data-uid="Menu.Remix.MenuModList.modButtons">
+  modButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly MenuModList.ModButton[] modButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList_selectionChanged" data-uid="Menu.Remix.MenuModList.selectionChanged">
+  selectionChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool selectionChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList_sortedModButtons" data-uid="Menu.Remix.MenuModList.sortedModButtons">
+  sortedModButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;MenuModList.ModButton&gt; sortedModButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MenuModList_visibleModButtons" data-uid="Menu.Remix.MenuModList.visibleModButtons">
+  visibleModButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;MenuModList.ModButton&gt; visibleModButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_Remix_MenuModList_CfgContainer_" data-uid="Menu.Remix.MenuModList.CfgContainer*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_CfgContainer" data-uid="Menu.Remix.MenuModList.CfgContainer">
+  CfgContainer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigContainer CfgContainer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.ConfigContainer.html">ConfigContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_MenuTab_" data-uid="Menu.Remix.MenuModList.MenuTab*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_MenuTab" data-uid="Menu.Remix.MenuModList.MenuTab">
+  MenuTab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigMenuTab MenuTab { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.ConfigMenuTab.html">ConfigMenuTab</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_MouseOver_" data-uid="Menu.Remix.MenuModList.MouseOver*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_MouseOver" data-uid="Menu.Remix.MenuModList.MouseOver">
+  MouseOver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool MouseOver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__ScrollMax_" data-uid="Menu.Remix.MenuModList._ScrollMax*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ScrollMax" data-uid="Menu.Remix.MenuModList._ScrollMax">
+  _ScrollMax
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int _ScrollMax { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__SearchMode_" data-uid="Menu.Remix.MenuModList._SearchMode*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__SearchMode" data-uid="Menu.Remix.MenuModList._SearchMode">
+  _SearchMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _SearchMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_Remix_MenuModList_CompareByModName_" data-uid="Menu.Remix.MenuModList.CompareByModName*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_CompareByModName_Menu_Remix_MenuModList_ModButton_Menu_Remix_MenuModList_ModButton_" data-uid="Menu.Remix.MenuModList.CompareByModName(Menu.Remix.MenuModList.ModButton,Menu.Remix.MenuModList.ModButton)">
+  CompareByModName(ModButton, ModButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareByModName(MenuModList.ModButton x, MenuModList.ModButton y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_CompareBySelectOrder_" data-uid="Menu.Remix.MenuModList.CompareBySelectOrder*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_CompareBySelectOrder_Menu_Remix_MenuModList_ModButton_Menu_Remix_MenuModList_ModButton_" data-uid="Menu.Remix.MenuModList.CompareBySelectOrder(Menu.Remix.MenuModList.ModButton,Menu.Remix.MenuModList.ModButton)">
+  CompareBySelectOrder(ModButton, ModButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareBySelectOrder(MenuModList.ModButton x, MenuModList.ModButton y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_GetModButton_" data-uid="Menu.Remix.MenuModList.GetModButton*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_GetModButton_System_String_" data-uid="Menu.Remix.MenuModList.GetModButton(System.String)">
+  GetModButton(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1880"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuModList.ModButton GetModButton(string modID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_GetModButtonAtBottom_" data-uid="Menu.Remix.MenuModList.GetModButtonAtBottom*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_GetModButtonAtBottom" data-uid="Menu.Remix.MenuModList.GetModButtonAtBottom">
+  GetModButtonAtBottom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1890"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuModList.ModButton GetModButtonAtBottom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_GetModButtonAtTop_" data-uid="Menu.Remix.MenuModList.GetModButtonAtTop*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_GetModButtonAtTop" data-uid="Menu.Remix.MenuModList.GetModButtonAtTop">
+  GetModButtonAtTop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuModList.ModButton GetModButtonAtTop()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_GrafUpdate_" data-uid="Menu.Remix.MenuModList.GrafUpdate*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_GrafUpdate_System_Single_" data-uid="Menu.Remix.MenuModList.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1895"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_RefreshAllButtons_" data-uid="Menu.Remix.MenuModList.RefreshAllButtons*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_RefreshAllButtons" data-uid="Menu.Remix.MenuModList.RefreshAllButtons">
+  RefreshAllButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshAllButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_RefreshSavedSelections_" data-uid="Menu.Remix.MenuModList.RefreshSavedSelections*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_RefreshSavedSelections" data-uid="Menu.Remix.MenuModList.RefreshSavedSelections">
+  RefreshSavedSelections()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1741"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshSavedSelections()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_RefreshVisibleButtons_" data-uid="Menu.Remix.MenuModList.RefreshVisibleButtons*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_RefreshVisibleButtons" data-uid="Menu.Remix.MenuModList.RefreshVisibleButtons">
+  RefreshVisibleButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshVisibleButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_ScrollToShow_" data-uid="Menu.Remix.MenuModList.ScrollToShow*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_ScrollToShow_System_Int32_" data-uid="Menu.Remix.MenuModList.ScrollToShow(System.Int32)">
+  ScrollToShow(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1859"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToShow(int targetIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_Signal_" data-uid="Menu.Remix.MenuModList.Signal*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_Signal_Menu_Remix_MixedUI_UIfocusable_System_Int32_" data-uid="Menu.Remix.MenuModList.Signal(Menu.Remix.MixedUI.UIfocusable,System.Int32)">
+  Signal(UIfocusable, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1962"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Signal(UIfocusable trigger, int index = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trigger</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_SwitchSelectMode_" data-uid="Menu.Remix.MenuModList.SwitchSelectMode*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_SwitchSelectMode_System_Boolean_" data-uid="Menu.Remix.MenuModList.SwitchSelectMode(System.Boolean)">
+  SwitchSelectMode(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchSelectMode(bool toSelect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toSelect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList_Update_" data-uid="Menu.Remix.MenuModList.Update*"></a>
+
+  <h3 id="Menu_Remix_MenuModList_Update" data-uid="Menu.Remix.MenuModList.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1916"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__AttachDependent_" data-uid="Menu.Remix.MenuModList._AttachDependent*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__AttachDependent_Menu_Remix_MenuModList_ModButton_" data-uid="Menu.Remix.MenuModList._AttachDependent(Menu.Remix.MenuModList.ModButton)">
+  _AttachDependent(ModButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1850"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _AttachDependent(MenuModList.ModButton btn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btn</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__AttachRequirement_" data-uid="Menu.Remix.MenuModList._AttachRequirement*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__AttachRequirement_Menu_Remix_MenuModList_ModButton_System_Int32_" data-uid="Menu.Remix.MenuModList._AttachRequirement(Menu.Remix.MenuModList.ModButton,System.Int32)">
+  _AttachRequirement(ModButton, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _AttachRequirement(MenuModList.ModButton btn, int requires)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btn</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+    <dt><code>requires</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__CheckRequirementsOrder_" data-uid="Menu.Remix.MenuModList._CheckRequirementsOrder*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__CheckRequirementsOrder_System_Collections_Generic_List_Menu_Remix_MenuModList_ModButton___" data-uid="Menu.Remix.MenuModList._CheckRequirementsOrder(System.Collections.Generic.List{Menu.Remix.MenuModList.ModButton}@)">
+  _CheckRequirementsOrder(ref List&lt;ModButton&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L1690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _CheckRequirementsOrder(ref List&lt;MenuModList.ModButton&gt; btns)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__ClampScrollPos_" data-uid="Menu.Remix.MenuModList._ClampScrollPos*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ClampScrollPos" data-uid="Menu.Remix.MenuModList._ClampScrollPos">
+  _ClampScrollPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L2081"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _ClampScrollPos()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__SetEnableToAllMods_" data-uid="Menu.Remix.MenuModList._SetEnableToAllMods*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__SetEnableToAllMods_System_Boolean_" data-uid="Menu.Remix.MenuModList._SetEnableToAllMods(System.Boolean)">
+  _SetEnableToAllMods(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L2061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _SetEnableToAllMods(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__ToggleMod_" data-uid="Menu.Remix.MenuModList._ToggleMod*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ToggleMod_Menu_Remix_MenuModList_ModButton_" data-uid="Menu.Remix.MenuModList._ToggleMod(Menu.Remix.MenuModList.ModButton)">
+  _ToggleMod(ModButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L2014"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _ToggleMod(MenuModList.ModButton btn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btn</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__ToggleMod_SubDisable_" data-uid="Menu.Remix.MenuModList._ToggleMod_SubDisable*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ToggleMod_SubDisable_Menu_Remix_MenuModList_ModButton_" data-uid="Menu.Remix.MenuModList._ToggleMod_SubDisable(Menu.Remix.MenuModList.ModButton)">
+  _ToggleMod_SubDisable(ModButton)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L2047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _ToggleMod_SubDisable(MenuModList.ModButton btn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btn</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MenuModList__ToggleMod_SubEnable_" data-uid="Menu.Remix.MenuModList._ToggleMod_SubEnable*"></a>
+
+  <h3 id="Menu_Remix_MenuModList__ToggleMod_SubEnable_Menu_Remix_MenuModList_ModButton_System_Int32__" data-uid="Menu.Remix.MenuModList._ToggleMod_SubEnable(Menu.Remix.MenuModList.ModButton,System.Int32@)">
+  _ToggleMod_SubEnable(ModButton, ref int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L2028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _ToggleMod_SubEnable(MenuModList.ModButton btn, ref int maxOrder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>btn</code> <a class="xref" href="Menu.Remix.MenuModList.html">MenuModList</a>.<a class="xref" href="Menu.Remix.MenuModList.ModButton.html">ModButton</a></dt>
+    <dd></dd>
+    <dt><code>maxOrder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix/MenuModList.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

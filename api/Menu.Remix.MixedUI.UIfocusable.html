@@ -1,0 +1,1259 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UIfocusable
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UIfocusable
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_Remix_MixedUI_UIfocusable.md&amp;value=---%0Auid%3A%20Menu.Remix.MixedUI.UIfocusable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.Remix.MixedUI.UIfocusable">
+
+
+
+  <h1 id="Menu_Remix_MixedUI_UIfocusable" data-uid="Menu.Remix.MixedUI.UIfocusable" class="text-break">
+    Class UIfocusable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a>.<a class="xref" href="Menu.Remix.html">Remix</a>.<a class="xref" href="Menu.Remix.MixedUI.html">MixedUI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UIfocusable : UIelement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.UIelement.html">UIelement</a></div>
+      <div><span class="xref">UIfocusable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Menu.Remix.MixedUI.FocusPointer.html">FocusPointer</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.OpHoldButton.html">OpHoldButton</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.OpRadioButton.html">OpRadioButton</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.OpScrollBox.html">OpScrollBox</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.OpSimpleButton.html">OpSimpleButton</a></div>
+      <div><a class="xref" href="Menu.Remix.MixedUI.UIconfig.html">UIconfig</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_mute">UIelement.mute</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_description">UIelement.description</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_isRectangular">UIelement.isRectangular</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__pos">UIelement._pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__size">UIelement._size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__rad">UIelement._rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedSize">UIelement.fixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_fixedRad">UIelement.fixedRad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_tab">UIelement.tab</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_myContainer">UIelement.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_lastScreenPos">UIelement.lastScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_wrapper">UIelement.wrapper</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosX">UIelement.PosX</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PosY">UIelement.PosY</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_size">UIelement.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_rad">UIelement.rad</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hidden">UIelement.Hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_IsInactive">UIelement.IsInactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_pos">UIelement.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Menu">UIelement.Menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Owner">UIelement.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MouseOver">UIelement.MouseOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MousePos">UIelement.MousePos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_scrollBox">UIelement.scrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_InScrollBox">UIelement.InScrollBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ScreenPos">UIelement.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_frameMulti">UIelement.frameMulti</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MenuMouseMode">UIelement.MenuMouseMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_CtlrInput">UIelement.CtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_LastCtlrInput">UIelement.LastCtlrInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ContextWrapped">UIelement.ContextWrapped</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnChange">UIelement.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUpdate">UIelement.OnUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnGrafUpdate">UIelement.OnGrafUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReset">UIelement.OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnDeactivate">UIelement.OnDeactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnReactivate">UIelement.OnReactivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_OnUnload">UIelement.OnUnload</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reset">UIelement.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Hide">UIelement.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Show">UIelement.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_GetPos">UIelement.GetPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_SetPos_UnityEngine_Vector2_">UIelement.SetPos(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToBack">UIelement.MoveToBack()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveToFront">UIelement.MoveToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveInFrontOfElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveInFrontOfElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_MoveBehindElement_Menu_Remix_MixedUI_UIelement_">UIelement.MoveBehindElement(UIelement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Change">UIelement.Change()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_">UIelement.PlaySound(SoundID)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_PlaySound_SoundID_System_Single_System_Single_System_Single_">UIelement.PlaySound(SoundID, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Unload">UIelement.Unload()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FrameMultiply_System_Int32_">UIelement.FrameMultiply(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_DisplayDescription">UIelement.DisplayDescription()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelCreate_System_String_System_Boolean_">UIelement.FLabelCreate(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_UnityEngine_Vector2_UnityEngine_Vector2_">UIelement.FLabelPlaceAtCenter(FLabel, Vector2, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_FLabelPlaceAtCenter_FLabel_System_Single_System_Single_System_Single_System_Single_">UIelement.FLabelPlaceAtCenter(FLabel, float, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_ForceMenuMouseMode_System_Nullable_System_Boolean__">UIelement.ForceMenuMouseMode(bool?)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement_Reactivate">UIelement.Reactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__AddToScrollBox_Menu_Remix_MixedUI_OpScrollBox_">UIelement._AddToScrollBox(OpScrollBox)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__RemoveFromScrollBox">UIelement._RemoveFromScrollBox()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__SetTab_Menu_Remix_MixedUI_OpTab_">UIelement._SetTab(OpTab)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Remix.MixedUI.UIelement.html#Menu_Remix_MixedUI_UIelement__CenterPos">UIelement._CenterPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable__ctor_" data-uid="Menu.Remix.MixedUI.UIfocusable.#ctor*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__ctor_UnityEngine_Vector2_System_Single_" data-uid="Menu.Remix.MixedUI.UIfocusable.#ctor(UnityEngine.Vector2,System.Single)">
+  UIfocusable(Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIfocusable(Vector2 pos, float rad)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>rad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable__ctor_" data-uid="Menu.Remix.MixedUI.UIfocusable.#ctor*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__ctor_UnityEngine_Vector2_UnityEngine_Vector2_" data-uid="Menu.Remix.MixedUI.UIfocusable.#ctor(UnityEngine.Vector2,UnityEngine.Vector2)">
+  UIfocusable(Vector2, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIfocusable(Vector2 pos, Vector2 size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__held" data-uid="Menu.Remix.MixedUI.UIfocusable._held">
+  _held
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _held</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__lastGreyedOut" data-uid="Menu.Remix.MixedUI.UIfocusable._lastGreyedOut">
+  _lastGreyedOut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _lastGreyedOut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_greyedOut" data-uid="Menu.Remix.MixedUI.UIfocusable.greyedOut">
+  greyedOut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool greyedOut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_mouseOverStopsScrollwheel" data-uid="Menu.Remix.MixedUI.UIfocusable.mouseOverStopsScrollwheel">
+  mouseOverStopsScrollwheel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mouseOverStopsScrollwheel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_sign" data-uid="Menu.Remix.MixedUI.UIfocusable.sign">
+  sign
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object sign</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_CurrentlyFocusableMouse_" data-uid="Menu.Remix.MixedUI.UIfocusable.CurrentlyFocusableMouse*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_CurrentlyFocusableMouse" data-uid="Menu.Remix.MixedUI.UIfocusable.CurrentlyFocusableMouse">
+  CurrentlyFocusableMouse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CurrentlyFocusableMouse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_CurrentlyFocusableNonMouse_" data-uid="Menu.Remix.MixedUI.UIfocusable.CurrentlyFocusableNonMouse*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_CurrentlyFocusableNonMouse" data-uid="Menu.Remix.MixedUI.UIfocusable.CurrentlyFocusableNonMouse">
+  CurrentlyFocusableNonMouse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CurrentlyFocusableNonMouse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_FocusRect_" data-uid="Menu.Remix.MixedUI.UIfocusable.FocusRect*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_FocusRect" data-uid="Menu.Remix.MixedUI.UIfocusable.FocusRect">
+  FocusRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Rect FocusRect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_Focused_" data-uid="Menu.Remix.MixedUI.UIfocusable.Focused*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_Focused" data-uid="Menu.Remix.MixedUI.UIfocusable.Focused">
+  Focused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Focused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_NextFocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.NextFocusable*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_NextFocusable" data-uid="Menu.Remix.MixedUI.UIfocusable.NextFocusable">
+  NextFocusable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIfocusable[] NextFocusable { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_bumpBehav_" data-uid="Menu.Remix.MixedUI.UIfocusable.bumpBehav*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_bumpBehav" data-uid="Menu.Remix.MixedUI.UIfocusable.bumpBehav">
+  bumpBehav
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BumpBehaviour bumpBehav { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.BumpBehaviour.html">BumpBehaviour</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_held_" data-uid="Menu.Remix.MixedUI.UIfocusable.held*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_held" data-uid="Menu.Remix.MixedUI.UIfocusable.held">
+  held
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool held { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_Deactivate_" data-uid="Menu.Remix.MixedUI.UIfocusable.Deactivate*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_Deactivate" data-uid="Menu.Remix.MixedUI.UIfocusable.Deactivate">
+  Deactivate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Deactivate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_FocusMoveDisallow_" data-uid="Menu.Remix.MixedUI.UIfocusable.FocusMoveDisallow*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_FocusMoveDisallow_Menu_Remix_MixedUI_UIfocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.FocusMoveDisallow(Menu.Remix.MixedUI.UIfocusable)">
+  FocusMoveDisallow(UIfocusable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FocusMoveDisallow(UIfocusable _ = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_Freeze_" data-uid="Menu.Remix.MixedUI.UIfocusable.Freeze*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_Freeze" data-uid="Menu.Remix.MixedUI.UIfocusable.Freeze">
+  Freeze()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Freeze()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_GrafUpdate_" data-uid="Menu.Remix.MixedUI.UIfocusable.GrafUpdate*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_GrafUpdate_System_Single_" data-uid="Menu.Remix.MixedUI.UIfocusable.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_MutualHorizontalFocusableBind_" data-uid="Menu.Remix.MixedUI.UIfocusable.MutualHorizontalFocusableBind*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_MutualHorizontalFocusableBind_Menu_Remix_MixedUI_UIfocusable_Menu_Remix_MixedUI_UIfocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.MutualHorizontalFocusableBind(Menu.Remix.MixedUI.UIfocusable,Menu.Remix.MixedUI.UIfocusable)">
+  MutualHorizontalFocusableBind(UIfocusable, UIfocusable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MutualHorizontalFocusableBind(UIfocusable left, UIfocusable right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_MutualVerticalFocusableBind_" data-uid="Menu.Remix.MixedUI.UIfocusable.MutualVerticalFocusableBind*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_MutualVerticalFocusableBind_Menu_Remix_MixedUI_UIfocusable_Menu_Remix_MixedUI_UIfocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.MutualVerticalFocusableBind(Menu.Remix.MixedUI.UIfocusable,Menu.Remix.MixedUI.UIfocusable)">
+  MutualVerticalFocusableBind(UIfocusable, UIfocusable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MutualVerticalFocusableBind(UIfocusable bottom, UIfocusable top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bottom</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+    <dt><code>top</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_NonMouseSetHeld_" data-uid="Menu.Remix.MixedUI.UIfocusable.NonMouseSetHeld*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_NonMouseSetHeld_System_Boolean_" data-uid="Menu.Remix.MixedUI.UIfocusable.NonMouseSetHeld(System.Boolean)">
+  NonMouseSetHeld(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NonMouseSetHeld(bool newHeld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newHeld</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_SetNextFocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.SetNextFocusable*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_SetNextFocusable_Menu_Remix_MixedUI_UIfocusable_NextDirection_Menu_Remix_MixedUI_UIfocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.SetNextFocusable(Menu.Remix.MixedUI.UIfocusable.NextDirection,Menu.Remix.MixedUI.UIfocusable)">
+  SetNextFocusable(NextDirection, UIfocusable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextFocusable(UIfocusable.NextDirection dir, UIfocusable candidate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a>.<a class="xref" href="Menu.Remix.MixedUI.UIfocusable.NextDirection.html">NextDirection</a></dt>
+    <dd></dd>
+    <dt><code>candidate</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_SetNextFocusable_" data-uid="Menu.Remix.MixedUI.UIfocusable.SetNextFocusable*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_SetNextFocusable_Menu_Remix_MixedUI_UIfocusable___" data-uid="Menu.Remix.MixedUI.UIfocusable.SetNextFocusable(Menu.Remix.MixedUI.UIfocusable[])">
+  SetNextFocusable(params UIfocusable[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNextFocusable(params UIfocusable[] candidates)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>candidates</code> <a class="xref" href="Menu.Remix.MixedUI.UIfocusable.html">UIfocusable</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable_Update_" data-uid="Menu.Remix.MixedUI.UIfocusable.Update*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_Update" data-uid="Menu.Remix.MixedUI.UIfocusable.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable__InvokeOnFocusGet_" data-uid="Menu.Remix.MixedUI.UIfocusable._InvokeOnFocusGet*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__InvokeOnFocusGet" data-uid="Menu.Remix.MixedUI.UIfocusable._InvokeOnFocusGet">
+  _InvokeOnFocusGet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _InvokeOnFocusGet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_Remix_MixedUI_UIfocusable__InvokeOnFocusLose_" data-uid="Menu.Remix.MixedUI.UIfocusable._InvokeOnFocusLose*"></a>
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable__InvokeOnFocusLose" data-uid="Menu.Remix.MixedUI.UIfocusable._InvokeOnFocusLose">
+  _InvokeOnFocusLose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void _InvokeOnFocusLose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_OnFocusGet" data-uid="Menu.Remix.MixedUI.UIfocusable.OnFocusGet">
+  OnFocusGet
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event OnSignalHandler OnFocusGet</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.OnSignalHandler.html">OnSignalHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_OnFocusLose" data-uid="Menu.Remix.MixedUI.UIfocusable.OnFocusLose">
+  OnFocusLose
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event OnSignalHandler OnFocusLose</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.OnSignalHandler.html">OnSignalHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Menu_Remix_MixedUI_UIfocusable_OnHeld" data-uid="Menu.Remix.MixedUI.UIfocusable.OnHeld">
+  OnHeld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event OnHeldHandler OnHeld</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.Remix.MixedUI.OnHeldHandler.html">OnHeldHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu.Remix.MixedUI/UIfocusable.cs/#L5" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

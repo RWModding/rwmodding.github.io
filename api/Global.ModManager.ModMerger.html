@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModManager.ModMerger
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModManager.ModMerger
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_ModManager_ModMerger.md&amp;value=---%0Auid%3A%20Global.ModManager.ModMerger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.ModManager.ModMerger">
+
+
+
+  <h1 id="Global_ModManager_ModMerger" data-uid="Global.ModManager.ModMerger" class="text-break">
+    Class ModManager.ModMerger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L1008"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModManager.ModMerger</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ModManager.ModMerger</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_ModManager_ModMerger__ctor_" data-uid="Global.ModManager.ModMerger.#ctor*"></a>
+
+  <h3 id="Global_ModManager_ModMerger__ctor" data-uid="Global.ModManager.ModMerger.#ctor">
+  ModMerger()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModMerger()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_ModManager_ModMerger_moddedFiles" data-uid="Global.ModManager.ModMerger.moddedFiles">
+  moddedFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2099"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;ModManager.ModMerger.PendingApply&gt;&gt; moddedFiles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.ModMerger.html">ModMerger</a>.<a class="xref" href="ModManager.ModMerger.PendingApply.html">PendingApply</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ModManager_ModMerger_paletteRemapping" data-uid="Global.ModManager.ModMerger.paletteRemapping">
+  paletteRemapping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2097"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, int&gt; paletteRemapping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_ModManager_ModMerger_palettesUsedSoFar" data-uid="Global.ModManager.ModMerger.palettesUsedSoFar">
+  palettesUsedSoFar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2095"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; palettesUsedSoFar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_ModManager_ModMerger_AddPendingApply_" data-uid="Global.ModManager.ModMerger.AddPendingApply*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_AddPendingApply_ModManager_Mod_System_String_System_String_System_Boolean_System_Boolean_" data-uid="Global.ModManager.ModMerger.AddPendingApply(ModManager.Mod,System.String,System.String,System.Boolean,System.Boolean)">
+  AddPendingApply(Mod, string, string, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPendingApply(ModManager.Mod modApplyFrom, string basePath, string moddedPath, bool hasVanilla, bool isModification)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>basePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>moddedPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hasVanilla</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isModification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_DeterminePaletteConflicts_" data-uid="Global.ModManager.ModMerger.DeterminePaletteConflicts*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_DeterminePaletteConflicts_System_String_" data-uid="Global.ModManager.ModMerger.DeterminePaletteConflicts(System.String)">
+  DeterminePaletteConflicts(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeterminePaletteConflicts(string modPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_ExecutePendingMerge_" data-uid="Global.ModManager.ModMerger.ExecutePendingMerge*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_ExecutePendingMerge_ModManager_ModApplyer_" data-uid="Global.ModManager.ModMerger.ExecutePendingMerge(ModManager.ModApplyer)">
+  ExecutePendingMerge(ModApplyer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecutePendingMerge(ModManager.ModApplyer applyer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applyer</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.ModApplyer.html">ModApplyer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeConcat_" data-uid="Global.ModManager.ModMerger.MergeConcat*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeConcat_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeConcat(ModManager.Mod,System.String,System.String[])">
+  MergeConcat(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MergeConcat(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeMapFiles_" data-uid="Global.ModManager.ModMerger.MergeMapFiles*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeMapFiles_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeMapFiles(ModManager.Mod,System.String,System.String[])">
+  MergeMapFiles(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeMapFiles(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeRoomSettings_" data-uid="Global.ModManager.ModMerger.MergeRoomSettings*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeRoomSettings_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeRoomSettings(ModManager.Mod,System.String,System.String[])">
+  MergeRoomSettings(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeRoomSettings(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeShortStrings_" data-uid="Global.ModManager.ModMerger.MergeShortStrings*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeShortStrings_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeShortStrings(ModManager.Mod,System.String,System.String[])">
+  MergeShortStrings(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MergeShortStrings(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeUniqueItemsUnordered_" data-uid="Global.ModManager.ModMerger.MergeUniqueItemsUnordered*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeUniqueItemsUnordered_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeUniqueItemsUnordered(ModManager.Mod,System.String,System.String[])">
+  MergeUniqueItemsUnordered(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MergeUniqueItemsUnordered(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeUniqueLinesUnordered_" data-uid="Global.ModManager.ModMerger.MergeUniqueLinesUnordered*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeUniqueLinesUnordered_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeUniqueLinesUnordered(ModManager.Mod,System.String,System.String[])">
+  MergeUniqueLinesUnordered(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeUniqueLinesUnordered(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeWorldFiles_" data-uid="Global.ModManager.ModMerger.MergeWorldFiles*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeWorldFiles_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.MergeWorldFiles(ModManager.Mod,System.String,System.String[])">
+  MergeWorldFiles(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeWorldFiles(ModManager.Mod modApplyFrom, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modApplyFrom</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_MergeWorldMaps_" data-uid="Global.ModManager.ModMerger.MergeWorldMaps*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_MergeWorldMaps_ModManager_ModApplyer_" data-uid="Global.ModManager.ModMerger.MergeWorldMaps(ModManager.ModApplyer)">
+  MergeWorldMaps(ModApplyer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeWorldMaps(ModManager.ModApplyer applyer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applyer</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.ModApplyer.html">ModApplyer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_PopulateWorldMapImageDictionary_" data-uid="Global.ModManager.ModMerger.PopulateWorldMapImageDictionary*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_PopulateWorldMapImageDictionary_ModManager_ModApplyer_System_String_System_String_" data-uid="Global.ModManager.ModMerger.PopulateWorldMapImageDictionary(ModManager.ModApplyer,System.String,System.String)">
+  PopulateWorldMapImageDictionary(ModApplyer, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateWorldMapImageDictionary(ModManager.ModApplyer applyer, string baseDir, string worldPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applyer</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.ModApplyer.html">ModApplyer</a></dt>
+    <dd></dd>
+    <dt><code>baseDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>worldPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_UpdatePaletteLineWithConflict_" data-uid="Global.ModManager.ModMerger.UpdatePaletteLineWithConflict*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_UpdatePaletteLineWithConflict_System_String_System_String_" data-uid="Global.ModManager.ModMerger.UpdatePaletteLineWithConflict(System.String,System.String)">
+  UpdatePaletteLineWithConflict(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2930"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UpdatePaletteLineWithConflict(string lineKey, string lineValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lineKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>lineValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_ModManager_ModMerger_WriteMergedFile_" data-uid="Global.ModManager.ModMerger.WriteMergedFile*"></a>
+
+  <h3 id="Global_ModManager_ModMerger_WriteMergedFile_ModManager_Mod_System_String_System_String___" data-uid="Global.ModManager.ModMerger.WriteMergedFile(ModManager.Mod,System.String,System.String[])">
+  WriteMergedFile(Mod, string, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L2948"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteMergedFile(ModManager.Mod sourceMod, string sourcePath, string[] mergeLines)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceMod</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>sourcePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>mergeLines</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ModManager.cs/#L1008" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

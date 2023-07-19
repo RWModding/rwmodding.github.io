@@ -1,0 +1,1658 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DeerAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DeerAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_DeerAI.md&amp;value=---%0Auid%3A%20Global.DeerAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.DeerAI">
+
+
+
+  <h1 id="Global_DeerAI" data-uid="Global.DeerAI" class="text-break">
+    Class DeerAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeerAI : ArtificialIntelligence, IUseARelationshipTracker, IUseItemTracker</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></div>
+      <div><span class="xref">DeerAI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IUseARelationshipTracker.html">IUseARelationshipTracker</a></div>
+      <div><a class="xref" href="Global.IUseItemTracker.html">IUseItemTracker</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_creature">ArtificialIntelligence.creature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_modules">ArtificialIntelligence.modules</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stranded">ArtificialIntelligence.stranded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_seeThroughWalls">ArtificialIntelligence.seeThroughWalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_timeInRoom">ArtificialIntelligence.timeInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_lastRoom">ArtificialIntelligence.lastRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_pathFinder">ArtificialIntelligence.pathFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_tracker">ArtificialIntelligence.tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_noiseTracker">ArtificialIntelligence.noiseTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_obstacleTracker">ArtificialIntelligence.obstacleTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_threatTracker">ArtificialIntelligence.threatTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_preyTracker">ArtificialIntelligence.preyTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_rainTracker">ArtificialIntelligence.rainTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_denFinder">ArtificialIntelligence.denFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_agressionTracker">ArtificialIntelligence.agressionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_utilityComparer">ArtificialIntelligence.utilityComparer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_missionTracker">ArtificialIntelligence.missionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_secondaryNodeFinder">ArtificialIntelligence.secondaryNodeFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_relationshipTracker">ArtificialIntelligence.relationshipTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_itemTracker">ArtificialIntelligence.itemTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_discomfortTracker">ArtificialIntelligence.discomfortTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stuckTracker">ArtificialIntelligence.stuckTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_injuryTracker">ArtificialIntelligence.injuryTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_friendTracker">ArtificialIntelligence.friendTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_AddModule_AIModule_">ArtificialIntelligence.AddModule(AIModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_">ArtificialIntelligence.VisualContact(WorldCoordinate, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualContact(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_BodyChunk_">ArtificialIntelligence.VisualContact(BodyChunk)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_SetDestination_WorldCoordinate_">ArtificialIntelligence.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewArea_System_Boolean_">ArtificialIntelligence.NewArea(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DenPosition">ArtificialIntelligence.DenPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_StaticRelationship_AbstractCreature_">ArtificialIntelligence.StaticRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_">ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_HeardNoise_Noise_InGameNoise_">ArtificialIntelligence.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_">ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_DeerAI__ctor_" data-uid="Global.DeerAI.#ctor*"></a>
+
+  <h3 id="Global_DeerAI__ctor_AbstractCreature_World_" data-uid="Global.DeerAI.#ctor(AbstractCreature,World)">
+  DeerAI(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeerAI(AbstractCreature creature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_DeerAI_behavior" data-uid="Global.DeerAI.behavior">
+  behavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeerAI.Behavior behavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DeerAI.html">DeerAI</a>.<a class="xref" href="DeerAI.Behavior.html">Behavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_cantEatFromCoordinate" data-uid="Global.DeerAI.cantEatFromCoordinate">
+  cantEatFromCoordinate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate cantEatFromCoordinate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_closeEyesCounter" data-uid="Global.DeerAI.closeEyesCounter">
+  closeEyesCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int closeEyesCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_currentUtility" data-uid="Global.DeerAI.currentUtility">
+  currentUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float currentUtility</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_debugDestinationVisualizer" data-uid="Global.DeerAI.debugDestinationVisualizer">
+  debugDestinationVisualizer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugDestinationVisualizer debugDestinationVisualizer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DebugDestinationVisualizer.html">DebugDestinationVisualizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_deer" data-uid="Global.DeerAI.deer">
+  deer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Deer deer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Deer.html">Deer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_deerPileCounter" data-uid="Global.DeerAI.deerPileCounter">
+  deerPileCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int deerPileCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_deniedPuffballs" data-uid="Global.DeerAI.deniedPuffballs">
+  deniedPuffballs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityID&gt; deniedPuffballs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EntityID.html">EntityID</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_focusCreature" data-uid="Global.DeerAI.focusCreature">
+  focusCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation focusCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_goToPuffBall" data-uid="Global.DeerAI.goToPuffBall">
+  goToPuffBall
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemTracker.ItemRepresentation goToPuffBall</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ItemTracker.html">ItemTracker</a>.<a class="xref" href="ItemTracker.ItemRepresentation.html">ItemRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_heldPuffballNotGiven" data-uid="Global.DeerAI.heldPuffballNotGiven">
+  heldPuffballNotGiven
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int heldPuffballNotGiven</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_inRoomDestination" data-uid="Global.DeerAI.inRoomDestination">
+  inRoomDestination
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate inRoomDestination</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_kneelCounter" data-uid="Global.DeerAI.kneelCounter">
+  kneelCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int kneelCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_lastPlayerInAntlers" data-uid="Global.DeerAI.lastPlayerInAntlers">
+  lastPlayerInAntlers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lastPlayerInAntlers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_layDownAndRestCounter" data-uid="Global.DeerAI.layDownAndRestCounter">
+  layDownAndRestCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int layDownAndRestCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_minorWanderTimer" data-uid="Global.DeerAI.minorWanderTimer">
+  minorWanderTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int minorWanderTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_restPos" data-uid="Global.DeerAI.restPos">
+  restPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? restPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_restingCounter" data-uid="Global.DeerAI.restingCounter">
+  restingCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int restingCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_seriouslyStuck" data-uid="Global.DeerAI.seriouslyStuck">
+  seriouslyStuck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int seriouslyStuck</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_sporeTracker" data-uid="Global.DeerAI.sporeTracker">
+  sporeTracker
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeerAI.SporeTracker sporeTracker</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="DeerAI.html">DeerAI</a>.<a class="xref" href="DeerAI.SporeTracker.html">SporeTracker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_timeInThisRoom" data-uid="Global.DeerAI.timeInThisRoom">
+  timeInThisRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeInThisRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_tiredOfClosingEyesCounter" data-uid="Global.DeerAI.tiredOfClosingEyesCounter">
+  tiredOfClosingEyesCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int tiredOfClosingEyesCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_DeerAI_wormGrass" data-uid="Global.DeerAI.wormGrass">
+  wormGrass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WormGrass wormGrass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WormGrass.html">WormGrass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_DeerAI_AllowMovementBetweenRooms_" data-uid="Global.DeerAI.AllowMovementBetweenRooms*"></a>
+
+  <h3 id="Global_DeerAI_AllowMovementBetweenRooms" data-uid="Global.DeerAI.AllowMovementBetweenRooms">
+  AllowMovementBetweenRooms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowMovementBetweenRooms { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_sporePos_" data-uid="Global.DeerAI.sporePos*"></a>
+
+  <h3 id="Global_DeerAI_sporePos" data-uid="Global.DeerAI.sporePos">
+  sporePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? sporePos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_DeerAI_CheckRestSpot_" data-uid="Global.DeerAI.CheckRestSpot*"></a>
+
+  <h3 id="Global_DeerAI_CheckRestSpot_RWCustom_IntVector2_" data-uid="Global.DeerAI.CheckRestSpot(RWCustom.IntVector2)">
+  CheckRestSpot(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckRestSpot(IntVector2 testSpot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testSpot</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_CreateTrackerRepresentationForCreature_" data-uid="Global.DeerAI.CreateTrackerRepresentationForCreature*"></a>
+
+  <h3 id="Global_DeerAI_CreateTrackerRepresentationForCreature_AbstractCreature_" data-uid="Global.DeerAI.CreateTrackerRepresentationForCreature(AbstractCreature)">
+  CreateTrackerRepresentationForCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Tracker.CreatureRepresentation CreateTrackerRepresentationForCreature(AbstractCreature otherCreature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_CreatureSpotted_" data-uid="Global.DeerAI.CreatureSpotted*"></a>
+
+  <h3 id="Global_DeerAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_" data-uid="Global.DeerAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)">
+  CreatureSpotted(bool, CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CreatureSpotted(bool firstSpot, Tracker.CreatureRepresentation creatureRep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstSpot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>creatureRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_FindGotoPuffBall_" data-uid="Global.DeerAI.FindGotoPuffBall*"></a>
+
+  <h3 id="Global_DeerAI_FindGotoPuffBall" data-uid="Global.DeerAI.FindGotoPuffBall">
+  FindGotoPuffBall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindGotoPuffBall()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_GetWanderCoordFromXPosition_" data-uid="Global.DeerAI.GetWanderCoordFromXPosition*"></a>
+
+  <h3 id="Global_DeerAI_GetWanderCoordFromXPosition_System_Int32_" data-uid="Global.DeerAI.GetWanderCoordFromXPosition(System.Int32)">
+  GetWanderCoordFromXPosition(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L779"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate GetWanderCoordFromXPosition(int tileX)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tileX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_GoodInRoomDest_" data-uid="Global.DeerAI.GoodInRoomDest*"></a>
+
+  <h3 id="Global_DeerAI_GoodInRoomDest_WorldCoordinate_" data-uid="Global.DeerAI.GoodInRoomDest(WorldCoordinate)">
+  GoodInRoomDest(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GoodInRoomDest(WorldCoordinate rndm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rndm</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_IdleRoomWanderGoal_" data-uid="Global.DeerAI.IdleRoomWanderGoal*"></a>
+
+  <h3 id="Global_DeerAI_IdleRoomWanderGoal" data-uid="Global.DeerAI.IdleRoomWanderGoal">
+  IdleRoomWanderGoal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate IdleRoomWanderGoal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_LegalInRoomDest_" data-uid="Global.DeerAI.LegalInRoomDest*"></a>
+
+  <h3 id="Global_DeerAI_LegalInRoomDest_WorldCoordinate_" data-uid="Global.DeerAI.LegalInRoomDest(WorldCoordinate)">
+  LegalInRoomDest(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LegalInRoomDest(WorldCoordinate rndm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rndm</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_NewRoom_" data-uid="Global.DeerAI.NewRoom*"></a>
+
+  <h3 id="Global_DeerAI_NewRoom_Room_" data-uid="Global.DeerAI.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_PuffBallLegal_" data-uid="Global.DeerAI.PuffBallLegal*"></a>
+
+  <h3 id="Global_DeerAI_PuffBallLegal_ItemTracker_ItemRepresentation_" data-uid="Global.DeerAI.PuffBallLegal(ItemTracker.ItemRepresentation)">
+  PuffBallLegal(ItemRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PuffBallLegal(ItemTracker.ItemRepresentation itemRep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemRep</code> <a class="xref" href="ItemTracker.html">ItemTracker</a>.<a class="xref" href="ItemTracker.ItemRepresentation.html">ItemRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_SeeThrownWeapon_" data-uid="Global.DeerAI.SeeThrownWeapon*"></a>
+
+  <h3 id="Global_DeerAI_SeeThrownWeapon_PhysicalObject_Creature_" data-uid="Global.DeerAI.SeeThrownWeapon(PhysicalObject,Creature)">
+  SeeThrownWeapon(PhysicalObject, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeeThrownWeapon(PhysicalObject obj, Creature thrower)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>thrower</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_TrackItem_" data-uid="Global.DeerAI.TrackItem*"></a>
+
+  <h3 id="Global_DeerAI_TrackItem_AbstractPhysicalObject_" data-uid="Global.DeerAI.TrackItem(AbstractPhysicalObject)">
+  TrackItem(AbstractPhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrackItem(AbstractPhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_TravelPreference_" data-uid="Global.DeerAI.TravelPreference*"></a>
+
+  <h3 id="Global_DeerAI_TravelPreference_MovementConnection_PathCost_" data-uid="Global.DeerAI.TravelPreference(MovementConnection,PathCost)">
+  TravelPreference(MovementConnection, PathCost)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override PathCost TravelPreference(MovementConnection connection, PathCost cost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+    <dt><code>cost</code> <a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_Update_" data-uid="Global.DeerAI.Update*"></a>
+
+  <h3 id="Global_DeerAI_Update" data-uid="Global.DeerAI.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_VisualScore_" data-uid="Global.DeerAI.VisualScore*"></a>
+
+  <h3 id="Global_DeerAI_VisualScore_UnityEngine_Vector2_System_Single_" data-uid="Global.DeerAI.VisualScore(UnityEngine.Vector2,System.Single)">
+  VisualScore(Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float VisualScore(Vector2 lookAtPoint, float targetSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lookAtPoint</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>targetSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_WantToStayInDenUntilEndOfCycle_" data-uid="Global.DeerAI.WantToStayInDenUntilEndOfCycle*"></a>
+
+  <h3 id="Global_DeerAI_WantToStayInDenUntilEndOfCycle" data-uid="Global.DeerAI.WantToStayInDenUntilEndOfCycle">
+  WantToStayInDenUntilEndOfCycle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool WantToStayInDenUntilEndOfCycle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_DeerAI_WormGrassUnderPos_" data-uid="Global.DeerAI.WormGrassUnderPos*"></a>
+
+  <h3 id="Global_DeerAI_WormGrassUnderPos_RWCustom_IntVector2_" data-uid="Global.DeerAI.WormGrassUnderPos(RWCustom.IntVector2)">
+  WormGrassUnderPos(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WormGrassUnderPos(IntVector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/DeerAI.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

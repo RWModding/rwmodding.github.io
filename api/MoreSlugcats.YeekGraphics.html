@@ -1,0 +1,2516 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YeekGraphics
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YeekGraphics
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=MoreSlugcats_YeekGraphics.md&amp;value=---%0Auid%3A%20MoreSlugcats.YeekGraphics%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MoreSlugcats.YeekGraphics">
+
+
+
+  <h1 id="MoreSlugcats_YeekGraphics" data-uid="MoreSlugcats.YeekGraphics" class="text-break">
+    Class YeekGraphics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MoreSlugcats.html">MoreSlugcats</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class YeekGraphics : GraphicsModule, IDrawable, ILookingAtCreatures</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.GraphicsModule.html">GraphicsModule</a></div>
+      <div><span class="xref">YeekGraphics</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+      <div><a class="xref" href="Global.ILookingAtCreatures.html">ILookingAtCreatures</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_internalContainerObjects">GraphicsModule.internalContainerObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_bodyParts">GraphicsModule.bodyParts</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_DEBUGLABELS">GraphicsModule.DEBUGLABELS</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_culled">GraphicsModule.culled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_lastCulled">GraphicsModule.lastCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_dispose">GraphicsModule.dispose</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_cullRange">GraphicsModule.cullRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_owner">GraphicsModule.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ShouldBeCulled">GraphicsModule.ShouldBeCulled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_">GraphicsModule.SuckedIntoShortCut(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_Reset">GraphicsModule.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_">GraphicsModule.PushOutOf(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_">GraphicsModule.AddObjectToInternalContainer(IDrawable, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseAllInternallyContainedSprites">GraphicsModule.ReleaseAllInternallyContainedSprites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_">GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_BringSpritesToFront">GraphicsModule.BringSpritesToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.GraphicsModule.html#Global_GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_">GraphicsModule.HypothermiaColorBlend(Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MoreSlugcats_YeekGraphics__ctor_" data-uid="MoreSlugcats.YeekGraphics.#ctor*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics__ctor_PhysicalObject_" data-uid="MoreSlugcats.YeekGraphics.#ctor(PhysicalObject)">
+  YeekGraphics(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public YeekGraphics(PhysicalObject ow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ow</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_HeadfurColor" data-uid="MoreSlugcats.YeekGraphics.HeadfurColor">
+  HeadfurColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color HeadfurColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_beakColor" data-uid="MoreSlugcats.YeekGraphics.beakColor">
+  beakColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color beakColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_blackColor" data-uid="MoreSlugcats.YeekGraphics.blackColor">
+  blackColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color blackColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_blinkPercent" data-uid="MoreSlugcats.YeekGraphics.blinkPercent">
+  blinkPercent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float blinkPercent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_blinkStartCounter" data-uid="MoreSlugcats.YeekGraphics.blinkStartCounter">
+  blinkStartCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int blinkStartCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_bodyFeathers" data-uid="MoreSlugcats.YeekGraphics.bodyFeathers">
+  bodyFeathers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;YeekGraphics.YeekFeather&gt; bodyFeathers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoreSlugcats.YeekGraphics.html">YeekGraphics</a>.<a class="xref" href="MoreSlugcats.YeekGraphics.YeekFeather.html">YeekFeather</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_climbingFoot" data-uid="MoreSlugcats.YeekGraphics.climbingFoot">
+  climbingFoot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int climbingFoot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_climbingModeGraphicsClean" data-uid="MoreSlugcats.YeekGraphics.climbingModeGraphicsClean">
+  climbingModeGraphicsClean
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool climbingModeGraphicsClean</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_creatureLooker" data-uid="MoreSlugcats.YeekGraphics.creatureLooker">
+  creatureLooker
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureLooker creatureLooker</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CreatureLooker.html">CreatureLooker</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_darkness" data-uid="MoreSlugcats.YeekGraphics.darkness">
+  darkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float darkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_debugPos" data-uid="MoreSlugcats.YeekGraphics.debugPos">
+  debugPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 debugPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_eyeColor" data-uid="MoreSlugcats.YeekGraphics.eyeColor">
+  eyeColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color eyeColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_eyeShudder" data-uid="MoreSlugcats.YeekGraphics.eyeShudder">
+  eyeShudder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float eyeShudder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_fearLookLoc" data-uid="MoreSlugcats.YeekGraphics.fearLookLoc">
+  fearLookLoc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 fearLookLoc</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_featherColor" data-uid="MoreSlugcats.YeekGraphics.featherColor">
+  featherColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color featherColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_flip" data-uid="MoreSlugcats.YeekGraphics.flip">
+  flip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float flip</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_footBoundingBox" data-uid="MoreSlugcats.YeekGraphics.footBoundingBox">
+  footBoundingBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect footBoundingBox</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_furColor" data-uid="MoreSlugcats.YeekGraphics.furColor">
+  furColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color furColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_goodBodyClimbPos" data-uid="MoreSlugcats.YeekGraphics.goodBodyClimbPos">
+  goodBodyClimbPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 goodBodyClimbPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_head" data-uid="MoreSlugcats.YeekGraphics.head">
+  head
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericBodyPart head</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.GenericBodyPart.html">GenericBodyPart</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_lastDarkness" data-uid="MoreSlugcats.YeekGraphics.lastDarkness">
+  lastDarkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastDarkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_lastFlip" data-uid="MoreSlugcats.YeekGraphics.lastFlip">
+  lastFlip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastFlip</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_leftFootClimbGoalPos" data-uid="MoreSlugcats.YeekGraphics.leftFootClimbGoalPos">
+  leftFootClimbGoalPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 leftFootClimbGoalPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_leftFootClimbPos" data-uid="MoreSlugcats.YeekGraphics.leftFootClimbPos">
+  leftFootClimbPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 leftFootClimbPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_moreBlinks" data-uid="MoreSlugcats.YeekGraphics.moreBlinks">
+  moreBlinks
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int moreBlinks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_plumageGraphic" data-uid="MoreSlugcats.YeekGraphics.plumageGraphic">
+  plumageGraphic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int plumageGraphic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_previousClimbingMode" data-uid="MoreSlugcats.YeekGraphics.previousClimbingMode">
+  previousClimbingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool previousClimbingMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_previousTunnelMode" data-uid="MoreSlugcats.YeekGraphics.previousTunnelMode">
+  previousTunnelMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool previousTunnelMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_rightFootClimbGoalPos" data-uid="MoreSlugcats.YeekGraphics.rightFootClimbGoalPos">
+  rightFootClimbGoalPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 rightFootClimbGoalPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_rightFootClimbPos" data-uid="MoreSlugcats.YeekGraphics.rightFootClimbPos">
+  rightFootClimbPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 rightFootClimbPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_swimCounter" data-uid="MoreSlugcats.YeekGraphics.swimCounter">
+  swimCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float swimCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_tail" data-uid="MoreSlugcats.YeekGraphics.tail">
+  tail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericBodyPart tail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.GenericBodyPart.html">GenericBodyPart</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_tailHighlightColor" data-uid="MoreSlugcats.YeekGraphics.tailHighlightColor">
+  tailHighlightColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color tailHighlightColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_trueEyeColor" data-uid="MoreSlugcats.YeekGraphics.trueEyeColor">
+  trueEyeColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color trueEyeColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_YeekGraphics_watchIntensity" data-uid="MoreSlugcats.YeekGraphics.watchIntensity">
+  watchIntensity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float watchIntensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MoreSlugcats_YeekGraphics_BodyFeatherCount_" data-uid="MoreSlugcats.YeekGraphics.BodyFeatherCount*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_BodyFeatherCount" data-uid="MoreSlugcats.YeekGraphics.BodyFeatherCount">
+  BodyFeatherCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodyFeatherCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_BodySpritesLength_" data-uid="MoreSlugcats.YeekGraphics.BodySpritesLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_BodySpritesLength" data-uid="MoreSlugcats.YeekGraphics.BodySpritesLength">
+  BodySpritesLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodySpritesLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_BodySpritesStart_" data-uid="MoreSlugcats.YeekGraphics.BodySpritesStart*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_BodySpritesStart" data-uid="MoreSlugcats.YeekGraphics.BodySpritesStart">
+  BodySpritesStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodySpritesStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_CanAdvanceClimb_" data-uid="MoreSlugcats.YeekGraphics.CanAdvanceClimb*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_CanAdvanceClimb" data-uid="MoreSlugcats.YeekGraphics.CanAdvanceClimb">
+  CanAdvanceClimb
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAdvanceClimb { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_DrawHeadInClimbingMode_" data-uid="MoreSlugcats.YeekGraphics.DrawHeadInClimbingMode*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_DrawHeadInClimbingMode" data-uid="MoreSlugcats.YeekGraphics.DrawHeadInClimbingMode">
+  DrawHeadInClimbingMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DrawHeadInClimbingMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_FeatherSpritesLength_" data-uid="MoreSlugcats.YeekGraphics.FeatherSpritesLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_FeatherSpritesLength" data-uid="MoreSlugcats.YeekGraphics.FeatherSpritesLength">
+  FeatherSpritesLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FeatherSpritesLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_FeatherSpritesStart_" data-uid="MoreSlugcats.YeekGraphics.FeatherSpritesStart*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_FeatherSpritesStart" data-uid="MoreSlugcats.YeekGraphics.FeatherSpritesStart">
+  FeatherSpritesStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FeatherSpritesStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_HeadSpritesLength_" data-uid="MoreSlugcats.YeekGraphics.HeadSpritesLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_HeadSpritesLength" data-uid="MoreSlugcats.YeekGraphics.HeadSpritesLength">
+  HeadSpritesLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeadSpritesLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_HeadSpritesStart_" data-uid="MoreSlugcats.YeekGraphics.HeadSpritesStart*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_HeadSpritesStart" data-uid="MoreSlugcats.YeekGraphics.HeadSpritesStart">
+  HeadSpritesStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeadSpritesStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_LegSpritesLength_" data-uid="MoreSlugcats.YeekGraphics.LegSpritesLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_LegSpritesLength" data-uid="MoreSlugcats.YeekGraphics.LegSpritesLength">
+  LegSpritesLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LegSpritesLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_LegSpritesStart_" data-uid="MoreSlugcats.YeekGraphics.LegSpritesStart*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_LegSpritesStart" data-uid="MoreSlugcats.YeekGraphics.LegSpritesStart">
+  LegSpritesStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LegSpritesStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_SecondTailLength_" data-uid="MoreSlugcats.YeekGraphics.SecondTailLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_SecondTailLength" data-uid="MoreSlugcats.YeekGraphics.SecondTailLength">
+  SecondTailLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SecondTailLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_SecondTailStart_" data-uid="MoreSlugcats.YeekGraphics.SecondTailStart*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_SecondTailStart" data-uid="MoreSlugcats.YeekGraphics.SecondTailStart">
+  SecondTailStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SecondTailStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_SpritesTotalLength_" data-uid="MoreSlugcats.YeekGraphics.SpritesTotalLength*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_SpritesTotalLength" data-uid="MoreSlugcats.YeekGraphics.SpritesTotalLength">
+  SpritesTotalLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpritesTotalLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_TailGraphSegments_" data-uid="MoreSlugcats.YeekGraphics.TailGraphSegments*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_TailGraphSegments" data-uid="MoreSlugcats.YeekGraphics.TailGraphSegments">
+  TailGraphSegments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TailGraphSegments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_TotGraphSegments_" data-uid="MoreSlugcats.YeekGraphics.TotGraphSegments*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_TotGraphSegments" data-uid="MoreSlugcats.YeekGraphics.TotGraphSegments">
+  TotGraphSegments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotGraphSegments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_myYeek_" data-uid="MoreSlugcats.YeekGraphics.myYeek*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_myYeek" data-uid="MoreSlugcats.YeekGraphics.myYeek">
+  myYeek
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Yeek myYeek { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.Yeek.html">Yeek</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MoreSlugcats_YeekGraphics_AddToContainer_" data-uid="MoreSlugcats.YeekGraphics.AddToContainer*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="MoreSlugcats.YeekGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L794"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_AdvanceClimb_" data-uid="MoreSlugcats.YeekGraphics.AdvanceClimb*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_AdvanceClimb" data-uid="MoreSlugcats.YeekGraphics.AdvanceClimb">
+  AdvanceClimb()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L842"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceClimb()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_ApplyPalette_" data-uid="MoreSlugcats.YeekGraphics.ApplyPalette*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="MoreSlugcats.YeekGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_ApplyPaletteLeg_" data-uid="MoreSlugcats.YeekGraphics.ApplyPaletteLeg*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_ApplyPaletteLeg_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_System_Int32_" data-uid="MoreSlugcats.YeekGraphics.ApplyPaletteLeg(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette,System.Int32)">
+  ApplyPaletteLeg(SpriteLeaser, RoomCamera, RoomPalette, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPaletteLeg(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette, int startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_ClampLegGoalsToBoundingRect_" data-uid="MoreSlugcats.YeekGraphics.ClampLegGoalsToBoundingRect*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_ClampLegGoalsToBoundingRect" data-uid="MoreSlugcats.YeekGraphics.ClampLegGoalsToBoundingRect">
+  ClampLegGoalsToBoundingRect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L863"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClampLegGoalsToBoundingRect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_CreateCosmeticAppearance_" data-uid="MoreSlugcats.YeekGraphics.CreateCosmeticAppearance*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_CreateCosmeticAppearance" data-uid="MoreSlugcats.YeekGraphics.CreateCosmeticAppearance">
+  CreateCosmeticAppearance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L899"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateCosmeticAppearance()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_CreatureInterestBonus_" data-uid="MoreSlugcats.YeekGraphics.CreatureInterestBonus*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_" data-uid="MoreSlugcats.YeekGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)">
+  CreatureInterestBonus(CreatureRepresentation, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CreatureInterestBonus(Tracker.CreatureRepresentation crit, float score)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_DrawLegs_" data-uid="MoreSlugcats.YeekGraphics.DrawLegs*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_DrawLegs_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_System_Int32_UnityEngine_Vector2_System_Boolean_System_Single_" data-uid="MoreSlugcats.YeekGraphics.DrawLegs(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2,System.Int32,UnityEngine.Vector2,System.Boolean,System.Single)">
+  DrawLegs(SpriteLeaser, RoomCamera, float, Vector2, int, Vector2, bool, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L675"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLegs(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos, int startIndex, Vector2 hipPos, bool leftLeg, float orientationDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hipPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>leftLeg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>orientationDir</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_DrawSprites_" data-uid="MoreSlugcats.YeekGraphics.DrawSprites*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="MoreSlugcats.YeekGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_EyeShaker_" data-uid="MoreSlugcats.YeekGraphics.EyeShaker*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_EyeShaker" data-uid="MoreSlugcats.YeekGraphics.EyeShaker">
+  EyeShaker()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L951"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EyeShaker()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_EyeShakerScale_" data-uid="MoreSlugcats.YeekGraphics.EyeShakerScale*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_EyeShakerScale" data-uid="MoreSlugcats.YeekGraphics.EyeShakerScale">
+  EyeShakerScale()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L956"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EyeShakerScale()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_ForcedLookCreature_" data-uid="MoreSlugcats.YeekGraphics.ForcedLookCreature*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_ForcedLookCreature" data-uid="MoreSlugcats.YeekGraphics.ForcedLookCreature">
+  ForcedLookCreature()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation ForcedLookCreature()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_GraphSegmentPos_" data-uid="MoreSlugcats.YeekGraphics.GraphSegmentPos*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_GraphSegmentPos_System_Int32_System_Single_System_Boolean_" data-uid="MoreSlugcats.YeekGraphics.GraphSegmentPos(System.Int32,System.Single,System.Boolean)">
+  GraphSegmentPos(int, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GraphSegmentPos(int i, float timeStacker, bool secondary)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>secondary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_GraphSegmentRad_" data-uid="MoreSlugcats.YeekGraphics.GraphSegmentRad*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_GraphSegmentRad_System_Int32_" data-uid="MoreSlugcats.YeekGraphics.GraphSegmentRad(System.Int32)">
+  GraphSegmentRad(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GraphSegmentRad(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_InitiateSprites_" data-uid="MoreSlugcats.YeekGraphics.InitiateSprites*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="MoreSlugcats.YeekGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_InititateLeg_" data-uid="MoreSlugcats.YeekGraphics.InititateLeg*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_InititateLeg_RoomCamera_SpriteLeaser_RoomCamera_System_Int32_" data-uid="MoreSlugcats.YeekGraphics.InititateLeg(RoomCamera.SpriteLeaser,RoomCamera,System.Int32)">
+  InititateLeg(SpriteLeaser, RoomCamera, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InititateLeg(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, int startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_LookAtNothing_" data-uid="MoreSlugcats.YeekGraphics.LookAtNothing*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_LookAtNothing" data-uid="MoreSlugcats.YeekGraphics.LookAtNothing">
+  LookAtNothing()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LookAtNothing()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_Update_" data-uid="MoreSlugcats.YeekGraphics.Update*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_Update" data-uid="MoreSlugcats.YeekGraphics.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_UpdateFootBoundingBox_" data-uid="MoreSlugcats.YeekGraphics.UpdateFootBoundingBox*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_UpdateFootBoundingBox_System_Single_System_Single_System_Single_System_Single_" data-uid="MoreSlugcats.YeekGraphics.UpdateFootBoundingBox(System.Single,System.Single,System.Single,System.Single)">
+  UpdateFootBoundingBox(float, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFootBoundingBox(float left, float top, float bottom, float right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>bottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_YeekGraphics_startClimbing_" data-uid="MoreSlugcats.YeekGraphics.startClimbing*"></a>
+
+  <h3 id="MoreSlugcats_YeekGraphics_startClimbing_UnityEngine_Vector2_" data-uid="MoreSlugcats.YeekGraphics.startClimbing(UnityEngine.Vector2)">
+  startClimbing(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L831"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void startClimbing(Vector2 Pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/YeekGraphics.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

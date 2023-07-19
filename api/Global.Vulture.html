@@ -1,0 +1,3206 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Vulture
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Vulture
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_Vulture.md&amp;value=---%0Auid%3A%20Global.Vulture%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Vulture">
+
+
+
+  <h1 id="Global_Vulture" data-uid="Global.Vulture" class="text-break">
+    Class Vulture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Vulture : AirBreatherCreature, IFlyingCreature, PhysicalObject.IHaveAppendages</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><a class="xref" href="Global.AirBreatherCreature.html">AirBreatherCreature</a></div>
+      <div><span class="xref">Vulture</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IFlyingCreature.html">IFlyingCreature</a></div>
+      <div><a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.IHaveAppendages.html">IHaveAppendages</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.AirBreatherCreature.html#Global_AirBreatherCreature_lungs">AirBreatherCreature.lungs</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_blind">Creature.blind</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_deaf">Creature.deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTag">Creature.killTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTagCounter">Creature.killTagCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_leechedOut">Creature.leechedOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_newToRoomInvinsibility">Creature.newToRoomInvinsibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_rainDeath">Creature.rainDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortcutDelay">Creature.shortcutDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_enteringShortCut">Creature.enteringShortCut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortCutRadAdd">Creature.shortCutRadAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NPCTransportationDestination">Creature.NPCTransportationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastCoord">Creature.lastCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContact">Creature.lavaContact</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContactCount">Creature.lavaContactCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedByDaddyCorruption">Creature.GrabbedByDaddyCorruption</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stunDamageType">Creature.stunDamageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaGain">Creature.HypothermiaGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaExposure">Creature.HypothermiaExposure</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaStunDelayCounter">Creature.HypothermiaStunDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithoutDiagonals">Creature.inputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithoutDiagonals">Creature.lastInputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithDiagonals">Creature.inputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithDiagonals">Creature.lastInputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_freezeControls">Creature.freezeControls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_protectDeathRecursionFlag">Creature.protectDeathRecursionFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stun">Creature.stun</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stunned">Creature.Stunned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blinded">Creature.Blinded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deaf">Creature.Deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunkIndex">Creature.mainBodyChunkIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunk">Creature.mainBodyChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_dead">Creature.dead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Consious">Creature.Consious</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inShortcut">Creature.inShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_grasps">Creature.grasps</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_abstractCreature">Creature.abstractCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Template">Creature.Template</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_State">Creature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_coord">Creature.coord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_safariControlled">Creature.safariControlled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Hypothermia">Creature.Hypothermia</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_WormGrassGooduckyImmune">Creature.WormGrassGooduckyImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_RecreateSticksFromAbstract">Creature.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NewTile">Creature.NewTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SetKillTag_AbstractCreature_">Creature.SetKillTag(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blind_System_Int32_">Creature.Blind(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deafen_System_Int32_">Creature.Deafen(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_">Creature.SuckedIntoShortCut(IntVector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyIntoRoom_WorldCoordinate_Room_">Creature.FlyIntoRoom(WorldCoordinate, Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyAwayFromRoom_System_Boolean_">Creature.FlyAwayFromRoom(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Abstractize">Creature.Abstractize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_LoseAllGrasps">Creature.LoseAllGrasps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_BodyPartByIndex_System_Int32_">Creature.BodyPartByIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseGrasp_System_Int32_">Creature.ReleaseGrasp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SwitchGrasps_System_Int32_System_Int32_">Creature.SwitchGrasps(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_UpdateGraspIndexes">Creature.UpdateGraspIndexes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_CanBeGrabbed_Creature_">Creature.CanBeGrabbed(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_">Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_">Creature.GrabbedObjectSnatched(PhysicalObject, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">Creature.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HeardNoise_Noise_InGameNoise_">Creature.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ToString">Creature.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_">Creature.ReleaseDoorForbiddenCreatures(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_">Creature.AllowableControlledAIOverride(MovementConnection.MovementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaUpdate">Creature.HypothermiaUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_">Creature.HypothermiaBodyContactWarmup(Creature, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SafariControlInputUpdate_System_Int32_">Creature.SafariControlInputUpdate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Vulture__ctor_" data-uid="Global.Vulture.#ctor*"></a>
+
+  <h3 id="Global_Vulture__ctor_AbstractCreature_World_" data-uid="Global.Vulture.#ctor(AbstractCreature,World)">
+  Vulture(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vulture(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Vulture_AI" data-uid="Global.Vulture.AI">
+  AI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VultureAI AI</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.VultureAI.html">VultureAI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_LaserLight" data-uid="Global.Vulture.LaserLight">
+  LaserLight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightSource LaserLight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.LightSource.html">LightSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_cantFindNewGripCounter" data-uid="Global.Vulture.cantFindNewGripCounter">
+  cantFindNewGripCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int cantFindNewGripCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_controlledJawSnap" data-uid="Global.Vulture.controlledJawSnap">
+  controlledJawSnap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool controlledJawSnap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_dontSwitchModesCounter" data-uid="Global.Vulture.dontSwitchModesCounter">
+  dontSwitchModesCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int dontSwitchModesCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_drown" data-uid="Global.Vulture.drown">
+  drown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float drown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_hangingInTentacle" data-uid="Global.Vulture.hangingInTentacle">
+  hangingInTentacle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hangingInTentacle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_hoverPos" data-uid="Global.Vulture.hoverPos">
+  hoverPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2 hoverPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_hoverStill" data-uid="Global.Vulture.hoverStill">
+  hoverStill
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hoverStill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jawKeepOpenPause" data-uid="Global.Vulture.jawKeepOpenPause">
+  jawKeepOpenPause
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int jawKeepOpenPause</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jawOpen" data-uid="Global.Vulture.jawOpen">
+  jawOpen
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jawOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jawSlamPause" data-uid="Global.Vulture.jawSlamPause">
+  jawSlamPause
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int jawSlamPause</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jawVel" data-uid="Global.Vulture.jawVel">
+  jawVel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jawVel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jetSound" data-uid="Global.Vulture.jetSound">
+  jetSound
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChunkSoundEmitter jetSound</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.ChunkSoundEmitter.html">ChunkSoundEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_jf" data-uid="Global.Vulture.jf">
+  jf
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_keepJawOpenPos" data-uid="Global.Vulture.keepJawOpenPos">
+  keepJawOpenPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float keepJawOpenPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_kingTusks" data-uid="Global.Vulture.kingTusks">
+  kingTusks
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KingTusks kingTusks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.KingTusks.html">KingTusks</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_landingBrake" data-uid="Global.Vulture.landingBrake">
+  landingBrake
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int landingBrake</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_landingBrakePos" data-uid="Global.Vulture.landingBrakePos">
+  landingBrakePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 landingBrakePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_laserCounter" data-uid="Global.Vulture.laserCounter">
+  laserCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int laserCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_lastConnection" data-uid="Global.Vulture.lastConnection">
+  lastConnection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection lastConnection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_lastHoverStill" data-uid="Global.Vulture.lastHoverStill">
+  lastHoverStill
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lastHoverStill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_lastJawOpen" data-uid="Global.Vulture.lastJawOpen">
+  lastJawOpen
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastJawOpen</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_mouseTilePos" data-uid="Global.Vulture.mouseTilePos">
+  mouseTilePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2 mouseTilePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_moveDirection" data-uid="Global.Vulture.moveDirection">
+  moveDirection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 moveDirection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_neck" data-uid="Global.Vulture.neck">
+  neck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tentacle neck</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Tentacle.html">Tentacle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_releaseGrippingTentacle" data-uid="Global.Vulture.releaseGrippingTentacle">
+  releaseGrippingTentacle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int releaseGrippingTentacle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_snapAt" data-uid="Global.Vulture.snapAt">
+  snapAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk snapAt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_snapAtPos" data-uid="Global.Vulture.snapAtPos">
+  snapAtPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 snapAtPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_snapFrames" data-uid="Global.Vulture.snapFrames">
+  snapFrames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int snapFrames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_stuck" data-uid="Global.Vulture.stuck">
+  stuck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int stuck</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_stuckShake" data-uid="Global.Vulture.stuckShake">
+  stuckShake
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int stuckShake</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_stuckShakeDuration" data-uid="Global.Vulture.stuckShakeDuration">
+  stuckShakeDuration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int stuckShakeDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_temporarilyAllowInForbiddenTiles" data-uid="Global.Vulture.temporarilyAllowInForbiddenTiles">
+  temporarilyAllowInForbiddenTiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool temporarilyAllowInForbiddenTiles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_tentacles" data-uid="Global.Vulture.tentacles">
+  tentacles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VultureTentacle[] tentacles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VultureTentacle.html">VultureTentacle</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_thrusters" data-uid="Global.Vulture.thrusters">
+  thrusters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vulture.VultureThruster[] thrusters</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vulture.VultureThruster.html">VultureThruster</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_timeSinceLastTakeoff" data-uid="Global.Vulture.timeSinceLastTakeoff">
+  timeSinceLastTakeoff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeSinceLastTakeoff</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_tuskCharge" data-uid="Global.Vulture.tuskCharge">
+  tuskCharge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float tuskCharge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_tuskChargeSound" data-uid="Global.Vulture.tuskChargeSound">
+  tuskChargeSound
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChunkSoundEmitter tuskChargeSound</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.ChunkSoundEmitter.html">ChunkSoundEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_wingFlap" data-uid="Global.Vulture.wingFlap">
+  wingFlap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingFlap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Vulture_wingFlapAmplitude" data-uid="Global.Vulture.wingFlapAmplitude">
+  wingFlapAmplitude
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wingFlapAmplitude</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Vulture_AirBorne_" data-uid="Global.Vulture.AirBorne*"></a>
+
+  <h3 id="Global_Vulture_AirBorne" data-uid="Global.Vulture.AirBorne">
+  AirBorne
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AirBorne { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_ChargingSnap_" data-uid="Global.Vulture.ChargingSnap*"></a>
+
+  <h3 id="Global_Vulture_ChargingSnap" data-uid="Global.Vulture.ChargingSnap">
+  ChargingSnap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ChargingSnap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_DangerPos_" data-uid="Global.Vulture.DangerPos*"></a>
+
+  <h3 id="Global_Vulture_DangerPos" data-uid="Global.Vulture.DangerPos">
+  DangerPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 DangerPos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_IsKing_" data-uid="Global.Vulture.IsKing*"></a>
+
+  <h3 id="Global_Vulture_IsKing" data-uid="Global.Vulture.IsKing">
+  IsKing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKing { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_IsMiros_" data-uid="Global.Vulture.IsMiros*"></a>
+
+  <h3 id="Global_Vulture_IsMiros" data-uid="Global.Vulture.IsMiros">
+  IsMiros
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMiros { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_MostlyConsious_" data-uid="Global.Vulture.MostlyConsious*"></a>
+
+  <h3 id="Global_Vulture_MostlyConsious" data-uid="Global.Vulture.MostlyConsious">
+  MostlyConsious
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MostlyConsious { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Snapping_" data-uid="Global.Vulture.Snapping*"></a>
+
+  <h3 id="Global_Vulture_Snapping" data-uid="Global.Vulture.Snapping">
+  Snapping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Snapping { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_TusksStuck_" data-uid="Global.Vulture.TusksStuck*"></a>
+
+  <h3 id="Global_Vulture_TusksStuck" data-uid="Global.Vulture.TusksStuck">
+  TusksStuck
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TusksStuck { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_VisionPoint_" data-uid="Global.Vulture.VisionPoint*"></a>
+
+  <h3 id="Global_Vulture_VisionPoint" data-uid="Global.Vulture.VisionPoint">
+  VisionPoint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 VisionPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_jetFuel_" data-uid="Global.Vulture.jetFuel*"></a>
+
+  <h3 id="Global_Vulture_jetFuel" data-uid="Global.Vulture.jetFuel">
+  jetFuel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jetFuel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Vulture_AccessSkyGate_" data-uid="Global.Vulture.AccessSkyGate*"></a>
+
+  <h3 id="Global_Vulture_AccessSkyGate_WorldCoordinate_WorldCoordinate_" data-uid="Global.Vulture.AccessSkyGate(WorldCoordinate,WorldCoordinate)">
+  AccessSkyGate(WorldCoordinate, WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AccessSkyGate(WorldCoordinate start, WorldCoordinate dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Act_" data-uid="Global.Vulture.Act*"></a>
+
+  <h3 id="Global_Vulture_Act_System_Boolean_" data-uid="Global.Vulture.Act(System.Boolean)">
+  Act(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Act(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_AirBrake_" data-uid="Global.Vulture.AirBrake*"></a>
+
+  <h3 id="Global_Vulture_AirBrake_System_Int32_" data-uid="Global.Vulture.AirBrake(System.Int32)">
+  AirBrake(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AirBrake(int frames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_AppendagePosition_" data-uid="Global.Vulture.AppendagePosition*"></a>
+
+  <h3 id="Global_Vulture_AppendagePosition_System_Int32_System_Int32_" data-uid="Global.Vulture.AppendagePosition(System.Int32,System.Int32)">
+  AppendagePosition(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 AppendagePosition(int appendage, int segment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appendage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>segment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_ApplyForceOnAppendage_" data-uid="Global.Vulture.ApplyForceOnAppendage*"></a>
+
+  <h3 id="Global_Vulture_ApplyForceOnAppendage_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_" data-uid="Global.Vulture.ApplyForceOnAppendage(PhysicalObject.Appendage.Pos,UnityEngine.Vector2)">
+  ApplyForceOnAppendage(Pos, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1738"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyForceOnAppendage(PhysicalObject.Appendage.Pos pos, Vector2 momentum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>momentum</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Carry_" data-uid="Global.Vulture.Carry*"></a>
+
+  <h3 id="Global_Vulture_Carry" data-uid="Global.Vulture.Carry">
+  Carry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Carry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_CheckFlip_" data-uid="Global.Vulture.CheckFlip*"></a>
+
+  <h3 id="Global_Vulture_CheckFlip" data-uid="Global.Vulture.CheckFlip">
+  CheckFlip()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckFlip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_CheckTentacleModeAnd_" data-uid="Global.Vulture.CheckTentacleModeAnd*"></a>
+
+  <h3 id="Global_Vulture_CheckTentacleModeAnd_VultureTentacle_Mode_" data-uid="Global.Vulture.CheckTentacleModeAnd(VultureTentacle.Mode)">
+  CheckTentacleModeAnd(Mode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckTentacleModeAnd(VultureTentacle.Mode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="VultureTentacle.html">VultureTentacle</a>.<a class="xref" href="VultureTentacle.Mode.html">Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_CheckTentacleModeOr_" data-uid="Global.Vulture.CheckTentacleModeOr*"></a>
+
+  <h3 id="Global_Vulture_CheckTentacleModeOr_VultureTentacle_Mode_" data-uid="Global.Vulture.CheckTentacleModeOr(VultureTentacle.Mode)">
+  CheckTentacleModeOr(Mode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckTentacleModeOr(VultureTentacle.Mode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="VultureTentacle.html">VultureTentacle</a>.<a class="xref" href="VultureTentacle.Mode.html">Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Collide_" data-uid="Global.Vulture.Collide*"></a>
+
+  <h3 id="Global_Vulture_Collide_PhysicalObject_System_Int32_System_Int32_" data-uid="Global.Vulture.Collide(PhysicalObject,System.Int32,System.Int32)">
+  Collide(PhysicalObject, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Collide(PhysicalObject otherObject, int myChunk, int otherChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>myChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>otherChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Die_" data-uid="Global.Vulture.Die*"></a>
+
+  <h3 id="Global_Vulture_Die" data-uid="Global.Vulture.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_DropMask_" data-uid="Global.Vulture.DropMask*"></a>
+
+  <h3 id="Global_Vulture_DropMask_UnityEngine_Vector2_" data-uid="Global.Vulture.DropMask(UnityEngine.Vector2)">
+  DropMask(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropMask(Vector2 violenceDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>violenceDir</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_FireLaser_" data-uid="Global.Vulture.FireLaser*"></a>
+
+  <h3 id="Global_Vulture_FireLaser" data-uid="Global.Vulture.FireLaser">
+  FireLaser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1915"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireLaser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Head_" data-uid="Global.Vulture.Head*"></a>
+
+  <h3 id="Global_Vulture_Head" data-uid="Global.Vulture.Head">
+  Head()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1821"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk Head()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_InitiateGraphicsModule_" data-uid="Global.Vulture.InitiateGraphicsModule*"></a>
+
+  <h3 id="Global_Vulture_InitiateGraphicsModule" data-uid="Global.Vulture.InitiateGraphicsModule">
+  InitiateGraphicsModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_JawSlamShut_" data-uid="Global.Vulture.JawSlamShut*"></a>
+
+  <h3 id="Global_Vulture_JawSlamShut" data-uid="Global.Vulture.JawSlamShut">
+  JawSlamShut()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1826"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JawSlamShut()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_LaserExplosion_" data-uid="Global.Vulture.LaserExplosion*"></a>
+
+  <h3 id="Global_Vulture_LaserExplosion" data-uid="Global.Vulture.LaserExplosion">
+  LaserExplosion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1930"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LaserExplosion()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_NewRoom_" data-uid="Global.Vulture.NewRoom*"></a>
+
+  <h3 id="Global_Vulture_NewRoom_Room_" data-uid="Global.Vulture.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_PlaceInRoom_" data-uid="Global.Vulture.PlaceInRoom*"></a>
+
+  <h3 id="Global_Vulture_PlaceInRoom_Room_" data-uid="Global.Vulture.PlaceInRoom(Room)">
+  PlaceInRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PlaceInRoom(Room placeRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_ShortCutColor_" data-uid="Global.Vulture.ShortCutColor*"></a>
+
+  <h3 id="Global_Vulture_ShortCutColor" data-uid="Global.Vulture.ShortCutColor">
+  ShortCutColor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color ShortCutColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Snap_" data-uid="Global.Vulture.Snap*"></a>
+
+  <h3 id="Global_Vulture_Snap_BodyChunk_" data-uid="Global.Vulture.Snap(BodyChunk)">
+  Snap(BodyChunk)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Snap(BodyChunk snapAt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>snapAt</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_SnapTowards_" data-uid="Global.Vulture.SnapTowards*"></a>
+
+  <h3 id="Global_Vulture_SnapTowards_UnityEngine_Vector2_" data-uid="Global.Vulture.SnapTowards(UnityEngine.Vector2)">
+  SnapTowards(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SnapTowards(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_SpawnFlyingCreature_" data-uid="Global.Vulture.SpawnFlyingCreature*"></a>
+
+  <h3 id="Global_Vulture_SpawnFlyingCreature_WorldCoordinate_" data-uid="Global.Vulture.SpawnFlyingCreature(WorldCoordinate)">
+  SpawnFlyingCreature(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnFlyingCreature(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_SpearStick_" data-uid="Global.Vulture.SpearStick*"></a>
+
+  <h3 id="Global_Vulture_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_" data-uid="Global.Vulture.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)">
+  SpearStick(Weapon, float, BodyChunk, Pos, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SpearStick(Weapon source, float dmg, BodyChunk chunk, PhysicalObject.Appendage.Pos appPos, Vector2 direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+    <dt><code>dmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>appPos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_SpitOutOfShortCut_" data-uid="Global.Vulture.SpitOutOfShortCut*"></a>
+
+  <h3 id="Global_Vulture_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_" data-uid="Global.Vulture.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)">
+  SpitOutOfShortCut(IntVector2, Room, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SpitOutOfShortCut(IntVector2 pos, Room newRoom, bool spitOutAllSticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+    <dt><code>spitOutAllSticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_StuckBehavior_" data-uid="Global.Vulture.StuckBehavior*"></a>
+
+  <h3 id="Global_Vulture_StuckBehavior" data-uid="Global.Vulture.StuckBehavior">
+  StuckBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StuckBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Stun_" data-uid="Global.Vulture.Stun*"></a>
+
+  <h3 id="Global_Vulture_Stun_System_Int32_" data-uid="Global.Vulture.Stun(System.Int32)">
+  Stun(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stun(int st)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_TakeOff_" data-uid="Global.Vulture.TakeOff*"></a>
+
+  <h3 id="Global_Vulture_TakeOff" data-uid="Global.Vulture.TakeOff">
+  TakeOff()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TakeOff()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_TentacleMaxReleaseInd_" data-uid="Global.Vulture.TentacleMaxReleaseInd*"></a>
+
+  <h3 id="Global_Vulture_TentacleMaxReleaseInd" data-uid="Global.Vulture.TentacleMaxReleaseInd">
+  TentacleMaxReleaseInd()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1806"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TentacleMaxReleaseInd()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_TerrainImpact_" data-uid="Global.Vulture.TerrainImpact*"></a>
+
+  <h3 id="Global_Vulture_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.Vulture.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Update_" data-uid="Global.Vulture.Update*"></a>
+
+  <h3 id="Global_Vulture_Update_System_Boolean_" data-uid="Global.Vulture.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_UpdateNeck_" data-uid="Global.Vulture.UpdateNeck*"></a>
+
+  <h3 id="Global_Vulture_UpdateNeck" data-uid="Global.Vulture.UpdateNeck">
+  UpdateNeck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateNeck()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_Violence_" data-uid="Global.Vulture.Violence*"></a>
+
+  <h3 id="Global_Vulture_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_" data-uid="Global.Vulture.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)">
+  Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos onAppendagePos, Creature.DamageType type, float damage, float stunBonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>directionAndMomentum</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>hitChunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>onAppendagePos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stunBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_WaterBehavior_" data-uid="Global.Vulture.WaterBehavior*"></a>
+
+  <h3 id="Global_Vulture_WaterBehavior" data-uid="Global.Vulture.WaterBehavior">
+  WaterBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaterBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Vulture_isLaserActive_" data-uid="Global.Vulture.isLaserActive*"></a>
+
+  <h3 id="Global_Vulture_isLaserActive" data-uid="Global.Vulture.isLaserActive">
+  isLaserActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L1906"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isLaserActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Vulture.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

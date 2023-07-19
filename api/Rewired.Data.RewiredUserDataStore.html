@@ -1,0 +1,3738 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RewiredUserDataStore
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RewiredUserDataStore
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Rewired_Data_RewiredUserDataStore.md&amp;value=---%0Auid%3A%20Rewired.Data.RewiredUserDataStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Rewired.Data.RewiredUserDataStore">
+
+
+
+  <h1 id="Rewired_Data_RewiredUserDataStore" data-uid="Rewired.Data.RewiredUserDataStore" class="text-break">
+    Class RewiredUserDataStore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Rewired.html">Rewired</a>.<a class="xref" href="Rewired.Data.html">Data</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RewiredUserDataStore : UserDataStore, IUserDataStore, IControllerMapStore</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UserDataStore</span></div>
+      <div><span class="xref">RewiredUserDataStore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IUserDataStore</span></div>
+      <div><span class="xref">IControllerMapStore</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">UserDataStore.OnDestroy()</span>
+    </div>
+    <div>
+      <span class="xref">UserDataStore.Initialize()</span>
+    </div>
+    <div>
+      <span class="xref">UserDataStore.OnControllerPreDiscconnect(ControllerStatusChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore___allActionIds" data-uid="Rewired.Data.RewiredUserDataStore.__allActionIds">
+  __allActionIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public List&lt;int&gt; __allActionIds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore___allActionIdsString" data-uid="Rewired.Data.RewiredUserDataStore.__allActionIdsString">
+  __allActionIdsString
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public string __allActionIdsString</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_allowImpreciseJoystickAssignmentMatching" data-uid="Rewired.Data.RewiredUserDataStore.allowImpreciseJoystickAssignmentMatching">
+  allowImpreciseJoystickAssignmentMatching
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool allowImpreciseJoystickAssignmentMatching</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_controllerMapPPKeyVersion" data-uid="Rewired.Data.RewiredUserDataStore.controllerMapPPKeyVersion">
+  controllerMapPPKeyVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int controllerMapPPKeyVersion = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_controllerMapPPKeyVersion_includeDuplicateJoystickIndex" data-uid="Rewired.Data.RewiredUserDataStore.controllerMapPPKeyVersion_includeDuplicateJoystickIndex">
+  controllerMapPPKeyVersion_includeDuplicateJoystickIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int controllerMapPPKeyVersion_includeDuplicateJoystickIndex = 1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_controllerMapPPKeyVersion_includeFormatVersion" data-uid="Rewired.Data.RewiredUserDataStore.controllerMapPPKeyVersion_includeFormatVersion">
+  controllerMapPPKeyVersion_includeFormatVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int controllerMapPPKeyVersion_includeFormatVersion = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_controllerMapPPKeyVersion_original" data-uid="Rewired.Data.RewiredUserDataStore.controllerMapPPKeyVersion_original">
+  controllerMapPPKeyVersion_original
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int controllerMapPPKeyVersion_original = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_controllerMapPPKeyVersion_supportDisconnectedControllers" data-uid="Rewired.Data.RewiredUserDataStore.controllerMapPPKeyVersion_supportDisconnectedControllers">
+  controllerMapPPKeyVersion_supportDisconnectedControllers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int controllerMapPPKeyVersion_supportDisconnectedControllers = 2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_deferredJoystickAssignmentLoadPending" data-uid="Rewired.Data.RewiredUserDataStore.deferredJoystickAssignmentLoadPending">
+  deferredJoystickAssignmentLoadPending
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool deferredJoystickAssignmentLoadPending</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_editorLoadedMessage" data-uid="Rewired.Data.RewiredUserDataStore.editorLoadedMessage">
+  editorLoadedMessage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string editorLoadedMessage = &quot;\n***IMPORTANT:*** Changes made to the Rewired Input Manager configuration after the last time XML data was saved WILL NOT be used because the loaded old saved data has overwritten these values. If you change something in the Rewired Input Manager such as a Joystick Map or Input Behavior settings, you will not see these changes reflected in the current configuration. Clear PlayerPrefs using the inspector option on the RewiredUserDataStore component.&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_isEnabled" data-uid="Rewired.Data.RewiredUserDataStore.isEnabled">
+  isEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Should this script be used? If disabled, nothing will be saved or loaded.&quot;)]
+[SerializeField]
+public bool isEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_loadDataOnStart" data-uid="Rewired.Data.RewiredUserDataStore.loadDataOnStart">
+  loadDataOnStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Should saved data be loaded on start?&quot;)]
+[SerializeField]
+public bool loadDataOnStart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_loadJoystickAssignments" data-uid="Rewired.Data.RewiredUserDataStore.loadJoystickAssignments">
+  loadJoystickAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Should Player Joystick assignments be saved and loaded? This is not totally reliable for all Joysticks on all platforms. Some platforms/input sources do not provide enough information to reliably save assignments from session to session and reboot to reboot.&quot;)]
+[SerializeField]
+public bool loadJoystickAssignments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_loadKeyboardAssignments" data-uid="Rewired.Data.RewiredUserDataStore.loadKeyboardAssignments">
+  loadKeyboardAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Should Player Keyboard assignments be saved and loaded?&quot;)]
+[SerializeField]
+public bool loadKeyboardAssignments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_loadMouseAssignments" data-uid="Rewired.Data.RewiredUserDataStore.loadMouseAssignments">
+  loadMouseAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Should Player Mouse assignments be saved and loaded?&quot;)]
+[SerializeField]
+public bool loadMouseAssignments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_logPrefix" data-uid="Rewired.Data.RewiredUserDataStore.logPrefix">
+  logPrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string logPrefix = &quot;Rewired: &quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_playerPrefsKeyPrefix" data-uid="Rewired.Data.RewiredUserDataStore.playerPrefsKeyPrefix">
+  playerPrefsKeyPrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The PlayerPrefs key prefix. Change this to change how keys are stored in PlayerPrefs. Changing this will make saved data already stored with the old key no longer accessible.&quot;)]
+[SerializeField]
+public string playerPrefsKeyPrefix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_playerPrefsKeySuffix_controllerAssignments" data-uid="Rewired.Data.RewiredUserDataStore.playerPrefsKeySuffix_controllerAssignments">
+  playerPrefsKeySuffix_controllerAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string playerPrefsKeySuffix_controllerAssignments = &quot;ControllerAssignments&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_thisScriptName" data-uid="Rewired.Data.RewiredUserDataStore.thisScriptName">
+  thisScriptName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string thisScriptName = &quot;RewiredUserDataStore&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_wasJoystickEverDetected" data-uid="Rewired.Data.RewiredUserDataStore.wasJoystickEverDetected">
+  wasJoystickEverDetected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool wasJoystickEverDetected</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_IsEnabled_" data-uid="Rewired.Data.RewiredUserDataStore.IsEnabled*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_IsEnabled" data-uid="Rewired.Data.RewiredUserDataStore.IsEnabled">
+  IsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadDataOnStart_" data-uid="Rewired.Data.RewiredUserDataStore.LoadDataOnStart*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadDataOnStart" data-uid="Rewired.Data.RewiredUserDataStore.LoadDataOnStart">
+  LoadDataOnStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadDataOnStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignments" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignments">
+  LoadJoystickAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadJoystickAssignments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadKeyboardAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.LoadKeyboardAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadKeyboardAssignments" data-uid="Rewired.Data.RewiredUserDataStore.LoadKeyboardAssignments">
+  LoadKeyboardAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadKeyboardAssignments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadMouseAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.LoadMouseAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadMouseAssignments" data-uid="Rewired.Data.RewiredUserDataStore.LoadMouseAssignments">
+  LoadMouseAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadMouseAssignments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_PlayerPrefsKeyPrefix_" data-uid="Rewired.Data.RewiredUserDataStore.PlayerPrefsKeyPrefix*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_PlayerPrefsKeyPrefix" data-uid="Rewired.Data.RewiredUserDataStore.PlayerPrefsKeyPrefix">
+  PlayerPrefsKeyPrefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlayerPrefsKeyPrefix { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_allActionIds_" data-uid="Rewired.Data.RewiredUserDataStore.allActionIds*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_allActionIds" data-uid="Rewired.Data.RewiredUserDataStore.allActionIds">
+  allActionIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; allActionIds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_allActionIdsString_" data-uid="Rewired.Data.RewiredUserDataStore.allActionIdsString*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_allActionIdsString" data-uid="Rewired.Data.RewiredUserDataStore.allActionIdsString">
+  allActionIdsString
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string allActionIdsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_loadControllerAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.loadControllerAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_loadControllerAssignments" data-uid="Rewired.Data.RewiredUserDataStore.loadControllerAssignments">
+  loadControllerAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool loadControllerAssignments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_playerPrefsKey_controllerAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.playerPrefsKey_controllerAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_playerPrefsKey_controllerAssignments" data-uid="Rewired.Data.RewiredUserDataStore.playerPrefsKey_controllerAssignments">
+  playerPrefsKey_controllerAssignments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string playerPrefsKey_controllerAssignments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_AddDefaultMappingsForNewActions_" data-uid="Rewired.Data.RewiredUserDataStore.AddDefaultMappingsForNewActions*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_AddDefaultMappingsForNewActions_Rewired_ControllerIdentifier_Rewired_ControllerMap_System_Collections_Generic_List_System_Int32__" data-uid="Rewired.Data.RewiredUserDataStore.AddDefaultMappingsForNewActions(Rewired.ControllerIdentifier,Rewired.ControllerMap,System.Collections.Generic.List{System.Int32})">
+  AddDefaultMappingsForNewActions(ControllerIdentifier, ControllerMap, List&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDefaultMappingsForNewActions(ControllerIdentifier controllerIdentifier, ControllerMap controllerMap, List&lt;int&gt; knownActionIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>controllerMap</code> <span class="xref">ControllerMap</span></dt>
+    <dd></dd>
+    <dt><code>knownActionIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveDataExists_" data-uid="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveDataExists*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveDataExists" data-uid="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveDataExists">
+  ControllerAssignmentSaveDataExists()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1077"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ControllerAssignmentSaveDataExists()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_FindJoystickPrecise_" data-uid="Rewired.Data.RewiredUserDataStore.FindJoystickPrecise*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_FindJoystickPrecise_Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveInfo_JoystickInfo_" data-uid="Rewired.Data.RewiredUserDataStore.FindJoystickPrecise(Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo)">
+  FindJoystickPrecise(JoystickInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Joystick FindJoystickPrecise(RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo joystickInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickInfo</code> <a class="xref" href="Rewired.Data.RewiredUserDataStore.html">RewiredUserDataStore</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.html">ControllerAssignmentSaveInfo</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo.html">JoystickInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Joystick</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetBasePlayerPrefsKey_" data-uid="Rewired.Data.RewiredUserDataStore.GetBasePlayerPrefsKey*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetBasePlayerPrefsKey_Rewired_Player_" data-uid="Rewired.Data.RewiredUserDataStore.GetBasePlayerPrefsKey(Rewired.Player)">
+  GetBasePlayerPrefsKey(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1090"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePlayerPrefsKey(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapKnownActionIds_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapKnownActionIds*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapKnownActionIds_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapKnownActionIds(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32)">
+  GetControllerMapKnownActionIds(Player, ControllerIdentifier, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; GetControllerMapKnownActionIds(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapKnownActionIdsPlayerPrefsKey_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapKnownActionIdsPlayerPrefsKey*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapKnownActionIdsPlayerPrefsKey_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapKnownActionIdsPlayerPrefsKey(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32,System.Int32)">
+  GetControllerMapKnownActionIdsPlayerPrefsKey(Player, ControllerIdentifier, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetControllerMapKnownActionIdsPlayerPrefsKey(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId, int ppKeyVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ppKeyVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapPlayerPrefsKey_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapPlayerPrefsKey*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapPlayerPrefsKey_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapPlayerPrefsKey(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32,System.Int32)">
+  GetControllerMapPlayerPrefsKey(Player, ControllerIdentifier, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1095"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetControllerMapPlayerPrefsKey(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId, int ppKeyVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ppKeyVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapPlayerPrefsKeyCommonSuffix_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapPlayerPrefsKeyCommonSuffix*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapPlayerPrefsKeyCommonSuffix_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapPlayerPrefsKeyCommonSuffix(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32,System.Int32)">
+  GetControllerMapPlayerPrefsKeyCommonSuffix(Player, ControllerIdentifier, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetControllerMapPlayerPrefsKeyCommonSuffix(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId, int ppKeyVersion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ppKeyVersion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapType_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapType*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapType_Rewired_ControllerType_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapType(Rewired.ControllerType)">
+  GetControllerMapType(ControllerType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetControllerMapType(ControllerType controllerType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetControllerMapXml_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapXml*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetControllerMapXml_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetControllerMapXml(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32)">
+  GetControllerMapXml(Player, ControllerIdentifier, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetControllerMapXml(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetDuplicateIndex_" data-uid="Rewired.Data.RewiredUserDataStore.GetDuplicateIndex*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetDuplicateIndex_Rewired_Player_Rewired_ControllerIdentifier_" data-uid="Rewired.Data.RewiredUserDataStore.GetDuplicateIndex(Rewired.Player,Rewired.ControllerIdentifier)">
+  GetDuplicateIndex(Player, ControllerIdentifier)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetDuplicateIndex(Player player, ControllerIdentifier controllerIdentifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetInputBehaviorPlayerPrefsKey_" data-uid="Rewired.Data.RewiredUserDataStore.GetInputBehaviorPlayerPrefsKey*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetInputBehaviorPlayerPrefsKey_Rewired_Player_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetInputBehaviorPlayerPrefsKey(Rewired.Player,System.Int32)">
+  GetInputBehaviorPlayerPrefsKey(Player, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetInputBehaviorPlayerPrefsKey(Player player, int inputBehaviorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>inputBehaviorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetInputBehaviorXml_" data-uid="Rewired.Data.RewiredUserDataStore.GetInputBehaviorXml*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetInputBehaviorXml_Rewired_Player_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.GetInputBehaviorXml(Rewired.Player,System.Int32)">
+  GetInputBehaviorXml(Player, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetInputBehaviorXml(Player player, int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetJoystickCalibrationMapPlayerPrefsKey_" data-uid="Rewired.Data.RewiredUserDataStore.GetJoystickCalibrationMapPlayerPrefsKey*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetJoystickCalibrationMapPlayerPrefsKey_Rewired_Joystick_" data-uid="Rewired.Data.RewiredUserDataStore.GetJoystickCalibrationMapPlayerPrefsKey(Rewired.Joystick)">
+  GetJoystickCalibrationMapPlayerPrefsKey(Joystick)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetJoystickCalibrationMapPlayerPrefsKey(Joystick joystick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystick</code> <span class="xref">Joystick</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_GetJoystickCalibrationMapXml_" data-uid="Rewired.Data.RewiredUserDataStore.GetJoystickCalibrationMapXml*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_GetJoystickCalibrationMapXml_Rewired_Joystick_" data-uid="Rewired.Data.RewiredUserDataStore.GetJoystickCalibrationMapXml(Rewired.Joystick)">
+  GetJoystickCalibrationMapXml(Joystick)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetJoystickCalibrationMapXml(Joystick joystick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystick</code> <span class="xref">Joystick</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_Load_" data-uid="Rewired.Data.RewiredUserDataStore.Load*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_Load" data-uid="Rewired.Data.RewiredUserDataStore.Load">
+  Load()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Load()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadAll_" data-uid="Rewired.Data.RewiredUserDataStore.LoadAll*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadAll" data-uid="Rewired.Data.RewiredUserDataStore.LoadAll">
+  LoadAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadAll()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadAllJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadAllJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadAllJoystickCalibrationData" data-uid="Rewired.Data.RewiredUserDataStore.LoadAllJoystickCalibrationData">
+  LoadAllJoystickCalibrationData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadAllJoystickCalibrationData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerAssignmentData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerAssignmentData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerAssignmentData" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerAssignmentData">
+  LoadControllerAssignmentData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RewiredUserDataStore.ControllerAssignmentSaveInfo LoadControllerAssignmentData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rewired.Data.RewiredUserDataStore.html">RewiredUserDataStore</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.html">ControllerAssignmentSaveInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerAssignmentsNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerAssignmentsNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerAssignmentsNow" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerAssignmentsNow">
+  LoadControllerAssignmentsNow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadControllerAssignmentsNow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerData_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerData(Rewired.ControllerType,System.Int32)">
+  LoadControllerData(ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadControllerData(ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerData_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerData(System.Int32,Rewired.ControllerType,System.Int32)">
+  LoadControllerData(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadControllerData(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerDataNow_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerDataNow(Rewired.ControllerType,System.Int32)">
+  LoadControllerDataNow(ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadControllerDataNow(ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerDataNow_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerDataNow(System.Int32,Rewired.ControllerType,System.Int32)">
+  LoadControllerDataNow(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadControllerDataNow(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMap*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerMap_Rewired_Player_Rewired_ControllerIdentifier_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMap(Rewired.Player,Rewired.ControllerIdentifier,System.Int32,System.Int32)">
+  LoadControllerMap(Player, ControllerIdentifier, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControllerMap LoadControllerMap(Player player, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ControllerMap</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMap*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerMap_System_Int32_Rewired_ControllerIdentifier_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMap(System.Int32,Rewired.ControllerIdentifier,System.Int32,System.Int32)">
+  LoadControllerMap(int, ControllerIdentifier, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ControllerMap LoadControllerMap(int playerId, ControllerIdentifier controllerIdentifier, int categoryId, int layoutId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerIdentifier</code> <span class="xref">ControllerIdentifier</span></dt>
+    <dd></dd>
+    <dt><code>categoryId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layoutId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ControllerMap</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadControllerMaps_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMaps*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadControllerMaps_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadControllerMaps(System.Int32,Rewired.ControllerType,System.Int32)">
+  LoadControllerMaps(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadControllerMaps(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadInputBehavior_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehavior*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadInputBehavior_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehavior(System.Int32,System.Int32)">
+  LoadInputBehavior(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadInputBehavior(int playerId, int behaviorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>behaviorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviorNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviorNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviorNow_Rewired_Player_Rewired_InputBehavior_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviorNow(Rewired.Player,Rewired.InputBehavior)">
+  LoadInputBehaviorNow(Player, InputBehavior)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadInputBehaviorNow(Player player, InputBehavior inputBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>inputBehavior</code> <span class="xref">InputBehavior</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviorNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviorNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviorNow_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviorNow(System.Int32,System.Int32)">
+  LoadInputBehaviorNow(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadInputBehaviorNow(int playerId, int behaviorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>behaviorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviors_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviors*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadInputBehaviors_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadInputBehaviors(System.Int32)">
+  LoadInputBehaviors(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadInputBehaviors(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignmentsDeferred_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignmentsDeferred*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignmentsDeferred" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignmentsDeferred">
+  LoadJoystickAssignmentsDeferred()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L883"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator LoadJoystickAssignmentsDeferred()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignmentsNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignmentsNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickAssignmentsNow_Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveInfo_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickAssignmentsNow(Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo)">
+  LoadJoystickAssignmentsNow(ControllerAssignmentSaveInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadJoystickAssignmentsNow(RewiredUserDataStore.ControllerAssignmentSaveInfo data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Rewired.Data.RewiredUserDataStore.html">RewiredUserDataStore</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.html">ControllerAssignmentSaveInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickCalibrationData_Rewired_Joystick_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickCalibrationData(Rewired.Joystick)">
+  LoadJoystickCalibrationData(Joystick)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadJoystickCalibrationData(Joystick joystick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystick</code> <span class="xref">Joystick</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickCalibrationData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickCalibrationData(System.Int32)">
+  LoadJoystickCalibrationData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadJoystickCalibrationData(int joystickId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadJoystickData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadJoystickData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadJoystickData(System.Int32)">
+  LoadJoystickData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadJoystickData(int joystickId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadKeyboardAndMouseAssignmentsNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadKeyboardAndMouseAssignmentsNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadKeyboardAndMouseAssignmentsNow_Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveInfo_" data-uid="Rewired.Data.RewiredUserDataStore.LoadKeyboardAndMouseAssignmentsNow(Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo)">
+  LoadKeyboardAndMouseAssignmentsNow(ControllerAssignmentSaveInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadKeyboardAndMouseAssignmentsNow(RewiredUserDataStore.ControllerAssignmentSaveInfo data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Rewired.Data.RewiredUserDataStore.html">RewiredUserDataStore</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.html">ControllerAssignmentSaveInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadPlayerData_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadPlayerData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerData(System.Int32)">
+  LoadPlayerData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadPlayerData(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadPlayerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadPlayerDataNow_Rewired_Player_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerDataNow(Rewired.Player)">
+  LoadPlayerDataNow(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadPlayerDataNow(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_LoadPlayerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_LoadPlayerDataNow_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.LoadPlayerDataNow(System.Int32)">
+  LoadPlayerDataNow(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LoadPlayerDataNow(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_OnControllerConnected_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerConnected*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_OnControllerConnected_Rewired_ControllerStatusChangedEventArgs_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerConnected(Rewired.ControllerStatusChangedEventArgs)">
+  OnControllerConnected(ControllerStatusChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnControllerConnected(ControllerStatusChangedEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">ControllerStatusChangedEventArgs</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_OnControllerDisconnected_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerDisconnected*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_OnControllerDisconnected_Rewired_ControllerStatusChangedEventArgs_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerDisconnected(Rewired.ControllerStatusChangedEventArgs)">
+  OnControllerDisconnected(ControllerStatusChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnControllerDisconnected(ControllerStatusChangedEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">ControllerStatusChangedEventArgs</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_OnControllerPreDisconnect_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerPreDisconnect*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_OnControllerPreDisconnect_Rewired_ControllerStatusChangedEventArgs_" data-uid="Rewired.Data.RewiredUserDataStore.OnControllerPreDisconnect(Rewired.ControllerStatusChangedEventArgs)">
+  OnControllerPreDisconnect(ControllerStatusChangedEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnControllerPreDisconnect(ControllerStatusChangedEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <span class="xref">ControllerStatusChangedEventArgs</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_OnInitialize_" data-uid="Rewired.Data.RewiredUserDataStore.OnInitialize*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_OnInitialize" data-uid="Rewired.Data.RewiredUserDataStore.OnInitialize">
+  OnInitialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_RefreshLayoutManager_" data-uid="Rewired.Data.RewiredUserDataStore.RefreshLayoutManager*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_RefreshLayoutManager_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.RefreshLayoutManager(System.Int32)">
+  RefreshLayoutManager(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshLayoutManager(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_Save_" data-uid="Rewired.Data.RewiredUserDataStore.Save*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_Save" data-uid="Rewired.Data.RewiredUserDataStore.Save">
+  Save()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Save()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveAll_" data-uid="Rewired.Data.RewiredUserDataStore.SaveAll*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveAll" data-uid="Rewired.Data.RewiredUserDataStore.SaveAll">
+  SaveAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveAllJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveAllJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveAllJoystickCalibrationData" data-uid="Rewired.Data.RewiredUserDataStore.SaveAllJoystickCalibrationData">
+  SaveAllJoystickCalibrationData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L926"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAllJoystickCalibrationData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerAssignments_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerAssignments*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerAssignments" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerAssignments">
+  SaveControllerAssignments()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1044"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveControllerAssignments()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerData_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerData(Rewired.ControllerType,System.Int32)">
+  SaveControllerData(ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveControllerData(ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerData_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerData(System.Int32,Rewired.ControllerType,System.Int32)">
+  SaveControllerData(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveControllerData(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerDataNow_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerDataNow(Rewired.ControllerType,System.Int32)">
+  SaveControllerDataNow(ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L970"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControllerDataNow(ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerDataNow_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerDataNow(System.Int32,Rewired.ControllerType,System.Int32)">
+  SaveControllerDataNow(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControllerDataNow(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMap*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerMap_Rewired_Player_Rewired_ControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMap(Rewired.Player,Rewired.ControllerMap)">
+  SaveControllerMap(Player, ControllerMap)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1004"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControllerMap(Player player, ControllerMap controllerMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>controllerMap</code> <span class="xref">ControllerMap</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMap*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerMap_System_Int32_Rewired_ControllerMap_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMap(System.Int32,Rewired.ControllerMap)">
+  SaveControllerMap(int, ControllerMap)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveControllerMap(int playerId, ControllerMap controllerMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerMap</code> <span class="xref">ControllerMap</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerMaps_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMaps*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerMaps_Rewired_Player_Rewired_PlayerSaveData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMaps(Rewired.Player,Rewired.PlayerSaveData)">
+  SaveControllerMaps(Player, PlayerSaveData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L979"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControllerMaps(Player player, PlayerSaveData playerSaveData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>playerSaveData</code> <span class="xref">PlayerSaveData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveControllerMaps_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMaps*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveControllerMaps_System_Int32_Rewired_ControllerType_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveControllerMaps(System.Int32,Rewired.ControllerType,System.Int32)">
+  SaveControllerMaps(int, ControllerType, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControllerMaps(int playerId, ControllerType controllerType, int controllerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>controllerType</code> <span class="xref">ControllerType</span></dt>
+    <dd></dd>
+    <dt><code>controllerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveInputBehavior_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehavior*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveInputBehavior_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehavior(System.Int32,System.Int32)">
+  SaveInputBehavior(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveInputBehavior(int playerId, int behaviorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>behaviorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviorNow_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviorNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviorNow_Rewired_Player_Rewired_InputBehavior_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviorNow(Rewired.Player,Rewired.InputBehavior)">
+  SaveInputBehaviorNow(Player, InputBehavior)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1036"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveInputBehaviorNow(Player player, InputBehavior inputBehavior)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>inputBehavior</code> <span class="xref">InputBehavior</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviorNow_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviorNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviorNow_System_Int32_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviorNow(System.Int32,System.Int32)">
+  SaveInputBehaviorNow(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveInputBehaviorNow(int playerId, int behaviorId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>behaviorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviors_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviors*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveInputBehaviors_Rewired_Player_Rewired_PlayerSaveData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveInputBehaviors(Rewired.Player,Rewired.PlayerSaveData)">
+  SaveInputBehaviors(Player, PlayerSaveData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveInputBehaviors(Player player, PlayerSaveData playerSaveData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+    <dt><code>playerSaveData</code> <span class="xref">PlayerSaveData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveJoystickCalibrationData_Rewired_Joystick_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickCalibrationData(Rewired.Joystick)">
+  SaveJoystickCalibrationData(Joystick)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveJoystickCalibrationData(Joystick joystick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystick</code> <span class="xref">Joystick</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveJoystickCalibrationData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickCalibrationData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveJoystickCalibrationData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickCalibrationData(System.Int32)">
+  SaveJoystickCalibrationData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveJoystickCalibrationData(int joystickId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SaveJoystickData_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SaveJoystickData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SaveJoystickData(System.Int32)">
+  SaveJoystickData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveJoystickData(int joystickId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SavePlayerData_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerData*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SavePlayerData_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerData(System.Int32)">
+  SavePlayerData(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SavePlayerData(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SavePlayerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SavePlayerDataNow_Rewired_Player_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerDataNow(Rewired.Player)">
+  SavePlayerDataNow(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L916"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SavePlayerDataNow(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_SavePlayerDataNow_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerDataNow*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_SavePlayerDataNow_System_Int32_" data-uid="Rewired.Data.RewiredUserDataStore.SavePlayerDataNow(System.Int32)">
+  SavePlayerDataNow(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SavePlayerDataNow(int playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rewired_Data_RewiredUserDataStore_TryFindJoysticksImprecise_" data-uid="Rewired.Data.RewiredUserDataStore.TryFindJoysticksImprecise*"></a>
+
+  <h3 id="Rewired_Data_RewiredUserDataStore_TryFindJoysticksImprecise_Rewired_Data_RewiredUserDataStore_ControllerAssignmentSaveInfo_JoystickInfo_System_Collections_Generic_List_Rewired_Joystick___" data-uid="Rewired.Data.RewiredUserDataStore.TryFindJoysticksImprecise(Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo,System.Collections.Generic.List{Rewired.Joystick}@)">
+  TryFindJoysticksImprecise(JoystickInfo, out List&lt;Joystick&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L1272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryFindJoysticksImprecise(RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo joystickInfo, out List&lt;Joystick&gt; matches)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>joystickInfo</code> <a class="xref" href="Rewired.Data.RewiredUserDataStore.html">RewiredUserDataStore</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.html">ControllerAssignmentSaveInfo</a>.<a class="xref" href="Rewired.Data.RewiredUserDataStore.ControllerAssignmentSaveInfo.JoystickInfo.html">JoystickInfo</a></dt>
+    <dd></dd>
+    <dt><code>matches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Joystick</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Rewired.Data/RewiredUserDataStore.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

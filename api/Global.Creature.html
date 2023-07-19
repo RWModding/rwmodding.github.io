@@ -1,0 +1,2872 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Creature
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Creature
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_Creature.md&amp;value=---%0Auid%3A%20Global.Creature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Creature">
+
+
+
+  <h1 id="Global_Creature" data-uid="Global.Creature" class="text-break">
+    Class Creature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Creature : PhysicalObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><span class="xref">Creature</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Global.AirBreatherCreature.html">AirBreatherCreature</a></div>
+      <div><a class="xref" href="Global.BigEel.html">BigEel</a></div>
+      <div><a class="xref" href="Global.DaddyLongLegs.html">DaddyLongLegs</a></div>
+      <div><a class="xref" href="Global.Deer.html">Deer</a></div>
+      <div><a class="xref" href="Global.Fly.html">Fly</a></div>
+      <div><a class="xref" href="Global.GarbageWorm.html">GarbageWorm</a></div>
+      <div><a class="xref" href="Global.Hazer.html">Hazer</a></div>
+      <div><a class="xref" href="Global.JetFish.html">JetFish</a></div>
+      <div><a class="xref" href="Global.Leech.html">Leech</a></div>
+      <div><a class="xref" href="Global.MirosBird.html">MirosBird</a></div>
+      <div><a class="xref" href="Global.Overseer.html">Overseer</a></div>
+      <div><a class="xref" href="Global.Player.html">Player</a></div>
+      <div><a class="xref" href="Global.PoleMimic.html">PoleMimic</a></div>
+      <div><a class="xref" href="Global.Snail.html">Snail</a></div>
+      <div><a class="xref" href="Global.Spider.html">Spider</a></div>
+      <div><a class="xref" href="Global.TempleGuard.html">TempleGuard</a></div>
+      <div><a class="xref" href="Global.TentaclePlant.html">TentaclePlant</a></div>
+      <div><a class="xref" href="Global.TubeWorm.html">TubeWorm</a></div>
+      <div><a class="xref" href="Global.VultureGrub.html">VultureGrub</a></div>
+      <div><a class="xref" href="MoreSlugcats.BigJellyFish.html">BigJellyFish</a></div>
+      <div><a class="xref" href="MoreSlugcats.Inspector.html">Inspector</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_">PhysicalObject.Collide(PhysicalObject, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_InitiateGraphicsModule">PhysicalObject.InitiateGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Creature__ctor_" data-uid="Global.Creature.#ctor*"></a>
+
+  <h3 id="Global_Creature__ctor_AbstractCreature_World_" data-uid="Global.Creature.#ctor(AbstractCreature,World)">
+  Creature(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Creature_GrabbedByDaddyCorruption" data-uid="Global.Creature.GrabbedByDaddyCorruption">
+  GrabbedByDaddyCorruption
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GrabbedByDaddyCorruption</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_HypothermiaExposure" data-uid="Global.Creature.HypothermiaExposure">
+  HypothermiaExposure
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HypothermiaExposure</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_HypothermiaGain" data-uid="Global.Creature.HypothermiaGain">
+  HypothermiaGain
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HypothermiaGain</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_HypothermiaStunDelayCounter" data-uid="Global.Creature.HypothermiaStunDelayCounter">
+  HypothermiaStunDelayCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HypothermiaStunDelayCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_NPCTransportationDestination" data-uid="Global.Creature.NPCTransportationDestination">
+  NPCTransportationDestination
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate NPCTransportationDestination</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_blind" data-uid="Global.Creature.blind">
+  blind
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int blind</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_deaf" data-uid="Global.Creature.deaf">
+  deaf
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int deaf</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_enteringShortCut" data-uid="Global.Creature.enteringShortCut">
+  enteringShortCut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2? enteringShortCut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_freezeControls" data-uid="Global.Creature.freezeControls">
+  freezeControls
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool freezeControls</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_inputWithDiagonals" data-uid="Global.Creature.inputWithDiagonals">
+  inputWithDiagonals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage? inputWithDiagonals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_inputWithoutDiagonals" data-uid="Global.Creature.inputWithoutDiagonals">
+  inputWithoutDiagonals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage? inputWithoutDiagonals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_killTag" data-uid="Global.Creature.killTag">
+  killTag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature killTag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_killTagCounter" data-uid="Global.Creature.killTagCounter">
+  killTagCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int killTagCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_lastCoord" data-uid="Global.Creature.lastCoord">
+  lastCoord
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate lastCoord</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_lastInputWithDiagonals" data-uid="Global.Creature.lastInputWithDiagonals">
+  lastInputWithDiagonals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage? lastInputWithDiagonals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_lastInputWithoutDiagonals" data-uid="Global.Creature.lastInputWithoutDiagonals">
+  lastInputWithoutDiagonals
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage? lastInputWithoutDiagonals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_lavaContact" data-uid="Global.Creature.lavaContact">
+  lavaContact
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lavaContact</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_lavaContactCount" data-uid="Global.Creature.lavaContactCount">
+  lavaContactCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lavaContactCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_leechedOut" data-uid="Global.Creature.leechedOut">
+  leechedOut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool leechedOut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_newToRoomInvinsibility" data-uid="Global.Creature.newToRoomInvinsibility">
+  newToRoomInvinsibility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int newToRoomInvinsibility</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_protectDeathRecursionFlag" data-uid="Global.Creature.protectDeathRecursionFlag">
+  protectDeathRecursionFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool protectDeathRecursionFlag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_rainDeath" data-uid="Global.Creature.rainDeath">
+  rainDeath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rainDeath</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_shortCutRadAdd" data-uid="Global.Creature.shortCutRadAdd">
+  shortCutRadAdd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float shortCutRadAdd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_shortcutDelay" data-uid="Global.Creature.shortcutDelay">
+  shortcutDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int shortcutDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Creature_stunDamageType" data-uid="Global.Creature.stunDamageType">
+  stunDamageType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature.DamageType stunDamageType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Creature_Blinded_" data-uid="Global.Creature.Blinded*"></a>
+
+  <h3 id="Global_Creature_Blinded" data-uid="Global.Creature.Blinded">
+  Blinded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Blinded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Consious_" data-uid="Global.Creature.Consious*"></a>
+
+  <h3 id="Global_Creature_Consious" data-uid="Global.Creature.Consious">
+  Consious
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Consious { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_DangerPos_" data-uid="Global.Creature.DangerPos*"></a>
+
+  <h3 id="Global_Creature_DangerPos" data-uid="Global.Creature.DangerPos">
+  DangerPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector2 DangerPos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Deaf_" data-uid="Global.Creature.Deaf*"></a>
+
+  <h3 id="Global_Creature_Deaf" data-uid="Global.Creature.Deaf">
+  Deaf
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Deaf { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Hypothermia_" data-uid="Global.Creature.Hypothermia*"></a>
+
+  <h3 id="Global_Creature_Hypothermia" data-uid="Global.Creature.Hypothermia">
+  Hypothermia
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Hypothermia { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_State_" data-uid="Global.Creature.State*"></a>
+
+  <h3 id="Global_Creature_State" data-uid="Global.Creature.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CreatureState.html">CreatureState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Stunned_" data-uid="Global.Creature.Stunned*"></a>
+
+  <h3 id="Global_Creature_Stunned" data-uid="Global.Creature.Stunned">
+  Stunned
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stunned { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Template_" data-uid="Global.Creature.Template*"></a>
+
+  <h3 id="Global_Creature_Template" data-uid="Global.Creature.Template">
+  Template
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureTemplate Template { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CreatureTemplate.html">CreatureTemplate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_VisionPoint_" data-uid="Global.Creature.VisionPoint*"></a>
+
+  <h3 id="Global_Creature_VisionPoint" data-uid="Global.Creature.VisionPoint">
+  VisionPoint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector2 VisionPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_WormGrassGooduckyImmune_" data-uid="Global.Creature.WormGrassGooduckyImmune*"></a>
+
+  <h3 id="Global_Creature_WormGrassGooduckyImmune" data-uid="Global.Creature.WormGrassGooduckyImmune">
+  WormGrassGooduckyImmune
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WormGrassGooduckyImmune { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_abstractCreature_" data-uid="Global.Creature.abstractCreature*"></a>
+
+  <h3 id="Global_Creature_abstractCreature" data-uid="Global.Creature.abstractCreature">
+  abstractCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature abstractCreature { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_coord_" data-uid="Global.Creature.coord*"></a>
+
+  <h3 id="Global_Creature_coord" data-uid="Global.Creature.coord">
+  coord
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate coord { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_dead_" data-uid="Global.Creature.dead*"></a>
+
+  <h3 id="Global_Creature_dead" data-uid="Global.Creature.dead">
+  dead
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool dead { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_grasps_" data-uid="Global.Creature.grasps*"></a>
+
+  <h3 id="Global_Creature_grasps" data-uid="Global.Creature.grasps">
+  grasps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature.Grasp[] grasps { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Creature.Grasp.html">Grasp</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_inShortcut_" data-uid="Global.Creature.inShortcut*"></a>
+
+  <h3 id="Global_Creature_inShortcut" data-uid="Global.Creature.inShortcut">
+  inShortcut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inShortcut { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_mainBodyChunk_" data-uid="Global.Creature.mainBodyChunk*"></a>
+
+  <h3 id="Global_Creature_mainBodyChunk" data-uid="Global.Creature.mainBodyChunk">
+  mainBodyChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk mainBodyChunk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_mainBodyChunkIndex_" data-uid="Global.Creature.mainBodyChunkIndex*"></a>
+
+  <h3 id="Global_Creature_mainBodyChunkIndex" data-uid="Global.Creature.mainBodyChunkIndex">
+  mainBodyChunkIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mainBodyChunkIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_safariControlled_" data-uid="Global.Creature.safariControlled*"></a>
+
+  <h3 id="Global_Creature_safariControlled" data-uid="Global.Creature.safariControlled">
+  safariControlled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool safariControlled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_stun_" data-uid="Global.Creature.stun*"></a>
+
+  <h3 id="Global_Creature_stun" data-uid="Global.Creature.stun">
+  stun
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int stun { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Creature_Abstractize_" data-uid="Global.Creature.Abstractize*"></a>
+
+  <h3 id="Global_Creature_Abstractize" data-uid="Global.Creature.Abstractize">
+  Abstractize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Abstractize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_AllowableControlledAIOverride_" data-uid="Global.Creature.AllowableControlledAIOverride*"></a>
+
+  <h3 id="Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_" data-uid="Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)">
+  AllowableControlledAIOverride(MovementType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowableControlledAIOverride(MovementConnection.MovementType movementType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>movementType</code> <a class="xref" href="MovementConnection.html">MovementConnection</a>.<a class="xref" href="MovementConnection.MovementType.html">MovementType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Blind_" data-uid="Global.Creature.Blind*"></a>
+
+  <h3 id="Global_Creature_Blind_System_Int32_" data-uid="Global.Creature.Blind(System.Int32)">
+  Blind(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Blind(int blnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_BodyPartByIndex_" data-uid="Global.Creature.BodyPartByIndex*"></a>
+
+  <h3 id="Global_Creature_BodyPartByIndex_System_Int32_" data-uid="Global.Creature.BodyPartByIndex(System.Int32)">
+  BodyPartByIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L932"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPart BodyPartByIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyPart.html">BodyPart</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_CanBeGrabbed_" data-uid="Global.Creature.CanBeGrabbed*"></a>
+
+  <h3 id="Global_Creature_CanBeGrabbed_Creature_" data-uid="Global.Creature.CanBeGrabbed(Creature)">
+  CanBeGrabbed(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L984"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanBeGrabbed(Creature grabber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grabber</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Deafen_" data-uid="Global.Creature.Deafen*"></a>
+
+  <h3 id="Global_Creature_Deafen_System_Int32_" data-uid="Global.Creature.Deafen(System.Int32)">
+  Deafen(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Deafen(int df)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>df</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Die_" data-uid="Global.Creature.Die*"></a>
+
+  <h3 id="Global_Creature_Die" data-uid="Global.Creature.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_FlyAwayFromRoom_" data-uid="Global.Creature.FlyAwayFromRoom*"></a>
+
+  <h3 id="Global_Creature_FlyAwayFromRoom_System_Boolean_" data-uid="Global.Creature.FlyAwayFromRoom(System.Boolean)">
+  FlyAwayFromRoom(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlyAwayFromRoom(bool carriedByOther)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>carriedByOther</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_FlyIntoRoom_" data-uid="Global.Creature.FlyIntoRoom*"></a>
+
+  <h3 id="Global_Creature_FlyIntoRoom_WorldCoordinate_Room_" data-uid="Global.Creature.FlyIntoRoom(WorldCoordinate,Room)">
+  FlyIntoRoom(WorldCoordinate, Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L879"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlyIntoRoom(WorldCoordinate entrancePos, Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entrancePos</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Grab_" data-uid="Global.Creature.Grab*"></a>
+
+  <h3 id="Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_" data-uid="Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)">
+  Grab(PhysicalObject, int, int, Shareability, float, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Grab(PhysicalObject obj, int graspUsed, int chunkGrabbed, Creature.Grasp.Shareability shareability, float dominance, bool overrideEquallyDominant, bool pacifying)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>graspUsed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>chunkGrabbed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shareability</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.Grasp.html">Grasp</a>.<a class="xref" href="Creature.Grasp.Shareability.html">Shareability</a></dt>
+    <dd></dd>
+    <dt><code>dominance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>overrideEquallyDominant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>pacifying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_GrabbedObjectSnatched_" data-uid="Global.Creature.GrabbedObjectSnatched*"></a>
+
+  <h3 id="Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_" data-uid="Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)">
+  GrabbedObjectSnatched(PhysicalObject, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GrabbedObjectSnatched(PhysicalObject grabbedObject, Creature thief)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grabbedObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>thief</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_HeardNoise_" data-uid="Global.Creature.HeardNoise*"></a>
+
+  <h3 id="Global_Creature_HeardNoise_Noise_InGameNoise_" data-uid="Global.Creature.HeardNoise(Noise.InGameNoise)">
+  HeardNoise(InGameNoise)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1076"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HeardNoise(InGameNoise noise)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>noise</code> <a class="xref" href="Noise.InGameNoise.html">InGameNoise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_HypothermiaBodyContactWarmup_" data-uid="Global.Creature.HypothermiaBodyContactWarmup*"></a>
+
+  <h3 id="Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_" data-uid="Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)">
+  HypothermiaBodyContactWarmup(Creature, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HypothermiaBodyContactWarmup(Creature self, Creature other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_HypothermiaUpdate_" data-uid="Global.Creature.HypothermiaUpdate*"></a>
+
+  <h3 id="Global_Creature_HypothermiaUpdate" data-uid="Global.Creature.HypothermiaUpdate">
+  HypothermiaUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HypothermiaUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_LoseAllGrasps_" data-uid="Global.Creature.LoseAllGrasps*"></a>
+
+  <h3 id="Global_Creature_LoseAllGrasps" data-uid="Global.Creature.LoseAllGrasps">
+  LoseAllGrasps()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoseAllGrasps()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_NewRoom_" data-uid="Global.Creature.NewRoom*"></a>
+
+  <h3 id="Global_Creature_NewRoom_Room_" data-uid="Global.Creature.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_NewTile_" data-uid="Global.Creature.NewTile*"></a>
+
+  <h3 id="Global_Creature_NewTile" data-uid="Global.Creature.NewTile">
+  NewTile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NewTile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_PlaceInRoom_" data-uid="Global.Creature.PlaceInRoom*"></a>
+
+  <h3 id="Global_Creature_PlaceInRoom_Room_" data-uid="Global.Creature.PlaceInRoom(Room)">
+  PlaceInRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PlaceInRoom(Room placeRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_PushOutOf_" data-uid="Global.Creature.PushOutOf*"></a>
+
+  <h3 id="Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_" data-uid="Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)">
+  PushOutOf(Vector2, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1071"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PushOutOf(Vector2 pos, float rad, int exceptedChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>rad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>exceptedChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_RecreateSticksFromAbstract_" data-uid="Global.Creature.RecreateSticksFromAbstract*"></a>
+
+  <h3 id="Global_Creature_RecreateSticksFromAbstract" data-uid="Global.Creature.RecreateSticksFromAbstract">
+  RecreateSticksFromAbstract()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RecreateSticksFromAbstract()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_ReleaseDoorForbiddenCreatures_" data-uid="Global.Creature.ReleaseDoorForbiddenCreatures*"></a>
+
+  <h3 id="Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_" data-uid="Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)">
+  ReleaseDoorForbiddenCreatures(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1089"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseDoorForbiddenCreatures(bool enteringShortcut, bool enteringDen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enteringShortcut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>enteringDen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_ReleaseGrasp_" data-uid="Global.Creature.ReleaseGrasp*"></a>
+
+  <h3 id="Global_Creature_ReleaseGrasp_System_Int32_" data-uid="Global.Creature.ReleaseGrasp(System.Int32)">
+  ReleaseGrasp(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReleaseGrasp(int grasp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grasp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SafariControlInputUpdate_" data-uid="Global.Creature.SafariControlInputUpdate*"></a>
+
+  <h3 id="Global_Creature_SafariControlInputUpdate_System_Int32_" data-uid="Global.Creature.SafariControlInputUpdate(System.Int32)">
+  SafariControlInputUpdate(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SafariControlInputUpdate(int playerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SetKillTag_" data-uid="Global.Creature.SetKillTag*"></a>
+
+  <h3 id="Global_Creature_SetKillTag_AbstractCreature_" data-uid="Global.Creature.SetKillTag(AbstractCreature)">
+  SetKillTag(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L699"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKillTag(AbstractCreature killer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>killer</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_ShortCutColor_" data-uid="Global.Creature.ShortCutColor*"></a>
+
+  <h3 id="Global_Creature_ShortCutColor" data-uid="Global.Creature.ShortCutColor">
+  ShortCutColor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1035"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color ShortCutColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SpearStick_" data-uid="Global.Creature.SpearStick*"></a>
+
+  <h3 id="Global_Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_" data-uid="Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)">
+  SpearStick(Weapon, float, BodyChunk, Pos, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L723"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SpearStick(Weapon source, float dmg, BodyChunk chunk, PhysicalObject.Appendage.Pos appPos, Vector2 direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+    <dt><code>dmg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>appPos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SpitOutOfShortCut_" data-uid="Global.Creature.SpitOutOfShortCut*"></a>
+
+  <h3 id="Global_Creature_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_" data-uid="Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)">
+  SpitOutOfShortCut(IntVector2, Room, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SpitOutOfShortCut(IntVector2 pos, Room newRoom, bool spitOutAllSticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+    <dt><code>spitOutAllSticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Stun_" data-uid="Global.Creature.Stun*"></a>
+
+  <h3 id="Global_Creature_Stun_System_Int32_" data-uid="Global.Creature.Stun(System.Int32)">
+  Stun(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Stun(int st)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SuckedIntoShortCut_" data-uid="Global.Creature.SuckedIntoShortCut*"></a>
+
+  <h3 id="Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_" data-uid="Global.Creature.SuckedIntoShortCut(RWCustom.IntVector2,System.Boolean)">
+  SuckedIntoShortCut(IntVector2, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L828"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SuckedIntoShortCut(IntVector2 entrancePos, bool carriedByOther)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entrancePos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>carriedByOther</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_SwitchGrasps_" data-uid="Global.Creature.SwitchGrasps*"></a>
+
+  <h3 id="Global_Creature_SwitchGrasps_System_Int32_System_Int32_" data-uid="Global.Creature.SwitchGrasps(System.Int32,System.Int32)">
+  SwitchGrasps(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchGrasps(int fromGrasp, int toGrasp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromGrasp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>toGrasp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_TerrainImpact_" data-uid="Global.Creature.TerrainImpact*"></a>
+
+  <h3 id="Global_Creature_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1040"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_ToString_" data-uid="Global.Creature.ToString*"></a>
+
+  <h3 id="Global_Creature_ToString" data-uid="Global.Creature.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L1084"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Update_" data-uid="Global.Creature.Update*"></a>
+
+  <h3 id="Global_Creature_Update_System_Boolean_" data-uid="Global.Creature.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_UpdateGraspIndexes_" data-uid="Global.Creature.UpdateGraspIndexes*"></a>
+
+  <h3 id="Global_Creature_UpdateGraspIndexes" data-uid="Global.Creature.UpdateGraspIndexes">
+  UpdateGraspIndexes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGraspIndexes()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Creature_Violence_" data-uid="Global.Creature.Violence*"></a>
+
+  <h3 id="Global_Creature_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_" data-uid="Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)">
+  Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos hitAppendage, Creature.DamageType type, float damage, float stunBonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>directionAndMomentum</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>hitChunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>hitAppendage</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stunBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Creature.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

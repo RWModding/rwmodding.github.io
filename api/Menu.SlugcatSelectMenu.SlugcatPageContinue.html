@@ -1,0 +1,967 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SlugcatSelectMenu.SlugcatPageContinue
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SlugcatSelectMenu.SlugcatPageContinue
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_SlugcatSelectMenu_SlugcatPageContinue.md&amp;value=---%0Auid%3A%20Menu.SlugcatSelectMenu.SlugcatPageContinue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue">
+
+
+
+  <h1 id="Menu_SlugcatSelectMenu_SlugcatPageContinue" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue" class="text-break">
+    Class SlugcatSelectMenu.SlugcatPageContinue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SlugcatSelectMenu.SlugcatPageContinue : SlugcatSelectMenu.SlugcatPage, IOwnAHUD</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.MenuObject.html">MenuObject</a></div>
+      <div><a class="xref" href="Menu.PositionedMenuObject.html">PositionedMenuObject</a></div>
+      <div><a class="xref" href="Menu.Page.html">Page</a></div>
+      <div><a class="xref" href="Menu.SlugcatSelectMenu.html">SlugcatSelectMenu</a>.<a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html">SlugcatPage</a></div>
+      <div><span class="xref">SlugcatSelectMenu.SlugcatPageContinue</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="HUD.IOwnAHUD.html">IOwnAHUD</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_slugcatImage">SlugcatSelectMenu.SlugcatPage.slugcatImage</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_slugcatNumber">SlugcatSelectMenu.SlugcatPage.slugcatNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_markSquare">SlugcatSelectMenu.SlugcatPage.markSquare</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_markGlow">SlugcatSelectMenu.SlugcatPage.markGlow</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_glowSpriteA">SlugcatSelectMenu.SlugcatPage.glowSpriteA</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_glowSpriteB">SlugcatSelectMenu.SlugcatPage.glowSpriteB</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_markAlpha">SlugcatSelectMenu.SlugcatPage.markAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_lastMarkAlpha">SlugcatSelectMenu.SlugcatPage.lastMarkAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_markFlicker">SlugcatSelectMenu.SlugcatPage.markFlicker</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_glowAlpha">SlugcatSelectMenu.SlugcatPage.glowAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_lastGlowAlpha">SlugcatSelectMenu.SlugcatPage.lastGlowAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_glowSinCounter">SlugcatSelectMenu.SlugcatPage.glowSinCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_inPosition">SlugcatSelectMenu.SlugcatPage.inPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_lastInposition">SlugcatSelectMenu.SlugcatPage.lastInposition</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_imagePos">SlugcatSelectMenu.SlugcatPage.imagePos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_sceneOffset">SlugcatSelectMenu.SlugcatPage.sceneOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_markOffset">SlugcatSelectMenu.SlugcatPage.markOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_glowOffset">SlugcatSelectMenu.SlugcatPage.glowOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_slugcatDepth">SlugcatSelectMenu.SlugcatPage.slugcatDepth</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_effectColor">SlugcatSelectMenu.SlugcatPage.effectColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_SlugcatPageIndex">SlugcatSelectMenu.SlugcatPage.SlugcatPageIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_MidXpos">SlugcatSelectMenu.SlugcatPage.MidXpos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_ScrollMagnitude">SlugcatSelectMenu.SlugcatPage.ScrollMagnitude</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_MinOffset">SlugcatSelectMenu.SlugcatPage.MinOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_MaxOffset">SlugcatSelectMenu.SlugcatPage.MaxOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_AddImage_System_Boolean_">SlugcatSelectMenu.SlugcatPage.AddImage(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_AddAltEndingImage">SlugcatSelectMenu.SlugcatPage.AddAltEndingImage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_AddGlow">SlugcatSelectMenu.SlugcatPage.AddGlow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_Scroll_System_Single_">SlugcatSelectMenu.SlugcatPage.Scroll(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_NextScroll_System_Single_">SlugcatSelectMenu.SlugcatPage.NextScroll(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SlugcatSelectMenu.SlugcatPage.html#Menu_SlugcatSelectMenu_SlugcatPage_UseAlpha_System_Single_">SlugcatSelectMenu.SlugcatPage.UseAlpha(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Page.html#Menu_Page_name">Page.name</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Page.html#Menu_Page_index">Page.index</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Page.html#Menu_Page_selectables">Page.selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Page.html#Menu_Page_lastSelectedObject">Page.lastSelectedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Page.html#Menu_Page_mouseCursor">Page.mouseCursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_pos">PositionedMenuObject.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_lastPos">PositionedMenuObject.lastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenPos">PositionedMenuObject.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenLastPos">PositionedMenuObject.ScreenLastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_">PositionedMenuObject.DrawPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_">PositionedMenuObject.DrawX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_">PositionedMenuObject.DrawY(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_menu">MenuObject.menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_subObjects">MenuObject.subObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_owner">MenuObject.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_nextSelectable">MenuObject.nextSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_toggled">MenuObject.toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_inactive">MenuObject.inactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_myContainer">MenuObject.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Container">MenuObject.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Selected">MenuObject.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_page">MenuObject.page</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_">MenuObject.Singal(MenuObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_">MenuObject.RemoveSubObject(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RecursiveRemoveSelectables_Menu_MenuObject_">MenuObject.RecursiveRemoveSelectables(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue__ctor_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.#ctor*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue__ctor_Menu_Menu_Menu_MenuObject_System_Int32_SlugcatStats_Name_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.#ctor(Menu.Menu,Menu.MenuObject,System.Int32,SlugcatStats.Name)">
+  SlugcatPageContinue(Menu, MenuObject, int, Name)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugcatPageContinue(Menu menu, MenuObject owner, int pageIndex, SlugcatStats.Name slugcatNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menu</code> <a class="xref" href="Menu.Menu.html">Menu</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>pageIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>slugcatNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_hud" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.hud">
+  hud
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HUD hud</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HUD.HUD.html">HUD</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_hudContainers" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.hudContainers">
+  hudContainers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FContainer[] hudContainers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FContainer.html">FContainer</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_regionLabel" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.regionLabel">
+  regionLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuLabel regionLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.MenuLabel.html">MenuLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_CurrentFood_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.CurrentFood*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_CurrentFood" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.CurrentFood">
+  CurrentFood
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentFood { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_HasGlow_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.HasGlow*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_HasGlow" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.HasGlow">
+  HasGlow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasGlow { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_HasMark_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.HasMark*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_HasMark" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.HasMark">
+  HasMark
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasMark { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_KarmaSymbolPos_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.KarmaSymbolPos*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_KarmaSymbolPos" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.KarmaSymbolPos">
+  KarmaSymbolPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 KarmaSymbolPos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapDiscoveryActive_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapDiscoveryActive*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapDiscoveryActive" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapDiscoveryActive">
+  MapDiscoveryActive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapDiscoveryActive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapInput_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapInput*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapInput" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapInput">
+  MapInput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player.InputPackage MapInput { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapOwnerInRoomPosition_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapOwnerInRoomPosition*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapOwnerInRoomPosition" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapOwnerInRoomPosition">
+  MapOwnerInRoomPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MapOwnerInRoomPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapOwnerRoom_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapOwnerRoom*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_MapOwnerRoom" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.MapOwnerRoom">
+  MapOwnerRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapOwnerRoom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_RevealMap_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.RevealMap*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_RevealMap" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.RevealMap">
+  RevealMap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L609"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RevealMap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_saveGameData_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.saveGameData*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_saveGameData" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.saveGameData">
+  saveGameData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugcatSelectMenu.SaveGameData saveGameData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SlugcatSelectMenu.html">SlugcatSelectMenu</a>.<a class="xref" href="Menu.SlugcatSelectMenu.SaveGameData.html">SaveGameData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_FoodCountDownDone_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.FoodCountDownDone*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_FoodCountDownDone" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.FoodCountDownDone">
+  FoodCountDownDone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FoodCountDownDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_GetOwnerType_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.GetOwnerType*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_GetOwnerType" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.GetOwnerType">
+  GetOwnerType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HUD.OwnerType GetOwnerType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HUD.HUD.html">HUD</a>.<a class="xref" href="HUD.HUD.OwnerType.html">OwnerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_GrafUpdate_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.GrafUpdate*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_GrafUpdate_System_Single_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_PlayHUDSound_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.PlayHUDSound*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_PlayHUDSound_SoundID_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.PlayHUDSound(SoundID)">
+  PlayHUDSound(SoundID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayHUDSound(SoundID soundID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soundID</code> <a class="xref" href="Global.SoundID.html">SoundID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_RemoveSprites_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.RemoveSprites*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_RemoveSprites" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.RemoveSprites">
+  RemoveSprites()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L695"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveSprites()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlugcatSelectMenu_SlugcatPageContinue_Update_" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.Update*"></a>
+
+  <h3 id="Menu_SlugcatSelectMenu_SlugcatPageContinue_Update" data-uid="Menu.SlugcatSelectMenu.SlugcatPageContinue.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlugcatSelectMenu.cs/#L553" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

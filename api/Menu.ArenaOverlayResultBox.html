@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ArenaOverlayResultBox
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ArenaOverlayResultBox
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_ArenaOverlayResultBox.md&amp;value=---%0Auid%3A%20Menu.ArenaOverlayResultBox%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.ArenaOverlayResultBox">
+
+
+
+  <h1 id="Menu_ArenaOverlayResultBox" data-uid="Menu.ArenaOverlayResultBox" class="text-break">
+    Class ArenaOverlayResultBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ArenaOverlayResultBox : PlayerResultBox</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.MenuObject.html">MenuObject</a></div>
+      <div><a class="xref" href="Menu.PositionedMenuObject.html">PositionedMenuObject</a></div>
+      <div><a class="xref" href="Menu.RectangularMenuObject.html">RectangularMenuObject</a></div>
+      <div><a class="xref" href="Menu.PlayerResultBox.html">PlayerResultBox</a></div>
+      <div><span class="xref">ArenaOverlayResultBox</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_backgroundRect">PlayerResultBox.backgroundRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_extraRect">PlayerResultBox.extraRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_portrait">PlayerResultBox.portrait</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_player">PlayerResultBox.player</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_playerNameLabel">PlayerResultBox.playerNameLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_killsSymbol">PlayerResultBox.killsSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_counter">PlayerResultBox.counter</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_index">PlayerResultBox.index</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_showAsAlive">PlayerResultBox.showAsAlive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_showAsWinner">PlayerResultBox.showAsWinner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_textWhite">PlayerResultBox.textWhite</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_lastTextWhite">PlayerResultBox.lastTextWhite</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_bump">PlayerResultBox.bump</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_lastBump">PlayerResultBox.lastBump</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_readyForNext">PlayerResultBox.readyForNext</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_killTrophies">PlayerResultBox.killTrophies</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_originalSize">PlayerResultBox.originalSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_rightMostKillSymbol">PlayerResultBox.rightMostKillSymbol</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_rightMostKillSymbolWidth">PlayerResultBox.rightMostKillSymbolWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_killsymbolRows">PlayerResultBox.killsymbolRows</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_AllBoxesInPlaceFac_System_Single_">PlayerResultBox.AllBoxesInPlaceFac(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_SecondsToMinutesAndSecondsString_System_Int32_">PlayerResultBox.SecondsToMinutesAndSecondsString(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_CollapseCreatureSymbols_IconSymbol_IconSymbolData_IconSymbol_IconSymbolData_">PlayerResultBox.CollapseCreatureSymbols(IconSymbol.IconSymbolData, IconSymbol.IconSymbolData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_UseTextBaseColor_System_Single_">PlayerResultBox.UseTextBaseColor(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_UseWinnerColor_System_Single_">PlayerResultBox.UseWinnerColor(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PlayerResultBox.html#Menu_PlayerResultBox_UseTextWhite_System_Single_">PlayerResultBox.UseTextWhite(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_size">RectangularMenuObject.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_lastSize">RectangularMenuObject.lastSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_MouseOver">RectangularMenuObject.MouseOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_DrawSize_System_Single_">RectangularMenuObject.DrawSize(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_pos">PositionedMenuObject.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_lastPos">PositionedMenuObject.lastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenPos">PositionedMenuObject.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenLastPos">PositionedMenuObject.ScreenLastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_">PositionedMenuObject.DrawPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_">PositionedMenuObject.DrawX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_">PositionedMenuObject.DrawY(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_menu">MenuObject.menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_subObjects">MenuObject.subObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_owner">MenuObject.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_nextSelectable">MenuObject.nextSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_toggled">MenuObject.toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_inactive">MenuObject.inactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_myContainer">MenuObject.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Container">MenuObject.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Selected">MenuObject.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_page">MenuObject.page</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_">MenuObject.Singal(MenuObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_">MenuObject.RemoveSubObject(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RecursiveRemoveSelectables_Menu_MenuObject_">MenuObject.RecursiveRemoveSelectables(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_ArenaOverlayResultBox__ctor_" data-uid="Menu.ArenaOverlayResultBox.#ctor*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox__ctor_Menu_ArenaOverlay_Menu_MenuObject_ArenaSitting_ArenaPlayer_System_Int32_System_Boolean_" data-uid="Menu.ArenaOverlayResultBox.#ctor(Menu.ArenaOverlay,Menu.MenuObject,ArenaSitting.ArenaPlayer,System.Int32,System.Boolean)">
+  ArenaOverlayResultBox(ArenaOverlay, MenuObject, ArenaPlayer, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArenaOverlayResultBox(ArenaOverlay arenaOverlay, MenuObject owner, ArenaSitting.ArenaPlayer player, int index, bool showWinnerStar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arenaOverlay</code> <a class="xref" href="Menu.ArenaOverlay.html">ArenaOverlay</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>player</code> <a class="xref" href="ArenaSitting.html">ArenaSitting</a>.<a class="xref" href="ArenaSitting.ArenaPlayer.html">ArenaPlayer</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>showWinnerStar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_inPlace" data-uid="Menu.ArenaOverlayResultBox.inPlace">
+  inPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_inPlaceF" data-uid="Menu.ArenaOverlayResultBox.inPlaceF">
+  inPlaceF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float inPlaceF</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_lastInPlaceF" data-uid="Menu.ArenaOverlayResultBox.lastInPlaceF">
+  lastInPlaceF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastInPlaceF</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_scoreSymbol" data-uid="Menu.ArenaOverlayResultBox.scoreSymbol">
+  scoreSymbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerResultBox.SymbolAndLabel scoreSymbol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.PlayerResultBox.html">PlayerResultBox</a>.<a class="xref" href="Menu.PlayerResultBox.SymbolAndLabel.html">SymbolAndLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_showWinnerStar" data-uid="Menu.ArenaOverlayResultBox.showWinnerStar">
+  showWinnerStar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showWinnerStar</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_timeSymbol" data-uid="Menu.ArenaOverlayResultBox.timeSymbol">
+  timeSymbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerResultBox.SymbolAndLabel timeSymbol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.PlayerResultBox.html">PlayerResultBox</a>.<a class="xref" href="Menu.PlayerResultBox.SymbolAndLabel.html">SymbolAndLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_winSymbol" data-uid="Menu.ArenaOverlayResultBox.winSymbol">
+  winSymbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerResultBox.SymbolAndLabel winSymbol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.PlayerResultBox.html">PlayerResultBox</a>.<a class="xref" href="Menu.PlayerResultBox.SymbolAndLabel.html">SymbolAndLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_ArenaOverlayResultBox_winSymbolGlow" data-uid="Menu.ArenaOverlayResultBox.winSymbolGlow">
+  winSymbolGlow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSprite winSymbolGlow</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FSprite.html">FSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_ArenaOverlayResultBox_AvailableXDistForTrophies_" data-uid="Menu.ArenaOverlayResultBox.AvailableXDistForTrophies*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_AvailableXDistForTrophies" data-uid="Menu.ArenaOverlayResultBox.AvailableXDistForTrophies">
+  AvailableXDistForTrophies
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float AvailableXDistForTrophies { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_DeadPortraint_" data-uid="Menu.ArenaOverlayResultBox.DeadPortraint*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_DeadPortraint" data-uid="Menu.ArenaOverlayResultBox.DeadPortraint">
+  DeadPortraint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool DeadPortraint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_KillsSymbolXpos_" data-uid="Menu.ArenaOverlayResultBox.KillsSymbolXpos*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_KillsSymbolXpos" data-uid="Menu.ArenaOverlayResultBox.KillsSymbolXpos">
+  KillsSymbolXpos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float KillsSymbolXpos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_ArenaOverlayResultBox_BumpAndReveal_" data-uid="Menu.ArenaOverlayResultBox.BumpAndReveal*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_BumpAndReveal" data-uid="Menu.ArenaOverlayResultBox.BumpAndReveal">
+  BumpAndReveal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BumpAndReveal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_GrafUpdate_" data-uid="Menu.ArenaOverlayResultBox.GrafUpdate*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_GrafUpdate_System_Single_" data-uid="Menu.ArenaOverlayResultBox.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_IdealPos_" data-uid="Menu.ArenaOverlayResultBox.IdealPos*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_IdealPos" data-uid="Menu.ArenaOverlayResultBox.IdealPos">
+  IdealPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 IdealPos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_InPlace_" data-uid="Menu.ArenaOverlayResultBox.InPlace*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_InPlace_System_Single_" data-uid="Menu.ArenaOverlayResultBox.InPlace(System.Single)">
+  InPlace(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InPlace(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_RemoveSprites_" data-uid="Menu.ArenaOverlayResultBox.RemoveSprites*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_RemoveSprites" data-uid="Menu.ArenaOverlayResultBox.RemoveSprites">
+  RemoveSprites()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveSprites()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_ArenaOverlayResultBox_Update_" data-uid="Menu.ArenaOverlayResultBox.Update*"></a>
+
+  <h3 id="Menu_ArenaOverlayResultBox_Update" data-uid="Menu.ArenaOverlayResultBox.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/ArenaOverlayResultBox.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

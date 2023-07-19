@@ -1,0 +1,2227 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Spider
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Spider
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_Spider.md&amp;value=---%0Auid%3A%20Global.Spider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Spider">
+
+
+
+  <h1 id="Global_Spider" data-uid="Global.Spider" class="text-break">
+    Class Spider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Spider : Creature</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><span class="xref">Spider</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_blind">Creature.blind</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_deaf">Creature.deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTag">Creature.killTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTagCounter">Creature.killTagCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_leechedOut">Creature.leechedOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_newToRoomInvinsibility">Creature.newToRoomInvinsibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_rainDeath">Creature.rainDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortcutDelay">Creature.shortcutDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_enteringShortCut">Creature.enteringShortCut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortCutRadAdd">Creature.shortCutRadAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NPCTransportationDestination">Creature.NPCTransportationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastCoord">Creature.lastCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContact">Creature.lavaContact</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContactCount">Creature.lavaContactCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedByDaddyCorruption">Creature.GrabbedByDaddyCorruption</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stunDamageType">Creature.stunDamageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaGain">Creature.HypothermiaGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaExposure">Creature.HypothermiaExposure</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaStunDelayCounter">Creature.HypothermiaStunDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithoutDiagonals">Creature.inputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithoutDiagonals">Creature.lastInputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithDiagonals">Creature.inputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithDiagonals">Creature.lastInputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_freezeControls">Creature.freezeControls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_protectDeathRecursionFlag">Creature.protectDeathRecursionFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stun">Creature.stun</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stunned">Creature.Stunned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blinded">Creature.Blinded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deaf">Creature.Deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunkIndex">Creature.mainBodyChunkIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunk">Creature.mainBodyChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_dead">Creature.dead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Consious">Creature.Consious</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_VisionPoint">Creature.VisionPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inShortcut">Creature.inShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_grasps">Creature.grasps</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_DangerPos">Creature.DangerPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_abstractCreature">Creature.abstractCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Template">Creature.Template</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_State">Creature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_coord">Creature.coord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_safariControlled">Creature.safariControlled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Hypothermia">Creature.Hypothermia</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_WormGrassGooduckyImmune">Creature.WormGrassGooduckyImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_RecreateSticksFromAbstract">Creature.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PlaceInRoom_Room_">Creature.PlaceInRoom(Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NewTile">Creature.NewTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_">Creature.Violence(BodyChunk, Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SetKillTag_AbstractCreature_">Creature.SetKillTag(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blind_System_Int32_">Creature.Blind(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deafen_System_Int32_">Creature.Deafen(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_">Creature.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_">Creature.SuckedIntoShortCut(IntVector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyIntoRoom_WorldCoordinate_Room_">Creature.FlyIntoRoom(WorldCoordinate, Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyAwayFromRoom_System_Boolean_">Creature.FlyAwayFromRoom(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Abstractize">Creature.Abstractize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_LoseAllGrasps">Creature.LoseAllGrasps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_BodyPartByIndex_System_Int32_">Creature.BodyPartByIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseGrasp_System_Int32_">Creature.ReleaseGrasp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SwitchGrasps_System_Int32_System_Int32_">Creature.SwitchGrasps(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_UpdateGraspIndexes">Creature.UpdateGraspIndexes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_CanBeGrabbed_Creature_">Creature.CanBeGrabbed(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_">Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_">Creature.GrabbedObjectSnatched(PhysicalObject, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ShortCutColor">Creature.ShortCutColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">Creature.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HeardNoise_Noise_InGameNoise_">Creature.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ToString">Creature.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_">Creature.ReleaseDoorForbiddenCreatures(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_">Creature.AllowableControlledAIOverride(MovementConnection.MovementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaUpdate">Creature.HypothermiaUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_">Creature.HypothermiaBodyContactWarmup(Creature, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SafariControlInputUpdate_System_Int32_">Creature.SafariControlInputUpdate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_">PhysicalObject.Collide(PhysicalObject, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Spider__ctor_" data-uid="Global.Spider.#ctor*"></a>
+
+  <h3 id="Global_Spider__ctor_AbstractCreature_World_" data-uid="Global.Spider.#ctor(AbstractCreature,World)">
+  Spider(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spider(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Spider_bannedCentipede" data-uid="Global.Spider.bannedCentipede">
+  bannedCentipede
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spider.Centipede bannedCentipede</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spider.html">Spider</a>.<a class="xref" href="Spider.Centipede.html">Centipede</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_bloodLust" data-uid="Global.Spider.bloodLust">
+  bloodLust
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bloodLust</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_centipede" data-uid="Global.Spider.centipede">
+  centipede
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spider.Centipede centipede</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spider.html">Spider</a>.<a class="xref" href="Spider.Centipede.html">Centipede</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_connectDistance" data-uid="Global.Spider.connectDistance">
+  connectDistance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float connectDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_deathSpasms" data-uid="Global.Spider.deathSpasms">
+  deathSpasms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float deathSpasms</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_denMovement" data-uid="Global.Spider.denMovement">
+  denMovement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int denMovement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_denPos" data-uid="Global.Spider.denPos">
+  denPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? denPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_direction" data-uid="Global.Spider.direction">
+  direction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 direction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_dragPos" data-uid="Global.Spider.dragPos">
+  dragPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 dragPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_flock" data-uid="Global.Spider.flock">
+  flock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spider.Flock flock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spider.html">Spider</a>.<a class="xref" href="Spider.Flock.html">Flock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_followingConnection" data-uid="Global.Spider.followingConnection">
+  followingConnection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection followingConnection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_graphicsAttachedToBodyChunk" data-uid="Global.Spider.graphicsAttachedToBodyChunk">
+  graphicsAttachedToBodyChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk graphicsAttachedToBodyChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_iVars" data-uid="Global.Spider.iVars">
+  iVars
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spider.IndividualVariations iVars</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spider.html">Spider</a>.<a class="xref" href="Spider.IndividualVariations.html">IndividualVariations</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_idle" data-uid="Global.Spider.idle">
+  idle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool idle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_idleCounter" data-uid="Global.Spider.idleCounter">
+  idleCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int idleCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_inAccessibleTerrain" data-uid="Global.Spider.inAccessibleTerrain">
+  inAccessibleTerrain
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inAccessibleTerrain</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_lastFollowingConnection" data-uid="Global.Spider.lastFollowingConnection">
+  lastFollowingConnection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection lastFollowingConnection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_lastShortCut" data-uid="Global.Spider.lastShortCut">
+  lastShortCut
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection lastShortCut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_legsPosition" data-uid="Global.Spider.legsPosition">
+  legsPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float legsPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_lightExp" data-uid="Global.Spider.lightExp">
+  lightExp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lightExp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_lightToMove" data-uid="Global.Spider.lightToMove">
+  lightToMove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lightToMove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_moveAwayFromPos" data-uid="Global.Spider.moveAwayFromPos">
+  moveAwayFromPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? moveAwayFromPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_moving" data-uid="Global.Spider.moving">
+  moving
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool moving</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_noCentipedeCounter" data-uid="Global.Spider.noCentipedeCounter">
+  noCentipedeCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int noCentipedeCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_outsideAccessibleCounter" data-uid="Global.Spider.outsideAccessibleCounter">
+  outsideAccessibleCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int outsideAccessibleCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_path" data-uid="Global.Spider.path">
+  path
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MovementConnection&gt; path</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MovementConnection.html">MovementConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_pathCount" data-uid="Global.Spider.pathCount">
+  pathCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int pathCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_scratchPath" data-uid="Global.Spider.scratchPath">
+  scratchPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MovementConnection&gt; scratchPath</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MovementConnection.html">MovementConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_scratchPathCount" data-uid="Global.Spider.scratchPathCount">
+  scratchPathCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int scratchPathCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Spider_seenNoPreyCounter" data-uid="Global.Spider.seenNoPreyCounter">
+  seenNoPreyCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int seenNoPreyCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Spider_WantToFormCentipede_" data-uid="Global.Spider.WantToFormCentipede*"></a>
+
+  <h3 id="Global_Spider_WantToFormCentipede" data-uid="Global.Spider.WantToFormCentipede">
+  WantToFormCentipede
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WantToFormCentipede { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Spider_Assist_" data-uid="Global.Spider.Assist*"></a>
+
+  <h3 id="Global_Spider_Assist" data-uid="Global.Spider.Assist">
+  Assist()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L904"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Assist()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Attached_" data-uid="Global.Spider.Attached*"></a>
+
+  <h3 id="Global_Spider_Attached" data-uid="Global.Spider.Attached">
+  Attached()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L974"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Attached()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_ConsiderCreature_" data-uid="Global.Spider.ConsiderCreature*"></a>
+
+  <h3 id="Global_Spider_ConsiderCreature" data-uid="Global.Spider.ConsiderCreature">
+  ConsiderCreature()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1073"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsiderCreature()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_ConsiderPrey_" data-uid="Global.Spider.ConsiderPrey*"></a>
+
+  <h3 id="Global_Spider_ConsiderPrey_Creature_" data-uid="Global.Spider.ConsiderPrey(Creature)">
+  ConsiderPrey(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsiderPrey(Creature crit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Crawl_" data-uid="Global.Spider.Crawl*"></a>
+
+  <h3 id="Global_Spider_Crawl" data-uid="Global.Spider.Crawl">
+  Crawl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Crawl()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_CreateRandomPath_" data-uid="Global.Spider.CreateRandomPath*"></a>
+
+  <h3 id="Global_Spider_CreateRandomPath_System_Collections_Generic_List_MovementConnection___" data-uid="Global.Spider.CreateRandomPath(System.Collections.Generic.List{MovementConnection}@)">
+  CreateRandomPath(ref List&lt;MovementConnection&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CreateRandomPath(ref List&lt;MovementConnection&gt; pth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MovementConnection.html">MovementConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Die_" data-uid="Global.Spider.Die*"></a>
+
+  <h3 id="Global_Spider_Die" data-uid="Global.Spider.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_FormCentipede_" data-uid="Global.Spider.FormCentipede*"></a>
+
+  <h3 id="Global_Spider_FormCentipede_Spider_" data-uid="Global.Spider.FormCentipede(Spider)">
+  FormCentipede(Spider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FormCentipede(Spider otherSpider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherSpider</code> <a class="xref" href="Global.Spider.html">Spider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_GenerateIVars_" data-uid="Global.Spider.GenerateIVars*"></a>
+
+  <h3 id="Global_Spider_GenerateIVars" data-uid="Global.Spider.GenerateIVars">
+  GenerateIVars()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GenerateIVars()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_InitiateGraphicsModule_" data-uid="Global.Spider.InitiateGraphicsModule*"></a>
+
+  <h3 id="Global_Spider_InitiateGraphicsModule" data-uid="Global.Spider.InitiateGraphicsModule">
+  InitiateGraphicsModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Move_" data-uid="Global.Spider.Move*"></a>
+
+  <h3 id="Global_Spider_Move_MovementConnection_" data-uid="Global.Spider.Move(MovementConnection)">
+  Move(MovementConnection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1048"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(MovementConnection con)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>con</code> <a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Move_" data-uid="Global.Spider.Move*"></a>
+
+  <h3 id="Global_Spider_Move_UnityEngine_Vector2_" data-uid="Global.Spider.Move(UnityEngine.Vector2)">
+  Move(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1053"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(Vector2 dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dest</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_NewRoom_" data-uid="Global.Spider.NewRoom*"></a>
+
+  <h3 id="Global_Spider_NewRoom_Room_" data-uid="Global.Spider.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_PushOutOfChunk_" data-uid="Global.Spider.PushOutOfChunk*"></a>
+
+  <h3 id="Global_Spider_PushOutOfChunk_BodyChunk_" data-uid="Global.Spider.PushOutOfChunk(BodyChunk)">
+  PushOutOfChunk(BodyChunk)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushOutOfChunk(BodyChunk chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_ResetFlock_" data-uid="Global.Spider.ResetFlock*"></a>
+
+  <h3 id="Global_Spider_ResetFlock" data-uid="Global.Spider.ResetFlock">
+  ResetFlock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetFlock()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_ScoreOfPath_" data-uid="Global.Spider.ScoreOfPath*"></a>
+
+  <h3 id="Global_Spider_ScoreOfPath_System_Collections_Generic_List_MovementConnection__System_Int32_" data-uid="Global.Spider.ScoreOfPath(System.Collections.Generic.List{MovementConnection},System.Int32)">
+  ScoreOfPath(List&lt;MovementConnection&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScoreOfPath(List&lt;MovementConnection&gt; testPath, int testPathCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MovementConnection.html">MovementConnection</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>testPathCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_SpitOutOfShortCut_" data-uid="Global.Spider.SpitOutOfShortCut*"></a>
+
+  <h3 id="Global_Spider_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_" data-uid="Global.Spider.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)">
+  SpitOutOfShortCut(IntVector2, Room, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SpitOutOfShortCut(IntVector2 pos, Room newRoom, bool spitOutAllSticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+    <dt><code>spitOutAllSticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Stun_" data-uid="Global.Spider.Stun*"></a>
+
+  <h3 id="Global_Spider_Stun_System_Int32_" data-uid="Global.Spider.Stun(System.Int32)">
+  Stun(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stun(int st)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_TerrainImpact_" data-uid="Global.Spider.TerrainImpact*"></a>
+
+  <h3 id="Global_Spider_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.Spider.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_TileScore_" data-uid="Global.Spider.TileScore*"></a>
+
+  <h3 id="Global_Spider_TileScore_RWCustom_IntVector2_" data-uid="Global.Spider.TileScore(RWCustom.IntVector2)">
+  TileScore(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TileScore(IntVector2 tile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_TryToAttatch_" data-uid="Global.Spider.TryToAttatch*"></a>
+
+  <h3 id="Global_Spider_TryToAttatch" data-uid="Global.Spider.TryToAttatch">
+  TryToAttatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryToAttatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_Update_" data-uid="Global.Spider.Update*"></a>
+
+  <h3 id="Global_Spider_Update_System_Boolean_" data-uid="Global.Spider.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Spider_VisualContact_" data-uid="Global.Spider.VisualContact*"></a>
+
+  <h3 id="Global_Spider_VisualContact_UnityEngine_Vector2_" data-uid="Global.Spider.VisualContact(UnityEngine.Vector2)">
+  VisualContact(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L1064"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VisualContact(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Spider.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

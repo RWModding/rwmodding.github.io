@@ -1,0 +1,1844 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RainWorldSteamManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RainWorldSteamManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_RainWorldSteamManager.md&amp;value=---%0Auid%3A%20Global.RainWorldSteamManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.RainWorldSteamManager">
+
+
+
+  <h1 id="Global_RainWorldSteamManager" data-uid="Global.RainWorldSteamManager" class="text-break">
+    Class RainWorldSteamManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RainWorldSteamManager : MainLoopProcess</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.MainLoopProcess.html">MainLoopProcess</a></div>
+      <div><span class="xref">RainWorldSteamManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_manager">MainLoopProcess.manager</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_ID">MainLoopProcess.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_framesPerSecond">MainLoopProcess.framesPerSecond</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_myTimeStacker">MainLoopProcess.myTimeStacker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_processActive">MainLoopProcess.processActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_TimeSpeedFac">MainLoopProcess.TimeSpeedFac</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_FadeInTime">MainLoopProcess.FadeInTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_InitialBlackSeconds">MainLoopProcess.InitialBlackSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_AllowDialogs">MainLoopProcess.AllowDialogs</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_RawUpdate_System_Single_">MainLoopProcess.RawUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_GrafUpdate_System_Single_">MainLoopProcess.GrafUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_ShutDownProcess">MainLoopProcess.ShutDownProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_">MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_RainWorldSteamManager__ctor_" data-uid="Global.RainWorldSteamManager.#ctor*"></a>
+
+  <h3 id="Global_RainWorldSteamManager__ctor_ProcessManager_" data-uid="Global.RainWorldSteamManager.#ctor(ProcessManager)">
+  RainWorldSteamManager(ProcessManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RainWorldSteamManager(ProcessManager manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="Global.ProcessManager.html">ProcessManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_RainWorldSteamManager_APP_ID" data-uid="Global.RainWorldSteamManager.APP_ID">
+  APP_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint APP_ID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_DOWNPOUR_APP_ID" data-uid="Global.RainWorldSteamManager.DOWNPOUR_APP_ID">
+  DOWNPOUR_APP_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint DOWNPOUR_APP_ID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_bytesProcessed" data-uid="Global.RainWorldSteamManager.bytesProcessed">
+  bytesProcessed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong bytesProcessed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_bytesTotal" data-uid="Global.RainWorldSteamManager.bytesTotal">
+  bytesTotal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong bytesTotal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_createItemCallback" data-uid="Global.RainWorldSteamManager.createItemCallback">
+  createItemCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallResult&lt;CreateItemResult_t&gt; createItemCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CallResult</span>&lt;<span class="xref">CreateItemResult_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_creatingMod" data-uid="Global.RainWorldSteamManager.creatingMod">
+  creatingMod
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModManager.Mod creatingMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_currentlyDownloading" data-uid="Global.RainWorldSteamManager.currentlyDownloading">
+  currentlyDownloading
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PublishedFileId_t&gt; currentlyDownloading</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">PublishedFileId_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_downloadCallback" data-uid="Global.RainWorldSteamManager.downloadCallback">
+  downloadCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Callback&lt;DownloadItemResult_t&gt; downloadCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Callback</span>&lt;<span class="xref">DownloadItemResult_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_isCurrentlyCreating" data-uid="Global.RainWorldSteamManager.isCurrentlyCreating">
+  isCurrentlyCreating
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isCurrentlyCreating</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_isCurrentlyQuerying" data-uid="Global.RainWorldSteamManager.isCurrentlyQuerying">
+  isCurrentlyQuerying
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isCurrentlyQuerying</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_isCurrentlyUploading" data-uid="Global.RainWorldSteamManager.isCurrentlyUploading">
+  isCurrentlyUploading
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isCurrentlyUploading</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastCreateFail" data-uid="Global.RainWorldSteamManager.lastCreateFail">
+  lastCreateFail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string lastCreateFail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastQueryCount" data-uid="Global.RainWorldSteamManager.lastQueryCount">
+  lastQueryCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lastQueryCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastQueryFail" data-uid="Global.RainWorldSteamManager.lastQueryFail">
+  lastQueryFail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string lastQueryFail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastQueryFiles" data-uid="Global.RainWorldSteamManager.lastQueryFiles">
+  lastQueryFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PublishedFileId_t&gt; lastQueryFiles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">PublishedFileId_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastQueryHandle" data-uid="Global.RainWorldSteamManager.lastQueryHandle">
+  lastQueryHandle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCQueryHandle_t lastQueryHandle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UGCQueryHandle_t</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastQueryOwners" data-uid="Global.RainWorldSteamManager.lastQueryOwners">
+  lastQueryOwners
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ulong&gt; lastQueryOwners</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_lastUploadFail" data-uid="Global.RainWorldSteamManager.lastUploadFail">
+  lastUploadFail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string lastUploadFail</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_needsLegalAgreement" data-uid="Global.RainWorldSteamManager.needsLegalAgreement">
+  needsLegalAgreement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool needsLegalAgreement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_numberItemsAddedForDownloading" data-uid="Global.RainWorldSteamManager.numberItemsAddedForDownloading">
+  numberItemsAddedForDownloading
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int numberItemsAddedForDownloading</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_ownerUserID" data-uid="Global.RainWorldSteamManager.ownerUserID">
+  ownerUserID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong ownerUserID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_queryCallback" data-uid="Global.RainWorldSteamManager.queryCallback">
+  queryCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallResult&lt;SteamUGCQueryCompleted_t&gt; queryCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CallResult</span>&lt;<span class="xref">SteamUGCQueryCompleted_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_shutdown" data-uid="Global.RainWorldSteamManager.shutdown">
+  shutdown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool shutdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_updateHandle" data-uid="Global.RainWorldSteamManager.updateHandle">
+  updateHandle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UGCUpdateHandle_t updateHandle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UGCUpdateHandle_t</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_updateItemCallback" data-uid="Global.RainWorldSteamManager.updateItemCallback">
+  updateItemCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallResult&lt;SubmitItemUpdateResult_t&gt; updateItemCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CallResult</span>&lt;<span class="xref">SubmitItemUpdateResult_t</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_RainWorldSteamManager_uploadingMod" data-uid="Global.RainWorldSteamManager.uploadingMod">
+  uploadingMod
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModManager.Mod uploadingMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_RainWorldSteamManager_ClearAchievement_" data-uid="Global.RainWorldSteamManager.ClearAchievement*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ClearAchievement_System_String_" data-uid="Global.RainWorldSteamManager.ClearAchievement(System.String)">
+  ClearAchievement(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAchievement(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_CreateWorkshopMod_" data-uid="Global.RainWorldSteamManager.CreateWorkshopMod*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_CreateWorkshopMod_ModManager_Mod_" data-uid="Global.RainWorldSteamManager.CreateWorkshopMod(ModManager.Mod)">
+  CreateWorkshopMod(Mod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateWorkshopMod(ModManager.Mod mod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mod</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_DownloadWorkshopMod_" data-uid="Global.RainWorldSteamManager.DownloadWorkshopMod*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_DownloadWorkshopMod_Steamworks_PublishedFileId_t_" data-uid="Global.RainWorldSteamManager.DownloadWorkshopMod(Steamworks.PublishedFileId_t)">
+  DownloadWorkshopMod(PublishedFileId_t)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DownloadWorkshopMod(PublishedFileId_t fileid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileid</code> <span class="xref">PublishedFileId_t</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_FindWorkshopItemsWithKeyValue_" data-uid="Global.RainWorldSteamManager.FindWorkshopItemsWithKeyValue*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_FindWorkshopItemsWithKeyValue_System_String_System_String_" data-uid="Global.RainWorldSteamManager.FindWorkshopItemsWithKeyValue(System.String,System.String)">
+  FindWorkshopItemsWithKeyValue(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindWorkshopItemsWithKeyValue(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_GetSubscribedItems_" data-uid="Global.RainWorldSteamManager.GetSubscribedItems*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_GetSubscribedItems" data-uid="Global.RainWorldSteamManager.GetSubscribedItems">
+  GetSubscribedItems()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PublishedFileId_t[] GetSubscribedItems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PublishedFileId_t</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_GetWorkshopDownloadProgress_" data-uid="Global.RainWorldSteamManager.GetWorkshopDownloadProgress*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_GetWorkshopDownloadProgress" data-uid="Global.RainWorldSteamManager.GetWorkshopDownloadProgress">
+  GetWorkshopDownloadProgress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetWorkshopDownloadProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_HasAchievement_" data-uid="Global.RainWorldSteamManager.HasAchievement*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_HasAchievement_System_String_" data-uid="Global.RainWorldSteamManager.HasAchievement(System.String)">
+  HasAchievement(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAchievement(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_InitCreate_" data-uid="Global.RainWorldSteamManager.InitCreate*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_InitCreate" data-uid="Global.RainWorldSteamManager.InitCreate">
+  InitCreate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitCreate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_InitQuery_" data-uid="Global.RainWorldSteamManager.InitQuery*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_InitQuery" data-uid="Global.RainWorldSteamManager.InitQuery">
+  InitQuery()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitQuery()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_InitUpload_" data-uid="Global.RainWorldSteamManager.InitUpload*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_InitUpload" data-uid="Global.RainWorldSteamManager.InitUpload">
+  InitUpload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InitUpload()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_OnCreateItemResult_" data-uid="Global.RainWorldSteamManager.OnCreateItemResult*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_OnCreateItemResult_Steamworks_CreateItemResult_t_System_Boolean_" data-uid="Global.RainWorldSteamManager.OnCreateItemResult(Steamworks.CreateItemResult_t,System.Boolean)">
+  OnCreateItemResult(CreateItemResult_t, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreateItemResult(CreateItemResult_t callback, bool ioFailure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <span class="xref">CreateItemResult_t</span></dt>
+    <dd></dd>
+    <dt><code>ioFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_OnDownloadItemResult_" data-uid="Global.RainWorldSteamManager.OnDownloadItemResult*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_OnDownloadItemResult_Steamworks_DownloadItemResult_t_" data-uid="Global.RainWorldSteamManager.OnDownloadItemResult(Steamworks.DownloadItemResult_t)">
+  OnDownloadItemResult(DownloadItemResult_t)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDownloadItemResult(DownloadItemResult_t callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <span class="xref">DownloadItemResult_t</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_OnQueryResult_" data-uid="Global.RainWorldSteamManager.OnQueryResult*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_OnQueryResult_Steamworks_SteamUGCQueryCompleted_t_System_Boolean_" data-uid="Global.RainWorldSteamManager.OnQueryResult(Steamworks.SteamUGCQueryCompleted_t,System.Boolean)">
+  OnQueryResult(SteamUGCQueryCompleted_t, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnQueryResult(SteamUGCQueryCompleted_t callback, bool ioFailure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <span class="xref">SteamUGCQueryCompleted_t</span></dt>
+    <dd></dd>
+    <dt><code>ioFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_OnUpdateItemResult_" data-uid="Global.RainWorldSteamManager.OnUpdateItemResult*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_OnUpdateItemResult_Steamworks_SubmitItemUpdateResult_t_System_Boolean_" data-uid="Global.RainWorldSteamManager.OnUpdateItemResult(Steamworks.SubmitItemUpdateResult_t,System.Boolean)">
+  OnUpdateItemResult(SubmitItemUpdateResult_t, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUpdateItemResult(SubmitItemUpdateResult_t callback, bool ioFailure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <span class="xref">SubmitItemUpdateResult_t</span></dt>
+    <dd></dd>
+    <dt><code>ioFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ResetDownloadBatch_" data-uid="Global.RainWorldSteamManager.ResetDownloadBatch*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ResetDownloadBatch" data-uid="Global.RainWorldSteamManager.ResetDownloadBatch">
+  ResetDownloadBatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDownloadBatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_SetAchievement_" data-uid="Global.RainWorldSteamManager.SetAchievement*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_SetAchievement_System_String_" data-uid="Global.RainWorldSteamManager.SetAchievement(System.String)">
+  SetAchievement(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAchievement(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ShowDownpourStorePage_" data-uid="Global.RainWorldSteamManager.ShowDownpourStorePage*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ShowDownpourStorePage" data-uid="Global.RainWorldSteamManager.ShowDownpourStorePage">
+  ShowDownpourStorePage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowDownpourStorePage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ShowLegalAgreement_" data-uid="Global.RainWorldSteamManager.ShowLegalAgreement*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ShowLegalAgreement" data-uid="Global.RainWorldSteamManager.ShowLegalAgreement">
+  ShowLegalAgreement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowLegalAgreement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ShowStorePage_" data-uid="Global.RainWorldSteamManager.ShowStorePage*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ShowStorePage" data-uid="Global.RainWorldSteamManager.ShowStorePage">
+  ShowStorePage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowStorePage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ShowWorkshopDetails_" data-uid="Global.RainWorldSteamManager.ShowWorkshopDetails*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ShowWorkshopDetails_System_UInt64_" data-uid="Global.RainWorldSteamManager.ShowWorkshopDetails(System.UInt64)">
+  ShowWorkshopDetails(ulong)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowWorkshopDetails(ulong workshopId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>workshopId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ShutDown_" data-uid="Global.RainWorldSteamManager.ShutDown*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ShutDown" data-uid="Global.RainWorldSteamManager.ShutDown">
+  ShutDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShutDown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_Translate_" data-uid="Global.RainWorldSteamManager.Translate*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_Translate_System_String_" data-uid="Global.RainWorldSteamManager.Translate(System.String)">
+  Translate(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Translate(string t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_Update_" data-uid="Global.RainWorldSteamManager.Update*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_Update" data-uid="Global.RainWorldSteamManager.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_UploadWorkshopMod_" data-uid="Global.RainWorldSteamManager.UploadWorkshopMod*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_UploadWorkshopMod_ModManager_Mod_System_Boolean_" data-uid="Global.RainWorldSteamManager.UploadWorkshopMod(ModManager.Mod,System.Boolean)">
+  UploadWorkshopMod(Mod, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UploadWorkshopMod(ModManager.Mod mod, bool unlisted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mod</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+    <dt><code>unlisted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ValidateModApplicableForWorkshopUpload_" data-uid="Global.RainWorldSteamManager.ValidateModApplicableForWorkshopUpload*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ValidateModApplicableForWorkshopUpload_ModManager_Mod_" data-uid="Global.RainWorldSteamManager.ValidateModApplicableForWorkshopUpload(ModManager.Mod)">
+  ValidateModApplicableForWorkshopUpload(Mod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ValidateModApplicableForWorkshopUpload(ModManager.Mod mod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mod</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_RainWorldSteamManager_ValidateWorkshopModForProblems_" data-uid="Global.RainWorldSteamManager.ValidateWorkshopModForProblems*"></a>
+
+  <h3 id="Global_RainWorldSteamManager_ValidateWorkshopModForProblems_ModManager_Mod_" data-uid="Global.RainWorldSteamManager.ValidateWorkshopModForProblems(ModManager.Mod)">
+  ValidateWorkshopModForProblems(Mod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValidateWorkshopModForProblems(ModManager.Mod mod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mod</code> <a class="xref" href="ModManager.html">ModManager</a>.<a class="xref" href="ModManager.Mod.html">Mod</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/RainWorldSteamManager.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

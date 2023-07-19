@@ -1,0 +1,2722 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BigJellyFish
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BigJellyFish
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=MoreSlugcats_BigJellyFish.md&amp;value=---%0Auid%3A%20MoreSlugcats.BigJellyFish%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MoreSlugcats.BigJellyFish">
+
+
+
+  <h1 id="MoreSlugcats_BigJellyFish" data-uid="MoreSlugcats.BigJellyFish" class="text-break">
+    Class BigJellyFish
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MoreSlugcats.html">MoreSlugcats</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BigJellyFish : Creature, IDrawable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><span class="xref">BigJellyFish</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_blind">Creature.blind</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_deaf">Creature.deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTag">Creature.killTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTagCounter">Creature.killTagCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_leechedOut">Creature.leechedOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_newToRoomInvinsibility">Creature.newToRoomInvinsibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_rainDeath">Creature.rainDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortcutDelay">Creature.shortcutDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_enteringShortCut">Creature.enteringShortCut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortCutRadAdd">Creature.shortCutRadAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NPCTransportationDestination">Creature.NPCTransportationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastCoord">Creature.lastCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContact">Creature.lavaContact</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContactCount">Creature.lavaContactCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedByDaddyCorruption">Creature.GrabbedByDaddyCorruption</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stunDamageType">Creature.stunDamageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaGain">Creature.HypothermiaGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaExposure">Creature.HypothermiaExposure</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaStunDelayCounter">Creature.HypothermiaStunDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithoutDiagonals">Creature.inputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithoutDiagonals">Creature.lastInputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithDiagonals">Creature.inputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithDiagonals">Creature.lastInputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_freezeControls">Creature.freezeControls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_protectDeathRecursionFlag">Creature.protectDeathRecursionFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stun">Creature.stun</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stunned">Creature.Stunned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blinded">Creature.Blinded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deaf">Creature.Deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunkIndex">Creature.mainBodyChunkIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunk">Creature.mainBodyChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_dead">Creature.dead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Consious">Creature.Consious</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_VisionPoint">Creature.VisionPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inShortcut">Creature.inShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_grasps">Creature.grasps</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_DangerPos">Creature.DangerPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_abstractCreature">Creature.abstractCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Template">Creature.Template</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_State">Creature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_coord">Creature.coord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_safariControlled">Creature.safariControlled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Hypothermia">Creature.Hypothermia</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_WormGrassGooduckyImmune">Creature.WormGrassGooduckyImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_RecreateSticksFromAbstract">Creature.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PlaceInRoom_Room_">Creature.PlaceInRoom(Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NewTile">Creature.NewTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SetKillTag_AbstractCreature_">Creature.SetKillTag(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stun_System_Int32_">Creature.Stun(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blind_System_Int32_">Creature.Blind(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deafen_System_Int32_">Creature.Deafen(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_">Creature.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_">Creature.SpitOutOfShortCut(IntVector2, Room, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_">Creature.SuckedIntoShortCut(IntVector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyIntoRoom_WorldCoordinate_Room_">Creature.FlyIntoRoom(WorldCoordinate, Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyAwayFromRoom_System_Boolean_">Creature.FlyAwayFromRoom(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Abstractize">Creature.Abstractize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_LoseAllGrasps">Creature.LoseAllGrasps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_BodyPartByIndex_System_Int32_">Creature.BodyPartByIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseGrasp_System_Int32_">Creature.ReleaseGrasp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SwitchGrasps_System_Int32_System_Int32_">Creature.SwitchGrasps(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_UpdateGraspIndexes">Creature.UpdateGraspIndexes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_CanBeGrabbed_Creature_">Creature.CanBeGrabbed(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_">Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_">Creature.GrabbedObjectSnatched(PhysicalObject, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ShortCutColor">Creature.ShortCutColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_">Creature.TerrainImpact(int, IntVector2, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">Creature.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ToString">Creature.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_">Creature.ReleaseDoorForbiddenCreatures(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_">Creature.AllowableControlledAIOverride(MovementConnection.MovementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaUpdate">Creature.HypothermiaUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_">Creature.HypothermiaBodyContactWarmup(Creature, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SafariControlInputUpdate_System_Int32_">Creature.SafariControlInputUpdate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_InitiateGraphicsModule">PhysicalObject.InitiateGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MoreSlugcats_BigJellyFish__ctor_" data-uid="MoreSlugcats.BigJellyFish.#ctor*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish__ctor_AbstractCreature_World_" data-uid="MoreSlugcats.BigJellyFish.#ctor(AbstractCreature,World)">
+  BigJellyFish(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigJellyFish(AbstractCreature abstractPhysicalObject, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractPhysicalObject</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_CoreChunk" data-uid="MoreSlugcats.BigJellyFish.CoreChunk">
+  CoreChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CoreChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_LightCounter" data-uid="MoreSlugcats.BigJellyFish.LightCounter">
+  LightCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LightCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_SMSuckCounter" data-uid="MoreSlugcats.BigJellyFish.SMSuckCounter">
+  SMSuckCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SMSuckCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_StartPos" data-uid="MoreSlugcats.BigJellyFish.StartPos">
+  StartPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 StartPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_anyTentaclePulled" data-uid="MoreSlugcats.BigJellyFish.anyTentaclePulled">
+  anyTentaclePulled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool anyTentaclePulled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_color" data-uid="MoreSlugcats.BigJellyFish.color">
+  color
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color color</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_consumedCreatures" data-uid="MoreSlugcats.BigJellyFish.consumedCreatures">
+  consumedCreatures
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Creature&gt; consumedCreatures</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Creature.html">Creature</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_coreColor" data-uid="MoreSlugcats.BigJellyFish.coreColor">
+  coreColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color coreColor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_coreColorDark" data-uid="MoreSlugcats.BigJellyFish.coreColorDark">
+  coreColorDark
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color coreColorDark</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_darkness" data-uid="MoreSlugcats.BigJellyFish.darkness">
+  darkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float darkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_driftCounter" data-uid="MoreSlugcats.BigJellyFish.driftCounter">
+  driftCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float driftCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_driftGoalPos" data-uid="MoreSlugcats.BigJellyFish.driftGoalPos">
+  driftGoalPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 driftGoalPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_driftMaxim" data-uid="MoreSlugcats.BigJellyFish.driftMaxim">
+  driftMaxim
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float driftMaxim</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_goHome" data-uid="MoreSlugcats.BigJellyFish.goHome">
+  goHome
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool goHome</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_hoodPulse" data-uid="MoreSlugcats.BigJellyFish.hoodPulse">
+  hoodPulse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float hoodPulse</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_hoodSwayingPulse" data-uid="MoreSlugcats.BigJellyFish.hoodSwayingPulse">
+  hoodSwayingPulse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float hoodSwayingPulse</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_huntPos" data-uid="MoreSlugcats.BigJellyFish.huntPos">
+  huntPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? huntPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_huntingCounter" data-uid="MoreSlugcats.BigJellyFish.huntingCounter">
+  huntingCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int huntingCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_lastDarkness" data-uid="MoreSlugcats.BigJellyFish.lastDarkness">
+  lastDarkness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastDarkness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_lastRotation" data-uid="MoreSlugcats.BigJellyFish.lastRotation">
+  lastRotation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lastRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_latchOnToBodyChunks" data-uid="MoreSlugcats.BigJellyFish.latchOnToBodyChunks">
+  latchOnToBodyChunks
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk[] latchOnToBodyChunks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BodyChunk.html">BodyChunk</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_leftHoodChunk" data-uid="MoreSlugcats.BigJellyFish.leftHoodChunk">
+  leftHoodChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int leftHoodChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_maxTGap" data-uid="MoreSlugcats.BigJellyFish.maxTGap">
+  maxTGap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxTGap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_minTGap" data-uid="MoreSlugcats.BigJellyFish.minTGap">
+  minTGap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minTGap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_mooCounter" data-uid="MoreSlugcats.BigJellyFish.mooCounter">
+  mooCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mooCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_mouthBeads" data-uid="MoreSlugcats.BigJellyFish.mouthBeads">
+  mouthBeads
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] mouthBeads</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_myLight" data-uid="MoreSlugcats.BigJellyFish.myLight">
+  myLight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightSource myLight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.LightSource.html">LightSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_oralArmOffsets" data-uid="MoreSlugcats.BigJellyFish.oralArmOffsets">
+  oralArmOffsets
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2[] oralArmOffsets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_oralArmSway" data-uid="MoreSlugcats.BigJellyFish.oralArmSway">
+  oralArmSway
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float oralArmSway</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_rightHoodChunk" data-uid="MoreSlugcats.BigJellyFish.rightHoodChunk">
+  rightHoodChunk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int rightHoodChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_rotation" data-uid="MoreSlugcats.BigJellyFish.rotation">
+  rotation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 rotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_surfaceMode" data-uid="MoreSlugcats.BigJellyFish.surfaceMode">
+  surfaceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool surfaceMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_tentacleScaler" data-uid="MoreSlugcats.BigJellyFish.tentacleScaler">
+  tentacleScaler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] tentacleScaler</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_tentacles" data-uid="MoreSlugcats.BigJellyFish.tentacles">
+  tentacles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2[][,] tentacles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>[][,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_tentaclesWithdrawn" data-uid="MoreSlugcats.BigJellyFish.tentaclesWithdrawn">
+  tentaclesWithdrawn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float tentaclesWithdrawn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_BigJellyFish_timeAbove" data-uid="MoreSlugcats.BigJellyFish.timeAbove">
+  timeAbove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeAbove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MoreSlugcats_BigJellyFish_BodySpriteLength_" data-uid="MoreSlugcats.BigJellyFish.BodySpriteLength*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_BodySpriteLength" data-uid="MoreSlugcats.BigJellyFish.BodySpriteLength">
+  BodySpriteLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodySpriteLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_BodySpriteStart_" data-uid="MoreSlugcats.BigJellyFish.BodySpriteStart*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_BodySpriteStart" data-uid="MoreSlugcats.BigJellyFish.BodySpriteStart">
+  BodySpriteStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodySpriteStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_CoreSpriteLength_" data-uid="MoreSlugcats.BigJellyFish.CoreSpriteLength*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_CoreSpriteLength" data-uid="MoreSlugcats.BigJellyFish.CoreSpriteLength">
+  CoreSpriteLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CoreSpriteLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_CoreSpriteStart_" data-uid="MoreSlugcats.BigJellyFish.CoreSpriteStart*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_CoreSpriteStart" data-uid="MoreSlugcats.BigJellyFish.CoreSpriteStart">
+  CoreSpriteStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CoreSpriteStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_MouthSpriteLength_" data-uid="MoreSlugcats.BigJellyFish.MouthSpriteLength*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_MouthSpriteLength" data-uid="MoreSlugcats.BigJellyFish.MouthSpriteLength">
+  MouthSpriteLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MouthSpriteLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_OralArmsStart_" data-uid="MoreSlugcats.BigJellyFish.OralArmsStart*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_OralArmsStart" data-uid="MoreSlugcats.BigJellyFish.OralArmsStart">
+  OralArmsStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OralArmsStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_TotalSprites_" data-uid="MoreSlugcats.BigJellyFish.TotalSprites*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_TotalSprites" data-uid="MoreSlugcats.BigJellyFish.TotalSprites">
+  TotalSprites
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalSprites { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_abstractState_" data-uid="MoreSlugcats.BigJellyFish.abstractState*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_abstractState" data-uid="MoreSlugcats.BigJellyFish.abstractState">
+  abstractState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigJellyState abstractState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.BigJellyState.html">BigJellyState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_canBeSurfaceMode_" data-uid="MoreSlugcats.BigJellyFish.canBeSurfaceMode*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_canBeSurfaceMode" data-uid="MoreSlugcats.BigJellyFish.canBeSurfaceMode">
+  canBeSurfaceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canBeSurfaceMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_hoodSpriteStart_" data-uid="MoreSlugcats.BigJellyFish.hoodSpriteStart*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_hoodSpriteStart" data-uid="MoreSlugcats.BigJellyFish.hoodSpriteStart">
+  hoodSpriteStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int hoodSpriteStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MoreSlugcats_BigJellyFish_AddToContainer_" data-uid="MoreSlugcats.BigJellyFish.AddToContainer*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="MoreSlugcats.BigJellyFish.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_ApplyPalette_" data-uid="MoreSlugcats.BigJellyFish.ApplyPalette*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="MoreSlugcats.BigJellyFish.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_AttachPos_" data-uid="MoreSlugcats.BigJellyFish.AttachPos*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_AttachPos_System_Int32_System_Single_" data-uid="MoreSlugcats.BigJellyFish.AttachPos(System.Int32,System.Single)">
+  AttachPos(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 AttachPos(int rag, float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_Collide_" data-uid="MoreSlugcats.BigJellyFish.Collide*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_Collide_PhysicalObject_System_Int32_System_Int32_" data-uid="MoreSlugcats.BigJellyFish.Collide(PhysicalObject,System.Int32,System.Int32)">
+  Collide(PhysicalObject, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L939"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Collide(PhysicalObject otherObject, int myChunk, int otherChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>myChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>otherChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_ConsumeCreateUpdate_" data-uid="MoreSlugcats.BigJellyFish.ConsumeCreateUpdate*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_ConsumeCreateUpdate" data-uid="MoreSlugcats.BigJellyFish.ConsumeCreateUpdate">
+  ConsumeCreateUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1000"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConsumeCreateUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_DebugDrag_" data-uid="MoreSlugcats.BigJellyFish.DebugDrag*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_DebugDrag" data-uid="MoreSlugcats.BigJellyFish.DebugDrag">
+  DebugDrag()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DebugDrag()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_Die_" data-uid="MoreSlugcats.BigJellyFish.Die*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_Die" data-uid="MoreSlugcats.BigJellyFish.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1065"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_DisableAirAccess_" data-uid="MoreSlugcats.BigJellyFish.DisableAirAccess*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_DisableAirAccess" data-uid="MoreSlugcats.BigJellyFish.DisableAirAccess">
+  DisableAirAccess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableAirAccess()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_DrawSprites_" data-uid="MoreSlugcats.BigJellyFish.DrawSprites*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="MoreSlugcats.BigJellyFish.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_HeardNoise_" data-uid="MoreSlugcats.BigJellyFish.HeardNoise*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_HeardNoise_Noise_InGameNoise_" data-uid="MoreSlugcats.BigJellyFish.HeardNoise(Noise.InGameNoise)">
+  HeardNoise(InGameNoise)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L919"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void HeardNoise(InGameNoise noise)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>noise</code> <a class="xref" href="Noise.InGameNoise.html">InGameNoise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_InitiateSprites_" data-uid="MoreSlugcats.BigJellyFish.InitiateSprites*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="MoreSlugcats.BigJellyFish.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_LightUpdate_" data-uid="MoreSlugcats.BigJellyFish.LightUpdate*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_LightUpdate" data-uid="MoreSlugcats.BigJellyFish.LightUpdate">
+  LightUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1037"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LightUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_MouthLeftPos_" data-uid="MoreSlugcats.BigJellyFish.MouthLeftPos*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_MouthLeftPos_System_Single_" data-uid="MoreSlugcats.BigJellyFish.MouthLeftPos(System.Single)">
+  MouthLeftPos(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1025"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MouthLeftPos(float timestacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_MouthRightPos_" data-uid="MoreSlugcats.BigJellyFish.MouthRightPos*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_MouthRightPos_System_Single_" data-uid="MoreSlugcats.BigJellyFish.MouthRightPos(System.Single)">
+  MouthRightPos(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 MouthRightPos(float timestacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_NewRoom_" data-uid="MoreSlugcats.BigJellyFish.NewRoom*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_NewRoom_Room_" data-uid="MoreSlugcats.BigJellyFish.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_PlayHorrifyingMoo_" data-uid="MoreSlugcats.BigJellyFish.PlayHorrifyingMoo*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_PlayHorrifyingMoo" data-uid="MoreSlugcats.BigJellyFish.PlayHorrifyingMoo">
+  PlayHorrifyingMoo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayHorrifyingMoo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_ResetTentacles_" data-uid="MoreSlugcats.BigJellyFish.ResetTentacles*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_ResetTentacles" data-uid="MoreSlugcats.BigJellyFish.ResetTentacles">
+  ResetTentacles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetTentacles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_TentacleSprite_" data-uid="MoreSlugcats.BigJellyFish.TentacleSprite*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_TentacleSprite_System_Int32_" data-uid="MoreSlugcats.BigJellyFish.TentacleSprite(System.Int32)">
+  TentacleSprite(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L908"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TentacleSprite(int t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_Update_" data-uid="MoreSlugcats.BigJellyFish.Update*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_Update_System_Boolean_" data-uid="MoreSlugcats.BigJellyFish.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_ValidGrabCreature_" data-uid="MoreSlugcats.BigJellyFish.ValidGrabCreature*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_ValidGrabCreature_AbstractCreature_" data-uid="MoreSlugcats.BigJellyFish.ValidGrabCreature(AbstractCreature)">
+  ValidGrabCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L991"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidGrabCreature(AbstractCreature abs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abs</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_Violence_" data-uid="MoreSlugcats.BigJellyFish.Violence*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_" data-uid="MoreSlugcats.BigJellyFish.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)">
+  Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos hitAppendage, Creature.DamageType type, float damage, float stunBonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>directionAndMomentum</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>hitChunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>hitAppendage</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stunBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_newCuriousHuntPos_" data-uid="MoreSlugcats.BigJellyFish.newCuriousHuntPos*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_newCuriousHuntPos_UnityEngine_Vector2_" data-uid="MoreSlugcats.BigJellyFish.newCuriousHuntPos(UnityEngine.Vector2)">
+  newCuriousHuntPos(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void newCuriousHuntPos(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_BigJellyFish_newHuntPos_" data-uid="MoreSlugcats.BigJellyFish.newHuntPos*"></a>
+
+  <h3 id="MoreSlugcats_BigJellyFish_newHuntPos_UnityEngine_Vector2_" data-uid="MoreSlugcats.BigJellyFish.newHuntPos(UnityEngine.Vector2)">
+  newHuntPos(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void newHuntPos(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/BigJellyFish.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

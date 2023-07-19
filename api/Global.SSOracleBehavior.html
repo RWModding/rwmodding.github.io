@@ -1,0 +1,2524 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SSOracleBehavior
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SSOracleBehavior
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_SSOracleBehavior.md&amp;value=---%0Auid%3A%20Global.SSOracleBehavior%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.SSOracleBehavior">
+
+
+
+  <h1 id="Global_SSOracleBehavior" data-uid="Global.SSOracleBehavior" class="text-break">
+    Class SSOracleBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SSOracleBehavior : OracleBehavior, Conversation.IOwnAConversation</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.OracleBehavior.html">OracleBehavior</a></div>
+      <div><span class="xref">SSOracleBehavior</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Conversation.html">Conversation</a>.<a class="xref" href="Conversation.IOwnAConversation.html">IOwnAConversation</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_oracle">OracleBehavior.oracle</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_lookPoint">OracleBehavior.lookPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_player">OracleBehavior.player</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_allStillCounter">OracleBehavior.allStillCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_consistentBasePosCounter">OracleBehavior.consistentBasePosCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_inActionCounter">OracleBehavior.inActionCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_dbspr">OracleBehavior.dbspr</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_voice">OracleBehavior.voice</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_safariCreature">OracleBehavior.safariCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_isRepeatedDiscussion">OracleBehavior.isRepeatedDiscussion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_PlayersInRoom">OracleBehavior.PlayersInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_PlayerWithNeuronInStomach">OracleBehavior.PlayerWithNeuronInStomach</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_StunCoopPlayers_System_Int32_">OracleBehavior.StunCoopPlayers(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_FindPlayer">OracleBehavior.FindPlayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_Translate_System_String_">OracleBehavior.Translate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_AlreadyDiscussedItemString_System_Boolean_">OracleBehavior.AlreadyDiscussedItemString(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_CheckSlugpupsInRoom">OracleBehavior.CheckSlugpupsInRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.OracleBehavior.html#Global_OracleBehavior_CheckStrayCreatureInRoom">OracleBehavior.CheckStrayCreatureInRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_SSOracleBehavior__ctor_" data-uid="Global.SSOracleBehavior.#ctor*"></a>
+
+  <h3 id="Global_SSOracleBehavior__ctor_Oracle_" data-uid="Global.SSOracleBehavior.#ctor(Oracle)">
+  SSOracleBehavior(Oracle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3083"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior(Oracle oracle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oracle</code> <a class="xref" href="Global.Oracle.html">Oracle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_SSOracleBehavior_SMCorePearl" data-uid="Global.SSOracleBehavior.SMCorePearl">
+  SMCorePearl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3009"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpearMasterPearl SMCorePearl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SpearMasterPearl.html">SpearMasterPearl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_action" data-uid="Global.SSOracleBehavior.action">
+  action
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2997"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior.Action action</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.Action.html">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_afterGiveMarkAction" data-uid="Global.SSOracleBehavior.afterGiveMarkAction">
+  afterGiveMarkAction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2999"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior.Action afterGiveMarkAction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.Action.html">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_allSubBehaviors" data-uid="Global.SSOracleBehavior.allSubBehaviors">
+  allSubBehaviors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2979"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SSOracleBehavior.SubBehavior&gt; allSubBehaviors</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.SubBehavior.html">SubBehavior</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_baseIdeal" data-uid="Global.SSOracleBehavior.baseIdeal">
+  baseIdeal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2959"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 baseIdeal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_conversation" data-uid="Global.SSOracleBehavior.conversation">
+  conversation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior.PebblesConversation conversation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.PebblesConversation.html">PebblesConversation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_currSubBehavior" data-uid="Global.SSOracleBehavior.currSubBehavior">
+  currSubBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2977"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior.SubBehavior currSubBehavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.SubBehavior.html">SubBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_currentGetTo" data-uid="Global.SSOracleBehavior.currentGetTo">
+  currentGetTo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 currentGetTo</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_dangerousSingularity" data-uid="Global.SSOracleBehavior.dangerousSingularity">
+  dangerousSingularity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3015"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SingularityBomb dangerousSingularity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SingularityBomb.html">SingularityBomb</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_discoverCounter" data-uid="Global.SSOracleBehavior.discoverCounter">
+  discoverCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2967"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int discoverCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_floatyMovement" data-uid="Global.SSOracleBehavior.floatyMovement">
+  floatyMovement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool floatyMovement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_getToWorking" data-uid="Global.SSOracleBehavior.getToWorking">
+  getToWorking
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getToWorking</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_greenNeuron" data-uid="Global.SSOracleBehavior.greenNeuron">
+  greenNeuron
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2981"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NSHSwarmer greenNeuron</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.NSHSwarmer.html">NSHSwarmer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_inspectPearl" data-uid="Global.SSOracleBehavior.inspectPearl">
+  inspectPearl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3013"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataPearl inspectPearl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DataPearl.html">DataPearl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_investigateAngle" data-uid="Global.SSOracleBehavior.investigateAngle">
+  investigateAngle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2953"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float investigateAngle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_investigateMarble" data-uid="Global.SSOracleBehavior.investigateMarble">
+  investigateMarble
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2957"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PebblesPearl investigateMarble</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PebblesPearl.html">PebblesPearl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_invstAngSpeed" data-uid="Global.SSOracleBehavior.invstAngSpeed">
+  invstAngSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2955"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float invstAngSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_killFac" data-uid="Global.SSOracleBehavior.killFac">
+  killFac
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2969"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float killFac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_killFacOverseer" data-uid="Global.SSOracleBehavior.killFacOverseer">
+  killFacOverseer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3005"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float killFacOverseer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_killOnSightCounter" data-uid="Global.SSOracleBehavior.killOnSightCounter">
+  killOnSightCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3017"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int killOnSightCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_lastKillFac" data-uid="Global.SSOracleBehavior.lastKillFac">
+  lastKillFac
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2971"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastKillFac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_lastKillFacOverseer" data-uid="Global.SSOracleBehavior.lastKillFacOverseer">
+  lastKillFacOverseer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3007"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastKillFacOverseer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_lastPearlPickedUp" data-uid="Global.SSOracleBehavior.lastPearlPickedUp">
+  lastPearlPickedUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lastPearlPickedUp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_lastPos" data-uid="Global.SSOracleBehavior.lastPos">
+  lastPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lastPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_lastPosHandle" data-uid="Global.SSOracleBehavior.lastPosHandle">
+  lastPosHandle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lastPosHandle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_movementBehavior" data-uid="Global.SSOracleBehavior.movementBehavior">
+  movementBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3001"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSOracleBehavior.MovementBehavior movementBehavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.MovementBehavior.html">MovementBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_nextPos" data-uid="Global.SSOracleBehavior.nextPos">
+  nextPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 nextPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_nextPosHandle" data-uid="Global.SSOracleBehavior.nextPosHandle">
+  nextPosHandle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2947"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 nextPosHandle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_pathProgression" data-uid="Global.SSOracleBehavior.pathProgression">
+  pathProgression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2951"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pathProgression</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_pearlConversation" data-uid="Global.SSOracleBehavior.pearlConversation">
+  pearlConversation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3011"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SLOracleBehaviorHasMark.MoonConversation pearlConversation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SLOracleBehaviorHasMark.html">SLOracleBehaviorHasMark</a>.<a class="xref" href="SLOracleBehaviorHasMark.MoonConversation.html">MoonConversation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_pearlPickupReaction" data-uid="Global.SSOracleBehavior.pearlPickupReaction">
+  pearlPickupReaction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool pearlPickupReaction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_playerEnteredWithMark" data-uid="Global.SSOracleBehavior.playerEnteredWithMark">
+  playerEnteredWithMark
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2993"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playerEnteredWithMark</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_playerOutOfRoomCounter" data-uid="Global.SSOracleBehavior.playerOutOfRoomCounter">
+  playerOutOfRoomCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2975"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int playerOutOfRoomCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_readDataPearlOrbits" data-uid="Global.SSOracleBehavior.readDataPearlOrbits">
+  readDataPearlOrbits
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3019"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DataPearl.AbstractDataPearl&gt; readDataPearlOrbits</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="DataPearl.html">DataPearl</a>.<a class="xref" href="DataPearl.AbstractDataPearl.html">AbstractDataPearl</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_readPearlGlyphs" data-uid="Global.SSOracleBehavior.readPearlGlyphs">
+  readPearlGlyphs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3021"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;DataPearl.AbstractDataPearl, GlyphLabel&gt; readPearlGlyphs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="DataPearl.html">DataPearl</a>.<a class="xref" href="DataPearl.AbstractDataPearl.html">AbstractDataPearl</a>, <a class="xref" href="GlyphLabel.html">GlyphLabel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_restartConversationAfterCurrentDialoge" data-uid="Global.SSOracleBehavior.restartConversationAfterCurrentDialoge">
+  restartConversationAfterCurrentDialoge
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2991"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool restartConversationAfterCurrentDialoge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_talkedAboutThisSession" data-uid="Global.SSOracleBehavior.talkedAboutThisSession">
+  talkedAboutThisSession
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2985"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EntityID&gt; talkedAboutThisSession</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EntityID.html">EntityID</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_throwOutCounter" data-uid="Global.SSOracleBehavior.throwOutCounter">
+  throwOutCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2973"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int throwOutCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_timeSinceSeenPlayer" data-uid="Global.SSOracleBehavior.timeSinceSeenPlayer">
+  timeSinceSeenPlayer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2995"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeSinceSeenPlayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_unconciousTick" data-uid="Global.SSOracleBehavior.unconciousTick">
+  unconciousTick
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3003"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float unconciousTick</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_SSOracleBehavior_working" data-uid="Global.SSOracleBehavior.working">
+  working
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L2961"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float working</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_SSOracleBehavior_BaseGetToPos_" data-uid="Global.SSOracleBehavior.BaseGetToPos*"></a>
+
+  <h3 id="Global_SSOracleBehavior_BaseGetToPos" data-uid="Global.SSOracleBehavior.BaseGetToPos">
+  BaseGetToPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 BaseGetToPos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_EyesClosed_" data-uid="Global.SSOracleBehavior.EyesClosed*"></a>
+
+  <h3 id="Global_SSOracleBehavior_EyesClosed" data-uid="Global.SSOracleBehavior.EyesClosed">
+  EyesClosed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3079"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool EyesClosed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_GetToDir_" data-uid="Global.SSOracleBehavior.GetToDir*"></a>
+
+  <h3 id="Global_SSOracleBehavior_GetToDir" data-uid="Global.SSOracleBehavior.GetToDir">
+  GetToDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3063"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 GetToDir { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_HasSeenGreenNeuron_" data-uid="Global.SSOracleBehavior.HasSeenGreenNeuron*"></a>
+
+  <h3 id="Global_SSOracleBehavior_HasSeenGreenNeuron" data-uid="Global.SSOracleBehavior.HasSeenGreenNeuron">
+  HasSeenGreenNeuron
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3036"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSeenGreenNeuron { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_OracleGetToPos_" data-uid="Global.SSOracleBehavior.OracleGetToPos*"></a>
+
+  <h3 id="Global_SSOracleBehavior_OracleGetToPos" data-uid="Global.SSOracleBehavior.OracleGetToPos">
+  OracleGetToPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3048"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 OracleGetToPos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_dialogBox_" data-uid="Global.SSOracleBehavior.dialogBox*"></a>
+
+  <h3 id="Global_SSOracleBehavior_dialogBox" data-uid="Global.SSOracleBehavior.dialogBox">
+  dialogBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3023"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DialogBox dialogBox { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="HUD.DialogBox.html">DialogBox</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_rainWorld_" data-uid="Global.SSOracleBehavior.rainWorld*"></a>
+
+  <h3 id="Global_SSOracleBehavior_rainWorld" data-uid="Global.SSOracleBehavior.rainWorld">
+  rainWorld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3081"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RainWorld rainWorld { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RainWorld.html">RainWorld</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_SSOracleBehavior_BasePosScore_" data-uid="Global.SSOracleBehavior.BasePosScore*"></a>
+
+  <h3 id="Global_SSOracleBehavior_BasePosScore_UnityEngine_Vector2_" data-uid="Global.SSOracleBehavior.BasePosScore(UnityEngine.Vector2)">
+  BasePosScore(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BasePosScore(Vector2 tryPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tryPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_ClampVectorInRoom_" data-uid="Global.SSOracleBehavior.ClampVectorInRoom*"></a>
+
+  <h3 id="Global_SSOracleBehavior_ClampVectorInRoom_UnityEngine_Vector2_" data-uid="Global.SSOracleBehavior.ClampVectorInRoom(UnityEngine.Vector2)">
+  ClampVectorInRoom(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ClampVectorInRoom(Vector2 v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_CommunicatePosScore_" data-uid="Global.SSOracleBehavior.CommunicatePosScore*"></a>
+
+  <h3 id="Global_SSOracleBehavior_CommunicatePosScore_UnityEngine_Vector2_" data-uid="Global.SSOracleBehavior.CommunicatePosScore(UnityEngine.Vector2)">
+  CommunicatePosScore(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CommunicatePosScore(Vector2 tryPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tryPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_CreatureJokeDialog_" data-uid="Global.SSOracleBehavior.CreatureJokeDialog*"></a>
+
+  <h3 id="Global_SSOracleBehavior_CreatureJokeDialog" data-uid="Global.SSOracleBehavior.CreatureJokeDialog">
+  CreatureJokeDialog()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreatureJokeDialog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_HandTowardsPlayer_" data-uid="Global.SSOracleBehavior.HandTowardsPlayer*"></a>
+
+  <h3 id="Global_SSOracleBehavior_HandTowardsPlayer" data-uid="Global.SSOracleBehavior.HandTowardsPlayer">
+  HandTowardsPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandTowardsPlayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_InitStoryPearlCollection_" data-uid="Global.SSOracleBehavior.InitStoryPearlCollection*"></a>
+
+  <h3 id="Global_SSOracleBehavior_InitStoryPearlCollection" data-uid="Global.SSOracleBehavior.InitStoryPearlCollection">
+  InitStoryPearlCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitStoryPearlCollection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_InitateConversation_" data-uid="Global.SSOracleBehavior.InitateConversation*"></a>
+
+  <h3 id="Global_SSOracleBehavior_InitateConversation_Conversation_ID_SSOracleBehavior_ConversationBehavior_" data-uid="Global.SSOracleBehavior.InitateConversation(Conversation.ID,SSOracleBehavior.ConversationBehavior)">
+  InitateConversation(ID, ConversationBehavior)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitateConversation(Conversation.ID convoId, SSOracleBehavior.ConversationBehavior convBehav)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>convoId</code> <a class="xref" href="Conversation.html">Conversation</a>.<a class="xref" href="Conversation.ID.html">ID</a></dt>
+    <dd></dd>
+    <dt><code>convBehav</code> <a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.ConversationBehavior.html">ConversationBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_InterruptPearlMessagePlayerLeaving_" data-uid="Global.SSOracleBehavior.InterruptPearlMessagePlayerLeaving*"></a>
+
+  <h3 id="Global_SSOracleBehavior_InterruptPearlMessagePlayerLeaving" data-uid="Global.SSOracleBehavior.InterruptPearlMessagePlayerLeaving">
+  InterruptPearlMessagePlayerLeaving()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InterruptPearlMessagePlayerLeaving()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_LockShortcuts_" data-uid="Global.SSOracleBehavior.LockShortcuts*"></a>
+
+  <h3 id="Global_SSOracleBehavior_LockShortcuts" data-uid="Global.SSOracleBehavior.LockShortcuts">
+  LockShortcuts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LockShortcuts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_Move_" data-uid="Global.SSOracleBehavior.Move*"></a>
+
+  <h3 id="Global_SSOracleBehavior_Move" data-uid="Global.SSOracleBehavior.Move">
+  Move()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_NameForPlayer_" data-uid="Global.SSOracleBehavior.NameForPlayer*"></a>
+
+  <h3 id="Global_SSOracleBehavior_NameForPlayer_System_Boolean_" data-uid="Global.SSOracleBehavior.NameForPlayer(System.Boolean)">
+  NameForPlayer(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NameForPlayer(bool capitalized)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capitalized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_NewAction_" data-uid="Global.SSOracleBehavior.NewAction*"></a>
+
+  <h3 id="Global_SSOracleBehavior_NewAction_SSOracleBehavior_Action_" data-uid="Global.SSOracleBehavior.NewAction(SSOracleBehavior.Action)">
+  NewAction(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3873"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NewAction(SSOracleBehavior.Action nextAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nextAction</code> <a class="xref" href="SSOracleBehavior.html">SSOracleBehavior</a>.<a class="xref" href="SSOracleBehavior.Action.html">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_ReactToHitWeapon_" data-uid="Global.SSOracleBehavior.ReactToHitWeapon*"></a>
+
+  <h3 id="Global_SSOracleBehavior_ReactToHitWeapon" data-uid="Global.SSOracleBehavior.ReactToHitWeapon">
+  ReactToHitWeapon()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReactToHitWeapon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_ReplaceParts_" data-uid="Global.SSOracleBehavior.ReplaceParts*"></a>
+
+  <h3 id="Global_SSOracleBehavior_ReplaceParts_System_String_" data-uid="Global.SSOracleBehavior.ReplaceParts(System.String)">
+  ReplaceParts(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReplaceParts(string s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_ResumePausedPearlConversation_" data-uid="Global.SSOracleBehavior.ResumePausedPearlConversation*"></a>
+
+  <h3 id="Global_SSOracleBehavior_ResumePausedPearlConversation" data-uid="Global.SSOracleBehavior.ResumePausedPearlConversation">
+  ResumePausedPearlConversation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumePausedPearlConversation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_SeePlayer_" data-uid="Global.SSOracleBehavior.SeePlayer*"></a>
+
+  <h3 id="Global_SSOracleBehavior_SeePlayer" data-uid="Global.SSOracleBehavior.SeePlayer">
+  SeePlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeePlayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_SetNewDestination_" data-uid="Global.SSOracleBehavior.SetNewDestination*"></a>
+
+  <h3 id="Global_SSOracleBehavior_SetNewDestination_UnityEngine_Vector2_" data-uid="Global.SSOracleBehavior.SetNewDestination(UnityEngine.Vector2)">
+  SetNewDestination(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNewDestination(Vector2 dst)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dst</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_SlugcatEnterRoomReaction_" data-uid="Global.SSOracleBehavior.SlugcatEnterRoomReaction*"></a>
+
+  <h3 id="Global_SSOracleBehavior_SlugcatEnterRoomReaction" data-uid="Global.SSOracleBehavior.SlugcatEnterRoomReaction">
+  SlugcatEnterRoomReaction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SlugcatEnterRoomReaction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_SpecialEvent_" data-uid="Global.SSOracleBehavior.SpecialEvent*"></a>
+
+  <h3 id="Global_SSOracleBehavior_SpecialEvent_System_String_" data-uid="Global.SSOracleBehavior.SpecialEvent(System.String)">
+  SpecialEvent(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpecialEvent(string eventName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_StartItemConversation_" data-uid="Global.SSOracleBehavior.StartItemConversation*"></a>
+
+  <h3 id="Global_SSOracleBehavior_StartItemConversation_DataPearl_" data-uid="Global.SSOracleBehavior.StartItemConversation(DataPearl)">
+  StartItemConversation(DataPearl)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartItemConversation(DataPearl item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Global.DataPearl.html">DataPearl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_TurnOffSSMusic_" data-uid="Global.SSOracleBehavior.TurnOffSSMusic*"></a>
+
+  <h3 id="Global_SSOracleBehavior_TurnOffSSMusic_System_Boolean_" data-uid="Global.SSOracleBehavior.TurnOffSSMusic(System.Boolean)">
+  TurnOffSSMusic(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TurnOffSSMusic(bool abruptEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abruptEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_UnconciousUpdate_" data-uid="Global.SSOracleBehavior.UnconciousUpdate*"></a>
+
+  <h3 id="Global_SSOracleBehavior_UnconciousUpdate" data-uid="Global.SSOracleBehavior.UnconciousUpdate">
+  UnconciousUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UnconciousUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_UnlockShortcuts_" data-uid="Global.SSOracleBehavior.UnlockShortcuts*"></a>
+
+  <h3 id="Global_SSOracleBehavior_UnlockShortcuts" data-uid="Global.SSOracleBehavior.UnlockShortcuts">
+  UnlockShortcuts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlockShortcuts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_Update_" data-uid="Global.SSOracleBehavior.Update*"></a>
+
+  <h3 id="Global_SSOracleBehavior_Update_System_Boolean_" data-uid="Global.SSOracleBehavior.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L3285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_UpdateStoryPearlCollection_" data-uid="Global.SSOracleBehavior.UpdateStoryPearlCollection*"></a>
+
+  <h3 id="Global_SSOracleBehavior_UpdateStoryPearlCollection" data-uid="Global.SSOracleBehavior.UpdateStoryPearlCollection">
+  UpdateStoryPearlCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateStoryPearlCollection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_UrgeAlong_" data-uid="Global.SSOracleBehavior.UrgeAlong*"></a>
+
+  <h3 id="Global_SSOracleBehavior_UrgeAlong" data-uid="Global.SSOracleBehavior.UrgeAlong">
+  UrgeAlong()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UrgeAlong()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_SSOracleBehavior_storedPearlOrbitLocation_" data-uid="Global.SSOracleBehavior.storedPearlOrbitLocation*"></a>
+
+  <h3 id="Global_SSOracleBehavior_storedPearlOrbitLocation_System_Int32_" data-uid="Global.SSOracleBehavior.storedPearlOrbitLocation(System.Int32)">
+  storedPearlOrbitLocation(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L4264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 storedPearlOrbitLocation(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/SSOracleBehavior.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

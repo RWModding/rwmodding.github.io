@@ -1,0 +1,1477 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CustomProgressionDialog
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CustomProgressionDialog
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_CustomProgressionDialog.md&amp;value=---%0Auid%3A%20Menu.CustomProgressionDialog%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.CustomProgressionDialog">
+
+
+
+  <h1 id="Menu_CustomProgressionDialog" data-uid="Menu.CustomProgressionDialog" class="text-break">
+    Class CustomProgressionDialog
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CustomProgressionDialog : Dialog, SelectOneButton.SelectOneButtonOwner</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.MainLoopProcess.html">MainLoopProcess</a></div>
+      <div><a class="xref" href="Menu.Menu.html">Menu</a></div>
+      <div><a class="xref" href="Menu.Dialog.html">Dialog</a></div>
+      <div><span class="xref">CustomProgressionDialog</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Menu.SelectOneButton.html">SelectOneButton</a>.<a class="xref" href="Menu.SelectOneButton.SelectOneButtonOwner.html">SelectOneButtonOwner</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_size">Dialog.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_pos">Dialog.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_descriptionLabel">Dialog.descriptionLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_descriptionLabelLong">Dialog.descriptionLabelLong</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_darkSprite">Dialog.darkSprite</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_roundedRect">Dialog.roundedRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_Init_System_String_System_String_UnityEngine_Vector2_">Dialog.Init(string, string, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Dialog.html#Menu_Dialog_Init_System_String_UnityEngine_Vector2_System_Boolean_">Dialog.Init(string, Vector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_pages">Menu.pages</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_mousePosition">Menu.mousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastMousePos">Menu.lastMousePos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_container">Menu.container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_cursorContainer">Menu.cursorContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_scene">Menu.scene</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_modeSwitch">Menu.modeSwitch</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_mouseDown">Menu.mouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastMouseDown">Menu.lastMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_selectedObject">Menu.selectedObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_backObject">Menu.backObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_pressButton">Menu.pressButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_holdButton">Menu.holdButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastHoldButton">Menu.lastHoldButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_input">Menu.input</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastInput">Menu.lastInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_currentPage">Menu.currentPage</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_scrollInitDelay">Menu.scrollInitDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_scrollDelay">Menu.scrollDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_soundLoop">Menu.soundLoop</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_mySoundLoopID">Menu.mySoundLoopID</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_allAlienSoundLoopsAreGone">Menu.allAlienSoundLoopsAreGone</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_mySoundLoopName">Menu.mySoundLoopName</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_infolabelDirty">Menu.infolabelDirty</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_infoLabel">Menu.infoLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_infoLabelFade">Menu.infoLabelFade</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastInfoLabelFade">Menu.lastInfoLabelFade</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_infoLabelSin">Menu.infoLabelSin</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_gradientsContainer">Menu.gradientsContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_mouseScrollWheelMovement">Menu.mouseScrollWheelMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_lastScrollWheel">Menu.lastScrollWheel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_floatScrollWheel">Menu.floatScrollWheel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_init">Menu.init</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_allowSelectMove">Menu.allowSelectMove</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_AllowDialogs">Menu.AllowDialogs</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_ShowCursor">Menu.ShowCursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_ForceNoMouseMode">Menu.ForceNoMouseMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_Active">Menu.Active</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_HoldButtonDisregardingFreeze">Menu.HoldButtonDisregardingFreeze</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_NonMouseInputDisregardingFreeze">Menu.NonMouseInputDisregardingFreeze</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_FreezeMenuFunctions">Menu.FreezeMenuFunctions</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_CurrLang">Menu.CurrLang</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_HorizontalMoveToGetCentered_ProcessManager_">Menu.HorizontalMoveToGetCentered(ProcessManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_GetFreezeMenuFunctions">Menu.GetFreezeMenuFunctions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_MenuColor_Menu_Menu_MenuColors_">Menu.MenuColor(Menu.MenuColors)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_MenuRGB_Menu_Menu_MenuColors_">Menu.MenuRGB(Menu.MenuColors)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_Translate_System_String_">Menu.Translate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_Translate_System_String_System_Int32_">Menu.Translate(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_Init">Menu.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_MutualHorizontalButtonBind_Menu_MenuObject_Menu_MenuObject_">Menu.MutualHorizontalButtonBind(MenuObject, MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_MutualVerticalButtonBind_Menu_MenuObject_Menu_MenuObject_">Menu.MutualVerticalButtonBind(MenuObject, MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_ResetSelection">Menu.ResetSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_UpdateInfoText">Menu.UpdateInfoText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_SliderSetValue_Menu_Slider_System_Single_">Menu.SliderSetValue(Slider, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_ValueOfSlider_Menu_Slider_">Menu.ValueOfSlider(Slider)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_CommunicateWithUpcomingProcess_MainLoopProcess_">Menu.CommunicateWithUpcomingProcess(MainLoopProcess)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_ShutDownProcess">Menu.ShutDownProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_SelectNewObject_RWCustom_IntVector2_">Menu.SelectNewObject(IntVector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_SelectCandidate_RWCustom_IntVector2_">Menu.SelectCandidate(IntVector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_CenterPositionOfObject_Menu_PositionedMenuObject_">Menu.CenterPositionOfObject(PositionedMenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_PlaySound_SoundID_">Menu.PlaySound(SoundID)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_PlaySound_SoundID_System_Single_System_Single_System_Single_">Menu.PlaySound(SoundID, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_PlayLoop_SoundID_System_Single_System_Single_System_Single_System_Boolean_">Menu.PlayLoop(SoundID, float, float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_PlaySoundCustom_System_String_System_Single_System_Single_System_Single_">Menu.PlaySoundCustom(string, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.Menu.html#Menu_Menu_PlayLoopCustom_System_String_System_Single_System_Single_System_Single_System_Boolean_">Menu.PlayLoopCustom(string, float, float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_manager">MainLoopProcess.manager</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_ID">MainLoopProcess.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_framesPerSecond">MainLoopProcess.framesPerSecond</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_myTimeStacker">MainLoopProcess.myTimeStacker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_processActive">MainLoopProcess.processActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_TimeSpeedFac">MainLoopProcess.TimeSpeedFac</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_FadeInTime">MainLoopProcess.FadeInTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_InitialBlackSeconds">MainLoopProcess.InitialBlackSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.MainLoopProcess.html#Global_MainLoopProcess_RawUpdate_System_Single_">MainLoopProcess.RawUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_CustomProgressionDialog__ctor_" data-uid="Menu.CustomProgressionDialog.#ctor*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog__ctor_ProcessManager_Menu_ExpeditionMenu_Menu_ProgressionPage_" data-uid="Menu.CustomProgressionDialog.#ctor(ProcessManager,Menu.ExpeditionMenu,Menu.ProgressionPage)">
+  CustomProgressionDialog(ProcessManager, ExpeditionMenu, ProgressionPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomProgressionDialog(ProcessManager manager, ExpeditionMenu expMenu, ProgressionPage progPage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="Global.ProcessManager.html">ProcessManager</a></dt>
+    <dd></dd>
+    <dt><code>expMenu</code> <a class="xref" href="Menu.ExpeditionMenu.html">ExpeditionMenu</a></dt>
+    <dd></dd>
+    <dt><code>progPage</code> <a class="xref" href="Menu.ProgressionPage.html">ProgressionPage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_cancelButton" data-uid="Menu.CustomProgressionDialog.cancelButton">
+  cancelButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleButton cancelButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SimpleButton.html">SimpleButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_categoryDivider" data-uid="Menu.CustomProgressionDialog.categoryDivider">
+  categoryDivider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSprite categoryDivider</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FSprite.html">FSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_closing" data-uid="Menu.CustomProgressionDialog.closing">
+  closing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool closing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_contentCategories" data-uid="Menu.CustomProgressionDialog.contentCategories">
+  contentCategories
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectOneButton[] contentCategories</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SelectOneButton.html">SelectOneButton</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_currentCategory" data-uid="Menu.CustomProgressionDialog.currentCategory">
+  currentCategory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int currentCategory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_currentMod" data-uid="Menu.CustomProgressionDialog.currentMod">
+  currentMod
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MenuLabel currentMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.MenuLabel.html">MenuLabel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_expeditionMenu" data-uid="Menu.CustomProgressionDialog.expeditionMenu">
+  expeditionMenu
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpeditionMenu expeditionMenu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.ExpeditionMenu.html">ExpeditionMenu</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_lastMovement" data-uid="Menu.CustomProgressionDialog.lastMovement">
+  lastMovement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastMovement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_leftAnchor" data-uid="Menu.CustomProgressionDialog.leftAnchor">
+  leftAnchor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float leftAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_leftButton" data-uid="Menu.CustomProgressionDialog.leftButton">
+  leftButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolButton leftButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SymbolButton.html">SymbolButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_missionButtons" data-uid="Menu.CustomProgressionDialog.missionButtons">
+  missionButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MissionButton&gt; missionButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Menu.MissionButton.html">MissionButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_modKey" data-uid="Menu.CustomProgressionDialog.modKey">
+  modKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string modKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_modKeys" data-uid="Menu.CustomProgressionDialog.modKeys">
+  modKeys
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; modKeys</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_movement" data-uid="Menu.CustomProgressionDialog.movement">
+  movement
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float movement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_movementCounter" data-uid="Menu.CustomProgressionDialog.movementCounter">
+  movementCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float movementCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_movementLimit" data-uid="Menu.CustomProgressionDialog.movementLimit">
+  movementLimit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float movementLimit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_movementProgress" data-uid="Menu.CustomProgressionDialog.movementProgress">
+  movementProgress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float movementProgress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_opening" data-uid="Menu.CustomProgressionDialog.opening">
+  opening
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool opening</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_pageTitle" data-uid="Menu.CustomProgressionDialog.pageTitle">
+  pageTitle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSprite pageTitle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.FSprite.html">FSprite</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_progressionPage" data-uid="Menu.CustomProgressionDialog.progressionPage">
+  progressionPage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProgressionPage progressionPage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.ProgressionPage.html">ProgressionPage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_questButtons" data-uid="Menu.CustomProgressionDialog.questButtons">
+  questButtons
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;QuestButton&gt; questButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Menu.QuestButton.html">QuestButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_rightAnchor" data-uid="Menu.CustomProgressionDialog.rightAnchor">
+  rightAnchor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rightAnchor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_CustomProgressionDialog_rightButton" data-uid="Menu.CustomProgressionDialog.rightButton">
+  rightButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolButton rightButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SymbolButton.html">SymbolButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_CustomProgressionDialog_ClearButtons_" data-uid="Menu.CustomProgressionDialog.ClearButtons*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_ClearButtons" data-uid="Menu.CustomProgressionDialog.ClearButtons">
+  ClearButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GenerateMissionButtons_" data-uid="Menu.CustomProgressionDialog.GenerateMissionButtons*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GenerateMissionButtons" data-uid="Menu.CustomProgressionDialog.GenerateMissionButtons">
+  GenerateMissionButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GenerateMissionButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GenerateQuestButtons_" data-uid="Menu.CustomProgressionDialog.GenerateQuestButtons*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GenerateQuestButtons" data-uid="Menu.CustomProgressionDialog.GenerateQuestButtons">
+  GenerateQuestButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GenerateQuestButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GenerateUnlockButtons_" data-uid="Menu.CustomProgressionDialog.GenerateUnlockButtons*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GenerateUnlockButtons" data-uid="Menu.CustomProgressionDialog.GenerateUnlockButtons">
+  GenerateUnlockButtons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GenerateUnlockButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GetCurrentlySelectedOfSeries_" data-uid="Menu.CustomProgressionDialog.GetCurrentlySelectedOfSeries*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GetCurrentlySelectedOfSeries_System_String_" data-uid="Menu.CustomProgressionDialog.GetCurrentlySelectedOfSeries(System.String)">
+  GetCurrentlySelectedOfSeries(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentlySelectedOfSeries(string series)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>series</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GetFirstCategory_" data-uid="Menu.CustomProgressionDialog.GetFirstCategory*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GetFirstCategory_System_String_" data-uid="Menu.CustomProgressionDialog.GetFirstCategory(System.String)">
+  GetFirstCategory(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFirstCategory(string modID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GetModKeys_" data-uid="Menu.CustomProgressionDialog.GetModKeys*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GetModKeys" data-uid="Menu.CustomProgressionDialog.GetModKeys">
+  GetModKeys()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetModKeys()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_GrafUpdate_" data-uid="Menu.CustomProgressionDialog.GrafUpdate*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_GrafUpdate_System_Single_" data-uid="Menu.CustomProgressionDialog.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_SetCurrentlySelectedOfSeries_" data-uid="Menu.CustomProgressionDialog.SetCurrentlySelectedOfSeries*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_SetCurrentlySelectedOfSeries_System_String_System_Int32_" data-uid="Menu.CustomProgressionDialog.SetCurrentlySelectedOfSeries(System.String,System.Int32)">
+  SetCurrentlySelectedOfSeries(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentlySelectedOfSeries(string series, int to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>series</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_Singal_" data-uid="Menu.CustomProgressionDialog.Singal*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_Singal_Menu_MenuObject_System_String_" data-uid="Menu.CustomProgressionDialog.Singal(Menu.MenuObject,System.String)">
+  Singal(MenuObject, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Singal(MenuObject sender, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_CustomProgressionDialog_Update_" data-uid="Menu.CustomProgressionDialog.Update*"></a>
+
+  <h3 id="Menu_CustomProgressionDialog_Update" data-uid="Menu.CustomProgressionDialog.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/CustomProgressionDialog.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

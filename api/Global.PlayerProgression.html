@@ -1,0 +1,2183 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerProgression
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerProgression
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_PlayerProgression.md&amp;value=---%0Auid%3A%20Global.PlayerProgression%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.PlayerProgression">
+
+
+
+  <h1 id="Global_PlayerProgression" data-uid="Global.PlayerProgression" class="text-break">
+    Class PlayerProgression
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerProgression</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PlayerProgression</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_PlayerProgression__ctor_" data-uid="Global.PlayerProgression.#ctor*"></a>
+
+  <h3 id="Global_PlayerProgression__ctor_RainWorld_System_Boolean_System_Boolean_" data-uid="Global.PlayerProgression.#ctor(RainWorld,System.Boolean,System.Boolean)">
+  PlayerProgression(RainWorld, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1767"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerProgression(RainWorld rainWorld, bool tryLoad, bool saveAfterLoad)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rainWorld</code> <a class="xref" href="Global.RainWorld.html">RainWorld</a></dt>
+    <dd></dd>
+    <dt><code>tryLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveAfterLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_PlayerProgression_LOAD" data-uid="Global.PlayerProgression.LOAD">
+  LOAD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1715"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LOAD</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_SAVE_BACKUP_KEY_FORMAT" data-uid="Global.PlayerProgression.SAVE_BACKUP_KEY_FORMAT">
+  SAVE_BACKUP_KEY_FORMAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SAVE_BACKUP_KEY_FORMAT = &quot;save_{0}&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_SAVE_FILE_DEFINITION" data-uid="Global.PlayerProgression.SAVE_FILE_DEFINITION">
+  SAVE_FILE_DEFINITION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly UserData.FileDefinition SAVE_FILE_DEFINITION</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UserData</span>.<span class="xref">FileDefinition</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_SAVE_KEY" data-uid="Global.PlayerProgression.SAVE_KEY">
+  SAVE_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1695"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SAVE_KEY = &quot;save&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_canSave" data-uid="Global.PlayerProgression.canSave">
+  canSave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canSave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_currentSaveState" data-uid="Global.PlayerProgression.currentSaveState">
+  currentSaveState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1699"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveState currentSaveState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.SaveState.html">SaveState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_gameTinkeredWith" data-uid="Global.PlayerProgression.gameTinkeredWith">
+  gameTinkeredWith
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool gameTinkeredWith</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_karmaLocks" data-uid="Global.PlayerProgression.karmaLocks">
+  karmaLocks
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] karmaLocks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_loadInProgress" data-uid="Global.PlayerProgression.loadInProgress">
+  loadInProgress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool loadInProgress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_mapDiscoveryTextures" data-uid="Global.PlayerProgression.mapDiscoveryTextures">
+  mapDiscoveryTextures
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Texture2D&gt; mapDiscoveryTextures</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">Texture2D</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_mapLastUpdatedTime" data-uid="Global.PlayerProgression.mapLastUpdatedTime">
+  mapLastUpdatedTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, long&gt; mapLastUpdatedTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_miscProgressionData" data-uid="Global.PlayerProgression.miscProgressionData">
+  miscProgressionData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerProgression.MiscProgressionData miscProgressionData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PlayerProgression.html">PlayerProgression</a>.<a class="xref" href="PlayerProgression.MiscProgressionData.html">MiscProgressionData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_onLoadEnabledModsState" data-uid="Global.PlayerProgression.onLoadEnabledModsState">
+  onLoadEnabledModsState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1725"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, bool&gt; onLoadEnabledModsState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_onLoadExpeditionState" data-uid="Global.PlayerProgression.onLoadExpeditionState">
+  onLoadExpeditionState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1723"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool onLoadExpeditionState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_onLoadJollyState" data-uid="Global.PlayerProgression.onLoadJollyState">
+  onLoadJollyState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool onLoadJollyState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_onLoadMMFState" data-uid="Global.PlayerProgression.onLoadMMFState">
+  onLoadMMFState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool onLoadMMFState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_onLoadMSCState" data-uid="Global.PlayerProgression.onLoadMSCState">
+  onLoadMSCState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool onLoadMSCState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_rainWorld" data-uid="Global.PlayerProgression.rainWorld">
+  rainWorld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1729"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RainWorld rainWorld</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RainWorld.html">RainWorld</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_regionNames" data-uid="Global.PlayerProgression.regionNames">
+  regionNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] regionNames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_requestLoad" data-uid="Global.PlayerProgression.requestLoad">
+  requestLoad
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool requestLoad</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_saveAfterLoad" data-uid="Global.PlayerProgression.saveAfterLoad">
+  saveAfterLoad
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool saveAfterLoad</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_saveFileDataInMemory" data-uid="Global.PlayerProgression.saveFileDataInMemory">
+  saveFileDataInMemory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1731"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserData.File saveFileDataInMemory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UserData</span>.<span class="xref">File</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_starvedSaveState" data-uid="Global.PlayerProgression.starvedSaveState">
+  starvedSaveState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveState starvedSaveState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.SaveState.html">SaveState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PlayerProgression_tempSheltersDiscovered" data-uid="Global.PlayerProgression.tempSheltersDiscovered">
+  tempSheltersDiscovered
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; tempSheltersDiscovered</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_PlayerProgression_HasSaveData_" data-uid="Global.PlayerProgression.HasSaveData*"></a>
+
+  <h3 id="Global_PlayerProgression_HasSaveData" data-uid="Global.PlayerProgression.HasSaveData">
+  HasSaveData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSaveData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_PlayingAsSlugcat_" data-uid="Global.PlayerProgression.PlayingAsSlugcat*"></a>
+
+  <h3 id="Global_PlayerProgression_PlayingAsSlugcat" data-uid="Global.PlayerProgression.PlayingAsSlugcat">
+  PlayingAsSlugcat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1741"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugcatStats.Name PlayingAsSlugcat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_progressionLoaded_" data-uid="Global.PlayerProgression.progressionLoaded*"></a>
+
+  <h3 id="Global_PlayerProgression_progressionLoaded" data-uid="Global.PlayerProgression.progressionLoaded">
+  progressionLoaded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool progressionLoaded { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_PlayerProgression_BackUpSave_" data-uid="Global.PlayerProgression.BackUpSave*"></a>
+
+  <h3 id="Global_PlayerProgression_BackUpSave_System_String_" data-uid="Global.PlayerProgression.BackUpSave(System.String)">
+  BackUpSave(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1855"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackUpSave(string appendName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appendName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_BackupRegionStatePreservation_" data-uid="Global.PlayerProgression.BackupRegionStatePreservation*"></a>
+
+  <h3 id="Global_PlayerProgression_BackupRegionStatePreservation" data-uid="Global.PlayerProgression.BackupRegionStatePreservation">
+  BackupRegionStatePreservation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1947"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackupRegionStatePreservation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_ClearOutLoadModState_" data-uid="Global.PlayerProgression.ClearOutLoadModState*"></a>
+
+  <h3 id="Global_PlayerProgression_ClearOutLoadModState" data-uid="Global.PlayerProgression.ClearOutLoadModState">
+  ClearOutLoadModState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1850"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOutLoadModState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_ClearOutSaveStateFromMemory_" data-uid="Global.PlayerProgression.ClearOutSaveStateFromMemory*"></a>
+
+  <h3 id="Global_PlayerProgression_ClearOutSaveStateFromMemory" data-uid="Global.PlayerProgression.ClearOutSaveStateFromMemory">
+  ClearOutSaveStateFromMemory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOutSaveStateFromMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_CopySaveFile_" data-uid="Global.PlayerProgression.CopySaveFile*"></a>
+
+  <h3 id="Global_PlayerProgression_CopySaveFile_System_String_System_String_" data-uid="Global.PlayerProgression.CopySaveFile(System.String,System.String)">
+  CopySaveFile(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopySaveFile(string sourceName, string destinationDirectory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>destinationDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_CreateCopyOfSaves_" data-uid="Global.PlayerProgression.CreateCopyOfSaves*"></a>
+
+  <h3 id="Global_PlayerProgression_CreateCopyOfSaves" data-uid="Global.PlayerProgression.CreateCopyOfSaves">
+  CreateCopyOfSaves()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1864"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateCopyOfSaves()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_Destroy_" data-uid="Global.PlayerProgression.Destroy*"></a>
+
+  <h3 id="Global_PlayerProgression_Destroy_System_Int32_" data-uid="Global.PlayerProgression.Destroy(System.Int32)">
+  Destroy(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy(int previousSaveSlot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>previousSaveSlot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_GetOrInitiateSaveState_" data-uid="Global.PlayerProgression.GetOrInitiateSaveState*"></a>
+
+  <h3 id="Global_PlayerProgression_GetOrInitiateSaveState_SlugcatStats_Name_RainWorldGame_ProcessManager_MenuSetup_System_Boolean_" data-uid="Global.PlayerProgression.GetOrInitiateSaveState(SlugcatStats.Name,RainWorldGame,ProcessManager.MenuSetup,System.Boolean)">
+  GetOrInitiateSaveState(Name, RainWorldGame, MenuSetup, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveState GetOrInitiateSaveState(SlugcatStats.Name saveStateNumber, RainWorldGame game, ProcessManager.MenuSetup setup, bool saveAsDeathOrQuit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveStateNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+    <dt><code>game</code> <a class="xref" href="Global.RainWorldGame.html">RainWorldGame</a></dt>
+    <dd></dd>
+    <dt><code>setup</code> <a class="xref" href="ProcessManager.html">ProcessManager</a>.<a class="xref" href="ProcessManager.MenuSetup.html">MenuSetup</a></dt>
+    <dd></dd>
+    <dt><code>saveAsDeathOrQuit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.SaveState.html">SaveState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_GetProgLinesFromMemory_" data-uid="Global.PlayerProgression.GetProgLinesFromMemory*"></a>
+
+  <h3 id="Global_PlayerProgression_GetProgLinesFromMemory" data-uid="Global.PlayerProgression.GetProgLinesFromMemory">
+  GetProgLinesFromMemory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetProgLinesFromMemory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_IsThereASavedGame_" data-uid="Global.PlayerProgression.IsThereASavedGame*"></a>
+
+  <h3 id="Global_PlayerProgression_IsThereASavedGame_SlugcatStats_Name_" data-uid="Global.PlayerProgression.IsThereASavedGame(SlugcatStats.Name)">
+  IsThereASavedGame(Name)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThereASavedGame(SlugcatStats.Name saveStateNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveStateNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadByteStringIntoMapTexture_" data-uid="Global.PlayerProgression.LoadByteStringIntoMapTexture*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadByteStringIntoMapTexture_System_String_System_String_" data-uid="Global.PlayerProgression.LoadByteStringIntoMapTexture(System.String,System.String)">
+  LoadByteStringIntoMapTexture(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadByteStringIntoMapTexture(string regionName, string byteString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>byteString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadGameState_" data-uid="Global.PlayerProgression.LoadGameState*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadGameState_System_String_RainWorldGame_System_Boolean_" data-uid="Global.PlayerProgression.LoadGameState(System.String,RainWorldGame,System.Boolean)">
+  LoadGameState(string, RainWorldGame, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveState LoadGameState(string saveFilePath, RainWorldGame game, bool saveAsDeathOrQuit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>game</code> <a class="xref" href="Global.RainWorldGame.html">RainWorldGame</a></dt>
+    <dd></dd>
+    <dt><code>saveAsDeathOrQuit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.SaveState.html">SaveState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadMapTexture_" data-uid="Global.PlayerProgression.LoadMapTexture*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadMapTexture_System_String_" data-uid="Global.PlayerProgression.LoadMapTexture(System.String)">
+  LoadMapTexture(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadMapTexture(string regionName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadOldPS4ProgressionSave_" data-uid="Global.PlayerProgression.LoadOldPS4ProgressionSave*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadOldPS4ProgressionSave" data-uid="Global.PlayerProgression.LoadOldPS4ProgressionSave">
+  LoadOldPS4ProgressionSave()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2769"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadOldPS4ProgressionSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadProgression_" data-uid="Global.PlayerProgression.LoadProgression*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadProgression" data-uid="Global.PlayerProgression.LoadProgression">
+  LoadProgression()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2000"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadProgression()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LoadProgressionFromLegacyFile_" data-uid="Global.PlayerProgression.LoadProgressionFromLegacyFile*"></a>
+
+  <h3 id="Global_PlayerProgression_LoadProgressionFromLegacyFile_System_String_" data-uid="Global.PlayerProgression.LoadProgressionFromLegacyFile(System.String)">
+  LoadProgressionFromLegacyFile(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2035"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadProgressionFromLegacyFile(string saveFilePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_LookForOldVersionSaveFile_" data-uid="Global.PlayerProgression.LookForOldVersionSaveFile*"></a>
+
+  <h3 id="Global_PlayerProgression_LookForOldVersionSaveFile" data-uid="Global.PlayerProgression.LookForOldVersionSaveFile">
+  LookForOldVersionSaveFile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LookForOldVersionSaveFile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_Options_onOldPS4SaveLoaded_" data-uid="Global.PlayerProgression.Options_onOldPS4SaveLoaded*"></a>
+
+  <h3 id="Global_PlayerProgression_Options_onOldPS4SaveLoaded_System_Boolean_" data-uid="Global.PlayerProgression.Options_onOldPS4SaveLoaded(System.Boolean)">
+  Options_onOldPS4SaveLoaded(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2953"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Options_onOldPS4SaveLoaded(bool success)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>success</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_Platform_OnRequestUserDataRead_" data-uid="Global.PlayerProgression.Platform_OnRequestUserDataRead*"></a>
+
+  <h3 id="Global_PlayerProgression_Platform_OnRequestUserDataRead_System_Collections_Generic_List_System_Object__" data-uid="Global.PlayerProgression.Platform_OnRequestUserDataRead(System.Collections.Generic.List{System.Object})">
+  Platform_OnRequestUserDataRead(List&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2806"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Platform_OnRequestUserDataRead(List&lt;object&gt; pendingUserDataReads)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pendingUserDataReads</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_ReloadLocksList_" data-uid="Global.PlayerProgression.ReloadLocksList*"></a>
+
+  <h3 id="Global_PlayerProgression_ReloadLocksList" data-uid="Global.PlayerProgression.ReloadLocksList">
+  ReloadLocksList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadLocksList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_ReloadRegionsList_" data-uid="Global.PlayerProgression.ReloadRegionsList*"></a>
+
+  <h3 id="Global_PlayerProgression_ReloadRegionsList" data-uid="Global.PlayerProgression.ReloadRegionsList">
+  ReloadRegionsList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadRegionsList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_Revert_" data-uid="Global.PlayerProgression.Revert*"></a>
+
+  <h3 id="Global_PlayerProgression_Revert" data-uid="Global.PlayerProgression.Revert">
+  Revert()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Revert()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveDeathPersistentDataOfCurrentState_" data-uid="Global.PlayerProgression.SaveDeathPersistentDataOfCurrentState*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveDeathPersistentDataOfCurrentState_System_Boolean_System_Boolean_" data-uid="Global.PlayerProgression.SaveDeathPersistentDataOfCurrentState(System.Boolean,System.Boolean)">
+  SaveDeathPersistentDataOfCurrentState(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveDeathPersistentDataOfCurrentState(bool saveAsIfPlayerDied, bool saveAsIfPlayerQuit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveAsIfPlayerDied</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveAsIfPlayerQuit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveFile_OnDeleteCompleted_" data-uid="Global.PlayerProgression.SaveFile_OnDeleteCompleted*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveFile_OnDeleteCompleted_Kittehface_Framework20_UserData_File_Kittehface_Framework20_UserData_Result_" data-uid="Global.PlayerProgression.SaveFile_OnDeleteCompleted(Kittehface.Framework20.UserData.File,Kittehface.Framework20.UserData.Result)">
+  SaveFile_OnDeleteCompleted(File, Result)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2891"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveFile_OnDeleteCompleted(UserData.File file, UserData.Result result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <span class="xref">UserData</span>.<span class="xref">File</span></dt>
+    <dd></dd>
+    <dt><code>result</code> <span class="xref">UserData</span>.<span class="xref">Result</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveFile_OnReadCompleted_" data-uid="Global.PlayerProgression.SaveFile_OnReadCompleted*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveFile_OnReadCompleted_Kittehface_Framework20_UserData_File_Kittehface_Framework20_UserData_Result_" data-uid="Global.PlayerProgression.SaveFile_OnReadCompleted(Kittehface.Framework20.UserData.File,Kittehface.Framework20.UserData.Result)">
+  SaveFile_OnReadCompleted(File, Result)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2835"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveFile_OnReadCompleted(UserData.File file, UserData.Result result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <span class="xref">UserData</span>.<span class="xref">File</span></dt>
+    <dd></dd>
+    <dt><code>result</code> <span class="xref">UserData</span>.<span class="xref">Result</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveFile_OnWriteCompleted_NewFile_" data-uid="Global.PlayerProgression.SaveFile_OnWriteCompleted_NewFile*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveFile_OnWriteCompleted_NewFile_Kittehface_Framework20_UserData_File_Kittehface_Framework20_UserData_Result_" data-uid="Global.PlayerProgression.SaveFile_OnWriteCompleted_NewFile(Kittehface.Framework20.UserData.File,Kittehface.Framework20.UserData.Result)">
+  SaveFile_OnWriteCompleted_NewFile(File, Result)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2908"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveFile_OnWriteCompleted_NewFile(UserData.File file, UserData.Result result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <span class="xref">UserData</span>.<span class="xref">File</span></dt>
+    <dd></dd>
+    <dt><code>result</code> <span class="xref">UserData</span>.<span class="xref">Result</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveProgression_" data-uid="Global.PlayerProgression.SaveProgression*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveProgression_System_Boolean_System_Boolean_" data-uid="Global.PlayerProgression.SaveProgression(System.Boolean,System.Boolean)">
+  SaveProgression(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2066"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveProgression(bool saveMaps, bool saveMiscProg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveMaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveMiscProg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveProgressionAndDeathPersistentDataOfCurrentState_" data-uid="Global.PlayerProgression.SaveProgressionAndDeathPersistentDataOfCurrentState*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveProgressionAndDeathPersistentDataOfCurrentState_System_Boolean_System_Boolean_" data-uid="Global.PlayerProgression.SaveProgressionAndDeathPersistentDataOfCurrentState(System.Boolean,System.Boolean)">
+  SaveProgressionAndDeathPersistentDataOfCurrentState(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2056"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveProgressionAndDeathPersistentDataOfCurrentState(bool saveAsDeath, bool saveAsQuit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveAsDeath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveAsQuit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveToDisk_" data-uid="Global.PlayerProgression.SaveToDisk*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveToDisk_System_Boolean_System_Boolean_System_Boolean_" data-uid="Global.PlayerProgression.SaveToDisk(System.Boolean,System.Boolean,System.Boolean)">
+  SaveToDisk(bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2099"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveToDisk(bool saveCurrentState, bool saveMaps, bool saveMiscProg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveCurrentState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveMaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>saveMiscProg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SaveWorldStateAndProgression_" data-uid="Global.PlayerProgression.SaveWorldStateAndProgression*"></a>
+
+  <h3 id="Global_PlayerProgression_SaveWorldStateAndProgression_System_Boolean_" data-uid="Global.PlayerProgression.SaveWorldStateAndProgression(System.Boolean)">
+  SaveWorldStateAndProgression(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2071"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveWorldStateAndProgression(bool malnourished)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>malnourished</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_ShelterOfSaveGame_" data-uid="Global.PlayerProgression.ShelterOfSaveGame*"></a>
+
+  <h3 id="Global_PlayerProgression_ShelterOfSaveGame_SlugcatStats_Name_" data-uid="Global.PlayerProgression.ShelterOfSaveGame(SlugcatStats.Name)">
+  ShelterOfSaveGame(Name)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShelterOfSaveGame(SlugcatStats.Name saveStateNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveStateNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_SyncLoadModState_" data-uid="Global.PlayerProgression.SyncLoadModState*"></a>
+
+  <h3 id="Global_PlayerProgression_SyncLoadModState" data-uid="Global.PlayerProgression.SyncLoadModState">
+  SyncLoadModState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L1836"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncLoadModState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_TempDiscoverShelter_" data-uid="Global.PlayerProgression.TempDiscoverShelter*"></a>
+
+  <h3 id="Global_PlayerProgression_TempDiscoverShelter_System_String_" data-uid="Global.PlayerProgression.TempDiscoverShelter(System.String)">
+  TempDiscoverShelter(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TempDiscoverShelter(string shelterName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shelterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_Update_" data-uid="Global.PlayerProgression.Update*"></a>
+
+  <h3 id="Global_PlayerProgression_Update" data-uid="Global.PlayerProgression.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_UserData_OnFileMounted_" data-uid="Global.PlayerProgression.UserData_OnFileMounted*"></a>
+
+  <h3 id="Global_PlayerProgression_UserData_OnFileMounted_Kittehface_Framework20_UserData_File_Kittehface_Framework20_UserData_Result_" data-uid="Global.PlayerProgression.UserData_OnFileMounted(Kittehface.Framework20.UserData.File,Kittehface.Framework20.UserData.Result)">
+  UserData_OnFileMounted(File, Result)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2814"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UserData_OnFileMounted(UserData.File file, UserData.Result result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <span class="xref">UserData</span>.<span class="xref">File</span></dt>
+    <dd></dd>
+    <dt><code>result</code> <span class="xref">UserData</span>.<span class="xref">Result</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_WipeAll_" data-uid="Global.PlayerProgression.WipeAll*"></a>
+
+  <h3 id="Global_PlayerProgression_WipeAll" data-uid="Global.PlayerProgression.WipeAll">
+  WipeAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WipeAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PlayerProgression_WipeSaveState_" data-uid="Global.PlayerProgression.WipeSaveState*"></a>
+
+  <h3 id="Global_PlayerProgression_WipeSaveState_SlugcatStats_Name_" data-uid="Global.PlayerProgression.WipeSaveState(SlugcatStats.Name)">
+  WipeSaveState(Name)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L2311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WipeSaveState(SlugcatStats.Name saveStateNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>saveStateNumber</code> <a class="xref" href="SlugcatStats.html">SlugcatStats</a>.<a class="xref" href="SlugcatStats.Name.html">Name</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/PlayerProgression.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

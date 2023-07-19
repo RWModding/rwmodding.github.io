@@ -1,0 +1,992 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SlideShowMenuScene
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SlideShowMenuScene
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_SlideShowMenuScene.md&amp;value=---%0Auid%3A%20Menu.SlideShowMenuScene%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.SlideShowMenuScene">
+
+
+
+  <h1 id="Menu_SlideShowMenuScene" data-uid="Menu.SlideShowMenuScene" class="text-break">
+    Class SlideShowMenuScene
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SlideShowMenuScene : MenuScene</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.MenuObject.html">MenuObject</a></div>
+      <div><a class="xref" href="Menu.MenuScene.html">MenuScene</a></div>
+      <div><span class="xref">SlideShowMenuScene</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_flatMode">MenuScene.flatMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_focus">MenuScene.focus</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_lastFocus">MenuScene.lastFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_camPos">MenuScene.camPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_lastCamPos">MenuScene.lastCamPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_depthIllustrations">MenuScene.depthIllustrations</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_flatIllustrations">MenuScene.flatIllustrations</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_slugcatColor">MenuScene.slugcatColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_recolorIllustrations">MenuScene.recolorIllustrations</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_cameraRange">MenuScene.cameraRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_dragIllustration">MenuScene.dragIllustration</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_dragOffset">MenuScene.dragOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_saveButton">MenuScene.saveButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_sceneFolder">MenuScene.sceneFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_initialized">MenuScene.initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_hidden">MenuScene.hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_blurMin">MenuScene.blurMin</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_blurMax">MenuScene.blurMax</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_positionsFile">MenuScene.positionsFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_cameraFile">MenuScene.cameraFile</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_crossFades">MenuScene.crossFades</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_crossFadeInd">MenuScene.crossFadeInd</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_crossFadeLength">MenuScene.crossFadeLength</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_crossFadeTime">MenuScene.crossFadeTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_useFlatCrossfades">MenuScene.useFlatCrossfades</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_sceneID">MenuScene.sceneID</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_scribbleA">MenuScene.scribbleA</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_scribbleB">MenuScene.scribbleB</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_CamPos_System_Single_">MenuScene.CamPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_AddIllustration_Menu_MenuIllustration_">MenuScene.AddIllustration(MenuIllustration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_HorizontalDisplace_System_Single_">MenuScene.HorizontalDisplace(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_Hide">MenuScene.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_Show">MenuScene.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_GrafUpdate_System_Single_">MenuScene.GrafUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_RefreshPositions">MenuScene.RefreshPositions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_AddCrossfade_Menu_MenuDepthIllustration_">MenuScene.AddCrossfade(MenuDepthIllustration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_TriggerCrossfade_System_Int32_">MenuScene.TriggerCrossfade(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_UpdateCrossfade">MenuScene.UpdateCrossfade()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildScene">MenuScene.BuildScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildMSCScene">MenuScene.BuildMSCScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_FlipScribble">MenuScene.FlipScribble()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildEndgameMartyrScene">MenuScene.BuildEndgameMartyrScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildEndgameMotherScene">MenuScene.BuildEndgameMotherScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildEndgamePilgrimScene">MenuScene.BuildEndgamePilgrimScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildEndgameNomadScene">MenuScene.BuildEndgameNomadScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_UseSlugcatUnlocked_SlugcatStats_Name_">MenuScene.UseSlugcatUnlocked(SlugcatStats.Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandScene">MenuScene.BuildGourmandScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerScene">MenuScene.BuildArtificerScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletScene">MenuScene.BuildRivuletScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSaintScene">MenuScene.BuildSaintScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSpearScene">MenuScene.BuildSpearScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildInvScene">MenuScene.BuildInvScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildInvEndScene">MenuScene.BuildInvEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandEndScene">MenuScene.BuildGourmandEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletOutro_System_Int32_">MenuScene.BuildRivuletOutro(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletOutroL_System_Int32_System_Int32_">MenuScene.BuildRivuletOutroL(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletEndScene">MenuScene.BuildRivuletEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletAltEndRobeScene">MenuScene.BuildRivuletAltEndRobeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerEndScene">MenuScene.BuildArtificerEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSaintEndScene">MenuScene.BuildSaintEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSpearEndScene">MenuScene.BuildSpearEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildLMLandscapeScene">MenuScene.BuildLMLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildHRLandscapeScene">MenuScene.BuildHRLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildMSLandscapeScene">MenuScene.BuildMSLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildLCLandscapeScene">MenuScene.BuildLCLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildDMLandscapeScene">MenuScene.BuildDMLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildOELandscapeScene">MenuScene.BuildOELandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildCLLandscapeScene">MenuScene.BuildCLLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRMLandscapeScene">MenuScene.BuildRMLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildUGLandscapeScene">MenuScene.BuildUGLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildVSLandscapeScene">MenuScene.BuildVSLandscapeScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSaintIntroScene">MenuScene.BuildSaintIntroScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSaintKarmaDream">MenuScene.BuildSaintKarmaDream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerOutroLeftSwim">MenuScene.BuildArtificerOutroLeftSwim()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerOutroSwim">MenuScene.BuildArtificerOutroSwim()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerOutroLook">MenuScene.BuildArtificerOutroLook()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerOutroFamily_System_Int32_">MenuScene.BuildArtificerOutroFamily(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerOutroB_System_Int32_">MenuScene.BuildArtificerOutroB(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSpearAltEndScene">MenuScene.BuildSpearAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildRivuletAltEndScene">MenuScene.BuildRivuletAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandAltEndScene">MenuScene.BuildGourmandAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandAltEndFullScene">MenuScene.BuildGourmandAltEndFullScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandOutro_System_Int32_">MenuScene.BuildGourmandOutro(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildArtificerAltEndScene">MenuScene.BuildArtificerAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildSurvivorAltEndScene">MenuScene.BuildSurvivorAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildMonkAltEndScene">MenuScene.BuildMonkAltEndScene()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildGourmandDream_System_Int32_">MenuScene.BuildGourmandDream(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuScene.html#Menu_MenuScene_BuildVanillaAltEnd_System_Int32_SlugcatStats_Name_System_Int32_">MenuScene.BuildVanillaAltEnd(int, SlugcatStats.Name, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_menu">MenuObject.menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_subObjects">MenuObject.subObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_owner">MenuObject.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_nextSelectable">MenuObject.nextSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_toggled">MenuObject.toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_inactive">MenuObject.inactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_myContainer">MenuObject.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Container">MenuObject.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Selected">MenuObject.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_page">MenuObject.page</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_">MenuObject.Singal(MenuObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSprites">MenuObject.RemoveSprites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_">MenuObject.RemoveSubObject(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RecursiveRemoveSelectables_Menu_MenuObject_">MenuObject.RecursiveRemoveSelectables(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_SlideShowMenuScene__ctor_" data-uid="Menu.SlideShowMenuScene.#ctor*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene__ctor_Menu_Menu_Menu_MenuObject_Menu_MenuScene_SceneID_" data-uid="Menu.SlideShowMenuScene.#ctor(Menu.Menu,Menu.MenuObject,Menu.MenuScene.SceneID)">
+  SlideShowMenuScene(Menu, MenuObject, SceneID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlideShowMenuScene(Menu menu, MenuObject owner, MenuScene.SceneID sceneID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menu</code> <a class="xref" href="Menu.Menu.html">Menu</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>sceneID</code> <a class="xref" href="Menu.MenuScene.html">MenuScene</a>.<a class="xref" href="Menu.MenuScene.SceneID.html">SceneID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_cameraMovementPoints" data-uid="Menu.SlideShowMenuScene.cameraMovementPoints">
+  cameraMovementPoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Vector3&gt; cameraMovementPoints</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_depths" data-uid="Menu.SlideShowMenuScene.depths">
+  depths
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;float&gt; depths</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_displayTime" data-uid="Menu.SlideShowMenuScene.displayTime">
+  displayTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float displayTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_moveEditor" data-uid="Menu.SlideShowMenuScene.moveEditor">
+  moveEditor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlideShowMenuScene.CameraMovementEditor moveEditor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SlideShowMenuScene.html">SlideShowMenuScene</a>.<a class="xref" href="Menu.SlideShowMenuScene.CameraMovementEditor.html">CameraMovementEditor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_moveEditorButton" data-uid="Menu.SlideShowMenuScene.moveEditorButton">
+  moveEditorButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool moveEditorButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_testPlay" data-uid="Menu.SlideShowMenuScene.testPlay">
+  testPlay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool testPlay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SlideShowMenuScene_testPlayButton" data-uid="Menu.SlideShowMenuScene.testPlayButton">
+  testPlayButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool testPlayButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_SlideShowMenuScene_ApplySceneSpecificAlphas_" data-uid="Menu.SlideShowMenuScene.ApplySceneSpecificAlphas*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_ApplySceneSpecificAlphas" data-uid="Menu.SlideShowMenuScene.ApplySceneSpecificAlphas">
+  ApplySceneSpecificAlphas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplySceneSpecificAlphas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_CameraPosition_" data-uid="Menu.SlideShowMenuScene.CameraPosition*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_CameraPosition_System_Single_" data-uid="Menu.SlideShowMenuScene.CameraPosition(System.Single)">
+  CameraPosition(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 CameraPosition(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_DepthPosition_" data-uid="Menu.SlideShowMenuScene.DepthPosition*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_DepthPosition_System_Single_" data-uid="Menu.SlideShowMenuScene.DepthPosition(System.Single)">
+  DepthPosition(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DepthPosition(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_DirectionOfSegment_" data-uid="Menu.SlideShowMenuScene.DirectionOfSegment*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_DirectionOfSegment_System_Int32_" data-uid="Menu.SlideShowMenuScene.DirectionOfSegment(System.Int32)">
+  DirectionOfSegment(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 DirectionOfSegment(int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_DisplayTimeToPointCoordinate_" data-uid="Menu.SlideShowMenuScene.DisplayTimeToPointCoordinate*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_DisplayTimeToPointCoordinate_System_Single_" data-uid="Menu.SlideShowMenuScene.DisplayTimeToPointCoordinate(System.Single)">
+  DisplayTimeToPointCoordinate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DisplayTimeToPointCoordinate(float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_PosBetweenSegments_" data-uid="Menu.SlideShowMenuScene.PosBetweenSegments*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_PosBetweenSegments_System_Int32_System_Int32_System_Single_" data-uid="Menu.SlideShowMenuScene.PosBetweenSegments(System.Int32,System.Int32,System.Single)">
+  PosBetweenSegments(int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 PosBetweenSegments(int firstSegment, int nextSegment, float f)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nextSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_SaveToFile_" data-uid="Menu.SlideShowMenuScene.SaveToFile*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_SaveToFile" data-uid="Menu.SlideShowMenuScene.SaveToFile">
+  SaveToFile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveToFile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SlideShowMenuScene_Update_" data-uid="Menu.SlideShowMenuScene.Update*"></a>
+
+  <h3 id="Menu_SlideShowMenuScene_Update" data-uid="Menu.SlideShowMenuScene.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SlideShowMenuScene.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

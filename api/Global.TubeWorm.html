@@ -1,0 +1,2004 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TubeWorm
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TubeWorm
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_TubeWorm.md&amp;value=---%0Auid%3A%20Global.TubeWorm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.TubeWorm">
+
+
+
+  <h1 id="Global_TubeWorm" data-uid="Global.TubeWorm" class="text-break">
+    Class TubeWorm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TubeWorm : Creature</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><span class="xref">TubeWorm</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_blind">Creature.blind</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_deaf">Creature.deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTag">Creature.killTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_killTagCounter">Creature.killTagCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_leechedOut">Creature.leechedOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_newToRoomInvinsibility">Creature.newToRoomInvinsibility</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_rainDeath">Creature.rainDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortcutDelay">Creature.shortcutDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_enteringShortCut">Creature.enteringShortCut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_shortCutRadAdd">Creature.shortCutRadAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NPCTransportationDestination">Creature.NPCTransportationDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastCoord">Creature.lastCoord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContact">Creature.lavaContact</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lavaContactCount">Creature.lavaContactCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedByDaddyCorruption">Creature.GrabbedByDaddyCorruption</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stunDamageType">Creature.stunDamageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaGain">Creature.HypothermiaGain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaExposure">Creature.HypothermiaExposure</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaStunDelayCounter">Creature.HypothermiaStunDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithoutDiagonals">Creature.inputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithoutDiagonals">Creature.lastInputWithoutDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inputWithDiagonals">Creature.inputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_lastInputWithDiagonals">Creature.lastInputWithDiagonals</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_freezeControls">Creature.freezeControls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_protectDeathRecursionFlag">Creature.protectDeathRecursionFlag</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_stun">Creature.stun</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Stunned">Creature.Stunned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blinded">Creature.Blinded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deaf">Creature.Deaf</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunkIndex">Creature.mainBodyChunkIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_mainBodyChunk">Creature.mainBodyChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_dead">Creature.dead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Consious">Creature.Consious</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_VisionPoint">Creature.VisionPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_inShortcut">Creature.inShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_grasps">Creature.grasps</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_DangerPos">Creature.DangerPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_abstractCreature">Creature.abstractCreature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Template">Creature.Template</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_State">Creature.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_coord">Creature.coord</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_safariControlled">Creature.safariControlled</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Hypothermia">Creature.Hypothermia</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_WormGrassGooduckyImmune">Creature.WormGrassGooduckyImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_RecreateSticksFromAbstract">Creature.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PlaceInRoom_Room_">Creature.PlaceInRoom(Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_NewTile">Creature.NewTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SetKillTag_AbstractCreature_">Creature.SetKillTag(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Blind_System_Int32_">Creature.Blind(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Deafen_System_Int32_">Creature.Deafen(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_">Creature.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SuckedIntoShortCut_RWCustom_IntVector2_System_Boolean_">Creature.SuckedIntoShortCut(IntVector2, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyIntoRoom_WorldCoordinate_Room_">Creature.FlyIntoRoom(WorldCoordinate, Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_FlyAwayFromRoom_System_Boolean_">Creature.FlyAwayFromRoom(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Abstractize">Creature.Abstractize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_LoseAllGrasps">Creature.LoseAllGrasps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_BodyPartByIndex_System_Int32_">Creature.BodyPartByIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseGrasp_System_Int32_">Creature.ReleaseGrasp(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SwitchGrasps_System_Int32_System_Int32_">Creature.SwitchGrasps(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_UpdateGraspIndexes">Creature.UpdateGraspIndexes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_CanBeGrabbed_Creature_">Creature.CanBeGrabbed(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_">Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_GrabbedObjectSnatched_PhysicalObject_Creature_">Creature.GrabbedObjectSnatched(PhysicalObject, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ShortCutColor">Creature.ShortCutColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">Creature.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HeardNoise_Noise_InGameNoise_">Creature.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ToString">Creature.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_">Creature.ReleaseDoorForbiddenCreatures(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_AllowableControlledAIOverride_MovementConnection_MovementType_">Creature.AllowableControlledAIOverride(MovementConnection.MovementType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaUpdate">Creature.HypothermiaUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_HypothermiaBodyContactWarmup_Creature_Creature_">Creature.HypothermiaBodyContactWarmup(Creature, Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Creature.html#Global_Creature_SafariControlInputUpdate_System_Int32_">Creature.SafariControlInputUpdate(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_g">PhysicalObject.g</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Grabbed_Creature_Grasp_">PhysicalObject.Grabbed(Creature.Grasp)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_TubeWorm__ctor_" data-uid="Global.TubeWorm.#ctor*"></a>
+
+  <h3 id="Global_TubeWorm__ctor_AbstractCreature_World_" data-uid="Global.TubeWorm.#ctor(AbstractCreature,World)">
+  TubeWorm(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TubeWorm(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_TubeWorm_crawlSpeed" data-uid="Global.TubeWorm.crawlSpeed">
+  crawlSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float crawlSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_goalOnRopePos" data-uid="Global.TubeWorm.goalOnRopePos">
+  goalOnRopePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float goalOnRopePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_grappleToPos" data-uid="Global.TubeWorm.grappleToPos">
+  grappleToPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2? grappleToPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_grapplingCounter" data-uid="Global.TubeWorm.grapplingCounter">
+  grapplingCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int grapplingCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_lastAccessibleCell" data-uid="Global.TubeWorm.lastAccessibleCell">
+  lastAccessibleCell
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathFinder.PathingCell lastAccessibleCell</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_lastGrabbed" data-uid="Global.TubeWorm.lastGrabbed">
+  lastGrabbed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lastGrabbed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_lastWalk" data-uid="Global.TubeWorm.lastWalk">
+  lastWalk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastWalk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_lungs" data-uid="Global.TubeWorm.lungs">
+  lungs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lungs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_maxTotalRope" data-uid="Global.TubeWorm.maxTotalRope">
+  maxTotalRope
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxTotalRope</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_nextGrapplePos" data-uid="Global.TubeWorm.nextGrapplePos">
+  nextGrapplePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2? nextGrapplePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_noSpearStickZones" data-uid="Global.TubeWorm.noSpearStickZones">
+  noSpearStickZones
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PlacedObject&gt; noSpearStickZones</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PlacedObject.html">PlacedObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_onRopePos" data-uid="Global.TubeWorm.onRopePos">
+  onRopePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float onRopePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_playerCheatAttachPos" data-uid="Global.TubeWorm.playerCheatAttachPos">
+  playerCheatAttachPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? playerCheatAttachPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_shootTries" data-uid="Global.TubeWorm.shootTries">
+  shootTries
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int shootTries</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_sleepCounter" data-uid="Global.TubeWorm.sleepCounter">
+  sleepCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int sleepCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_sleeping" data-uid="Global.TubeWorm.sleeping">
+  sleeping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sleeping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_step" data-uid="Global.TubeWorm.step">
+  step
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int step</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_tongues" data-uid="Global.TubeWorm.tongues">
+  tongues
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TubeWorm.Tongue[] tongues</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TubeWorm.Tongue.html">Tongue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_triedMove" data-uid="Global.TubeWorm.triedMove">
+  triedMove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int triedMove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_useBool" data-uid="Global.TubeWorm.useBool">
+  useBool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool useBool</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_TubeWorm_walkCycle" data-uid="Global.TubeWorm.walkCycle">
+  walkCycle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float walkCycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_TubeWorm_FreeRope_" data-uid="Global.TubeWorm.FreeRope*"></a>
+
+  <h3 id="Global_TubeWorm_FreeRope" data-uid="Global.TubeWorm.FreeRope">
+  FreeRope
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FreeRope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_RopeStretchFac_" data-uid="Global.TubeWorm.RopeStretchFac*"></a>
+
+  <h3 id="Global_TubeWorm_RopeStretchFac" data-uid="Global.TubeWorm.RopeStretchFac">
+  RopeStretchFac
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RopeStretchFac { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_totalRope_" data-uid="Global.TubeWorm.totalRope*"></a>
+
+  <h3 id="Global_TubeWorm_totalRope" data-uid="Global.TubeWorm.totalRope">
+  totalRope
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float totalRope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_TubeWorm_Act_" data-uid="Global.TubeWorm.Act*"></a>
+
+  <h3 id="Global_TubeWorm_Act" data-uid="Global.TubeWorm.Act">
+  Act()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L683"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Act()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Collide_" data-uid="Global.TubeWorm.Collide*"></a>
+
+  <h3 id="Global_TubeWorm_Collide_PhysicalObject_System_Int32_System_Int32_" data-uid="Global.TubeWorm.Collide(PhysicalObject,System.Int32,System.Int32)">
+  Collide(PhysicalObject, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Collide(PhysicalObject otherObject, int myChunk, int otherChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>myChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>otherChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_ComparePathingCells_" data-uid="Global.TubeWorm.ComparePathingCells*"></a>
+
+  <h3 id="Global_TubeWorm_ComparePathingCells_PathFinder_PathingCell_PathFinder_PathingCell_" data-uid="Global.TubeWorm.ComparePathingCells(PathFinder.PathingCell,PathFinder.PathingCell)">
+  ComparePathingCells(PathingCell, PathingCell)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L863"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ComparePathingCells(PathFinder.PathingCell A, PathFinder.PathingCell B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd></dd>
+    <dt><code>B</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Die_" data-uid="Global.TubeWorm.Die*"></a>
+
+  <h3 id="Global_TubeWorm_Die" data-uid="Global.TubeWorm.Die">
+  Die()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_FindAccessibleGrapplingPos_" data-uid="Global.TubeWorm.FindAccessibleGrapplingPos*"></a>
+
+  <h3 id="Global_TubeWorm_FindAccessibleGrapplingPos" data-uid="Global.TubeWorm.FindAccessibleGrapplingPos">
+  FindAccessibleGrapplingPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindAccessibleGrapplingPos()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_FindInaccessibleGrapplingPos_" data-uid="Global.TubeWorm.FindInaccessibleGrapplingPos*"></a>
+
+  <h3 id="Global_TubeWorm_FindInaccessibleGrapplingPos" data-uid="Global.TubeWorm.FindInaccessibleGrapplingPos">
+  FindInaccessibleGrapplingPos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindInaccessibleGrapplingPos()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_FlopAlong_" data-uid="Global.TubeWorm.FlopAlong*"></a>
+
+  <h3 id="Global_TubeWorm_FlopAlong" data-uid="Global.TubeWorm.FlopAlong">
+  FlopAlong()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L912"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlopAlong()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_GrabbedByPlayer_" data-uid="Global.TubeWorm.GrabbedByPlayer*"></a>
+
+  <h3 id="Global_TubeWorm_GrabbedByPlayer" data-uid="Global.TubeWorm.GrabbedByPlayer">
+  GrabbedByPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GrabbedByPlayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_GrappleToPosition_" data-uid="Global.TubeWorm.GrappleToPosition*"></a>
+
+  <h3 id="Global_TubeWorm_GrappleToPosition" data-uid="Global.TubeWorm.GrappleToPosition">
+  GrappleToPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1073"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GrappleToPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_HoldOnToObject_" data-uid="Global.TubeWorm.HoldOnToObject*"></a>
+
+  <h3 id="Global_TubeWorm_HoldOnToObject" data-uid="Global.TubeWorm.HoldOnToObject">
+  HoldOnToObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L884"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HoldOnToObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_InitiateGraphicsModule_" data-uid="Global.TubeWorm.InitiateGraphicsModule*"></a>
+
+  <h3 id="Global_TubeWorm_InitiateGraphicsModule" data-uid="Global.TubeWorm.InitiateGraphicsModule">
+  InitiateGraphicsModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_JumpButton_" data-uid="Global.TubeWorm.JumpButton*"></a>
+
+  <h3 id="Global_TubeWorm_JumpButton_Player_" data-uid="Global.TubeWorm.JumpButton(Player)">
+  JumpButton(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool JumpButton(Player plr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>plr</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_NewRoom_" data-uid="Global.TubeWorm.NewRoom*"></a>
+
+  <h3 id="Global_TubeWorm_NewRoom_Room_" data-uid="Global.TubeWorm.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_RequestRope_" data-uid="Global.TubeWorm.RequestRope*"></a>
+
+  <h3 id="Global_TubeWorm_RequestRope_System_Int32_" data-uid="Global.TubeWorm.RequestRope(System.Int32)">
+  RequestRope(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RequestRope(int tongue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tongue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Sleep_" data-uid="Global.TubeWorm.Sleep*"></a>
+
+  <h3 id="Global_TubeWorm_Sleep" data-uid="Global.TubeWorm.Sleep">
+  Sleep()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sleep()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_SpitOutOfShortCut_" data-uid="Global.TubeWorm.SpitOutOfShortCut*"></a>
+
+  <h3 id="Global_TubeWorm_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_" data-uid="Global.TubeWorm.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)">
+  SpitOutOfShortCut(IntVector2, Room, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SpitOutOfShortCut(IntVector2 pos, Room newRoom, bool spitOutAllSticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+    <dt><code>spitOutAllSticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Stun_" data-uid="Global.TubeWorm.Stun*"></a>
+
+  <h3 id="Global_TubeWorm_Stun_System_Int32_" data-uid="Global.TubeWorm.Stun(System.Int32)">
+  Stun(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Stun(int time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_TerrainImpact_" data-uid="Global.TubeWorm.TerrainImpact*"></a>
+
+  <h3 id="Global_TubeWorm_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.TubeWorm.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Update_" data-uid="Global.TubeWorm.Update*"></a>
+
+  <h3 id="Global_TubeWorm_Update_System_Boolean_" data-uid="Global.TubeWorm.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Use_" data-uid="Global.TubeWorm.Use*"></a>
+
+  <h3 id="Global_TubeWorm_Use" data-uid="Global.TubeWorm.Use">
+  Use()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Use()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_Violence_" data-uid="Global.TubeWorm.Violence*"></a>
+
+  <h3 id="Global_TubeWorm_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_" data-uid="Global.TubeWorm.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)">
+  Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos onAppendagePos, Creature.DamageType type, float damage, float stunBonus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>directionAndMomentum</code> <span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+    <dt><code>hitChunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+    <dt><code>onAppendagePos</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>.<a class="xref" href="PhysicalObject.Appendage.Pos.html">Pos</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.DamageType.html">DamageType</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stunBonus</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_WalkAlongRope_" data-uid="Global.TubeWorm.WalkAlongRope*"></a>
+
+  <h3 id="Global_TubeWorm_WalkAlongRope" data-uid="Global.TubeWorm.WalkAlongRope">
+  WalkAlongRope()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L1112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WalkAlongRope()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_TubeWorm_WeightedRopeRequest_" data-uid="Global.TubeWorm.WeightedRopeRequest*"></a>
+
+  <h3 id="Global_TubeWorm_WeightedRopeRequest_System_Int32_" data-uid="Global.TubeWorm.WeightedRopeRequest(System.Int32)">
+  WeightedRopeRequest(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WeightedRopeRequest(int tongue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tongue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/TubeWorm.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

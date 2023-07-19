@@ -1,0 +1,1628 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OverseerAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OverseerAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_OverseerAI.md&amp;value=---%0Auid%3A%20Global.OverseerAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.OverseerAI">
+
+
+
+  <h1 id="Global_OverseerAI" data-uid="Global.OverseerAI" class="text-break">
+    Class OverseerAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OverseerAI : ArtificialIntelligence</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></div>
+      <div><span class="xref">OverseerAI</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_creature">ArtificialIntelligence.creature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_modules">ArtificialIntelligence.modules</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stranded">ArtificialIntelligence.stranded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_seeThroughWalls">ArtificialIntelligence.seeThroughWalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_timeInRoom">ArtificialIntelligence.timeInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_lastRoom">ArtificialIntelligence.lastRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_pathFinder">ArtificialIntelligence.pathFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_tracker">ArtificialIntelligence.tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_noiseTracker">ArtificialIntelligence.noiseTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_obstacleTracker">ArtificialIntelligence.obstacleTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_threatTracker">ArtificialIntelligence.threatTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_preyTracker">ArtificialIntelligence.preyTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_rainTracker">ArtificialIntelligence.rainTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_denFinder">ArtificialIntelligence.denFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_agressionTracker">ArtificialIntelligence.agressionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_utilityComparer">ArtificialIntelligence.utilityComparer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_missionTracker">ArtificialIntelligence.missionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_secondaryNodeFinder">ArtificialIntelligence.secondaryNodeFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_relationshipTracker">ArtificialIntelligence.relationshipTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_itemTracker">ArtificialIntelligence.itemTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_discomfortTracker">ArtificialIntelligence.discomfortTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stuckTracker">ArtificialIntelligence.stuckTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_injuryTracker">ArtificialIntelligence.injuryTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_friendTracker">ArtificialIntelligence.friendTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_AddModule_AIModule_">ArtificialIntelligence.AddModule(AIModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_">ArtificialIntelligence.VisualContact(WorldCoordinate, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualContact(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_BodyChunk_">ArtificialIntelligence.VisualContact(BodyChunk)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualScore(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_">ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_SetDestination_WorldCoordinate_">ArtificialIntelligence.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_">ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewArea_System_Boolean_">ArtificialIntelligence.NewArea(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DenPosition">ArtificialIntelligence.DenPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_WantToStayInDenUntilEndOfCycle">ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_">ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_StaticRelationship_AbstractCreature_">ArtificialIntelligence.StaticRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_">ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_HeardNoise_Noise_InGameNoise_">ArtificialIntelligence.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_">ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_OverseerAI__ctor_" data-uid="Global.OverseerAI.#ctor*"></a>
+
+  <h3 id="Global_OverseerAI__ctor_AbstractCreature_World_" data-uid="Global.OverseerAI.#ctor(AbstractCreature,World)">
+  OverseerAI(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseerAI(AbstractCreature abstractCreature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_OverseerAI_addToPathingList" data-uid="Global.OverseerAI.addToPathingList">
+  addToPathingList
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntVector2&gt; addToPathingList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_avoidPositions" data-uid="Global.OverseerAI.avoidPositions">
+  avoidPositions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntVector2&gt; avoidPositions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_bringUpLens" data-uid="Global.OverseerAI.bringUpLens">
+  bringUpLens
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bringUpLens</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_casualInterestBonus" data-uid="Global.OverseerAI.casualInterestBonus">
+  casualInterestBonus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float casualInterestBonus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_casualInterestCreature" data-uid="Global.OverseerAI.casualInterestCreature">
+  casualInterestCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature casualInterestCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_communication" data-uid="Global.OverseerAI.communication">
+  communication
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseerCommunicationModule communication</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.OverseerCommunicationModule.html">OverseerCommunicationModule</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lastLookAtAirPositions" data-uid="Global.OverseerAI.lastLookAtAirPositions">
+  lastLookAtAirPositions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Vector2&gt; lastLookAtAirPositions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector2</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lastTargetPos" data-uid="Global.OverseerAI.lastTargetPos">
+  lastTargetPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lastTargetPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lookAt" data-uid="Global.OverseerAI.lookAt">
+  lookAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lookAt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lookAtAdd" data-uid="Global.OverseerAI.lookAtAdd">
+  lookAtAdd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 lookAtAdd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lookAtFlyingWeapon" data-uid="Global.OverseerAI.lookAtFlyingWeapon">
+  lookAtFlyingWeapon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon lookAtFlyingWeapon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_lookAtSameAirPosCounter" data-uid="Global.OverseerAI.lookAtSameAirPosCounter">
+  lookAtSameAirPosCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lookAtSameAirPosCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_randomBringUpLensBonus" data-uid="Global.OverseerAI.randomBringUpLensBonus">
+  randomBringUpLensBonus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float randomBringUpLensBonus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_scaredDistance" data-uid="Global.OverseerAI.scaredDistance">
+  scaredDistance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scaredDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_slowLookAt" data-uid="Global.OverseerAI.slowLookAt">
+  slowLookAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 slowLookAt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_targetStationary" data-uid="Global.OverseerAI.targetStationary">
+  targetStationary
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float targetStationary</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_tempHoverTile" data-uid="Global.OverseerAI.tempHoverTile">
+  tempHoverTile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2 tempHoverTile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_tutorialBehavior" data-uid="Global.OverseerAI.tutorialBehavior">
+  tutorialBehavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseerTutorialBehavior tutorialBehavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.OverseerTutorialBehavior.html">OverseerTutorialBehavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_zipPathMatrixOffset" data-uid="Global.OverseerAI.zipPathMatrixOffset">
+  zipPathMatrixOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2 zipPathMatrixOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_OverseerAI_zipPathingMatrix" data-uid="Global.OverseerAI.zipPathingMatrix">
+  zipPathingMatrix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[,] zipPathingMatrix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_OverseerAI_CosmeticLookAt_" data-uid="Global.OverseerAI.CosmeticLookAt*"></a>
+
+  <h3 id="Global_OverseerAI_CosmeticLookAt" data-uid="Global.OverseerAI.CosmeticLookAt">
+  CosmeticLookAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 CosmeticLookAt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_overseer_" data-uid="Global.OverseerAI.overseer*"></a>
+
+  <h3 id="Global_OverseerAI_overseer" data-uid="Global.OverseerAI.overseer">
+  overseer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Overseer overseer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Overseer.html">Overseer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_targetCreature_" data-uid="Global.OverseerAI.targetCreature*"></a>
+
+  <h3 id="Global_OverseerAI_targetCreature" data-uid="Global.OverseerAI.targetCreature">
+  targetCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature targetCreature { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_worldAI_" data-uid="Global.OverseerAI.worldAI*"></a>
+
+  <h3 id="Global_OverseerAI_worldAI" data-uid="Global.OverseerAI.worldAI">
+  worldAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverseersWorldAI worldAI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.OverseersWorldAI.html">OverseersWorldAI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_OverseerAI_DoIWantToTalkToThisOverSeer_" data-uid="Global.OverseerAI.DoIWantToTalkToThisOverSeer*"></a>
+
+  <h3 id="Global_OverseerAI_DoIWantToTalkToThisOverSeer_Overseer_" data-uid="Global.OverseerAI.DoIWantToTalkToThisOverSeer(Overseer)">
+  DoIWantToTalkToThisOverSeer(Overseer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoIWantToTalkToThisOverSeer(Overseer other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Global.Overseer.html">Overseer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_FindRootTileForHoverPos_" data-uid="Global.OverseerAI.FindRootTileForHoverPos*"></a>
+
+  <h3 id="Global_OverseerAI_FindRootTileForHoverPos_RWCustom_IntVector2_" data-uid="Global.OverseerAI.FindRootTileForHoverPos(RWCustom.IntVector2)">
+  FindRootTileForHoverPos(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVector2? FindRootTileForHoverPos(IntVector2 testHoverPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testHoverPos</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_FlyingWeapon_" data-uid="Global.OverseerAI.FlyingWeapon*"></a>
+
+  <h3 id="Global_OverseerAI_FlyingWeapon_Weapon_" data-uid="Global.OverseerAI.FlyingWeapon(Weapon)">
+  FlyingWeapon(Weapon)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlyingWeapon(Weapon weapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_GetZipPathMatrixCell_" data-uid="Global.OverseerAI.GetZipPathMatrixCell*"></a>
+
+  <h3 id="Global_OverseerAI_GetZipPathMatrixCell_RWCustom_IntVector2_" data-uid="Global.OverseerAI.GetZipPathMatrixCell(RWCustom.IntVector2)">
+  GetZipPathMatrixCell(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetZipPathMatrixCell(IntVector2 intVec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intVec</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_GetZipPathMatrixCell_" data-uid="Global.OverseerAI.GetZipPathMatrixCell*"></a>
+
+  <h3 id="Global_OverseerAI_GetZipPathMatrixCell_System_Int32_System_Int32_" data-uid="Global.OverseerAI.GetZipPathMatrixCell(System.Int32,System.Int32)">
+  GetZipPathMatrixCell(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetZipPathMatrixCell(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_HoverScoreOfTile_" data-uid="Global.OverseerAI.HoverScoreOfTile*"></a>
+
+  <h3 id="Global_OverseerAI_HoverScoreOfTile_RWCustom_IntVector2_" data-uid="Global.OverseerAI.HoverScoreOfTile(RWCustom.IntVector2)">
+  HoverScoreOfTile(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HoverScoreOfTile(IntVector2 testTile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testTile</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_LensUpdate_" data-uid="Global.OverseerAI.LensUpdate*"></a>
+
+  <h3 id="Global_OverseerAI_LensUpdate_Creature_" data-uid="Global.OverseerAI.LensUpdate(Creature)">
+  LensUpdate(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LensUpdate(Creature crit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_LikeOfPlayer_" data-uid="Global.OverseerAI.LikeOfPlayer*"></a>
+
+  <h3 id="Global_OverseerAI_LikeOfPlayer_AbstractCreature_" data-uid="Global.OverseerAI.LikeOfPlayer(AbstractCreature)">
+  LikeOfPlayer(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LikeOfPlayer(AbstractCreature player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_LookAtAirPosScore_" data-uid="Global.OverseerAI.LookAtAirPosScore*"></a>
+
+  <h3 id="Global_OverseerAI_LookAtAirPosScore_UnityEngine_Vector2_" data-uid="Global.OverseerAI.LookAtAirPosScore(UnityEngine.Vector2)">
+  LookAtAirPosScore(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LookAtAirPosScore(Vector2 testPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_NewRoom_" data-uid="Global.OverseerAI.NewRoom*"></a>
+
+  <h3 id="Global_OverseerAI_NewRoom_Room_" data-uid="Global.OverseerAI.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_RealizedCreatureInterest_" data-uid="Global.OverseerAI.RealizedCreatureInterest*"></a>
+
+  <h3 id="Global_OverseerAI_RealizedCreatureInterest_Creature_" data-uid="Global.OverseerAI.RealizedCreatureInterest(Creature)">
+  RealizedCreatureInterest(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RealizedCreatureInterest(Creature testCrit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_ResetZipPathingMatrix_" data-uid="Global.OverseerAI.ResetZipPathingMatrix*"></a>
+
+  <h3 id="Global_OverseerAI_ResetZipPathingMatrix_RWCustom_IntVector2_" data-uid="Global.OverseerAI.ResetZipPathingMatrix(RWCustom.IntVector2)">
+  ResetZipPathingMatrix(IntVector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetZipPathingMatrix(IntVector2 newCenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newCenter</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_SetZipPathMatrixCell_" data-uid="Global.OverseerAI.SetZipPathMatrixCell*"></a>
+
+  <h3 id="Global_OverseerAI_SetZipPathMatrixCell_RWCustom_IntVector2_System_Single_" data-uid="Global.OverseerAI.SetZipPathMatrixCell(RWCustom.IntVector2,System.Single)">
+  SetZipPathMatrixCell(IntVector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZipPathMatrixCell(IntVector2 intVec, float setValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intVec</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>setValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_SetZipPathMatrixCell_" data-uid="Global.OverseerAI.SetZipPathMatrixCell*"></a>
+
+  <h3 id="Global_OverseerAI_SetZipPathMatrixCell_System_Int32_System_Int32_System_Single_" data-uid="Global.OverseerAI.SetZipPathMatrixCell(System.Int32,System.Int32,System.Single)">
+  SetZipPathMatrixCell(int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZipPathMatrixCell(int x, int y, float setValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>setValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_Update_" data-uid="Global.OverseerAI.Update*"></a>
+
+  <h3 id="Global_OverseerAI_Update" data-uid="Global.OverseerAI.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_UpdateTempHoverPosition_" data-uid="Global.OverseerAI.UpdateTempHoverPosition*"></a>
+
+  <h3 id="Global_OverseerAI_UpdateTempHoverPosition" data-uid="Global.OverseerAI.UpdateTempHoverPosition">
+  UpdateTempHoverPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTempHoverPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_OverseerAI_UpdateZipMatrix_" data-uid="Global.OverseerAI.UpdateZipMatrix*"></a>
+
+  <h3 id="Global_OverseerAI_UpdateZipMatrix" data-uid="Global.OverseerAI.UpdateZipMatrix">
+  UpdateZipMatrix()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateZipMatrix()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/OverseerAI.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

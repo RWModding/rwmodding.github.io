@@ -1,0 +1,2876 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SlugNPCAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SlugNPCAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=MoreSlugcats_SlugNPCAI.md&amp;value=---%0Auid%3A%20MoreSlugcats.SlugNPCAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MoreSlugcats.SlugNPCAI">
+
+
+
+  <h1 id="MoreSlugcats_SlugNPCAI" data-uid="MoreSlugcats.SlugNPCAI" class="text-break">
+    Class SlugNPCAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MoreSlugcats.html">MoreSlugcats</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SlugNPCAI : ArtificialIntelligence, IUseItemTracker, IAINoiseReaction, IUseARelationshipTracker, IReactToSocialEvents, FriendTracker.IHaveFriendTracker</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></div>
+      <div><span class="xref">SlugNPCAI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IUseItemTracker.html">IUseItemTracker</a></div>
+      <div><a class="xref" href="Global.IAINoiseReaction.html">IAINoiseReaction</a></div>
+      <div><a class="xref" href="Global.IUseARelationshipTracker.html">IUseARelationshipTracker</a></div>
+      <div><a class="xref" href="Global.IReactToSocialEvents.html">IReactToSocialEvents</a></div>
+      <div><a class="xref" href="FriendTracker.html">FriendTracker</a>.<a class="xref" href="FriendTracker.IHaveFriendTracker.html">IHaveFriendTracker</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_creature">ArtificialIntelligence.creature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_modules">ArtificialIntelligence.modules</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stranded">ArtificialIntelligence.stranded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_seeThroughWalls">ArtificialIntelligence.seeThroughWalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_timeInRoom">ArtificialIntelligence.timeInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_lastRoom">ArtificialIntelligence.lastRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_pathFinder">ArtificialIntelligence.pathFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_tracker">ArtificialIntelligence.tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_noiseTracker">ArtificialIntelligence.noiseTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_obstacleTracker">ArtificialIntelligence.obstacleTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_threatTracker">ArtificialIntelligence.threatTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_preyTracker">ArtificialIntelligence.preyTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_rainTracker">ArtificialIntelligence.rainTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_denFinder">ArtificialIntelligence.denFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_agressionTracker">ArtificialIntelligence.agressionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_utilityComparer">ArtificialIntelligence.utilityComparer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_missionTracker">ArtificialIntelligence.missionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_secondaryNodeFinder">ArtificialIntelligence.secondaryNodeFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_relationshipTracker">ArtificialIntelligence.relationshipTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_itemTracker">ArtificialIntelligence.itemTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_discomfortTracker">ArtificialIntelligence.discomfortTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stuckTracker">ArtificialIntelligence.stuckTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_injuryTracker">ArtificialIntelligence.injuryTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_friendTracker">ArtificialIntelligence.friendTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_AddModule_AIModule_">ArtificialIntelligence.AddModule(AIModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_">ArtificialIntelligence.VisualContact(WorldCoordinate, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualContact(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_BodyChunk_">ArtificialIntelligence.VisualContact(BodyChunk)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualScore(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_">ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_SetDestination_WorldCoordinate_">ArtificialIntelligence.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewRoom_Room_">ArtificialIntelligence.NewRoom(Room)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewArea_System_Boolean_">ArtificialIntelligence.NewArea(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DenPosition">ArtificialIntelligence.DenPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_WantToStayInDenUntilEndOfCycle">ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_StaticRelationship_AbstractCreature_">ArtificialIntelligence.StaticRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_">ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_HeardNoise_Noise_InGameNoise_">ArtificialIntelligence.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_">ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MoreSlugcats_SlugNPCAI__ctor_" data-uid="MoreSlugcats.SlugNPCAI.#ctor*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI__ctor_AbstractCreature_World_" data-uid="MoreSlugcats.SlugNPCAI.#ctor(AbstractCreature,World)">
+  SlugNPCAI(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI(AbstractCreature creature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_alreadyIdledAt" data-uid="MoreSlugcats.SlugNPCAI.alreadyIdledAt">
+  alreadyIdledAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WorldCoordinate&gt; alreadyIdledAt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_attackPos" data-uid="MoreSlugcats.SlugNPCAI.attackPos">
+  attackPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate attackPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_behaviorType" data-uid="MoreSlugcats.SlugNPCAI.behaviorType">
+  behaviorType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI.BehaviorType behaviorType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAI.html">SlugNPCAI</a>.<a class="xref" href="MoreSlugcats.SlugNPCAI.BehaviorType.html">BehaviorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_catchDelay" data-uid="MoreSlugcats.SlugNPCAI.catchDelay">
+  catchDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int catchDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_catchPoles" data-uid="MoreSlugcats.SlugNPCAI.catchPoles">
+  catchPoles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool catchPoles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_changeAttackPositionDelay" data-uid="MoreSlugcats.SlugNPCAI.changeAttackPositionDelay">
+  changeAttackPositionDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int changeAttackPositionDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_combatDebug" data-uid="MoreSlugcats.SlugNPCAI.combatDebug">
+  combatDebug
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI.CombatDebug combatDebug</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAI.html">SlugNPCAI</a>.<a class="xref" href="MoreSlugcats.SlugNPCAI.CombatDebug.html">CombatDebug</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_cutCorners" data-uid="MoreSlugcats.SlugNPCAI.cutCorners">
+  cutCorners
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool cutCorners</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_followCloseness" data-uid="MoreSlugcats.SlugNPCAI.followCloseness">
+  followCloseness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float followCloseness</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_foodPreference" data-uid="MoreSlugcats.SlugNPCAI.foodPreference">
+  foodPreference
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] foodPreference</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_foodReaction" data-uid="MoreSlugcats.SlugNPCAI.foodReaction">
+  foodReaction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int foodReaction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_forceJump" data-uid="MoreSlugcats.SlugNPCAI.forceJump">
+  forceJump
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int forceJump</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_grabTarget" data-uid="MoreSlugcats.SlugNPCAI.grabTarget">
+  grabTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicalObject grabTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_heldWiggle" data-uid="MoreSlugcats.SlugNPCAI.heldWiggle">
+  heldWiggle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int heldWiggle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_idleCounter" data-uid="MoreSlugcats.SlugNPCAI.idleCounter">
+  idleCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int idleCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_jumpDir" data-uid="MoreSlugcats.SlugNPCAI.jumpDir">
+  jumpDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int jumpDir</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_jumping" data-uid="MoreSlugcats.SlugNPCAI.jumping">
+  jumping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool jumping</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_lastIdleSpot" data-uid="MoreSlugcats.SlugNPCAI.lastIdleSpot">
+  lastIdleSpot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? lastIdleSpot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_nap" data-uid="MoreSlugcats.SlugNPCAI.nap">
+  nap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool nap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_pathingAssist" data-uid="MoreSlugcats.SlugNPCAI.pathingAssist">
+  pathingAssist
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI.PathingAssist pathingAssist</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAI.html">SlugNPCAI</a>.<a class="xref" href="MoreSlugcats.SlugNPCAI.PathingAssist.html">PathingAssist</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_personalityDebug" data-uid="MoreSlugcats.SlugNPCAI.personalityDebug">
+  personalityDebug
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI.PersonalityDebug personalityDebug</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAI.html">SlugNPCAI</a>.<a class="xref" href="MoreSlugcats.SlugNPCAI.PersonalityDebug.html">PersonalityDebug</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_playPos" data-uid="MoreSlugcats.SlugNPCAI.playPos">
+  playPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 playPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_playWithItem" data-uid="MoreSlugcats.SlugNPCAI.playWithItem">
+  playWithItem
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playWithItem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_previousAttackPositions" data-uid="MoreSlugcats.SlugNPCAI.previousAttackPositions">
+  previousAttackPositions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntVector2&gt; previousAttackPositions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_testIdlePos" data-uid="MoreSlugcats.SlugNPCAI.testIdlePos">
+  testIdlePos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate testIdlePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_testThrowPos" data-uid="MoreSlugcats.SlugNPCAI.testThrowPos">
+  testThrowPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate testThrowPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_throwAtTarget" data-uid="MoreSlugcats.SlugNPCAI.throwAtTarget">
+  throwAtTarget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int throwAtTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_toldToPlay" data-uid="MoreSlugcats.SlugNPCAI.toldToPlay">
+  toldToPlay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int toldToPlay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_transportDelay" data-uid="MoreSlugcats.SlugNPCAI.transportDelay">
+  transportDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int transportDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MoreSlugcats_SlugNPCAI_turnDelay" data-uid="MoreSlugcats.SlugNPCAI.turnDelay">
+  turnDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int turnDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MoreSlugcats_SlugNPCAI_FunStuff_" data-uid="MoreSlugcats.SlugNPCAI.FunStuff*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_FunStuff" data-uid="MoreSlugcats.SlugNPCAI.FunStuff">
+  FunStuff
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FunStuff { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_IsFull_" data-uid="MoreSlugcats.SlugNPCAI.IsFull*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_IsFull" data-uid="MoreSlugcats.SlugNPCAI.IsFull">
+  IsFull
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFull { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_abstractAI_" data-uid="MoreSlugcats.SlugNPCAI.abstractAI*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_abstractAI" data-uid="MoreSlugcats.SlugNPCAI.abstractAI">
+  abstractAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAbstractAI abstractAI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAbstractAI.html">SlugNPCAbstractAI</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_cat_" data-uid="MoreSlugcats.SlugNPCAI.cat*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_cat" data-uid="MoreSlugcats.SlugNPCAI.cat">
+  cat
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player cat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MoreSlugcats_SlugNPCAI_AnyClimb_" data-uid="MoreSlugcats.SlugNPCAI.AnyClimb*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_AnyClimb" data-uid="MoreSlugcats.SlugNPCAI.AnyClimb">
+  AnyClimb()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AnyClimb()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_AteFood_" data-uid="MoreSlugcats.SlugNPCAI.AteFood*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_AteFood_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.AteFood(PhysicalObject)">
+  AteFood(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AteFood(PhysicalObject food)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>food</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_AttackUpdate_" data-uid="MoreSlugcats.SlugNPCAI.AttackUpdate*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_AttackUpdate_WorldCoordinate__Tracker_CreatureRepresentation_" data-uid="MoreSlugcats.SlugNPCAI.AttackUpdate(WorldCoordinate@,Tracker.CreatureRepresentation)">
+  AttackUpdate(ref WorldCoordinate, CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate AttackUpdate(ref WorldCoordinate coord, Tracker.CreatureRepresentation target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_AttackingPrey_" data-uid="MoreSlugcats.SlugNPCAI.AttackingPrey*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_AttackingPrey" data-uid="MoreSlugcats.SlugNPCAI.AttackingPrey">
+  AttackingPrey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttackingPrey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_AttackingThreat_" data-uid="MoreSlugcats.SlugNPCAI.AttackingThreat*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_AttackingThreat" data-uid="MoreSlugcats.SlugNPCAI.AttackingThreat">
+  AttackingThreat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L922"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttackingThreat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_CanGrabItem_" data-uid="MoreSlugcats.SlugNPCAI.CanGrabItem*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_CanGrabItem_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.CanGrabItem(PhysicalObject)">
+  CanGrabItem(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanGrabItem(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_CareAboutHitting_" data-uid="MoreSlugcats.SlugNPCAI.CareAboutHitting*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_CareAboutHitting_Creature_Creature_" data-uid="MoreSlugcats.SlugNPCAI.CareAboutHitting(Creature,Creature)">
+  CareAboutHitting(Creature, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1060"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CareAboutHitting(Creature crit, Creature intendedTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>intendedTarget</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_Communicate_" data-uid="MoreSlugcats.SlugNPCAI.Communicate*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_Communicate_Player_" data-uid="MoreSlugcats.SlugNPCAI.Communicate(Player)">
+  Communicate(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1094"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Communicate(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_CorridorClimbing_" data-uid="MoreSlugcats.SlugNPCAI.CorridorClimbing*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_CorridorClimbing" data-uid="MoreSlugcats.SlugNPCAI.CorridorClimbing">
+  CorridorClimbing()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CorridorClimbing()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_CreateTrackerRepresentationForCreature_" data-uid="MoreSlugcats.SlugNPCAI.CreateTrackerRepresentationForCreature*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_CreateTrackerRepresentationForCreature_AbstractCreature_" data-uid="MoreSlugcats.SlugNPCAI.CreateTrackerRepresentationForCreature(AbstractCreature)">
+  CreateTrackerRepresentationForCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Tracker.CreatureRepresentation CreateTrackerRepresentationForCreature(AbstractCreature otherCreature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_DecideBehavior_" data-uid="MoreSlugcats.SlugNPCAI.DecideBehavior*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_DecideBehavior" data-uid="MoreSlugcats.SlugNPCAI.DecideBehavior">
+  DecideBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1867"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DecideBehavior()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_DefineFollowCloseness_" data-uid="MoreSlugcats.SlugNPCAI.DefineFollowCloseness*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_DefineFollowCloseness" data-uid="MoreSlugcats.SlugNPCAI.DefineFollowCloseness">
+  DefineFollowCloseness()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DefineFollowCloseness()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_FindAttackPosition_" data-uid="MoreSlugcats.SlugNPCAI.FindAttackPosition*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_FindAttackPosition_Tracker_CreatureRepresentation_" data-uid="MoreSlugcats.SlugNPCAI.FindAttackPosition(Tracker.CreatureRepresentation)">
+  FindAttackPosition(CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L2060"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindAttackPosition(Tracker.CreatureRepresentation target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_GetFoodType_" data-uid="MoreSlugcats.SlugNPCAI.GetFoodType*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_GetFoodType_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.GetFoodType(PhysicalObject)">
+  GetFoodType(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlugNPCAI.Food GetFoodType(PhysicalObject food)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>food</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.SlugNPCAI.html">SlugNPCAI</a>.<a class="xref" href="MoreSlugcats.SlugNPCAI.Food.html">Food</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_GetUpcoming_" data-uid="MoreSlugcats.SlugNPCAI.GetUpcoming*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_GetUpcoming" data-uid="MoreSlugcats.SlugNPCAI.GetUpcoming">
+  GetUpcoming()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MovementConnection&gt; GetUpcoming()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MovementConnection.html">MovementConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_GiftRecieved_" data-uid="MoreSlugcats.SlugNPCAI.GiftRecieved*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_GiftRecieved_SocialEventRecognizer_OwnedItemOnGround_" data-uid="MoreSlugcats.SlugNPCAI.GiftRecieved(SocialEventRecognizer.OwnedItemOnGround)">
+  GiftRecieved(OwnedItemOnGround)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1961"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GiftRecieved(SocialEventRecognizer.OwnedItemOnGround giftOfferedToMe)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>giftOfferedToMe</code> <a class="xref" href="SocialEventRecognizer.html">SocialEventRecognizer</a>.<a class="xref" href="SocialEventRecognizer.OwnedItemOnGround.html">OwnedItemOnGround</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_GoodAttackPos_" data-uid="MoreSlugcats.SlugNPCAI.GoodAttackPos*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_GoodAttackPos_Tracker_CreatureRepresentation_System_Int32_" data-uid="MoreSlugcats.SlugNPCAI.GoodAttackPos(Tracker.CreatureRepresentation,System.Int32)">
+  GoodAttackPos(CreatureRepresentation, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1015"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GoodAttackPos(Tracker.CreatureRepresentation target, int chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_HasEdible_" data-uid="MoreSlugcats.SlugNPCAI.HasEdible*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_HasEdible" data-uid="MoreSlugcats.SlugNPCAI.HasEdible">
+  HasEdible()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1928"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEdible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_HasLethal_" data-uid="MoreSlugcats.SlugNPCAI.HasLethal*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_HasLethal_Creature_" data-uid="MoreSlugcats.SlugNPCAI.HasLethal(Creature)">
+  HasLethal(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLethal(Creature creature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_HasLethal_" data-uid="MoreSlugcats.SlugNPCAI.HasLethal*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_HasLethal_Creature_System_Boolean_" data-uid="MoreSlugcats.SlugNPCAI.HasLethal(Creature,System.Boolean)">
+  HasLethal(Creature, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1003"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLethal(Creature creature, bool actuallyLethal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>actuallyLethal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_HoldingThis_" data-uid="MoreSlugcats.SlugNPCAI.HoldingThis*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_HoldingThis_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.HoldingThis(PhysicalObject)">
+  HoldingThis(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HoldingThis(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_IdleBehavior_" data-uid="MoreSlugcats.SlugNPCAI.IdleBehavior*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_IdleBehavior" data-uid="MoreSlugcats.SlugNPCAI.IdleBehavior">
+  IdleBehavior()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? IdleBehavior()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_IdleScore_" data-uid="MoreSlugcats.SlugNPCAI.IdleScore*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_IdleScore_WorldCoordinate_" data-uid="MoreSlugcats.SlugNPCAI.IdleScore(WorldCoordinate)">
+  IdleScore(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IdleScore(WorldCoordinate tstPs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tstPs</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_Jump_" data-uid="MoreSlugcats.SlugNPCAI.Jump*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_Jump_System_Int32_System_Boolean_Player_InputPackage__" data-uid="MoreSlugcats.SlugNPCAI.Jump(System.Int32,System.Boolean,Player.InputPackage@)">
+  Jump(int, bool, ref InputPackage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1731"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(int direction, bool catchPoles, ref Player.InputPackage input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>catchPoles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="Player.html">Player</a>.<a class="xref" href="Player.InputPackage.html">InputPackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_LethalWeaponScore_" data-uid="MoreSlugcats.SlugNPCAI.LethalWeaponScore*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_LethalWeaponScore_PhysicalObject_Creature_" data-uid="MoreSlugcats.SlugNPCAI.LethalWeaponScore(PhysicalObject,Creature)">
+  LethalWeaponScore(PhysicalObject, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LethalWeaponScore(PhysicalObject obj, Creature target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_Move_" data-uid="MoreSlugcats.SlugNPCAI.Move*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_Move" data-uid="MoreSlugcats.SlugNPCAI.Move">
+  Move()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_NearestLethalWeapon_" data-uid="MoreSlugcats.SlugNPCAI.NearestLethalWeapon*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_NearestLethalWeapon_Creature_" data-uid="MoreSlugcats.SlugNPCAI.NearestLethalWeapon(Creature)">
+  NearestLethalWeapon(Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1073"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicalObject NearestLethalWeapon(Creature target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_NeuronsLegal_" data-uid="MoreSlugcats.SlugNPCAI.NeuronsLegal*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_NeuronsLegal" data-uid="MoreSlugcats.SlugNPCAI.NeuronsLegal">
+  NeuronsLegal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NeuronsLegal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_NoSolidTilesBetween_" data-uid="MoreSlugcats.SlugNPCAI.NoSolidTilesBetween*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_NoSolidTilesBetween_System_Int32_System_Int32_System_Int32_" data-uid="MoreSlugcats.SlugNPCAI.NoSolidTilesBetween(System.Int32,System.Int32,System.Int32)">
+  NoSolidTilesBetween(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L2042"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoSolidTilesBetween(int xA, int xB, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>xB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_OnAnyBeam_" data-uid="MoreSlugcats.SlugNPCAI.OnAnyBeam*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_OnAnyBeam" data-uid="MoreSlugcats.SlugNPCAI.OnAnyBeam">
+  OnAnyBeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1754"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnAnyBeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_OnHorizontalBeam_" data-uid="MoreSlugcats.SlugNPCAI.OnHorizontalBeam*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_OnHorizontalBeam" data-uid="MoreSlugcats.SlugNPCAI.OnHorizontalBeam">
+  OnHorizontalBeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnHorizontalBeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_OnVerticalBeam_" data-uid="MoreSlugcats.SlugNPCAI.OnVerticalBeam*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_OnVerticalBeam" data-uid="MoreSlugcats.SlugNPCAI.OnVerticalBeam">
+  OnVerticalBeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnVerticalBeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_PassingGrab_" data-uid="MoreSlugcats.SlugNPCAI.PassingGrab*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_PassingGrab" data-uid="MoreSlugcats.SlugNPCAI.PassingGrab">
+  PassingGrab()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PassingGrab()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_ReactToNoise_" data-uid="MoreSlugcats.SlugNPCAI.ReactToNoise*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_" data-uid="MoreSlugcats.SlugNPCAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)">
+  ReactToNoise(TheorizedSource, InGameNoise)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReactToNoise(NoiseTracker.TheorizedSource source, InGameNoise noise)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="NoiseTracker.html">NoiseTracker</a>.<a class="xref" href="NoiseTracker.TheorizedSource.html">TheorizedSource</a></dt>
+    <dd></dd>
+    <dt><code>noise</code> <a class="xref" href="Noise.InGameNoise.html">InGameNoise</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_SeeThrownWeapon_" data-uid="MoreSlugcats.SlugNPCAI.SeeThrownWeapon*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_SeeThrownWeapon_PhysicalObject_Creature_" data-uid="MoreSlugcats.SlugNPCAI.SeeThrownWeapon(PhysicalObject,Creature)">
+  SeeThrownWeapon(PhysicalObject, Creature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeeThrownWeapon(PhysicalObject obj, Creature thrower)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+    <dt><code>thrower</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_SetupFoodPrefs_" data-uid="MoreSlugcats.SlugNPCAI.SetupFoodPrefs*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_SetupFoodPrefs" data-uid="MoreSlugcats.SlugNPCAI.SetupFoodPrefs">
+  SetupFoodPrefs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupFoodPrefs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_SocialEvent_" data-uid="MoreSlugcats.SlugNPCAI.SocialEvent*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_SocialEvent_SocialEventRecognizer_EventID_Creature_Creature_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.SocialEvent(SocialEventRecognizer.EventID,Creature,Creature,PhysicalObject)">
+  SocialEvent(EventID, Creature, Creature, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1813"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SocialEvent(SocialEventRecognizer.EventID ID, Creature subjectCrit, Creature objectCrit, PhysicalObject involvedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="SocialEventRecognizer.html">SocialEventRecognizer</a>.<a class="xref" href="SocialEventRecognizer.EventID.html">EventID</a></dt>
+    <dd></dd>
+    <dt><code>subjectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>objectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>involvedItem</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_SpearThrowPositionScore_" data-uid="MoreSlugcats.SlugNPCAI.SpearThrowPositionScore*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_SpearThrowPositionScore_WorldCoordinate_RWCustom_IntVector2_System_Collections_Generic_List_RWCustom_IntVector2___" data-uid="MoreSlugcats.SlugNPCAI.SpearThrowPositionScore(WorldCoordinate,RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)">
+  SpearThrowPositionScore(WorldCoordinate, IntVector2, ref List&lt;IntVector2&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpearThrowPositionScore(WorldCoordinate tst, IntVector2 creaturePosition, ref List&lt;IntVector2&gt; creatureMovementArea)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tst</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+    <dt><code>creaturePosition</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+    <dt><code>creatureMovementArea</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_TheoreticallyEatMeat_" data-uid="MoreSlugcats.SlugNPCAI.TheoreticallyEatMeat*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_TheoreticallyEatMeat_Creature_System_Boolean_" data-uid="MoreSlugcats.SlugNPCAI.TheoreticallyEatMeat(Creature,System.Boolean)">
+  TheoreticallyEatMeat(Creature, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1675"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TheoreticallyEatMeat(Creature crit, bool excludeCentipedes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>crit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>excludeCentipedes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_TileClimbable_" data-uid="MoreSlugcats.SlugNPCAI.TileClimbable*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_TileClimbable_WorldCoordinate_" data-uid="MoreSlugcats.SlugNPCAI.TileClimbable(WorldCoordinate)">
+  TileClimbable(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TileClimbable(WorldCoordinate coordinate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinate</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_TrackItem_" data-uid="MoreSlugcats.SlugNPCAI.TrackItem*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_TrackItem_AbstractPhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.TrackItem(AbstractPhysicalObject)">
+  TrackItem(AbstractPhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1791"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrackItem(AbstractPhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_TravelPreference_" data-uid="MoreSlugcats.SlugNPCAI.TravelPreference*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_TravelPreference_MovementConnection_PathCost_" data-uid="MoreSlugcats.SlugNPCAI.TravelPreference(MovementConnection,PathCost)">
+  TravelPreference(MovementConnection, PathCost)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override PathCost TravelPreference(MovementConnection coord, PathCost cost)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd></dd>
+    <dt><code>cost</code> <a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_Tunnel_" data-uid="MoreSlugcats.SlugNPCAI.Tunnel*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_Tunnel_WorldCoordinate_" data-uid="MoreSlugcats.SlugNPCAI.Tunnel(WorldCoordinate)">
+  Tunnel(WorldCoordinate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Tunnel(WorldCoordinate coordinate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coordinate</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_Update_" data-uid="MoreSlugcats.SlugNPCAI.Update*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_Update" data-uid="MoreSlugcats.SlugNPCAI.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoreSlugcats_SlugNPCAI_WantsToEatThis_" data-uid="MoreSlugcats.SlugNPCAI.WantsToEatThis*"></a>
+
+  <h3 id="MoreSlugcats_SlugNPCAI_WantsToEatThis_PhysicalObject_" data-uid="MoreSlugcats.SlugNPCAI.WantsToEatThis(PhysicalObject)">
+  WantsToEatThis(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L1602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WantsToEatThis(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/MoreSlugcats/SlugNPCAI.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

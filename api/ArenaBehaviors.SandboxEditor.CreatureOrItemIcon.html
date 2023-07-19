@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SandboxEditor.CreatureOrItemIcon
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SandboxEditor.CreatureOrItemIcon
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=ArenaBehaviors_SandboxEditor_CreatureOrItemIcon.md&amp;value=---%0Auid%3A%20ArenaBehaviors.SandboxEditor.CreatureOrItemIcon%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon">
+
+
+
+  <h1 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon" class="text-break">
+    Class SandboxEditor.CreatureOrItemIcon
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ArenaBehaviors.html">ArenaBehaviors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SandboxEditor.CreatureOrItemIcon : SandboxEditor.PlacedIcon, IDrawable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="ArenaBehaviors.SandboxEditor.html">SandboxEditor</a>.<a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html">PlacedIcon</a></div>
+      <div><span class="xref">SandboxEditor.CreatureOrItemIcon</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="ArenaBehaviors.SandboxEditor.InDenCreatureIcon.html">SandboxEditor.InDenCreatureIcon</a></div>
+      <div><a class="xref" href="ArenaBehaviors.SandboxEditor.StayOutOfTerrainIcon.html">SandboxEditor.StayOutOfTerrainIcon</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_editor">SandboxEditor.PlacedIcon.editor</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_pos">SandboxEditor.PlacedIcon.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_lastPos">SandboxEditor.PlacedIcon.lastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_lastDisplace">SandboxEditor.PlacedIcon.lastDisplace</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_displace">SandboxEditor.PlacedIcon.displace</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_setDisplace">SandboxEditor.PlacedIcon.setDisplace</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_flash">SandboxEditor.PlacedIcon.flash</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_lastFlash">SandboxEditor.PlacedIcon.lastFlash</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_setFlash">SandboxEditor.PlacedIcon.setFlash</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_fadeOut">SandboxEditor.PlacedIcon.fadeOut</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_fade">SandboxEditor.PlacedIcon.fade</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_lastFade">SandboxEditor.PlacedIcon.lastFade</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_DraggedBy">SandboxEditor.PlacedIcon.DraggedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_Fade">SandboxEditor.PlacedIcon.Fade()</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_SetFlashValue_System_Single_">SandboxEditor.PlacedIcon.SetFlashValue(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_InitiateLightSprites_RoomCamera_SpriteLeaser_RoomCamera_">SandboxEditor.PlacedIcon.InitiateLightSprites(RoomCamera.SpriteLeaser, RoomCamera)</a>
+    </div>
+    <div>
+      <a class="xref" href="ArenaBehaviors.SandboxEditor.PlacedIcon.html#ArenaBehaviors_SandboxEditor_PlacedIcon_DrawPos_System_Single_">SandboxEditor.PlacedIcon.DrawPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon__ctor_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.#ctor*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon__ctor_ArenaBehaviors_SandboxEditor_UnityEngine_Vector2_IconSymbol_IconSymbolData_EntityID_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.#ctor(ArenaBehaviors.SandboxEditor,UnityEngine.Vector2,IconSymbol.IconSymbolData,EntityID)">
+  CreatureOrItemIcon(SandboxEditor, Vector2, IconSymbolData, EntityID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureOrItemIcon(SandboxEditor editor, Vector2 initPos, IconSymbol.IconSymbolData iconData, EntityID ID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>editor</code> <a class="xref" href="ArenaBehaviors.SandboxEditor.html">SandboxEditor</a></dt>
+    <dd></dd>
+    <dt><code>initPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>iconData</code> <a class="xref" href="IconSymbol.html">IconSymbol</a>.<a class="xref" href="IconSymbol.IconSymbolData.html">IconSymbolData</a></dt>
+    <dd></dd>
+    <dt><code>ID</code> <a class="xref" href="Global.EntityID.html">EntityID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_ID" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.ID">
+  ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L759"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityID ID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.EntityID.html">EntityID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_iconData" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.iconData">
+  iconData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L757"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconSymbol.IconSymbolData iconData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IconSymbol.html">IconSymbol</a>.<a class="xref" href="IconSymbol.IconSymbolData.html">IconSymbolData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_move" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.move">
+  move
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float move</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_moveToPoint" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.moveToPoint">
+  moveToPoint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 moveToPoint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_symbol" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.symbol">
+  symbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconSymbol symbol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.IconSymbol.html">IconSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_AllowedToMove_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.AllowedToMove*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_AllowedToMove" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.AllowedToMove">
+  AllowedToMove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowedToMove { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_AddToContainer_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.AddToContainer*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_ApplyPalette_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.ApplyPalette*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_DrawSprites_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.DrawSprites*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L834"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_Flash_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.Flash*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_Flash" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.Flash">
+  Flash()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L807"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Flash()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowAlpha_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowAlpha*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowAlpha_System_Single_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowAlpha(System.Single)">
+  GlowAlpha(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float GlowAlpha(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowColor_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowColor*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowColor_System_Single_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowColor(System.Single)">
+  GlowColor(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color GlowColor(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowRad_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowRad*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_GlowRad_System_Single_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.GlowRad(System.Single)">
+  GlowRad(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float GlowRad(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_InitiateSprites_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.InitiateSprites*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L825"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd></dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_Update_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.Update*"></a>
+
+  <h3 id="ArenaBehaviors_SandboxEditor_CreatureOrItemIcon_Update_System_Boolean_" data-uid="ArenaBehaviors.SandboxEditor.CreatureOrItemIcon.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/ArenaBehaviors/SandboxEditor.cs/#L753" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

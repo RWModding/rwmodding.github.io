@@ -1,0 +1,1908 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VoidSeaScene
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VoidSeaScene
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=VoidSea_VoidSeaScene.md&amp;value=---%0Auid%3A%20VoidSea.VoidSeaScene%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VoidSea.VoidSeaScene">
+
+
+
+  <h1 id="VoidSea_VoidSeaScene" data-uid="VoidSea.VoidSeaScene" class="text-break">
+    Class VoidSeaScene
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VoidSea.html">VoidSea</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VoidSeaScene : BackgroundScene</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.BackgroundScene.html">BackgroundScene</a></div>
+      <div><span class="xref">VoidSeaScene</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_elements">BackgroundScene.elements</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_sceneOrigo">BackgroundScene.sceneOrigo</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_elementsAddedToRoom">BackgroundScene.elementsAddedToRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_convergencePoint">BackgroundScene.convergencePoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_AddElement_BackgroundScene_BackgroundSceneElement_">BackgroundScene.AddElement(BackgroundScene.BackgroundSceneElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_Destroy">BackgroundScene.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_RoomToWorldPos_UnityEngine_Vector2_">BackgroundScene.RoomToWorldPos(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_DrawPos_UnityEngine_Vector2_System_Single_UnityEngine_Vector2_System_Single_">BackgroundScene.DrawPos(Vector2, float, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_PosFromDrawPosAtNeutralCamPos_UnityEngine_Vector2_System_Single_">BackgroundScene.PosFromDrawPosAtNeutralCamPos(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_LoadGraphic_System_String_System_Boolean_System_Boolean_">BackgroundScene.LoadGraphic(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_ManualLoadGraphic_System_String_System_String_System_Boolean_System_Boolean_">BackgroundScene.ManualLoadGraphic(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.BackgroundScene.html#Global_BackgroundScene_ManualLoadGraphicFullpath_System_String_System_String_System_Boolean_System_Boolean_">BackgroundScene.ManualLoadGraphicFullpath(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VoidSea_VoidSeaScene__ctor_" data-uid="VoidSea.VoidSeaScene.#ctor*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene__ctor_Room_" data-uid="VoidSea.VoidSeaScene.#ctor(Room)">
+  VoidSeaScene(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidSeaScene(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_blackFade" data-uid="VoidSea.VoidSeaScene.blackFade">
+  blackFade
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L702"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FadeOut blackFade</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoreSlugcats.FadeOut.html">FadeOut</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_cameraOffset" data-uid="VoidSea.VoidSeaScene.cameraOffset">
+  cameraOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 cameraOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_deepDivePhase" data-uid="VoidSea.VoidSeaScene.deepDivePhase">
+  deepDivePhase
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidSeaScene.DeepDivePhase deepDivePhase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.DeepDivePhase.html">DeepDivePhase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_editObject" data-uid="VoidSea.VoidSeaScene.editObject">
+  editObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int editObject</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_eggLoop" data-uid="VoidSea.VoidSeaScene.eggLoop">
+  eggLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisembodiedDynamicSoundLoop eggLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DisembodiedDynamicSoundLoop.html">DisembodiedDynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_eggProximity" data-uid="VoidSea.VoidSeaScene.eggProximity">
+  eggProximity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float eggProximity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_eggScenarioTimer" data-uid="VoidSea.VoidSeaScene.eggScenarioTimer">
+  eggScenarioTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int eggScenarioTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_endingSavedFlag" data-uid="VoidSea.VoidSeaScene.endingSavedFlag">
+  endingSavedFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool endingSavedFlag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_fadeOutLights" data-uid="VoidSea.VoidSeaScene.fadeOutLights">
+  fadeOutLights
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool fadeOutLights</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_fadeOutLightsTimer" data-uid="VoidSea.VoidSeaScene.fadeOutLightsTimer">
+  fadeOutLightsTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L698"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fadeOutLightsTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_fadeOutSaint" data-uid="VoidSea.VoidSeaScene.fadeOutSaint">
+  fadeOutSaint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fadeOutSaint</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_lastVoidSeaModes" data-uid="VoidSea.VoidSeaScene.lastVoidSeaModes">
+  lastVoidSeaModes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] lastVoidSeaModes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_meltingObjects" data-uid="VoidSea.VoidSeaScene.meltingObjects">
+  meltingObjects
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VoidSeaScene.MeltingItem&gt; meltingObjects</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.MeltingItem.html">MeltingItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_musicFadeFac" data-uid="VoidSea.VoidSeaScene.musicFadeFac">
+  musicFadeFac
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float musicFadeFac</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_playerDipped" data-uid="VoidSea.VoidSeaScene.playerDipped">
+  playerDipped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playerDipped</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_playerGhosts" data-uid="VoidSea.VoidSeaScene.playerGhosts">
+  playerGhosts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerGhosts playerGhosts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoidSea.PlayerGhosts.html">PlayerGhosts</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_playerInRoom" data-uid="VoidSea.VoidSeaScene.playerInRoom">
+  playerInRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playerInRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_playerY" data-uid="VoidSea.VoidSeaScene.playerY">
+  playerY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float playerY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_ridingWorm" data-uid="VoidSea.VoidSeaScene.ridingWorm">
+  ridingWorm
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ridingWorm</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_saintEndPhase" data-uid="VoidSea.VoidSeaScene.saintEndPhase">
+  saintEndPhase
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidSeaScene.SaintEndingPhase saintEndPhase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.SaintEndingPhase.html">SaintEndingPhase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_secondSpace" data-uid="VoidSea.VoidSeaScene.secondSpace">
+  secondSpace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool secondSpace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_storedJourneyIllustration" data-uid="VoidSea.VoidSeaScene.storedJourneyIllustration">
+  storedJourneyIllustration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L692"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BackgroundScene.SaintsJourneyIllustration storedJourneyIllustration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BackgroundScene.html">BackgroundScene</a>.<a class="xref" href="BackgroundScene.SaintsJourneyIllustration.html">SaintsJourneyIllustration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_swimLoop" data-uid="VoidSea.VoidSeaScene.swimLoop">
+  swimLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisembodiedDynamicSoundLoop swimLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DisembodiedDynamicSoundLoop.html">DisembodiedDynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_theEgg" data-uid="VoidSea.VoidSeaScene.theEgg">
+  theEgg
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidSeaScene.TheEgg theEgg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.TheEgg.html">TheEgg</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_timeInSaintPhase" data-uid="VoidSea.VoidSeaScene.timeInSaintPhase">
+  timeInSaintPhase
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeInSaintPhase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_voidSeaBackground" data-uid="VoidSea.VoidSeaScene.voidSeaBackground">
+  voidSeaBackground
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidSeaScene.VoidSeaBkg voidSeaBackground</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.VoidSeaBkg.html">VoidSeaBkg</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_voidWormsAltitude" data-uid="VoidSea.VoidSeaScene.voidWormsAltitude">
+  voidWormsAltitude
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float voidWormsAltitude</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_wooshLoop" data-uid="VoidSea.VoidSeaScene.wooshLoop">
+  wooshLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisembodiedDynamicSoundLoop wooshLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DisembodiedDynamicSoundLoop.html">DisembodiedDynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_worms" data-uid="VoidSea.VoidSeaScene.worms">
+  worms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VoidWorm&gt; worms</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VoidSea.VoidWorm.html">VoidWorm</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VoidSea_VoidSeaScene_wormsLoop" data-uid="VoidSea.VoidSeaScene.wormsLoop">
+  wormsLoop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DisembodiedDynamicSoundLoop wormsLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DisembodiedDynamicSoundLoop.html">DisembodiedDynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VoidSea_VoidSeaScene_BigOpenMusic_" data-uid="VoidSea.VoidSeaScene.BigOpenMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_BigOpenMusic" data-uid="VoidSea.VoidSeaScene.BigOpenMusic">
+  BigOpenMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L732"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BigOpenMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_Inverted_" data-uid="VoidSea.VoidSeaScene.Inverted*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_Inverted" data-uid="VoidSea.VoidSeaScene.Inverted">
+  Inverted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L812"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Inverted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_SlugcatGhostMusic_" data-uid="VoidSea.VoidSeaScene.SlugcatGhostMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_SlugcatGhostMusic" data-uid="VoidSea.VoidSeaScene.SlugcatGhostMusic">
+  SlugcatGhostMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SlugcatGhostMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_SwimDownMusic_" data-uid="VoidSea.VoidSeaScene.SwimDownMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_SwimDownMusic" data-uid="VoidSea.VoidSeaScene.SwimDownMusic">
+  SwimDownMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SwimDownMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_TheLightMusic_" data-uid="VoidSea.VoidSeaScene.TheLightMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_TheLightMusic" data-uid="VoidSea.VoidSeaScene.TheLightMusic">
+  TheLightMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TheLightMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_TheRideMusic_" data-uid="VoidSea.VoidSeaScene.TheRideMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_TheRideMusic" data-uid="VoidSea.VoidSeaScene.TheRideMusic">
+  TheRideMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TheRideMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_VSS_DeathMusic_" data-uid="VoidSea.VoidSeaScene.VSS_DeathMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_VSS_DeathMusic" data-uid="VoidSea.VoidSeaScene.VSS_DeathMusic">
+  VSS_DeathMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L824"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VSS_DeathMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_VSS_TransformMusic_" data-uid="VoidSea.VoidSeaScene.VSS_TransformMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_VSS_TransformMusic" data-uid="VoidSea.VoidSeaScene.VSS_TransformMusic">
+  VSS_TransformMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L848"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VSS_TransformMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_VSS_TransformWaitMusic_" data-uid="VoidSea.VoidSeaScene.VSS_TransformWaitMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_VSS_TransformWaitMusic" data-uid="VoidSea.VoidSeaScene.VSS_TransformWaitMusic">
+  VSS_TransformWaitMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VSS_TransformWaitMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_WormsMusic_" data-uid="VoidSea.VoidSeaScene.WormsMusic*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_WormsMusic" data-uid="VoidSea.VoidSeaScene.WormsMusic">
+  WormsMusic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WormsMusic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VoidSea_VoidSeaScene_AddMeltObject_" data-uid="VoidSea.VoidSeaScene.AddMeltObject*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_AddMeltObject_PhysicalObject_" data-uid="VoidSea.VoidSeaScene.AddMeltObject(PhysicalObject)">
+  AddMeltObject(PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMeltObject(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_ArtificerEndUpdate_" data-uid="VoidSea.VoidSeaScene.ArtificerEndUpdate*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_ArtificerEndUpdate_Player_System_Int32_" data-uid="VoidSea.VoidSeaScene.ArtificerEndUpdate(Player,System.Int32)">
+  ArtificerEndUpdate(Player, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1666"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ArtificerEndUpdate(Player player, int timer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+    <dt><code>timer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_DeleteMainWorm_" data-uid="VoidSea.VoidSeaScene.DeleteMainWorm*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_DeleteMainWorm" data-uid="VoidSea.VoidSeaScene.DeleteMainWorm">
+  DeleteMainWorm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteMainWorm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_DestroyAllWormsExceptMainWorm_" data-uid="VoidSea.VoidSeaScene.DestroyAllWormsExceptMainWorm*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_DestroyAllWormsExceptMainWorm" data-uid="VoidSea.VoidSeaScene.DestroyAllWormsExceptMainWorm">
+  DestroyAllWormsExceptMainWorm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyAllWormsExceptMainWorm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_DestroyCeiling_" data-uid="VoidSea.VoidSeaScene.DestroyCeiling*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_DestroyCeiling" data-uid="VoidSea.VoidSeaScene.DestroyCeiling">
+  DestroyCeiling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyCeiling()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_DestroyDistantWorms_" data-uid="VoidSea.VoidSeaScene.DestroyDistantWorms*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_DestroyDistantWorms" data-uid="VoidSea.VoidSeaScene.DestroyDistantWorms">
+  DestroyDistantWorms()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyDistantWorms()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_DestroyMainWorm_" data-uid="VoidSea.VoidSeaScene.DestroyMainWorm*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_DestroyMainWorm" data-uid="VoidSea.VoidSeaScene.DestroyMainWorm">
+  DestroyMainWorm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyMainWorm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_Move_" data-uid="VoidSea.VoidSeaScene.Move*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_Move_Player_UnityEngine_Vector2_System_Boolean_" data-uid="VoidSea.VoidSeaScene.Move(Player,UnityEngine.Vector2,System.Boolean)">
+  Move(Player, Vector2, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(Player player, Vector2 move, bool moveCamera)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+    <dt><code>move</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>moveCamera</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_MovedToSecondSpace_" data-uid="VoidSea.VoidSeaScene.MovedToSecondSpace*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_MovedToSecondSpace" data-uid="VoidSea.VoidSeaScene.MovedToSecondSpace">
+  MovedToSecondSpace()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MovedToSecondSpace()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_SaintEndUpdate_" data-uid="VoidSea.VoidSeaScene.SaintEndUpdate*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_SaintEndUpdate" data-uid="VoidSea.VoidSeaScene.SaintEndUpdate">
+  SaintEndUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1558"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaintEndUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_Update_" data-uid="VoidSea.VoidSeaScene.Update*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_Update_System_Boolean_" data-uid="VoidSea.VoidSeaScene.Update(System.Boolean)">
+  Update(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L963"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_UpdatePlayerInVoidSea_" data-uid="VoidSea.VoidSeaScene.UpdatePlayerInVoidSea*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_UpdatePlayerInVoidSea_Player_" data-uid="VoidSea.VoidSeaScene.UpdatePlayerInVoidSea(Player)">
+  UpdatePlayerInVoidSea(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlayerInVoidSea(Player voidSeaPlayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voidSeaPlayer</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_UpdatePlayersJolly_" data-uid="VoidSea.VoidSeaScene.UpdatePlayersJolly*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_UpdatePlayersJolly" data-uid="VoidSea.VoidSeaScene.UpdatePlayersJolly">
+  UpdatePlayersJolly()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlayersJolly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_VoidSeaTreatment_" data-uid="VoidSea.VoidSeaScene.VoidSeaTreatment*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_VoidSeaTreatment_Player_System_Single_" data-uid="VoidSea.VoidSeaScene.VoidSeaTreatment(Player,System.Single)">
+  VoidSeaTreatment(Player, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void VoidSeaTreatment(Player player, float swimSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+    <dt><code>swimSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VoidSea_VoidSeaScene_switchSaintEndPhase_" data-uid="VoidSea.VoidSeaScene.switchSaintEndPhase*"></a>
+
+  <h3 id="VoidSea_VoidSeaScene_switchSaintEndPhase_VoidSea_VoidSeaScene_SaintEndingPhase_" data-uid="VoidSea.VoidSeaScene.switchSaintEndPhase(VoidSea.VoidSeaScene.SaintEndingPhase)">
+  switchSaintEndPhase(SaintEndingPhase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L1660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void switchSaintEndPhase(VoidSeaScene.SaintEndingPhase phase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phase</code> <a class="xref" href="VoidSea.VoidSeaScene.html">VoidSeaScene</a>.<a class="xref" href="VoidSea.VoidSeaScene.SaintEndingPhase.html">SaintEndingPhase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/VoidSea/VoidSeaScene.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

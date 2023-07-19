@@ -1,0 +1,724 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SelectOneButton
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SelectOneButton
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Menu_SelectOneButton.md&amp;value=---%0Auid%3A%20Menu.SelectOneButton%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Menu.SelectOneButton">
+
+
+
+  <h1 id="Menu_SelectOneButton" data-uid="Menu.SelectOneButton" class="text-break">
+    Class SelectOneButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Menu.html">Menu</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SelectOneButton : SimpleButton, SelectableMenuObject, ButtonMenuObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Menu.MenuObject.html">MenuObject</a></div>
+      <div><a class="xref" href="Menu.PositionedMenuObject.html">PositionedMenuObject</a></div>
+      <div><a class="xref" href="Menu.RectangularMenuObject.html">RectangularMenuObject</a></div>
+      <div><a class="xref" href="Menu.ButtonTemplate.html">ButtonTemplate</a></div>
+      <div><a class="xref" href="Menu.SimpleButton.html">SimpleButton</a></div>
+      <div><span class="xref">SelectOneButton</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Menu.SelectableMenuObject.html">SelectableMenuObject</a></div>
+      <div><a class="xref" href="Menu.ButtonMenuObject.html">ButtonMenuObject</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Menu.InputOptionsMenu.DeviceButton.html">InputOptionsMenu.DeviceButton</a></div>
+      <div><a class="xref" href="Menu.InputOptionsMenu.PlayerButton.html">InputOptionsMenu.PlayerButton</a></div>
+      <div><a class="xref" href="Menu.MusicTrackButton.html">MusicTrackButton</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_menuLabel">SimpleButton.menuLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_roundedRect">SimpleButton.roundedRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_selectRect">SimpleButton.selectRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_labelColor">SimpleButton.labelColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_signalText">SimpleButton.signalText</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.SimpleButton.html#Menu_SimpleButton_SetSize_UnityEngine_Vector2_">SimpleButton.SetSize(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_buttonBehav">ButtonTemplate.buttonBehav</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_black">ButtonTemplate.black</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_rectColor">ButtonTemplate.rectColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_IsMouseOverMe">ButtonTemplate.IsMouseOverMe</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_CurrentlySelectableMouse">ButtonTemplate.CurrentlySelectableMouse</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_CurrentlySelectableNonMouse">ButtonTemplate.CurrentlySelectableNonMouse</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_GetButtonBehavior">ButtonTemplate.GetButtonBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.ButtonTemplate.html#Menu_ButtonTemplate_InterpColor_System_Single_HSLColor_">ButtonTemplate.InterpColor(float, HSLColor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_size">RectangularMenuObject.size</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_lastSize">RectangularMenuObject.lastSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_MouseOver">RectangularMenuObject.MouseOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_DrawSize_System_Single_">RectangularMenuObject.DrawSize(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_pos">PositionedMenuObject.pos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_lastPos">PositionedMenuObject.lastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenPos">PositionedMenuObject.ScreenPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenLastPos">PositionedMenuObject.ScreenLastPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_">PositionedMenuObject.DrawPos(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_">PositionedMenuObject.DrawX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_">PositionedMenuObject.DrawY(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_menu">MenuObject.menu</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_subObjects">MenuObject.subObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_owner">MenuObject.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_nextSelectable">MenuObject.nextSelectable</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_toggled">MenuObject.toggled</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_inactive">MenuObject.inactive</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_myContainer">MenuObject.myContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Container">MenuObject.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Selected">MenuObject.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_page">MenuObject.page</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_">MenuObject.Singal(MenuObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSprites">MenuObject.RemoveSprites()</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_">MenuObject.RemoveSubObject(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Menu.MenuObject.html#Menu_MenuObject_RecursiveRemoveSelectables_Menu_MenuObject_">MenuObject.RecursiveRemoveSelectables(MenuObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Menu_SelectOneButton__ctor_" data-uid="Menu.SelectOneButton.#ctor*"></a>
+
+  <h3 id="Menu_SelectOneButton__ctor_Menu_Menu_Menu_MenuObject_System_String_System_String_UnityEngine_Vector2_UnityEngine_Vector2_Menu_SelectOneButton___System_Int32_" data-uid="Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)">
+  SelectOneButton(Menu, MenuObject, string, string, Vector2, Vector2, SelectOneButton[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectOneButton(Menu menu, MenuObject owner, string displayText, string signalText, Vector2 pos, Vector2 size, SelectOneButton[] buttonArray, int buttonArrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>menu</code> <a class="xref" href="Menu.Menu.html">Menu</a></dt>
+    <dd></dd>
+    <dt><code>owner</code> <a class="xref" href="Menu.MenuObject.html">MenuObject</a></dt>
+    <dd></dd>
+    <dt><code>displayText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>signalText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>buttonArray</code> <a class="xref" href="Menu.SelectOneButton.html">SelectOneButton</a>[]</dt>
+    <dd></dd>
+    <dt><code>buttonArrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Menu_SelectOneButton_buttonArray" data-uid="Menu.SelectOneButton.buttonArray">
+  buttonArray
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectOneButton[] buttonArray</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SelectOneButton.html">SelectOneButton</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SelectOneButton_buttonArrayIndex" data-uid="Menu.SelectOneButton.buttonArrayIndex">
+  buttonArrayIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int buttonArrayIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SelectOneButton_handleSelectedColInChild" data-uid="Menu.SelectOneButton.handleSelectedColInChild">
+  handleSelectedColInChild
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool handleSelectedColInChild</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SelectOneButton_lastSelectedCol" data-uid="Menu.SelectOneButton.lastSelectedCol">
+  lastSelectedCol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lastSelectedCol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SelectOneButton_outerRect" data-uid="Menu.SelectOneButton.outerRect">
+  outerRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoundedRect outerRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.RoundedRect.html">RoundedRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Menu_SelectOneButton_selectedCol" data-uid="Menu.SelectOneButton.selectedCol">
+  selectedCol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float selectedCol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Menu_SelectOneButton_AmISelected_" data-uid="Menu.SelectOneButton.AmISelected*"></a>
+
+  <h3 id="Menu_SelectOneButton_AmISelected" data-uid="Menu.SelectOneButton.AmISelected">
+  AmISelected
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AmISelected { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Menu_SelectOneButton_ReportTo_" data-uid="Menu.SelectOneButton.ReportTo*"></a>
+
+  <h3 id="Menu_SelectOneButton_ReportTo" data-uid="Menu.SelectOneButton.ReportTo">
+  ReportTo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectOneButton.SelectOneButtonOwner ReportTo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Menu.SelectOneButton.html">SelectOneButton</a>.<a class="xref" href="Menu.SelectOneButton.SelectOneButtonOwner.html">SelectOneButtonOwner</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Menu_SelectOneButton_Clicked_" data-uid="Menu.SelectOneButton.Clicked*"></a>
+
+  <h3 id="Menu_SelectOneButton_Clicked" data-uid="Menu.SelectOneButton.Clicked">
+  Clicked()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clicked()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SelectOneButton_GrafUpdate_" data-uid="Menu.SelectOneButton.GrafUpdate*"></a>
+
+  <h3 id="Menu_SelectOneButton_GrafUpdate_System_Single_" data-uid="Menu.SelectOneButton.GrafUpdate(System.Single)">
+  GrafUpdate(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GrafUpdate(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SelectOneButton_MyColor_" data-uid="Menu.SelectOneButton.MyColor*"></a>
+
+  <h3 id="Menu_SelectOneButton_MyColor_System_Single_" data-uid="Menu.SelectOneButton.MyColor(System.Single)">
+  MyColor(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color MyColor(float timeStacker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Menu_SelectOneButton_Update_" data-uid="Menu.SelectOneButton.Update*"></a>
+
+  <h3 id="Menu_SelectOneButton_Update" data-uid="Menu.SelectOneButton.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/Menu/SelectOneButton.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

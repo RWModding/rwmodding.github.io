@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CicadaAI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CicadaAI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RWModding/RainWorldDocs/new/main/apiSpec/new?filename=Global_CicadaAI.md&amp;value=---%0Auid%3A%20Global.CicadaAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.CicadaAI">
+
+
+
+  <h1 id="Global_CicadaAI" data-uid="Global.CicadaAI" class="text-break">
+    Class CicadaAI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CicadaAI : ArtificialIntelligence, IUseARelationshipTracker, IReactToSocialEvents, FriendTracker.IHaveFriendTracker</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></div>
+      <div><span class="xref">CicadaAI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IUseARelationshipTracker.html">IUseARelationshipTracker</a></div>
+      <div><a class="xref" href="Global.IReactToSocialEvents.html">IReactToSocialEvents</a></div>
+      <div><a class="xref" href="FriendTracker.html">FriendTracker</a>.<a class="xref" href="FriendTracker.IHaveFriendTracker.html">IHaveFriendTracker</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_creature">ArtificialIntelligence.creature</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_modules">ArtificialIntelligence.modules</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stranded">ArtificialIntelligence.stranded</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_seeThroughWalls">ArtificialIntelligence.seeThroughWalls</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_timeInRoom">ArtificialIntelligence.timeInRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_lastRoom">ArtificialIntelligence.lastRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_pathFinder">ArtificialIntelligence.pathFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_tracker">ArtificialIntelligence.tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_noiseTracker">ArtificialIntelligence.noiseTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_obstacleTracker">ArtificialIntelligence.obstacleTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_threatTracker">ArtificialIntelligence.threatTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_preyTracker">ArtificialIntelligence.preyTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_rainTracker">ArtificialIntelligence.rainTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_denFinder">ArtificialIntelligence.denFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_agressionTracker">ArtificialIntelligence.agressionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_utilityComparer">ArtificialIntelligence.utilityComparer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_missionTracker">ArtificialIntelligence.missionTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_secondaryNodeFinder">ArtificialIntelligence.secondaryNodeFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_relationshipTracker">ArtificialIntelligence.relationshipTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_itemTracker">ArtificialIntelligence.itemTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_discomfortTracker">ArtificialIntelligence.discomfortTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_stuckTracker">ArtificialIntelligence.stuckTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_injuryTracker">ArtificialIntelligence.injuryTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_friendTracker">ArtificialIntelligence.friendTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_AddModule_AIModule_">ArtificialIntelligence.AddModule(AIModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_">ArtificialIntelligence.VisualContact(WorldCoordinate, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_">ArtificialIntelligence.VisualContact(Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_VisualContact_BodyChunk_">ArtificialIntelligence.VisualContact(BodyChunk)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_SetDestination_WorldCoordinate_">ArtificialIntelligence.SetDestination(WorldCoordinate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_">ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_NewArea_System_Boolean_">ArtificialIntelligence.NewArea(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DenPosition">ArtificialIntelligence.DenPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_">ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_StaticRelationship_AbstractCreature_">ArtificialIntelligence.StaticRelationship(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_">ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.ArtificialIntelligence.html#Global_ArtificialIntelligence_HeardNoise_Noise_InGameNoise_">ArtificialIntelligence.HeardNoise(InGameNoise)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_CicadaAI__ctor_" data-uid="Global.CicadaAI.#ctor*"></a>
+
+  <h3 id="Global_CicadaAI__ctor_AbstractCreature_World_" data-uid="Global.CicadaAI.#ctor(AbstractCreature,World)">
+  CicadaAI(AbstractCreature, World)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CicadaAI(AbstractCreature creature, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_CicadaAI_antagonizeMethod" data-uid="Global.CicadaAI.antagonizeMethod">
+  antagonizeMethod
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool antagonizeMethod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_antagonizeMethodCounter" data-uid="Global.CicadaAI.antagonizeMethodCounter">
+  antagonizeMethodCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int antagonizeMethodCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_behavior" data-uid="Global.CicadaAI.behavior">
+  behavior
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CicadaAI.Behavior behavior</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CicadaAI.html">CicadaAI</a>.<a class="xref" href="CicadaAI.Behavior.html">Behavior</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_cicada" data-uid="Global.CicadaAI.cicada">
+  cicada
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cicada cicada</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Cicada.html">Cicada</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_circleGroup" data-uid="Global.CicadaAI.circleGroup">
+  circleGroup
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CicadaAI.CircleGroup circleGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CicadaAI.html">CicadaAI</a>.<a class="xref" href="CicadaAI.CircleGroup.html">CircleGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_currentUtility" data-uid="Global.CicadaAI.currentUtility">
+  currentUtility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float currentUtility</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_debugDestinationVisualizer" data-uid="Global.CicadaAI.debugDestinationVisualizer">
+  debugDestinationVisualizer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugDestinationVisualizer debugDestinationVisualizer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DebugDestinationVisualizer.html">DebugDestinationVisualizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_focusCreature" data-uid="Global.CicadaAI.focusCreature">
+  focusCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tracker.CreatureRepresentation focusCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_forbiddenIdleSitSpot" data-uid="Global.CicadaAI.forbiddenIdleSitSpot">
+  forbiddenIdleSitSpot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate forbiddenIdleSitSpot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_huntAttackCounter" data-uid="Global.CicadaAI.huntAttackCounter">
+  huntAttackCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int huntAttackCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_idleSitCounter" data-uid="Global.CicadaAI.idleSitCounter">
+  idleSitCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int idleSitCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_idleSitSpot" data-uid="Global.CicadaAI.idleSitSpot">
+  idleSitSpot
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate idleSitSpot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_migrateToSwarmRoom" data-uid="Global.CicadaAI.migrateToSwarmRoom">
+  migrateToSwarmRoom
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool migrateToSwarmRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_noCircleGroupCounter" data-uid="Global.CicadaAI.noCircleGroupCounter">
+  noCircleGroupCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int noCircleGroupCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_panicFleeCrit" data-uid="Global.CicadaAI.panicFleeCrit">
+  panicFleeCrit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature panicFleeCrit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_swooshToPos" data-uid="Global.CicadaAI.swooshToPos">
+  swooshToPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? swooshToPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_tiredOfHuntingCounter" data-uid="Global.CicadaAI.tiredOfHuntingCounter">
+  tiredOfHuntingCounter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int tiredOfHuntingCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_CicadaAI_tiredOfHuntingCreature" data-uid="Global.CicadaAI.tiredOfHuntingCreature">
+  tiredOfHuntingCreature
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractCreature tiredOfHuntingCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_CicadaAI_AddToCircle_" data-uid="Global.CicadaAI.AddToCircle*"></a>
+
+  <h3 id="Global_CicadaAI_AddToCircle_CicadaAI_CircleGroup_" data-uid="Global.CicadaAI.AddToCircle(CicadaAI.CircleGroup)">
+  AddToCircle(CircleGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToCircle(CicadaAI.CircleGroup newGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newGroup</code> <a class="xref" href="CicadaAI.html">CicadaAI</a>.<a class="xref" href="CicadaAI.CircleGroup.html">CircleGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_CicadaPlayerRelationChange_" data-uid="Global.CicadaAI.CicadaPlayerRelationChange*"></a>
+
+  <h3 id="Global_CicadaAI_CicadaPlayerRelationChange_System_Single_AbstractCreature_" data-uid="Global.CicadaAI.CicadaPlayerRelationChange(System.Single,AbstractCreature)">
+  CicadaPlayerRelationChange(float, AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L794"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CicadaPlayerRelationChange(float change, AbstractCreature player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>change</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>player</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_ContextualDislikeOfRival_" data-uid="Global.CicadaAI.ContextualDislikeOfRival*"></a>
+
+  <h3 id="Global_CicadaAI_ContextualDislikeOfRival_RelationshipTracker_DynamicRelationship_CreatureTemplate_Relationship_" data-uid="Global.CicadaAI.ContextualDislikeOfRival(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)">
+  ContextualDislikeOfRival(DynamicRelationship, Relationship)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ContextualDislikeOfRival(RelationshipTracker.DynamicRelationship dRelation, CreatureTemplate.Relationship rel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dRelation</code> <a class="xref" href="RelationshipTracker.html">RelationshipTracker</a>.<a class="xref" href="RelationshipTracker.DynamicRelationship.html">DynamicRelationship</a></dt>
+    <dd></dd>
+    <dt><code>rel</code> <a class="xref" href="CreatureTemplate.html">CreatureTemplate</a>.<a class="xref" href="CreatureTemplate.Relationship.html">Relationship</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_CreateTrackerRepresentationForCreature_" data-uid="Global.CicadaAI.CreateTrackerRepresentationForCreature*"></a>
+
+  <h3 id="Global_CicadaAI_CreateTrackerRepresentationForCreature_AbstractCreature_" data-uid="Global.CicadaAI.CreateTrackerRepresentationForCreature(AbstractCreature)">
+  CreateTrackerRepresentationForCreature(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Tracker.CreatureRepresentation CreateTrackerRepresentationForCreature(AbstractCreature otherCreature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherCreature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_CreatureSpotted_" data-uid="Global.CicadaAI.CreatureSpotted*"></a>
+
+  <h3 id="Global_CicadaAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_" data-uid="Global.CicadaAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)">
+  CreatureSpotted(bool, CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CreatureSpotted(bool firstSpot, Tracker.CreatureRepresentation creatureRep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>firstSpot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>creatureRep</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_CurrentPlayerAggression_" data-uid="Global.CicadaAI.CurrentPlayerAggression*"></a>
+
+  <h3 id="Global_CicadaAI_CurrentPlayerAggression_AbstractCreature_" data-uid="Global.CicadaAI.CurrentPlayerAggression(AbstractCreature)">
+  CurrentPlayerAggression(AbstractCreature)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L687"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float CurrentPlayerAggression(AbstractCreature player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_GiftRecieved_" data-uid="Global.CicadaAI.GiftRecieved*"></a>
+
+  <h3 id="Global_CicadaAI_GiftRecieved_SocialEventRecognizer_OwnedItemOnGround_" data-uid="Global.CicadaAI.GiftRecieved(SocialEventRecognizer.OwnedItemOnGround)">
+  GiftRecieved(OwnedItemOnGround)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GiftRecieved(SocialEventRecognizer.OwnedItemOnGround gift)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gift</code> <a class="xref" href="SocialEventRecognizer.html">SocialEventRecognizer</a>.<a class="xref" href="SocialEventRecognizer.OwnedItemOnGround.html">OwnedItemOnGround</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_InviteToDance_" data-uid="Global.CicadaAI.InviteToDance*"></a>
+
+  <h3 id="Global_CicadaAI_InviteToDance" data-uid="Global.CicadaAI.InviteToDance">
+  InviteToDance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InviteToDance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_LikeOfPlayer_" data-uid="Global.CicadaAI.LikeOfPlayer*"></a>
+
+  <h3 id="Global_CicadaAI_LikeOfPlayer_Tracker_CreatureRepresentation_" data-uid="Global.CicadaAI.LikeOfPlayer(Tracker.CreatureRepresentation)">
+  LikeOfPlayer(CreatureRepresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LikeOfPlayer(Tracker.CreatureRepresentation player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Tracker.html">Tracker</a>.<a class="xref" href="Tracker.CreatureRepresentation.html">CreatureRepresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_NewRoom_" data-uid="Global.CicadaAI.NewRoom*"></a>
+
+  <h3 id="Global_CicadaAI_NewRoom_Room_" data-uid="Global.CicadaAI.NewRoom(Room)">
+  NewRoom(Room)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room room)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_RemoveFromCircle_" data-uid="Global.CicadaAI.RemoveFromCircle*"></a>
+
+  <h3 id="Global_CicadaAI_RemoveFromCircle" data-uid="Global.CicadaAI.RemoveFromCircle">
+  RemoveFromCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFromCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_SocialEvent_" data-uid="Global.CicadaAI.SocialEvent*"></a>
+
+  <h3 id="Global_CicadaAI_SocialEvent_SocialEventRecognizer_EventID_Creature_Creature_PhysicalObject_" data-uid="Global.CicadaAI.SocialEvent(SocialEventRecognizer.EventID,Creature,Creature,PhysicalObject)">
+  SocialEvent(EventID, Creature, Creature, PhysicalObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SocialEvent(SocialEventRecognizer.EventID ID, Creature subjectCrit, Creature objectCrit, PhysicalObject involvedItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="SocialEventRecognizer.html">SocialEventRecognizer</a>.<a class="xref" href="SocialEventRecognizer.EventID.html">EventID</a></dt>
+    <dd></dd>
+    <dt><code>subjectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>objectCrit</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+    <dt><code>involvedItem</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_Update_" data-uid="Global.CicadaAI.Update*"></a>
+
+  <h3 id="Global_CicadaAI_Update" data-uid="Global.CicadaAI.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_VisualScore_" data-uid="Global.CicadaAI.VisualScore*"></a>
+
+  <h3 id="Global_CicadaAI_VisualScore_UnityEngine_Vector2_System_Single_" data-uid="Global.CicadaAI.VisualScore(UnityEngine.Vector2,System.Single)">
+  VisualScore(Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float VisualScore(Vector2 lookAtPoint, float targetSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lookAtPoint</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>targetSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_CicadaAI_WantToStayInDenUntilEndOfCycle_" data-uid="Global.CicadaAI.WantToStayInDenUntilEndOfCycle*"></a>
+
+  <h3 id="Global_CicadaAI_WantToStayInDenUntilEndOfCycle" data-uid="Global.CicadaAI.WantToStayInDenUntilEndOfCycle">
+  WantToStayInDenUntilEndOfCycle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool WantToStayInDenUntilEndOfCycle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RWModding/RainWorldDocs/blob/main/src/CicadaAI.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
